@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- your app branding color for the app bar -->
+    <color name="colorPrimary">#000000</color>
+    <!-- darker variant for the status bar and contextual app bars -->
+    <color name="color_1">#ff99cc00</color>
+    <!-- A light Holo shade of red -->
+    <color name="color_2">#ffff4444</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="color_3">#ff0099cc</color>
+    <!-- A dark Holo shade of green -->
+    <color name="color_4">#ff669900</color>
+</resources>

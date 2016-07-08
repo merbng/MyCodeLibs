@@ -24,6 +24,7 @@
         <activity android:name=".activitys.RecyclerViewActivity" />
         <activity android:name=".activitys.SeeZoomImgActivity" />
         <activity android:name=".activitys.ZanActivity" />
+        <activity android:name=".activitys.TabActivity" />
 
     </application>
 

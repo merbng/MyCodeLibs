@@ -35,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_zan:
                 startActivity(new Intent(this, ZanActivity.class));
                 break;
+            case R.id.btn_viewpager:
+                startActivity(new Intent(this, TabActivity.class));
+                break;
         }
     }
 }

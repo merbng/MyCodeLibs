@@ -9,36 +9,48 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="btnClick"
-        android:text="带logo的二维码" />    
+        android:text="带logo的二维码" />
+
     <Button
         android:id="@+id/btn_recycleView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="btnClick"
-        android:text="recycleView" />    
+        android:text="recycleView" />
+
     <Button
         android:id="@+id/btn_seeZoomImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="btnClick"
-        android:text="SeeZoomImg" />  
+        android:text="SeeZoomImg" />
+
     <Button
         android:id="@+id/btn_TipShow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="btnClick"
         android:text="TipShow" />
+
     <Button
         android:id="@+id/btn_titleBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="btnClick"
         android:text="titleBar" />
+
     <Button
         android:id="@+id/btn_zan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="btnClick"
         android:text="Zan" />
+
+    <Button
+        android:id="@+id/btn_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnClick"
+        android:text="导航栏" />
 
 </LinearLayout>
