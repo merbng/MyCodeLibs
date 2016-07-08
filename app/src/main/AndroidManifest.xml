@@ -20,9 +20,11 @@
         </activity>
         <activity android:name=".activitys.TitleBarActivity" />
         <activity android:name=".activitys.TipShowActivity" />
-        <activity
-            android:name=".activitys.SeeZoomImgActivity"
-            android:label="@string/title_activity_see_zoom_img"></activity>
+        <activity android:name=".activitys.LogoQrCodeActivity" />
+        <activity android:name=".activitys.RecyclerViewActivity" />
+        <activity android:name=".activitys.SeeZoomImgActivity" />
+        <activity android:name=".activitys.ZanActivity" />
+
     </application>
 
 </manifest>

@@ -16,6 +16,9 @@ import com.app.merbng.mycodelibs.utils.QRCodeUtil;
 
 import java.io.File;
 
+/**
+ * 带logo的二维码
+ */
 public class LogoQrCodeActivity extends AppCompatActivity {
 
     @Override

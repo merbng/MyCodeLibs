@@ -7,7 +7,6 @@
 
     <com.app.merbng.mycodelibs.views.VoteSurface
         android:id="@+id/view"
-        android:background="@drawable/zan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
