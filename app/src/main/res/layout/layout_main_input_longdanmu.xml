@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><!--这是主页面的输入框布局（输入框是个写死textView）[主频道。子频道专属]-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+    <!--输入布局-->
+    <include layout="@layout/include_input_layout" />
+    <!--相机、相册，链接-->
+</LinearLayout>
