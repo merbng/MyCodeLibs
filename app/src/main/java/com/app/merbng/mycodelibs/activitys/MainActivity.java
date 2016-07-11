@@ -38,6 +38,21 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_viewpager:
                 startActivity(new Intent(this, TabActivity.class));
                 break;
+            case R.id.time_line:
+                startActivity(new Intent(MainActivity.this, TimeLineActivity.class));
+                break;
+            case R.id.Shine_text:
+                startActivity(new Intent(MainActivity.this, ShineTextActivity.class));
+                break;
+            case R.id.loading:
+                startActivity(new Intent(MainActivity.this, LoadingActivity.class));
+                break;
+            case R.id.search:
+                startActivity(new Intent(MainActivity.this, SearchActivity.class));
+                break;
+            case R.id.toast:
+                startActivity(new Intent(MainActivity.this, ToastActivity.class));
+                break;
         }
     }
 }

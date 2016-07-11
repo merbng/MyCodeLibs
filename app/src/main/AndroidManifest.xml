@@ -25,7 +25,11 @@
         <activity android:name=".activitys.SeeZoomImgActivity" />
         <activity android:name=".activitys.ZanActivity" />
         <activity android:name=".activitys.TabActivity" />
-
+        <activity android:name=".activitys.TimeLineActivity"></activity>
+        <activity android:name=".activitys.ShineTextActivity"></activity>
+        <activity android:name=".activitys.LoadingActivity"></activity>
+        <activity android:name=".activitys.SearchActivity"></activity>
+        <activity android:name=".activitys.ToastActivity"></activity>
     </application>
 
 </manifest>

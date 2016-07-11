@@ -53,4 +53,38 @@
         android:onClick="btnClick"
         android:text="导航栏" />
 
+    <Button
+        android:id="@+id/time_line"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:onClick="btnClick"
+        android:text="时间轴" />
+
+    <Button
+        android:id="@+id/Shine_text"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:onClick="btnClick"
+        android:text="流光字" />
+
+    <Button
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:onClick="btnClick"
+        android:text="Loading" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:onClick="btnClick"
+        android:text="Search" />
+
+    <Button
+        android:id="@+id/toast"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:onClick="btnClick"
+        android:text="Toast" />
 </LinearLayout>
