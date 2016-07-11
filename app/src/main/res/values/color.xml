@@ -10,4 +10,5 @@
     <color name="color_3">#ff0099cc</color>
     <!-- A dark Holo shade of green -->
     <color name="color_4">#ff669900</color>
+    <color name="window_background">#e1e1e1</color>
 </resources>
