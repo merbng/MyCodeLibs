@@ -3,20 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#ff00"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/mTV"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_gravity="center_horizontal"
-            android:text="Demo"
-            android:textColor="#ffffff" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/mBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        android:text="Demo"
+        android:textColor="#000" />
 </RelativeLayout>

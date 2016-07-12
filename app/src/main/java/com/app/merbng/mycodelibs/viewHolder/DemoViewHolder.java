@@ -14,6 +14,6 @@ public class DemoViewHolder extends RecyclerView.ViewHolder {
 
     public DemoViewHolder(View itemView) {
         super(itemView);
-        mTectView = (TextView) itemView.findViewById(R.id.mTV);
+        mTectView = (TextView) itemView.findViewById(R.id.mBtn);
     }
 }

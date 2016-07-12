@@ -3,12 +3,12 @@
     package="com.app.merbng.mycodelibs">
 
     <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-
         <activity
             android:name=".activitys.MainActivity"
             android:label="@string/app_name">
@@ -25,13 +25,16 @@
         <activity android:name=".activitys.SeeZoomImgActivity" />
         <activity android:name=".activitys.ZanActivity" />
         <activity android:name=".activitys.TabActivity" />
-        <activity android:name=".activitys.TimeLineActivity"></activity>
-        <activity android:name=".activitys.ShineTextActivity"></activity>
-        <activity android:name=".activitys.LoadingActivity"></activity>
-        <activity android:name=".activitys.SearchActivity"></activity>
-        <activity android:name=".activitys.ToastActivity"></activity>
-        <activity android:name=".activitys.CreateCircularActivity"></activity>
-        <activity android:name=".activitys.StudyRecycleActivity"></activity>
+        <activity android:name=".activitys.TimeLineActivity" />
+        <activity android:name=".activitys.ShineTextActivity" />
+        <activity android:name=".activitys.LoadingActivity" />
+        <activity android:name=".activitys.SearchActivity" />
+        <activity android:name=".activitys.ToastActivity" />
+        <activity android:name=".activitys.CreateCircularActivity" />
+        <activity android:name=".activitys.StudyRecycleActivity" />
+        <activity
+            android:name=".activitys.Main2Activity"
+            android:label="@string/title_activity_main2"></activity>
     </application>
 
 </manifest>
