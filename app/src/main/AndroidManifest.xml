@@ -30,6 +30,7 @@
         <activity android:name=".activitys.LoadingActivity"></activity>
         <activity android:name=".activitys.SearchActivity"></activity>
         <activity android:name=".activitys.ToastActivity"></activity>
+        <activity android:name=".activitys.CreateCircularActivity"></activity>
     </application>
 
 </manifest>

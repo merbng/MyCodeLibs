@@ -53,6 +53,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.toast:
                 startActivity(new Intent(MainActivity.this, ToastActivity.class));
                 break;
+            case R.id.createcircular://圆形缩放
+                startActivity(new Intent(MainActivity.this, CreateCircularActivity.class));
+                break;
         }
     }
 }
