@@ -56,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.createcircular://圆形缩放
                 startActivity(new Intent(MainActivity.this, CreateCircularActivity.class));
                 break;
+            case R.id.studyRecycleView://学习RecycleView
+                startActivity(new Intent(MainActivity.this, StudyRecycleActivity.class));
+                break;
         }
     }
 }

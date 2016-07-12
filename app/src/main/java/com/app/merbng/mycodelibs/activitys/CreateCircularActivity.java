@@ -2,8 +2,8 @@ package com.app.merbng.mycodelibs.activitys;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.widget.Button;
@@ -15,7 +15,7 @@ import com.app.merbng.mycodelibs.R;
 /**
  * 动画缩放
  */
-public class CreateCircularActivity extends Activity {
+public class CreateCircularActivity extends AppCompatActivity {
     Button btnTestScale;
     LinearLayout linearTestScale;
 

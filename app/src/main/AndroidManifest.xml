@@ -31,6 +31,7 @@
         <activity android:name=".activitys.SearchActivity"></activity>
         <activity android:name=".activitys.ToastActivity"></activity>
         <activity android:name=".activitys.CreateCircularActivity"></activity>
+        <activity android:name=".activitys.StudyRecycleActivity"></activity>
     </application>
 
 </manifest>

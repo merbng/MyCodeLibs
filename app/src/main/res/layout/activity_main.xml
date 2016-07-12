@@ -94,4 +94,11 @@
         android:layout_height="40dp"
         android:onClick="btnClick"
         android:text="createCircular" />
+
+    <Button
+        android:id="@+id/studyRecycleView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:onClick="btnClick"
+        android:text="Study RecycleView" />
 </LinearLayout>
