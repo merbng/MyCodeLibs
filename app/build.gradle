@@ -45,4 +45,8 @@ dependencies {
     compile 'com.lusfold.spinnerloading:library:1.0.0'
 //    换肤
     compile 'com.zhy:changeskin:3.0.0'
+//    Retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.0.1'
+//    使用Retrofit获取JSON类型的数据
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
 }

@@ -36,6 +36,7 @@
         <activity android:name=".activitys.CreateCircularActivity" />
         <activity android:name=".activitys.StudyRecycleActivity" />
         <activity android:name=".activitys.TestGetConnection" />
+        <activity android:name=".A_studyRetrofit.StudyRetrofit" />
     </application>
 
 </manifest>
