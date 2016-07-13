@@ -75,11 +75,7 @@ public class VoteSurface extends SurfaceView implements Callback, Runnable {
         paint.setXfermode(new PorterDuffXfermode(Mode.CLEAR));
 
         setFocusable(true);
-
-
-//		InputStream is00 = MyApplication.getInstance().getResources().openRawResource(R.drawable.heart0);
-//		bitmap =  GlobalFunctions.
-//				GetBitmapFromBitmap(MyApplication.getInstance(), is00);
+ 
         bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.skin_guide_page01);
 
         setZOrderOnTop(true);

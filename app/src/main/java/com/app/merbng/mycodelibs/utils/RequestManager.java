@@ -3,13 +3,13 @@ package com.app.merbng.mycodelibs.utils;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
-import com.app.merbng.mycodelibs.MyApplication;
+import com.app.merbng.mycodelibs.MyCodeLibApplication;
 
 /**
- * 
+ *
  */
 public class RequestManager {
-    public static RequestQueue mRequestQueue = Volley.newRequestQueue(MyApplication.getContext());
+    public static RequestQueue mRequestQueue = Volley.newRequestQueue(MyCodeLibApplication.getmContext());
 
     private RequestManager() {
         // no instances
