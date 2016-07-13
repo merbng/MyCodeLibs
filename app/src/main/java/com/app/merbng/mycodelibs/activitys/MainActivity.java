@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.app.merbng.mycodelibs.A_studyRetrofit.StudyRetrofit;
+import com.app.merbng.mycodelibs.A_studyRetrofit.StudyRetrofitActivity;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.zhy.changeskin.SkinManager;
@@ -65,7 +65,7 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(mContext, TestGetConnection.class));
                 break;
             case R.id.studyRetrofit://学习Retrofit
-                startActivity(new Intent(mContext, StudyRetrofit.class));
+                startActivity(new Intent(mContext, StudyRetrofitActivity.class));
                 break;
             case R.id.changeSkin://换肤 白天模式
                 SkinManager.getInstance().changeSkin("night");
