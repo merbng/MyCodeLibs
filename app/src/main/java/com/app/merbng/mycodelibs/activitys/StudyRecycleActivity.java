@@ -1,12 +1,12 @@
 package com.app.merbng.mycodelibs.activitys;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.adapters.StudyAdapter;
+import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.model.DataDemo;
 
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 /**
  * 学习RecycleView
  */
-public class StudyRecycleActivity extends AppCompatActivity {
+public class StudyRecycleActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -63,7 +63,7 @@
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:layout_marginLeft="5dp"
-            android:src="@drawable/bg_green_circle_smic" />
+            android:src="@drawable/skin_bg_green_circle_smic" />
 
         <TextView
             android:id="@+id/title"

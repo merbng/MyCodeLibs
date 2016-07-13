@@ -2,11 +2,11 @@ package com.app.merbng.mycodelibs.activitys;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 import com.app.merbng.mycodelibs.R;
+import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.interfaces.ShowTipsViewInterface;
 import com.app.merbng.mycodelibs.showtips.ShowTipsBuilder;
 import com.app.merbng.mycodelibs.showtips.ShowTipsView;
@@ -14,7 +14,7 @@ import com.app.merbng.mycodelibs.showtips.ShowTipsView;
 /**
  * 新用户引导提示页
  */
-public class TipShowActivity extends AppCompatActivity {
+public class TipShowActivity extends BaseActivity {
 
     private ShowTipsView showtips2, showtip1, showtips3, showtips4;
 

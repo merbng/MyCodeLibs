@@ -17,7 +17,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="157dp"
-        android:background="@drawable/iconfont_ok" />
+        android:background="@drawable/skin_iconfont_ok" />
 
     <Button
         android:id="@+id/id_btn_remove"

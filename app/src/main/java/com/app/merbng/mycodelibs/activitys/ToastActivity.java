@@ -2,12 +2,12 @@ package com.app.merbng.mycodelibs.activitys;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.app.merbng.mycodelibs.R;
+import com.app.merbng.mycodelibs.base.BaseActivity;
 
 import net.steamcrafted.loadtoast.LoadToast;
 import net.steamcrafted.loadtoast.MaterialProgressDrawable;
@@ -16,7 +16,7 @@ import net.steamcrafted.loadtoast.MaterialProgressDrawable;
 /**
  * Toast 动画
  */
-public class ToastActivity extends AppCompatActivity {
+public class ToastActivity extends BaseActivity {
 
     // Example activity
 

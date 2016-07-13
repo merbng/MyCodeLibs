@@ -1,4 +1,4 @@
-<CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,11 +6,24 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.app.merbng.mycodelibs.activitys.Main2Activity">
+    android:orientation="vertical"
+    tools:context="com.app.merbng.mycodelibs.activitys.TestGetConnection">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/edit_input"
+        android:hint="输入手机号"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/btn_ok"
+        android:text="确定"
+        android:layout_height="wrap_content" />
     <TextView
+        android:id="@+id/tv_msg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
 
-</CoordinatorLayout>
+</LinearLayout>

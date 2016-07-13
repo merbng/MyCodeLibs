@@ -1,16 +1,16 @@
 package com.app.merbng.mycodelibs.activitys;
 
-import android.app.Activity;
 import android.os.Bundle;
 
 import com.app.merbng.mycodelibs.R;
+import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.lusfold.spinnerloading.SpinnerLoading;
 
 
 /**
  * 转圈Loading
  */
-public class LoadingActivity extends Activity {
+public class LoadingActivity extends BaseActivity {
 
 
     @Override

@@ -43,4 +43,6 @@ dependencies {
     compile 'net.steamcrafted:load-toast:1.0.10'
 //    转圈圈loading
     compile 'com.lusfold.spinnerloading:library:1.0.0'
+//    换肤
+    compile 'com.zhy:changeskin:3.0.0'
 }

@@ -3,13 +3,13 @@ package com.app.merbng.mycodelibs.activitys;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 
 import com.app.merbng.mycodelibs.R;
+import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.views.VoteSurface;
 
-public class ZanActivity extends AppCompatActivity {
+public class ZanActivity extends BaseActivity {
     private VoteSurface sur;
     private Bitmap b;
     @Override

@@ -3,7 +3,6 @@ package com.app.merbng.mycodelibs.activitys;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -11,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.app.merbng.mycodelibs.R;
+import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.widget.TitleBar;
 
 /**一个简单易用的导航栏TitleBar，可以轻松实现IOS导航栏的各种效果整个代码全部集中在TitleBar.java中，
@@ -18,7 +18,7 @@ import com.app.merbng.mycodelibs.widget.TitleBar;
  * Created by merbng on 2016/3/27.
  */
 
-public class TitleBarActivity extends AppCompatActivity {
+public class TitleBarActivity extends BaseActivity {
 
     private ImageView mCollectView;
     private boolean mIsSelected;
@@ -41,7 +41,7 @@ public class TitleBarActivity extends AppCompatActivity {
         titleBar = (TitleBar) findViewById(R.id.titleBar);
         titleBar.setImmersive(true);
         titleBar.setBackgroundColor(Color.parseColor("#ffffff"));//状态栏整体渲染颜色
-        titleBar.setLeftImageResource(R.drawable.iconfont_back);
+        titleBar.setLeftImageResource(R.drawable.skin_iconfont_back);
         titleBar.setLeftText("返回");
         titleBar.setLeftTextColor(Color.BLACK);
         titleBar.setLeftClickListener(new View.OnClickListener() {
@@ -69,7 +69,7 @@ public class TitleBarActivity extends AppCompatActivity {
             @Override
             public void performAction(View view) {
                 Toast.makeText(TitleBarActivity.this, "点击了收藏", Toast.LENGTH_SHORT).show();
-                mCollectView.setImageResource(R.drawable.iconfont_ok);
+                mCollectView.setImageResource(R.drawable.skin_iconfont_ok);
                 titleBar.setTitle(mIsSelected ? "文章详情\n朋友圈" : "帖子详情");
                 mIsSelected = !mIsSelected;
 

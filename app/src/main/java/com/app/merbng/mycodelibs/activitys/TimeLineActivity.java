@@ -1,11 +1,11 @@
 package com.app.merbng.mycodelibs.activitys;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
 
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.adapters.TimelineAdapter;
+import com.app.merbng.mycodelibs.base.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,7 +16,7 @@ import java.util.Map;
 /**
  * 时间轴
  */
-public class TimeLineActivity extends Activity {
+public class TimeLineActivity extends BaseActivity {
 
     private ListView listView;
     List<String> data;

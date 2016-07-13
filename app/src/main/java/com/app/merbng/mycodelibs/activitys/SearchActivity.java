@@ -2,13 +2,13 @@ package com.app.merbng.mycodelibs.activitys;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.ImageView;
 
 import com.app.merbng.mycodelibs.R;
+import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.utils.DensityUtil;
 import com.nineoldandroids.animation.ObjectAnimator;
 
@@ -18,7 +18,7 @@ import io.codetail.animation.ViewAnimationUtils;
 /**
  * 搜索动画
  */
-public class SearchActivity extends AppCompatActivity {
+public class SearchActivity extends BaseActivity {
     private SupportAnimator mAnimator;
     private ImageView iv_bottom_search;
 

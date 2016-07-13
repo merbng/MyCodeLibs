@@ -1,7 +1,6 @@
 package com.app.merbng.mycodelibs.activitys;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -11,11 +10,12 @@ import android.widget.Toast;
 import com.app.merbng.mycodelibs.ListItemDecoration;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.adapters.ListAdapter;
+import com.app.merbng.mycodelibs.base.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecyclerViewActivity extends AppCompatActivity implements View.OnClickListener {
+public class RecyclerViewActivity extends BaseActivity implements View.OnClickListener {
     private RecyclerView mRecyclerView;
     private ListAdapter mListAdapter;
     private List<String> mDatas;

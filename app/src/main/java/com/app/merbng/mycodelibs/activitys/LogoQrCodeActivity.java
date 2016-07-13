@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -12,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.app.merbng.mycodelibs.R;
+import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.utils.QRCodeUtil;
 
 import java.io.File;
@@ -19,7 +19,7 @@ import java.io.File;
 /**
  * 带logo的二维码
  */
-public class LogoQrCodeActivity extends AppCompatActivity {
+public class LogoQrCodeActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

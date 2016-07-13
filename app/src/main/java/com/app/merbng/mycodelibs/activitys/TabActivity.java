@@ -3,7 +3,6 @@ package com.app.merbng.mycodelibs.activitys;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -13,12 +12,13 @@ import android.widget.TextView;
 
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.adapters.FragmentAdapter;
+import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.fragments.ChatFragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class TabActivity extends FragmentActivity {
+public class TabActivity extends BaseActivity {
     private List<Fragment> mFragmentList = new ArrayList<Fragment>();
     private FragmentAdapter mFragmentAdapter;
 
