@@ -37,6 +37,13 @@
         <activity android:name=".activitys.StudyRecycleActivity" />
         <activity android:name=".activitys.TestGetConnection" />
         <activity android:name=".A_studyRetrofit.StudyRetrofitActivity" />
+        <activity android:name=".activitys.TimeLineActivity"></activity>
+        <activity android:name=".activitys.ShineTextActivity"></activity>
+        <activity android:name=".activitys.LoadingActivity"></activity>
+        <activity android:name=".activitys.SearchActivity"></activity>
+        <activity android:name=".activitys.ToastActivity"></activity>
+        <activity android:name=".activitys.BitmapCodeActivity" />
+
     </application>
 
 </manifest>

@@ -2,9 +2,13 @@ package com.app.merbng.mycodelibs.utils;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Rect;
+import android.graphics.RectF;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.EncodeHintType;
+import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.QRCodeWriter;
@@ -13,6 +17,7 @@ import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Map;
 
 /**
@@ -120,4 +125,167 @@ public class QRCodeUtil {
         return bitmap;
     }
 
+    /**
+     * 图像二维码
+     *
+     * @param content
+     * @param size
+     * @return
+     */
+    public static Bitmap CreateQRCodeBitmap(String content, int size, Bitmap[] bitmaps, Bitmap bitmapKey) {
+        if (bitmaps == null || bitmaps.length == 0) {
+            return null;
+        }
+        try {
+
+            int count = bitmaps.length;
+            // 生成一维条码,编码时指定大小,不要生成了图片以后再进行缩放,这样会模糊导致识别失败
+
+            Hashtable<EncodeHintType, Object> hints = new Hashtable<EncodeHintType, Object>();
+            hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);
+            hints.put(EncodeHintType.CHARACTER_SET, "utf-8");
+            hints.put(EncodeHintType.MARGIN, 0);
+            BitMatrix matrix = new MultiFormatWriter().encode(content, BarcodeFormat.QR_CODE, size, size, hints);
+
+            Rect codeRect = new Rect();
+            int cellWidth = checkParam(matrix, codeRect);
+
+            int width = matrix.getWidth();
+            int height = matrix.getHeight();
+
+            Paint paint = new Paint();
+            paint.setAntiAlias(true);
+            int hcellWidth = cellWidth / 2;
+            int startXp = codeRect.left + hcellWidth;
+            int startYp = codeRect.top + hcellWidth;
+            Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+            Canvas canvas = new Canvas(bitmap);
+            int pw = 7 * cellWidth;
+            for (int x = startXp; x <= codeRect.right; x += cellWidth) {
+                for (int y = startYp; y <= codeRect.bottom; y += cellWidth) {
+                    if (matrix.get(x, y)) {
+                        Bitmap bm = null;
+                        if ((x > codeRect.left + pw || y > codeRect.top + pw) && (x < codeRect.right - pw || y > codeRect.top + pw) && (x > codeRect.left + pw || y < codeRect.bottom - pw)) {
+
+                            if (count == 1) {
+                                bm = bitmaps[0];
+                            } else {
+                                int i = (int) (Math.random() * count);
+                                if (i >= count) {
+                                    i = count - 1;
+                                }
+                                bm = bitmaps[i];
+                            }
+                        } else {
+                            bm = bitmapKey;
+                        }
+                        Rect rect = new Rect(0, 0, bm.getWidth(), bm.getHeight());
+                        RectF rectf = new RectF(x - hcellWidth, y - hcellWidth, x + hcellWidth, y + hcellWidth);
+                        canvas.drawBitmap(bm, rect, rectf, paint);
+                    }
+                }
+            }
+            return bitmap;
+        } catch (Exception e) {
+        }
+        return null;
+    }
+
+
+    /**
+     * 获取二维码位置信息
+     *
+     * @param matrix
+     * @param rect 带回二维码边界
+     * @return 返回单个信息点的宽
+     */
+    private static int checkParam(BitMatrix matrix, Rect rect) {
+        int width = matrix.getWidth();
+        int height = matrix.getHeight();
+
+        int startX = 0;
+        int startY = 0;
+
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                if (matrix.get(x, y)) {
+                    startX = x;
+                    startY = y;
+                    x = width;
+                    y = height;
+                }
+            }
+        }
+        int endX = 0;
+        for (int x = width - 1; x >= 0; x--) {
+            if (matrix.get(x, startY)) {
+                endX = x;
+                x = -1;
+            }
+        }
+        int endY = 0;
+        for (int y = height - 1; y >= 0; y--) {
+            if (matrix.get(startX, y)) {
+                endY = y;
+                y = -1;
+            }
+        }
+        int cellWidth = 1;
+        while (true) {
+            int pX = startX + cellWidth;
+            int pY = startY + cellWidth;
+            if (pX <= endX && pY <= endY && matrix.get(pX, pY)) {
+                cellWidth++;
+                continue;
+            }
+            break;
+        }
+        rect.left = startX;
+        rect.top = startY;
+        rect.right = endX;
+        rect.bottom = endY;
+        return cellWidth;
+    }
+
+    /**
+     * 附加icon
+     *
+     * @param QRCode
+     * @param icon
+     * @param scale
+     * @return
+     */
+    public static Bitmap withIcon(Bitmap QRCode, Bitmap icon, float scale) {
+        Bitmap bitmap = null;
+        try {
+            bitmap = QRCode;
+            Canvas canvas = new Canvas(bitmap);
+
+            int width = bitmap.getWidth();
+            int heigth = bitmap.getHeight();
+            int iwidth = icon.getWidth();
+            int iheigth = icon.getHeight();
+
+            Rect src = new Rect();
+            src.left = 0;
+            src.top = 0;
+            src.right = iwidth;
+            src.bottom = iheigth;
+
+            float aIWidth = width * scale;
+            float aIHeigth = heigth * scale;
+
+            RectF dst = new RectF();
+            dst.left = (width - aIWidth) / 2;
+            dst.top = (heigth - aIHeigth) / 2;
+            dst.right = dst.left + aIWidth;
+            dst.bottom = dst.top + aIHeigth;
+            Paint paint = new Paint();
+            canvas.drawBitmap(icon, src, dst, paint);
+        } catch (Exception e) {
+
+        }
+
+        return bitmap;
+    }
 }
