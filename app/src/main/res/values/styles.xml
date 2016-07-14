@@ -7,4 +7,8 @@
         <item name="colorAccent">#4caf50</item>
         <item name="android:windowBackground">@color/skin_window_background_day</item>
     </style>
+
+    <style name="SelectableItem">
+        <item name="android:background">@android:drawable/list_selector_background</item>
+    </style>
 </resources>

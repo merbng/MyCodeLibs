@@ -15,4 +15,15 @@
     <color name="skin_color_bg">#575757</color>
     <color name="skin_color_bg_night">#575757</color>
     <color name="skin_color_bg_day">#ffffff</color>
+
+
+    <color name="color_ff">#F0F0F0</color>
+    <color name="color_00">#8A000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="custom">#ff0099CC</color>
+    <color name="sticky">#ffffcd5a</color>
 </resources>

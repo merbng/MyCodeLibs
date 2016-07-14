@@ -152,6 +152,24 @@
             android:text="学习Retrofit"
             android:textColor="@color/skin_color_bg" />
 
+        <Button
+            android:id="@+id/StudyRecycleAddHeardFootActivity"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="RecycleView加头加脚"
+            android:textColor="@color/skin_color_bg" />
+
+        <Button
+            android:id="@+id/AppMsgActivity"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="AppMsgActivity顶部Toast"
+            android:textColor="@color/skin_color_bg" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

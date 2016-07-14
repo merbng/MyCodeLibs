@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.app.merbng.mycodelibs.A_studyRecycleAddHeardFoot.StudyRecycleAddHeardFootActivity;
 import com.app.merbng.mycodelibs.A_studyRetrofit.StudyRetrofitActivity;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
@@ -67,6 +68,14 @@ public class MainActivity extends BaseActivity {
             case R.id.studyRetrofit://学习Retrofit
                 startActivity(new Intent(mContext, StudyRetrofitActivity.class));
                 break;
+            case R.id.StudyRecycleAddHeardFootActivity://RecycleView加头加脚
+                startActivity(new Intent(mContext, StudyRecycleAddHeardFootActivity.class));
+                break;
+            case R.id.AppMsgActivity://AppMsgActivity顶部Toast
+                startActivity(new Intent(mContext, AppMsgActivity.class));
+                break;
+
+
             case R.id.changeSkin://换肤 白天模式
                 SkinManager.getInstance().changeSkin("night");
                 show("白天模式");
