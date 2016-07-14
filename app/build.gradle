@@ -49,6 +49,8 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
     compile files('libs/volley.jar')
     compile project(':library')
-//    顶部toast
+    //    顶部toast
     compile 'com.github.johnkil.android-appmsg:appmsg:1.2.0'
+    //    进度条Button
+    compile 'com.github.dmytrodanylyk.android-process-button:library:1.0.0'
 }

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.app.merbng.mycodelibs.A_StudyProcessButton.ProcessButtonActivity;
 import com.app.merbng.mycodelibs.A_studyRecycleAddHeardFoot.StudyRecycleAddHeardFootActivity;
 import com.app.merbng.mycodelibs.A_studyRetrofit.StudyRetrofitActivity;
 import com.app.merbng.mycodelibs.R;
@@ -73,6 +74,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.AppMsgActivity://AppMsgActivity顶部Toast
                 startActivity(new Intent(mContext, AppMsgActivity.class));
+                break;
+            case R.id.processButtonActivity://进度条Button
+                startActivity(new Intent(mContext, ProcessButtonActivity.class));
                 break;
 
 

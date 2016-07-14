@@ -24,6 +24,10 @@ import static android.view.View.VISIBLE;
 import static com.devspark.appmsg.AppMsg.LENGTH_SHORT;
 import static com.devspark.appmsg.AppMsg.LENGTH_STICKY;
 
+/**
+ * 顶部，中间，底部，Toast
+ * https://github.com/johnkil/Android-AppMsg
+ */
 public class AppMsgActivity extends BaseActivity {
     private static final int NORMAL_POSITION = 1;
     private static final int INFO_POSITION = 2;

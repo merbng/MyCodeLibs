@@ -36,9 +36,14 @@
         <activity android:name=".activitys.CreateCircularActivity" />
         <activity android:name=".activitys.StudyRecycleActivity" />
         <activity android:name=".activitys.TestGetConnection" />
-        <activity android:name=".A_studyRetrofit.StudyRetrofitActivity" />
         <activity android:name=".activitys.BitmapCodeActivity" />
         <activity android:name=".activitys.AppMsgActivity" />
+        <activity android:name=".A_studyRetrofit.StudyRetrofitActivity" />
+        <activity android:name=".A_StudyProcessButton.ProcessButtonActivity" />
+        <activity android:name=".A_StudyProcessButton.StateSampleActivity" />
+        <activity android:name=".A_StudyProcessButton.UploadActivity" />
+        <activity android:name=".A_StudyProcessButton.MessageActivity" />
+        <activity android:name=".A_StudyProcessButton.SignInActivity" />
         <activity android:name=".A_studyRecycleAddHeardFoot.StudyRecycleAddHeardFootActivity" />
     </application>
 
