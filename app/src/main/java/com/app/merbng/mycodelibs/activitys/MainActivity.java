@@ -78,6 +78,9 @@ public class MainActivity extends BaseActivity {
             case R.id.processButtonActivity://进度条Button
                 startActivity(new Intent(mContext, ProcessButtonActivity.class));
                 break;
+            case R.id.QQLoginActivity://登陆
+                startActivity(new Intent(mContext, QQLoginActivity.class));
+                break;
 
 
             case R.id.changeSkin://换肤 白天模式

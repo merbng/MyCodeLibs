@@ -12,6 +12,7 @@ import com.app.merbng.mycodelibs.R;
 
 /**
  * 进度条Button
+ * https://github.com/dmytrodanylyk/android-process-button/wiki/User-Guide
  */
 public class ProcessButtonActivity extends ListActivity {
 

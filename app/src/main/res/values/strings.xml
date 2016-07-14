@@ -4,7 +4,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_see_zoom_img">SeeZoomImgActivity</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="qq_login">QQ登陆</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -59,4 +59,5 @@
         <item>Generate Button Progress sample</item>
         <item>Button State sample</item>
     </array>
+    <string name="title_activity_qqlogin">QQLoginActivity</string>
 </resources>

@@ -180,6 +180,16 @@
             android:text="进度条Button"
             android:textColor="@color/skin_color_bg" />
 
+
+        <Button
+            android:id="@+id/QQLoginActivity"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="登陆"
+            android:textColor="@color/skin_color_bg" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

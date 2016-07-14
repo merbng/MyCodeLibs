@@ -7,10 +7,9 @@ import android.widget.TextView;
 
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
-import com.app.merbng.mycodelibs.base.Connection;
-import com.app.merbng.mycodelibs.base.ConnectionManager;
-
-import java.util.HashMap;
+import com.app.merbng.mycodelibs.base.IRequestBack;
+import com.app.merbng.mycodelibs.base.Request;
+import com.app.merbng.mycodelibs.base.RequestParams;
 
 /**
  * 测试Get请求
@@ -28,52 +27,27 @@ public class TestGetConnection extends BaseActivity {
         findViewById(R.id.btn_ok).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                HashMap<String, Object> param = new HashMap<>();
-                if (edit_input != null) {
-                    param.put("userName", edit_input.getText().toString());
-                }
-                getName(param, new Connection.IConnectListener() {
+                RequestParams params = RequestParams.newParams().addParameter("userName", edit_input.getText().toString());
+                Request.from(TestGetConnection.this).getRequestInBG(url, params, new IRequestBack() {
                     @Override
-                    public void onSuccess(String result) {
-                        if (tvMsg != null) {
-                            tvMsg.setText(result);
-                        }
+                    public void onSuccess(String json) {
+                        tvMsg.setText(json);
                     }
 
                     @Override
-                    public void onFail(String failMsg) {
-
-                    }
-
-                    @Override
-                    public void onException(Exception e) {
-
+                    public void onFail(Exception e) {
+                        tvMsg.setText(e.getMessage());
                     }
                 });
+
             }
         });
 
     }
 
-    private void getName(HashMap<String, Object> param, final Connection.IConnectListener cb) {
-
-        Connection conn = new Connection.Builder(TestGetConnection.this).setUrl(url).setMethod(Connection.GET).setParams(param).setListener(new Connection.IConnectListener() {
-            @Override
-            public void onSuccess(String result) {
-                cb.onSuccess(result);
-            }
-
-            @Override
-            public void onFail(String failMsg) {
-                cb.onFail(failMsg);
-            }
-
-            @Override
-            public void onException(Exception e) {
-                cb.onException(e);
-            }
-        }).build();
-        ConnectionManager.getInstance().connect(conn);
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Request.from(this).cancelRequest();
     }
-
 }
