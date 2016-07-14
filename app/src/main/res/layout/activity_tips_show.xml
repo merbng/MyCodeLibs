@@ -17,7 +17,7 @@
         android:text="Button" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_login_qq"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button1"
@@ -26,12 +26,12 @@
         android:text="Button" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_getInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/button4"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2"
+        android:layout_alignLeft="@+id/btn_login_qq"
+        android:layout_alignStart="@+id/btn_login_qq"
         android:layout_marginBottom="87dp"
         android:text="Button" />
 

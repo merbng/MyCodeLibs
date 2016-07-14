@@ -23,8 +23,8 @@ public class TipShowActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tips_show);
         Button btn_one = (Button) findViewById(R.id.button1);
-        Button btn_two = (Button) findViewById(R.id.button2);
-        Button btn_three = (Button) findViewById(R.id.button3);
+        Button btn_two = (Button) findViewById(R.id.btn_login_qq);
+        Button btn_three = (Button) findViewById(R.id.btn_getInfo);
         Button btn_four = (Button) findViewById(R.id.button4);
 
         showtip1 = new ShowTipsBuilder(this)

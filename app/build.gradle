@@ -54,4 +54,6 @@ dependencies {
     //    进度条Button
     compile 'com.github.dmytrodanylyk.android-process-button:library:1.0.0'
     compile files('libs/open_sdk_r5756_lite.jar')
+
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }

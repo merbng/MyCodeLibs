@@ -2,18 +2,21 @@ package com.app.merbng.mycodelibs.activitys;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
+import com.app.merbng.mycodelibs.utils.LogUtil;
+import com.squareup.picasso.Picasso;
 import com.tencent.connect.UserInfo;
 import com.tencent.connect.common.Constants;
 import com.tencent.tauth.IUiListener;
 import com.tencent.tauth.Tencent;
 import com.tencent.tauth.UiError;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 public class QQLoginActivity extends BaseActivity {
@@ -23,9 +26,11 @@ public class QQLoginActivity extends BaseActivity {
     private Tencent mTencent;
     private IUiListener loginListener;
     private IUiListener userInfoListener;
-    private String scope;
+    private String scope = "get_simple_userinfo";
 
     private UserInfo userInfo;
+    private TextView tv_nickName, tv_gender;
+    private ImageView imgvHeard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,83 +40,85 @@ public class QQLoginActivity extends BaseActivity {
         initData();
     }
 
-    @Override
-    protected void onDestroy() {
-        if (mTencent != null) {
-            mTencent.logout(QQLoginActivity.this);
-        }
-        super.onDestroy();
-    }
 
     private void setupViews() {
-
-        findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                login();
-            }
-        });
-
-        findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
+        tv_nickName = ((TextView) findViewById(R.id.tv_nickName));
+        tv_gender = ((TextView) findViewById(R.id.tv_gender));
+        imgvHeard = ((ImageView) findViewById(R.id.imgv_heard));
+        findViewById(R.id.btn_login_qq).setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
-                Log.e("开始获取用户信息", "");
-                if (mTencent.getQQToken() == null) {
-                    Log.e("qqtoken == null", "");
-                }
-                userInfo = new UserInfo(QQLoginActivity.this, mTencent.getQQToken());
-                userInfo.getUserInfo(userInfoListener);
+                loginQQ();
             }
         });
+        findViewById(R.id.btn_login_sina).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        findViewById(R.id.btn_login_weixin).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+
+    }
+
+    private void loginQQ() {
+        if (!mTencent.isSessionValid()) {
+            mTencent.login(QQLoginActivity.this, scope, loginListener);
+        }
     }
 
     private void initData() {
         mTencent = Tencent.createInstance(APPID, mContext);
-        Log.e("-----肯定：", mTencent.toString());
-        //要所有权限，不用再次申请增量权限，这里不要设置成get_user_info,add_t
-        scope = "get_simple_userinfo";
         loginListener = new IUiListener() {
 
             @Override
             public void onError(UiError arg0) {
-                show("登陆错误");
+                LogUtil.log.e("onError：");
             }
 
             @Override
             public void onComplete(Object value) {
-                show("登陆完成" + value);
-                if (value == null) {
-                    return;
-                }
+   /*onComplete：{
+    "ret": 0,
+    "pay_token": "286EEDBE8456C642240206F8A351455B",
+    "pf": "desktop_m_qq-10000144-android-2002-",
+    "query_authority_cost": 319,
+    "authority_cost": 0,
+    "openid": "5D4C8F377C1AA60B8B711E2D562DE006",
+    "expires_in": 7776000,
+    "pfkey": "33431cc32df7b04eaa1af8fc798792fc",
+    "msg": "",
+    "access_token": "5911B4C0DFABDEE3D86702C821CB1D6A",
+    "login_cost": 462
+}*/
+                JSONObject jo = (JSONObject) value;
 
                 try {
-                    JSONObject jo = (JSONObject) value;
+                    String openid = jo.getString("openid");
+                    String access_token = jo.getString("access_token");
+                    String expires_in = jo.getString("expires_in");
 
-                    String msg = jo.getString("msg");
-
-                    Log.e("json=", String.valueOf(jo));
-
-                    show(msg);
-                    if ("sucess".equals(msg)) {
-                        show("登录成功");
-                        String openID = jo.getString("openid");
-                        String accessToken = jo.getString("access_token");
-                        String expires = jo.getString("expires_in");
-                        mTencent.setOpenId(openID);
-                        mTencent.setAccessToken(accessToken, expires);
-                    }
-
-                } catch (Exception e) {
-                    show("异常");
+                    mTencent.setOpenId(openid);
+                    mTencent.setAccessToken(access_token, expires_in);
+                    userInfo = new UserInfo(QQLoginActivity.this, mTencent.getQQToken());
+                    userInfo.getUserInfo(userInfoListener);
+                } catch (JSONException e) {
+                    e.printStackTrace();
                 }
+
+
             }
 
             @Override
             public void onCancel() {
-                show("取消了");
+                LogUtil.log.e("取消登陆：");
             }
         };
 
@@ -124,14 +131,15 @@ public class QQLoginActivity extends BaseActivity {
 
             @Override
             public void onComplete(Object arg0) {
-                show(arg0.toString());
+                LogUtil.log.e("-----" + arg0.toString());
                 if (arg0 == null) {
                     return;
                 }
                 try {
-                    JSONObject jo = (JSONObject) arg0;
+                    final JSONObject jo = (JSONObject) arg0;
+
                     int ret = jo.getInt("ret");
-                    show(jo.toString() + "");
+
                     if (ret == 100030) {
                         //权限不够，需要增量授权
                         Runnable r = new Runnable() {
@@ -140,19 +148,21 @@ public class QQLoginActivity extends BaseActivity {
 
                                     @Override
                                     public void onError(UiError arg0) {
-                                        // TODO Auto-generated method stub
 
                                     }
 
                                     @Override
                                     public void onComplete(Object arg0) {
-                                        // TODO Auto-generated method stub
+                                        try {
+                                            getUserInfo(jo);
+                                        } catch (JSONException e) {
+                                            e.printStackTrace();
+                                        }
 
                                     }
 
                                     @Override
                                     public void onCancel() {
-                                        // TODO Auto-generated method stub
 
                                     }
                                 });
@@ -161,13 +171,10 @@ public class QQLoginActivity extends BaseActivity {
 
                         QQLoginActivity.this.runOnUiThread(r);
                     } else {
-                        String nickName = jo.getString("nickname");
-                        String gender = jo.getString("gender");
-                        Toast.makeText(QQLoginActivity.this, "你好，" + nickName + "性别：" + gender, Toast.LENGTH_LONG).show();
+                        getUserInfo(jo);
                     }
-
                 } catch (Exception e) {
-                    show("异常了。");
+                    show("异常了-----------------------------。");
                 }
 
 
@@ -180,23 +187,36 @@ public class QQLoginActivity extends BaseActivity {
         };
     }
 
-    private void login() {
-        if (!mTencent.isSessionValid()) {
-            mTencent.login(QQLoginActivity.this, scope, loginListener);
-            show("登陆");
-        } else {
-            show("否则！！！");
-        }
+    private void getUserInfo(JSONObject jo) throws JSONException {
+        String nickName = jo.getString("nickname");
+        String gender = jo.getString("gender");
+        String heardImgUrl = jo.getString("figureurl_qq_2");
+        tv_gender.setText("性别：" + gender);
+        tv_nickName.setText("昵称：" + nickName);
+        Picasso.with(mContext).load(heardImgUrl).into(imgvHeard);
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        if (requestCode == Constants.REQUEST_LOGIN) {
+            LogUtil.log.e("requestCode----：" + requestCode);
+            LogUtil.log.e("resultCode：" + resultCode);
+
+            Tencent.handleResultData(data, loginListener);
+        }
+        super.onActivityResult(requestCode, resultCode, data);
+
+
         if (requestCode == Constants.REQUEST_API) {
-            if (resultCode == Constants.REQUEST_LOGIN) {
-                Log.e("得到了。result", "");
-                Tencent.handleResultData(data, loginListener);
-            }
-            super.onActivityResult(requestCode, resultCode, data);
+
         }
     }
 
+    @Override
+    protected void onDestroy() {
+        if (mTencent != null) {
+            mTencent.logout(QQLoginActivity.this);
+        }
+        super.onDestroy();
+    }
 }
