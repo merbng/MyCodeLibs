@@ -48,12 +48,13 @@
             android:text="登录" />
 
     </LinearLayout>
+
     <Button
-        android:id="@+id/btn_login_qq"
-        android:layout_width="match_parent"
+        android:id="@+id/btn_login_sina"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/icon"
-        android:text="使用QQ登录" />
+        android:drawableLeft="@drawable/sina_icon"
+        android:text="新浪微博登陆" />
 
     <LinearLayout
         android:layout_width="match_parent"
