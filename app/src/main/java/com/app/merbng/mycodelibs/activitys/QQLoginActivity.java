@@ -52,20 +52,6 @@ public class QQLoginActivity extends BaseActivity {
                 loginQQ();
             }
         });
-        findViewById(R.id.btn_login_sina).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        findViewById(R.id.btn_login_weixin).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-
     }
 
     private void loginQQ() {

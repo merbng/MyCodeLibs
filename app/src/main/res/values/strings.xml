@@ -60,4 +60,8 @@
         <item>Button State sample</item>
     </array>
     <string name="title_activity_qqlogin">QQLoginActivity</string>
+    <string name="title_activity_sina_login">SinaLoginActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_weixin_login">WeixinLoginActivity</string>
 </resources>

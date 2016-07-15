@@ -54,6 +54,9 @@ dependencies {
     //    进度条Button
     compile 'com.github.dmytrodanylyk.android-process-button:library:1.0.0'
     compile files('libs/open_sdk_r5756_lite.jar')
-
+    //  Picasso 加载图片
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile files('libs/weiboSDKCore_3.1.4.jar')
+    compile project(':weiboSDK')
+    compile files('libs/libammsdk.jar')
 }

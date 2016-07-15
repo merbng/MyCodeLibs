@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 
+import com.tencent.mm.sdk.openapi.IWXAPI;
+import com.tencent.mm.sdk.openapi.WXAPIFactory;
 import com.zhy.changeskin.SkinManager;
 
 import java.util.LinkedList;
@@ -19,13 +21,20 @@ public class MyCodeLibApplication extends Application {
     private static MyCodeLibApplication mInstance = null;
     //  存放打开的activity
     private List<Activity> allActivities = new LinkedList<>();
+    public static String WXapp_id = "wxdf6d515d366bfd4d";
+    public static IWXAPI api;
 
     @Override
     public void onCreate() {
         super.onCreate();
         mContext = this;
         mInstance = this;
+//        换肤
         SkinManager.getInstance().init(this);
+//        注册微信登陆
+        api = WXAPIFactory.createWXAPI(mContext, WXapp_id, true);
+        api.registerApp(WXapp_id);
+
     }
 
     /**

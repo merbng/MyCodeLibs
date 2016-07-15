@@ -81,6 +81,12 @@ public class MainActivity extends BaseActivity {
             case R.id.QQLoginActivity://登陆
                 startActivity(new Intent(mContext, QQLoginActivity.class));
                 break;
+            case R.id.SinaLoginActivity://微博登陆
+                startActivity(new Intent(mContext, SinaLoginActivity.class));
+                break;
+            case R.id.WeixinLoginActivity://微信登陆
+                startActivity(new Intent(mContext, WeixinLoginActivity.class));
+                break;
 
 
             case R.id.changeSkin://换肤 白天模式
