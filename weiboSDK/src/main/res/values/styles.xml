@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><!--
+<?xml version="1.0" encoding="utf-8"?>
+<!--
     Copyright (C) 2010-2013 The SINA WEIBO Open Source Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,17 +34,17 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
-    <color name="com_sina_weibo_sdk_blue">#3B5998</color>
+	<color name="com_sina_weibo_sdk_blue">#3B5998</color>
 
     <color name="com_sina_weibo_sdk_loginview_text_color">#FFFFFF</color>
     <dimen name="com_sina_weibo_sdk_loginview_text_size">16.0sp</dimen>
-    <dimen name="com_sina_weibo_sdk_loginview_padding">12dip</dimen>
+ 	<dimen name="com_sina_weibo_sdk_loginview_padding">12dip</dimen>
     <dimen name="com_sina_weibo_sdk_loginview_padding_left">12dip</dimen>
     <dimen name="com_sina_weibo_sdk_loginview_padding_right">16dp</dimen>
     <dimen name="com_sina_weibo_sdk_loginview_padding_top">6dp</dimen>
     <dimen name="com_sina_weibo_sdk_loginview_padding_bottom">6dp</dimen>
     <dimen name="com_sina_weibo_sdk_loginview_compound_drawable_padding">12dp</dimen>
-
+     
     <style name="com_sina_weibo_sdk_loginview_default_style" parent="@android:style/Widget.Button">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -52,9 +53,7 @@
         <item name="android:paddingRight">@dimen/com_sina_weibo_sdk_loginview_padding_right</item>
         <item name="android:paddingBottom">@dimen/com_sina_weibo_sdk_loginview_padding_bottom</item>
         <item name="android:drawableLeft">@drawable/ic_com_sina_weibo_sdk_logo</item>
-        <item name="android:drawablePadding">
-            @dimen/com_sina_weibo_sdk_loginview_compound_drawable_padding
-        </item>
+        <item name="android:drawablePadding">@dimen/com_sina_weibo_sdk_loginview_compound_drawable_padding</item>
         <item name="android:background">@drawable/com_sina_weibo_sdk_button_blue</item>
         <item name="android:textColor">@color/com_sina_weibo_sdk_loginview_text_color</item>
         <item name="android:textSize">@dimen/com_sina_weibo_sdk_loginview_text_size</item>
@@ -62,7 +61,7 @@
         <item name="android:gravity">center</item>
         <item name="android:text">@string/com_sina_weibo_sdk_login_with_weibo_account</item>
     </style>
-
+    
     <style name="com_sina_weibo_sdk_loginview_silver_style" parent="@android:style/Widget.Button">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -71,9 +70,7 @@
         <item name="android:paddingRight">@dimen/com_sina_weibo_sdk_loginview_padding_right</item>
         <item name="android:paddingBottom">@dimen/com_sina_weibo_sdk_loginview_padding_bottom</item>
         <item name="android:drawableLeft">@drawable/ic_com_sina_weibo_sdk_logo</item>
-        <item name="android:drawablePadding">
-            @dimen/com_sina_weibo_sdk_loginview_compound_drawable_padding
-        </item>
+        <item name="android:drawablePadding">@dimen/com_sina_weibo_sdk_loginview_compound_drawable_padding</item>
         <item name="android:background">@drawable/com_sina_weibo_sdk_button_grey</item>
         <item name="android:textColor">#4B5164</item>
         <item name="android:textSize">@dimen/com_sina_weibo_sdk_loginview_text_size</item>
@@ -81,5 +78,5 @@
         <item name="android:gravity">center</item>
         <item name="android:text">@string/com_sina_weibo_sdk_login_with_weibo_account</item>
     </style>
-
+    
 </resources>

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><!--
+<?xml version="1.0" encoding="utf-8"?>
+<!--
     Copyright (C) 2010-2013 The SINA WEIBO Open Source Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,8 +21,8 @@
         AppBaseTheme from BOTH res/values/styles.xml and
         res/values-v11/styles.xml on API 14+ devices.
     -->
-    <!--     <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
-            API 14 theme customizations can go here.
-        </style> -->
+<!--     <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        API 14 theme customizations can go here.
+    </style> -->
 
 </resources>

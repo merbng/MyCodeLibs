@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><!--
+<?xml version="1.0" encoding="utf-8"?>
+<!--
     Copyright (C) 2010-2013 The SINA WEIBO Open Source Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,11 +15,11 @@
     limitations under the License.
 -->
 
-<resources>
-    <!--     <dimen name="weibosdk_dialog_left_margin">10dp</dimen>
-        <dimen name="weibosdk_dialog_top_margin">30dp</dimen>
-        <dimen name="weibosdk_dialog_right_margin">10dp</dimen>
-        <dimen name="weibosdk_dialog_bottom_margin">10dp</dimen> -->
+<resources>  
+<!--     <dimen name="weibosdk_dialog_left_margin">10dp</dimen>
+    <dimen name="weibosdk_dialog_top_margin">30dp</dimen>
+    <dimen name="weibosdk_dialog_right_margin">10dp</dimen>
+    <dimen name="weibosdk_dialog_bottom_margin">10dp</dimen> -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 </resources>

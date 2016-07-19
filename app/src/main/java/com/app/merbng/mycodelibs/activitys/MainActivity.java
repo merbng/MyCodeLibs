@@ -87,6 +87,9 @@ public class MainActivity extends BaseActivity {
             case R.id.WeixinLoginActivity://微信登陆
                 startActivity(new Intent(mContext, WeixinLoginActivity.class));
                 break;
+            case R.id.TestEditTextActivity://EditText值得注意的地方
+                startActivity(new Intent(mContext, TestEditTextActivity.class));
+                break;
 
 
             case R.id.changeSkin://换肤 白天模式

@@ -22,30 +22,25 @@ import com.sina.weibo.sdk.auth.Oauth2AccessToken;
 import com.sina.weibo.sdk.net.RequestListener;
 import com.sina.weibo.sdk.net.WeiboParameters;
 import com.sina.weibo.sdk.openapi.AbsOpenAPI;
-import com.sina.weibo.sdk.openapi.CommentsAPI;
 
 /**
  * 此类封装了公共服务的接口。
  * 详情见<a href="http://t.cn/8Fdg7EX">公共服务接口</a>
- *
+ * 
  * @author SINA
  * @date 2014-03-03
  */
 public class CommonAPI extends AbsOpenAPI {
 
-    /**
-     * 国家的首字母，默认为空，代表全部。
-     */
+    /** 国家的首字母，默认为空，代表全部。 */
     public enum CAPITAL {
         a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z
     }
 
-    /**
-     * 语言版本，zh-cn：简体中文、zh-tw：繁体中文、english：英文，默认为zh-cn。
-     */
-    public static final String LANGUAGE_ZH_CN = "zh-cn";
-    public static final String LANGUAGE_ZH_TW = "zh-tw";
-    public static final String LANGUAGE_EN = "english";
+    /** 语言版本，zh-cn：简体中文、zh-tw：繁体中文、english：英文，默认为zh-cn。 */
+    public static final String LANGUAGE_ZH_CN   = "zh-cn";
+    public static final String LANGUAGE_ZH_TW   = "zh-tw";
+    public static final String LANGUAGE_EN      = "english";
 
     public CommonAPI(Context context, String appKey, Oauth2AccessToken accessToken) {
         super(context, appKey, accessToken);
@@ -55,15 +50,15 @@ public class CommonAPI extends AbsOpenAPI {
 
     /**
      * 获取城市列表。
-     *
-     * @param province 省份代码
-     * @param capital  国家的首字母，a-z，可为空代表返回全部，默认为全部。
-     *                 <li> {@link CommentsAPI# CAPITAL}
-     * @param language 返回的语言版本，zh-cn：简体中文、zh-tw：繁体中文、english：英文，默认为zh-cn
-     *                 <li> {@link #LANGUAGE_ZH_CN}
-     *                 <li> {@link #LANGUAGE_ZH_TW}
-     *                 <li> {@link #LANGUAGE_EN}
-     * @param listener 异步请求回调接口
+     * 
+     * @param province  省份代码
+     * @param capital   国家的首字母，a-z，可为空代表返回全部，默认为全部。
+     *                  <li> 
+     * @param language  返回的语言版本，zh-cn：简体中文、zh-tw：繁体中文、english：英文，默认为zh-cn
+     *                  <li> {@link #LANGUAGE_ZH_CN}
+     *                  <li> {@link #LANGUAGE_ZH_TW}
+     *                  <li> {@link #LANGUAGE_EN}
+     * @param listener  异步请求回调接口
      */
     public void getCity(String province, String capital, String language, RequestListener listener) {
         WeiboParameters params = new WeiboParameters(mAppKey);
@@ -77,13 +72,12 @@ public class CommonAPI extends AbsOpenAPI {
 
     /**
      * 获取国家列表
-     *
-     * @param capital  国家的首字母，a-z，可为空代表返回全部，默认为全部。
-     * @param language 返回的语言版本，zh-cn：简体中文、zh-tw：繁体中文、english：英文，默认为zh-cn
-     *                 <li> {@link #LANGUAGE_ZH_CN}
-     *                 <li> {@link #LANGUAGE_ZH_TW}
-     *                 <li> {@link #LANGUAGE_EN}
-     * @param listener 异步请求回调接口
+     * @param capital   国家的首字母，a-z，可为空代表返回全部，默认为全部。
+     * @param language  返回的语言版本，zh-cn：简体中文、zh-tw：繁体中文、english：英文，默认为zh-cn
+     *                  <li> {@link #LANGUAGE_ZH_CN}
+     *                  <li> {@link #LANGUAGE_ZH_TW}
+     *                  <li> {@link #LANGUAGE_EN}
+     *@param listener   异步请求回调接口
      */
     public void getCountry(CAPITAL capital, String language, RequestListener listener) {
         WeiboParameters params = new WeiboParameters(mAppKey);
@@ -96,12 +90,12 @@ public class CommonAPI extends AbsOpenAPI {
 
     /**
      * 获取时区配置表。
-     *
-     * @param language 返回的语言版本，zh-cn：简体中文、zh-tw：繁体中文、english：英文，默认为zh-cn
-     *                 <li> {@link #LANGUAGE_ZH_CN}
-     *                 <li> {@link #LANGUAGE_ZH_TW}
-     *                 <li> {@link #LANGUAGE_EN}
-     * @param listener 异步请求回调接口
+     * 
+     * @param language  返回的语言版本，zh-cn：简体中文、zh-tw：繁体中文、english：英文，默认为zh-cn
+     *                  <li> {@link #LANGUAGE_ZH_CN}
+     *                  <li> {@link #LANGUAGE_ZH_TW}
+     *                  <li> {@link #LANGUAGE_EN}
+     *@param listener   异步请求回调接口
      */
     public void getTimezone(String language, RequestListener listener) {
         WeiboParameters params = new WeiboParameters(mAppKey);

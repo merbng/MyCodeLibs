@@ -16,17 +16,17 @@
 
 package com.sina.weibo.sdk.openapi.models;
 
-import android.text.TextUtils;
+import java.util.ArrayList;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
+import android.text.TextUtils;
 
 /**
  * 地理位置纠正信息.
- *
+ * 
  * @author SINA
  * @since 2013-12-4
  */

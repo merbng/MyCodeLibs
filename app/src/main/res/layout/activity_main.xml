@@ -17,6 +17,8 @@
             android:text="带logo的二维码"
             android:textColor="@color/skin_color_bg" />
 
+        <include layout="@layout/view_line" />
+
         <Button
             android:id="@+id/btn_recycleView"
             android:layout_width="match_parent"
@@ -25,6 +27,8 @@
             android:onClick="btnClick"
             android:text="recycleView"
             android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/btn_seeZoomImg"
@@ -35,6 +39,8 @@
             android:text="SeeZoomImg"
             android:textColor="@color/skin_color_bg" />
 
+        <include layout="@layout/view_line" />
+
         <Button
             android:id="@+id/btn_TipShow"
             android:layout_width="match_parent"
@@ -43,6 +49,8 @@
             android:onClick="btnClick"
             android:text="TipShow"
             android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/btn_titleBar"
@@ -53,6 +61,8 @@
             android:text="titleBar"
             android:textColor="@color/skin_color_bg" />
 
+        <include layout="@layout/view_line" />
+
         <Button
             android:id="@+id/btn_zan"
             android:layout_width="match_parent"
@@ -61,6 +71,8 @@
             android:onClick="btnClick"
             android:text="Zan"
             android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/btn_viewpager"
@@ -71,6 +83,8 @@
             android:text="导航栏"
             android:textColor="@color/skin_color_bg" />
 
+        <include layout="@layout/view_line" />
+
         <Button
             android:id="@+id/time_line"
             android:layout_width="match_parent"
@@ -79,6 +93,8 @@
             android:onClick="btnClick"
             android:text="时间轴"
             android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/Shine_text"
@@ -89,6 +105,8 @@
             android:text="流光字"
             android:textColor="@color/skin_color_bg" />
 
+        <include layout="@layout/view_line" />
+
         <Button
             android:id="@+id/loading"
             android:layout_width="match_parent"
@@ -97,6 +115,8 @@
             android:onClick="btnClick"
             android:text="Loading"
             android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/search"
@@ -107,6 +127,8 @@
             android:text="Search"
             android:textColor="@color/skin_color_bg" />
 
+        <include layout="@layout/view_line" />
+
         <Button
             android:id="@+id/toast"
             android:layout_width="match_parent"
@@ -115,6 +137,8 @@
             android:onClick="btnClick"
             android:text="Toast"
             android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/createcircular"
@@ -125,6 +149,8 @@
             android:text="createCircular"
             android:textColor="@color/skin_color_bg" />
 
+        <include layout="@layout/view_line" />
+
         <Button
             android:id="@+id/studyRecycleView"
             android:layout_width="match_parent"
@@ -133,6 +159,8 @@
             android:onClick="btnClick"
             android:text="Study RecycleView"
             android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/testGetConnection"
@@ -143,6 +171,8 @@
             android:text="测试Get请求"
             android:textColor="@color/skin_color_bg" />
 
+        <include layout="@layout/view_line" />
+
         <Button
             android:id="@+id/studyRetrofit"
             android:layout_width="match_parent"
@@ -151,6 +181,8 @@
             android:onClick="btnClick"
             android:text="学习Retrofit"
             android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/StudyRecycleAddHeardFootActivity"
@@ -161,6 +193,8 @@
             android:text="RecycleView加头加脚"
             android:textColor="@color/skin_color_bg" />
 
+        <include layout="@layout/view_line" />
+
         <Button
             android:id="@+id/AppMsgActivity"
             android:layout_width="match_parent"
@@ -170,6 +204,7 @@
             android:text="AppMsgActivity顶部Toast"
             android:textColor="@color/skin_color_bg" />
 
+        <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/processButtonActivity"
@@ -179,6 +214,19 @@
             android:onClick="btnClick"
             android:text="进度条Button"
             android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
+        <Button
+            android:id="@+id/TestEditTextActivity"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="EditText值得注意的地方"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -192,6 +240,7 @@
                 android:layout_height="40dp"
                 android:layout_weight="1"
                 android:background="@color/skin_color_text"
+                android:drawableRight="@drawable/img_division"
                 android:onClick="btnClick"
                 android:text="QQ登陆"
                 android:textColor="@color/skin_color_bg" />
@@ -203,9 +252,11 @@
                 android:layout_height="40dp"
                 android:layout_weight="1"
                 android:background="@color/skin_color_text"
+                android:drawableRight="@drawable/img_division"
                 android:onClick="btnClick"
                 android:text="新浪登陆"
                 android:textColor="@color/skin_color_bg" />
+
 
             <Button
                 android:id="@+id/WeixinLoginActivity"
@@ -218,6 +269,8 @@
                 android:textColor="@color/skin_color_bg" />
 
         </LinearLayout>
+
+        <include layout="@layout/view_line" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -232,6 +285,12 @@
                 android:background="@color/skin_color_1_day"
                 android:onClick="btnClick"
                 android:text="换肤1-白天模式" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.04"
+                android:background="@color/colorAccent" />
 
             <Button
                 android:id="@+id/changeSkin2"
