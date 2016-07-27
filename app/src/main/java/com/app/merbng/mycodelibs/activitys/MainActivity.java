@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.app.merbng.mycodelibs.A_StudyProcessButton.ProcessButtonActivity;
-import com.app.merbng.mycodelibs.A_studyRecycleAddHeardFoot.StudyRecycleAddHeardFootActivity;
+import com.app.merbng.mycodelibs.A_recycleViewRefresh.StudyRecycleRefreshActivity;
 import com.app.merbng.mycodelibs.A_studyRetrofit.StudyRetrofitActivity;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
@@ -70,7 +70,7 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(mContext, StudyRetrofitActivity.class));
                 break;
             case R.id.StudyRecycleAddHeardFootActivity://RecycleView加头加脚
-                startActivity(new Intent(mContext, StudyRecycleAddHeardFootActivity.class));
+                startActivity(new Intent(mContext, StudyRecycleRefreshActivity.class));
                 break;
             case R.id.AppMsgActivity://AppMsgActivity顶部Toast
                 startActivity(new Intent(mContext, AppMsgActivity.class));

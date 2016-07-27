@@ -48,7 +48,6 @@
         <activity android:name=".A_StudyProcessButton.UploadActivity" />
         <activity android:name=".A_StudyProcessButton.MessageActivity" />
         <activity android:name=".A_StudyProcessButton.SignInActivity" />
-        <activity android:name=".A_studyRecycleAddHeardFoot.StudyRecycleAddHeardFootActivity" />
         <activity android:name=".activitys.WeixinLoginActivity" />
         <activity android:name=".activitys.QQLoginActivity" />
         <activity android:name=".activitys.TestEditTextActivity" />
@@ -86,6 +85,7 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".A_recycleViewRefresh.StudyRecycleRefreshActivity"></activity>
     </application>
 
 </manifest>
