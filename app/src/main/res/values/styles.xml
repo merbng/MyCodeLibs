@@ -11,4 +11,8 @@
     <style name="SelectableItem">
         <item name="android:background">@android:drawable/list_selector_background</item>
     </style>
+    <style name="TickerTextAppearance">
+        <item name="android:textColor">?colorPrimary</item>
+        <item name="android:textSize">50sp</item>
+    </style>
 </resources>
