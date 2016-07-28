@@ -7,7 +7,7 @@ import android.view.View;
 import com.app.merbng.mycodelibs.A_StudyProcessButton.ProcessButtonActivity;
 import com.app.merbng.mycodelibs.A_recycleViewRefresh.StudyRecycleRefreshActivity;
 import com.app.merbng.mycodelibs.A_studyRetrofit.StudyRetrofitActivity;
-import com.app.merbng.mycodelibs.A_ticker.TickerActivityTicker;
+import com.app.merbng.mycodelibs.A_ticker.TickerActivity;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.zhy.changeskin.SkinManager;
@@ -92,7 +92,7 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(mContext, TestEditTextActivity.class));
                 break;
             case R.id.tickeractivityticker://EditText值得注意的地方
-                startActivity(new Intent(mContext, TickerActivityTicker.class));
+                startActivity(new Intent(mContext, TickerActivity.class));
                 break;
 
 

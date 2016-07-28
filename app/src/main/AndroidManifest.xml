@@ -52,7 +52,7 @@
         <activity android:name=".activitys.QQLoginActivity" />
         <activity android:name=".activitys.TestEditTextActivity" />
         <activity android:name=".activitys.SinaLoginActivity" />
-        <activity android:name=".A_ticker.TickerActivityTicker" />
+        <activity android:name=".A_ticker.TickerActivity" />
         <activity android:name=".A_ticker.PerfActivityTicker"/>
         <!-- QQ登陆 -->
         <activity

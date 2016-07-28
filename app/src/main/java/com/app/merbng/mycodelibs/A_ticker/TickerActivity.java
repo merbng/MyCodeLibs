@@ -10,7 +10,7 @@ import com.robinhood.ticker.TickerView;
 
 import java.util.Random;
 
-public class TickerActivityTicker extends TickerBaseActivity {
+public class TickerActivity extends TickerBaseActivity {
     private static final char[] NUMBER_LIST = TickerUtils.getDefaultNumberList();
     private static final char[] CURRENCY_LIST = TickerUtils.getDefaultListForUSCurrency();
     private char[] alphabetlist;
@@ -46,7 +46,7 @@ public class TickerActivityTicker extends TickerBaseActivity {
         findViewById(R.id.perfBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(TickerActivityTicker.this, PerfActivityTicker.class));
+                startActivity(new Intent(TickerActivity.this, PerfActivityTicker.class));
             }
         });
     }
