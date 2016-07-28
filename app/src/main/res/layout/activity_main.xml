@@ -1,13 +1,21 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/draw_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:ticker_animationDuration="1500"
+            android:layout_width="80dp"
+            android:layout_height="40dp" />
         <Button
             android:id="@+id/btn_add_logo_qrCode"
             android:layout_width="match_parent"

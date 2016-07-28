@@ -2,13 +2,17 @@ package com.app.merbng.mycodelibs.activitys;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
+import android.view.animation.OvershootInterpolator;
 
 import com.app.merbng.mycodelibs.A_StudyProcessButton.ProcessButtonActivity;
 import com.app.merbng.mycodelibs.A_recycleViewRefresh.StudyRecycleRefreshActivity;
 import com.app.merbng.mycodelibs.A_studyRetrofit.StudyRetrofitActivity;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
+import com.robinhood.ticker.TickerUtils;
+import com.robinhood.ticker.TickerView;
 import com.zhy.changeskin.SkinManager;
 
 public class MainActivity extends BaseActivity {
@@ -17,6 +21,17 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        showTickerView();
+    }
+
+    private void showTickerView() {
+        TickerView tickerView = (TickerView) findViewById(R.id.tickerView);
+        tickerView.setTextColor(R.color.color_error);
+        tickerView.setTextSize(16); 
+        tickerView.setAnimationDuration(500);
+        tickerView.setAnimationInterpolator(new OvershootInterpolator());
+        tickerView.setGravity(Gravity.START);
+        tickerView.setCharacterList(TickerUtils.getDefaultNumberList());
     }
 
     public void btnClick(View view) {
