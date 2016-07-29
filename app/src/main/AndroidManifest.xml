@@ -55,7 +55,7 @@
         <activity android:name=".A_ticker.TickerActivity" />
         <activity android:name=".A_ticker.PerfActivityTicker" />
         <activity android:name=".A_recycleViewRefresh.StudyRecycleRefreshActivity" />
-        <activity android:name=".activitys.MagicButtonActivity"></activity>
+        <activity android:name=".activitys.MagicButtonActivity"/>
         <!-- QQ登陆 -->
         <activity
             android:name="com.tencent.connect.common.AssistActivity"
