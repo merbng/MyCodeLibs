@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.app.merbng.mycodelibs"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -59,6 +59,8 @@ dependencies {
     compile files('libs/weiboSDKCore_3.1.4.jar')
     compile project(':weiboSDK')
     compile files('libs/libammsdk.jar')
-    // 滚动的数字
+    // 滚动文本的简单的Android UI组件
     compile 'com.robinhood.ticker:ticker:1.0.1'
+    //从侧面 滑出的Button   :minSdkVersion 16
+    compile 'com.github.bloder:magic:1.0'
 }

@@ -17,8 +17,8 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); 
-    } 
+        setContentView(R.layout.activity_main);
+    }
 
     public void btnClick(View view) {
         switch (view.getId()) {
@@ -91,8 +91,11 @@ public class MainActivity extends BaseActivity {
             case R.id.TestEditTextActivity://EditText值得注意的地方
                 startActivity(new Intent(mContext, TestEditTextActivity.class));
                 break;
-            case R.id.tickeractivityticker://EditText值得注意的地方
+            case R.id.tickeractivityticker://滚动文本的简单的Android UI组件
                 startActivity(new Intent(mContext, TickerActivity.class));
+                break;
+            case R.id.magicbuttonactivity://从侧边滑出的Button
+                startActivity(new Intent(mContext, MagicButtonActivity.class));
                 break;
 
 

@@ -53,7 +53,9 @@
         <activity android:name=".activitys.TestEditTextActivity" />
         <activity android:name=".activitys.SinaLoginActivity" />
         <activity android:name=".A_ticker.TickerActivity" />
-        <activity android:name=".A_ticker.PerfActivityTicker"/>
+        <activity android:name=".A_ticker.PerfActivityTicker" />
+        <activity android:name=".A_recycleViewRefresh.StudyRecycleRefreshActivity" />
+        <activity android:name=".activitys.MagicButtonActivity"></activity>
         <!-- QQ登陆 -->
         <activity
             android:name="com.tencent.connect.common.AssistActivity"
@@ -87,7 +89,6 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity android:name=".A_recycleViewRefresh.StudyRecycleRefreshActivity"></activity>
     </application>
 
 </manifest>

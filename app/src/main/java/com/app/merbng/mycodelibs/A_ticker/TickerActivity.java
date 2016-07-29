@@ -10,6 +10,9 @@ import com.robinhood.ticker.TickerView;
 
 import java.util.Random;
 
+/**用于显示滚动文本的简单的Android UI组件
+ * https://github.com/robinhood/ticker
+ */
 public class TickerActivity extends TickerBaseActivity {
     private static final char[] NUMBER_LIST = TickerUtils.getDefaultNumberList();
     private static final char[] CURRENCY_LIST = TickerUtils.getDefaultListForUSCurrency();

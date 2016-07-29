@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="60dp"
+    android:layout_marginLeft="50dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/magic_button_github"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:button_icon="@drawable/github"
+        app:button_icon_height="25dp"
+        app:button_icon_width="25dp"
+        app:expandable_area_color="#bcbcbc"
+        app:hide_text="Github"
+        app:icon_button_color="#ff00"
+        app:magic_button_size="50dp" />
+
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/magic_button_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        app:button_icon="@drawable/fb_white"
+        app:button_icon_height="25dp"
+        app:button_icon_width="25dp"
+        app:expandable_area_color="#203763"
+        app:hide_text="Facebook"
+        app:icon_button_color="#365899"
+        app:magic_button_size="50dp" />
+
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/magic_button_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        app:button_icon="@drawable/twitter"
+        app:button_icon_height="25dp"
+        app:button_icon_width="25dp"
+        app:expandable_area_color="#2f83de"
+        app:hide_text="Twitter"
+        app:icon_button_color="#ced0d4"
+        app:magic_button_size="50dp" />
+</LinearLayout>

@@ -64,8 +64,8 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_weixin_login">WeixinLoginActivity</string>
-    
-    
+
+
     <!--简单的RecycleView 刷新 加载-->
     <string name="lfrecyclerview_header_hint_normal">下拉刷新</string>
     <string name="lfrecyclerview_header_hint_ready">松开刷新数据</string>
