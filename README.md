@@ -1,5 +1,9 @@
 # MyCodeLibs
 AndroidStudy代码库	
+
+2016年7月30日02:44:38   
+侧边滑出的Button；  
+MagicButtonActivity   
 _____________________
 2016年7月29日00:28:44   
 完成滚动的数字；  
