@@ -39,8 +39,7 @@
     <br.com.bloder.magic.view.MagicButton
         android:id="@+id/magic_button_twitter"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content" android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
         app:button_icon="@drawable/twitter"
         app:button_icon_height="25dp"
