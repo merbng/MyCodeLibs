@@ -1,4 +1,4 @@
-package com.app.merbng.mycodelibs.A_TumbleEditText.mr_immortalz.com.stereoview ;
+package com.app.merbng.mycodelibs.A_TumbleEditText;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

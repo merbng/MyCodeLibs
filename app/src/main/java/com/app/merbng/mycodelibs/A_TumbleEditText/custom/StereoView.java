@@ -1,4 +1,4 @@
-package com.app.merbng.mycodelibs.A_TumbleEditText.mr_immortalz.com.stereoview.custom;
+package com.app.merbng.mycodelibs.A_TumbleEditText.custom;
 
 import android.content.Context;
 import android.graphics.Camera;
@@ -11,8 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Interpolator;
 import android.widget.Scroller;
-
-import com.app.merbng.mycodelibs.A_TumbleEditText.mr_immortalz.com.stereoview.utils.LogUtil;
 
 
 /**
@@ -187,6 +185,7 @@ public class StereoView extends ViewGroup {
 
     /**
      * mState = State.ToPre 时进行的动作
+     *
      * @param yVelocity 竖直方向的速度
      */
     private void toPreAction(float yVelocity) {
@@ -207,8 +206,10 @@ public class StereoView extends ViewGroup {
         mScroller.startScroll(0, startY, 0, delta, duration);
         addCount--;
     }
+
     /**
      * mState = State.ToNext 时进行的动作
+     *
      * @param yVelocity 竖直方向的速度
      */
     private void toNextAction(float yVelocity) {
@@ -222,7 +223,7 @@ public class StereoView extends ViewGroup {
         startY = getScrollY() - mHeight;
         setScrollY(startY);
         delta = mHeight * mStartScreen - startY + (addCount - 1) * mHeight;
-        LogUtil.m("多后一页startY " + startY + " yVelocity " + yVelocity + " delta " + delta + "  getScrollY() " + getScrollY() + " addCount " + addCount);
+//        LogUtil.m("多后一页startY " + startY + " yVelocity " + yVelocity + " delta " + delta + "  getScrollY() " + getScrollY() + " addCount " + addCount);
         duration = (Math.abs(delta)) * 3;
         mScroller.startScroll(0, startY, 0, delta, duration);
         addCount--;
@@ -398,6 +399,7 @@ public class StereoView extends ViewGroup {
 
     /**
      * 设置滚动时两个item的夹角度数
+     *
      * @param mAngle [0f,180f]
      * @return
      */
@@ -408,6 +410,7 @@ public class StereoView extends ViewGroup {
 
     /**
      * 是否开启3D效果
+     *
      * @param can3D
      * @return
      */
@@ -424,10 +427,10 @@ public class StereoView extends ViewGroup {
      */
     public StereoView setItem(int itemId) {
 
-        LogUtil.m("之前curScreen " + mCurScreen);
+//        LogUtil.m("之前curScreen " + mCurScreen);
         if (!mScroller.isFinished()) {
             mScroller.abortAnimation();
-            LogUtil.m("强制完成");
+//            LogUtil.m("强制完成");
         }
         if (itemId < 0 || itemId > (getChildCount() - 1)) {
             throw new IndexOutOfBoundsException("请输入规定范围内item位置号");
@@ -440,18 +443,19 @@ public class StereoView extends ViewGroup {
             //setScrollY(mStartScreen * mHeight);
             toPreAction(standerSpeed + (mCurScreen - itemId - 1) * flingSpeed);
         }
-        LogUtil.m("之后curScreen " + mCurScreen + " getScrollY " + getScrollY());
+//        LogUtil.m("之后curScreen " + mCurScreen + " getScrollY " + getScrollY());
         return this;
     }
 
     /**
      * 上一页
+     *
      * @return
      */
     public StereoView toPre() {
         if (!mScroller.isFinished()) {
             mScroller.abortAnimation();
-            LogUtil.m("强制完成");
+//            LogUtil.m("强制完成");
         }
         toPreAction(standerSpeed);
         return this;
@@ -459,12 +463,13 @@ public class StereoView extends ViewGroup {
 
     /**
      * 下一页
+     *
      * @return
      */
     public StereoView toNext() {
         if (!mScroller.isFinished()) {
             mScroller.abortAnimation();
-            LogUtil.m("强制完成");
+//            LogUtil.m("强制完成");
         }
         toNextAction(-standerSpeed);
         return this;
@@ -474,6 +479,7 @@ public class StereoView extends ViewGroup {
     public interface IStereoListener {
         //上滑一页时回调
         void toPre(int curScreen);
+
         //下滑一页时回调
         void toNext(int curScreen);
     }

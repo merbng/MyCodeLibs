@@ -1,4 +1,4 @@
-package com.app.merbng.mycodelibs.A_TumbleEditText.mr_immortalz.com.stereoview;
+package com.app.merbng.mycodelibs.A_TumbleEditText;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.widget.Button;
 import com.app.merbng.mycodelibs.R;
 
 /**
+ * Android 3D立体无限旋转容器
+ * https://github.com/ImmortalZ/StereoView
  * Created by Mr_immortalZ on 2016/7/15.
  * email : mr_immortalz@qq.com
  */
@@ -18,6 +20,7 @@ public class TumbeEditTextActivity extends AppCompatActivity {
     private Button btnLogin;
     private Button btnSetting;
     private Button btnImage;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

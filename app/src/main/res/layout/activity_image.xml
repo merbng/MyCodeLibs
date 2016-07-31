@@ -14,7 +14,7 @@
     android:paddingTop="@dimen/activity_vertical_margin">
 
 
-    <mr_immortalz.com.stereoview.custom.StereoView
+    <com.app.merbng.mycodelibs.A_TumbleEditText.custom.StereoView
         android:id="@+id/stereoView"
         android:layout_width="300dp"
         android:layout_height="200dp"
@@ -36,6 +36,6 @@
             android:background="@drawable/p11"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
-    </mr_immortalz.com.stereoview.custom.StereoView>
+    </com.app.merbng.mycodelibs.A_TumbleEditText.custom.StereoView>
 
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.app.merbng.mycodelibs.A_TumbleEditText.mr_immortalz.com.stereoview;
+package com.app.merbng.mycodelibs.A_TumbleEditText;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.app.merbng.mycodelibs.A_TumbleEditText.mr_immortalz.com.stereoview.custom.StereoView;
+import com.app.merbng.mycodelibs.A_TumbleEditText.custom.StereoView;
 import com.app.merbng.mycodelibs.R;
 
 

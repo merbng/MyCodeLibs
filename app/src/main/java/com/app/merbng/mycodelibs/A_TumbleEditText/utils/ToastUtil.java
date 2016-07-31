@@ -1,4 +1,4 @@
-package com.app.merbng.mycodelibs.A_TumbleEditText.mr_immortalz.com.stereoview.utils;
+package com.app.merbng.mycodelibs.A_TumbleEditText.utils;
 
 import android.content.Context;
 import android.widget.Toast;

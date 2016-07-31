@@ -1,4 +1,4 @@
-package com.app.merbng.mycodelibs.A_TumbleEditText.mr_immortalz.com.stereoview.custom;
+package com.app.merbng.mycodelibs.A_TumbleEditText.custom;
 
 import android.content.Context;
 import android.util.AttributeSet;

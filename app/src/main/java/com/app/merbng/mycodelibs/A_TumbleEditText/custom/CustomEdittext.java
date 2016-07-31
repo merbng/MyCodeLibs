@@ -1,4 +1,4 @@
-package com.app.merbng.mycodelibs.A_TumbleEditText.mr_immortalz.com.stereoview.custom;
+package com.app.merbng.mycodelibs.A_TumbleEditText.custom;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -6,8 +6,6 @@ import android.graphics.Region;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.EditText;
-
-import com.app.merbng.mycodelibs.A_TumbleEditText.mr_immortalz.com.stereoview.utils.LogUtil;
 
 
 /**
@@ -48,7 +46,7 @@ public class CustomEdittext extends EditText {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        LogUtil.m();
+
         width = getMeasuredWidth();
         height = getMeasuredHeight();
         rect.set(0, 0, width / 2, height);
@@ -59,13 +57,13 @@ public class CustomEdittext extends EditText {
     protected void onFocusChanged(boolean focused, int direction, Rect previouslyFocusedRect) {
         super.onFocusChanged(focused, direction, previouslyFocusedRect);
         hasFocus = focused;
-        LogUtil.m(focused + "");
+
     }
 
     @Override
     protected void onTextChanged(CharSequence text, int start, int lengthBefore, int lengthAfter) {
         super.onTextChanged(text, start, lengthBefore, lengthAfter);
-        LogUtil.m();
+
         if (hasFocus) {
             Rect bounds = new Rect();
             getFocusedRect(bounds);

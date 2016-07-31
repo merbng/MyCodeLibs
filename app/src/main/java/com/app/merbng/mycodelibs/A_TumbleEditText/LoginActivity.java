@@ -1,4 +1,4 @@
-package com.app.merbng.mycodelibs.A_TumbleEditText.mr_immortalz.com.stereoview;
+package com.app.merbng.mycodelibs.A_TumbleEditText;
 
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
@@ -7,16 +7,15 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.app.merbng.mycodelibs.A_TumbleEditText.mr_immortalz.com.stereoview.custom.CustomEdittext;
-import com.app.merbng.mycodelibs.A_TumbleEditText.mr_immortalz.com.stereoview.custom.CustomTextView;
-import com.app.merbng.mycodelibs.A_TumbleEditText.mr_immortalz.com.stereoview.custom.RippleView;
-import com.app.merbng.mycodelibs.A_TumbleEditText.mr_immortalz.com.stereoview.custom.StereoView;
-import com.app.merbng.mycodelibs.A_TumbleEditText.mr_immortalz.com.stereoview.utils.LogUtil;
-import com.app.merbng.mycodelibs.A_TumbleEditText.mr_immortalz.com.stereoview.utils.ToastUtil;
+import com.app.merbng.mycodelibs.A_TumbleEditText.custom.CustomEdittext;
+import com.app.merbng.mycodelibs.A_TumbleEditText.custom.CustomTextView;
+import com.app.merbng.mycodelibs.A_TumbleEditText.custom.RippleView;
+import com.app.merbng.mycodelibs.A_TumbleEditText.custom.StereoView;
+import com.app.merbng.mycodelibs.A_TumbleEditText.utils.ToastUtil;
 import com.app.merbng.mycodelibs.R;
 
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
     private CustomEdittext etUsername;
     private CustomEdittext etEmail;
@@ -47,12 +46,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         stereoView.setiStereoListener(new StereoView.IStereoListener() {
             @Override
             public void toPre(int curScreen) {
-                LogUtil.m("跳转到前一页 "+curScreen);
+//                LogUtil.m("跳转到前一页 "+curScreen);
             }
 
             @Override
             public void toNext(int curScreen) {
-                LogUtil.m("跳转到下一页 "+curScreen);
+//                LogUtil.m("跳转到下一页 "+curScreen);
             }
         });
     }
@@ -103,17 +102,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.tv_welcome:
                 if (TextUtils.isEmpty(etUsername.getText())) {
-                    ToastUtil.showInfo(LoginActivity.this,"请输入用户名!");
+                    ToastUtil.showInfo(LoginActivity.this, "请输入用户名!");
                     stereoView.setItem(2);
                     return;
                 }
                 if (TextUtils.isEmpty(etEmail.getText())) {
-                    ToastUtil.showInfo(LoginActivity.this,"请输入邮箱!");
+                    ToastUtil.showInfo(LoginActivity.this, "请输入邮箱!");
                     stereoView.setItem(1);
                     return;
                 }
                 if (TextUtils.isEmpty(etPassword.getText())) {
-                    ToastUtil.showInfo(LoginActivity.this,"请输入密码!");
+                    ToastUtil.showInfo(LoginActivity.this, "请输入密码!");
                     stereoView.setItem(0);
                     return;
                 }
@@ -125,6 +124,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private void startExitAnim() {
         ObjectAnimator animator = ObjectAnimator.ofFloat(stereoView, "translationY", 0, 100, -translateY);
         animator.setDuration(500).start();
-        ToastUtil.showInfo(LoginActivity.this,"登录成功 =.=");
+        ToastUtil.showInfo(LoginActivity.this, "登录成功 =.=");
     }
 }

@@ -20,7 +20,7 @@
         android:text="3D效果"
         android:textColor="@color/font_white"/>
 
-    <mr_immortalz.com.stereoview.custom.StereoView
+    <com.app.merbng.mycodelibs.A_TumbleEditText.custom.StereoView
         android:id="@+id/stereoView1"
         android:layout_width="300dp"
         android:layout_height="60dp">
@@ -39,7 +39,7 @@
                 android:layout_height="25dp"
                 android:background="@drawable/icon_password"/>
 
-            <mr_immortalz.com.stereoview.custom.CustomEdittext
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.CustomEdittext
                 android:id="@+id/et_password"
                 android:layout_width="180dp"
                 android:layout_height="50dp"
@@ -49,7 +49,7 @@
                 android:inputType="textPassword"
                 android:textColorHint="@color/font_gray"/>
 
-            <mr_immortalz.com.stereoview.custom.RippleView
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.RippleView
                 android:id="@+id/rv_password"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -72,7 +72,7 @@
                 android:layout_height="25dp"
                 android:background="@drawable/icon_email"/>
 
-            <mr_immortalz.com.stereoview.custom.CustomEdittext
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.CustomEdittext
                 android:id="@+id/et_email"
                 android:layout_width="180dp"
                 android:layout_height="50dp"
@@ -81,7 +81,7 @@
                 android:hint="1"
                 android:textColorHint="@color/font_gray"/>
 
-            <mr_immortalz.com.stereoview.custom.RippleView
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.RippleView
                 android:id="@+id/rv_email"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -104,7 +104,7 @@
                 android:layout_height="25dp"
                 android:background="@drawable/icon_user"/>
 
-            <mr_immortalz.com.stereoview.custom.CustomEdittext
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.CustomEdittext
                 android:id="@+id/et_username"
                 android:layout_width="180dp"
                 android:layout_height="50dp"
@@ -114,7 +114,7 @@
                 android:textColorHint="@color/font_gray"
                 android:textSize="18sp"/>
 
-            <mr_immortalz.com.stereoview.custom.RippleView
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.RippleView
                 android:id="@+id/rv_username"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -138,7 +138,7 @@
                 android:layout_height="25dp"
                 android:background="@drawable/icon_love"/>
 
-            <mr_immortalz.com.stereoview.custom.CustomTextView
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.CustomTextView
                 android:layout_width="180dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="10dp"
@@ -148,7 +148,7 @@
                 android:textColorHint="@color/font_gray"
                 android:textSize="18sp"/>
 
-            <mr_immortalz.com.stereoview.custom.RippleView
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.RippleView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:paddingLeft="10dp"
@@ -168,7 +168,7 @@
                 android:layout_height="25dp"
                 android:background="@drawable/icon_love"/>
 
-            <mr_immortalz.com.stereoview.custom.CustomTextView
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.CustomTextView
                 android:layout_width="180dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="10dp"
@@ -178,7 +178,7 @@
                 android:textColorHint="@color/font_gray"
                 android:textSize="18sp"/>
 
-            <mr_immortalz.com.stereoview.custom.RippleView
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.RippleView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:paddingLeft="10dp"
@@ -199,7 +199,7 @@
                 android:layout_height="25dp"
                 android:background="@drawable/icon_love"/>
 
-            <mr_immortalz.com.stereoview.custom.CustomTextView
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.CustomTextView
                 android:id="@+id/tv_welcome"
                 android:layout_width="180dp"
                 android:layout_height="50dp"
@@ -210,13 +210,13 @@
                 android:textColorHint="@color/font_gray"
                 android:textSize="18sp"/>
 
-            <mr_immortalz.com.stereoview.custom.RippleView
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.RippleView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:paddingLeft="10dp"
                 app:normal="@drawable/icon_love"/>
         </LinearLayout>
-    </mr_immortalz.com.stereoview.custom.StereoView>
+    </com.app.merbng.mycodelibs.A_TumbleEditText.custom.StereoView>
 
     <TextView
         android:layout_width="match_parent"
@@ -225,7 +225,7 @@
         android:text="平面效果"
         android:textColor="@color/font_white"/>
 
-    <mr_immortalz.com.stereoview.custom.StereoView
+    <com.app.merbng.mycodelibs.A_TumbleEditText.custom.StereoView
         android:id="@+id/stereoView2"
         android:layout_width="300dp"
         android:layout_height="60dp">
@@ -244,7 +244,7 @@
                 android:layout_height="25dp"
                 android:background="@drawable/icon_password"/>
 
-            <mr_immortalz.com.stereoview.custom.CustomEdittext
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.CustomEdittext
                 android:layout_width="180dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="10dp"
@@ -253,7 +253,7 @@
                 android:inputType="textPassword"
                 android:textColorHint="@color/font_gray"/>
 
-            <mr_immortalz.com.stereoview.custom.RippleView
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.RippleView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:paddingLeft="10dp"
@@ -275,7 +275,7 @@
                 android:layout_height="25dp"
                 android:background="@drawable/icon_email"/>
 
-            <mr_immortalz.com.stereoview.custom.CustomEdittext
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.CustomEdittext
                 android:layout_width="180dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="10dp"
@@ -283,7 +283,7 @@
                 android:hint="1"
                 android:textColorHint="@color/font_gray"/>
 
-            <mr_immortalz.com.stereoview.custom.RippleView
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.RippleView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:paddingLeft="10dp"
@@ -305,7 +305,7 @@
                 android:layout_height="25dp"
                 android:background="@drawable/icon_user"/>
 
-            <mr_immortalz.com.stereoview.custom.CustomEdittext
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.CustomEdittext
                 android:layout_width="180dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="10dp"
@@ -314,7 +314,7 @@
                 android:textColorHint="@color/font_gray"
                 android:textSize="18sp"/>
 
-            <mr_immortalz.com.stereoview.custom.RippleView
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.RippleView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:paddingLeft="10dp"
@@ -337,7 +337,7 @@
                 android:layout_height="25dp"
                 android:background="@drawable/icon_love"/>
 
-            <mr_immortalz.com.stereoview.custom.CustomTextView
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.CustomTextView
                 android:layout_width="180dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="10dp"
@@ -347,14 +347,14 @@
                 android:textColorHint="@color/font_gray"
                 android:textSize="18sp"/>
 
-            <mr_immortalz.com.stereoview.custom.RippleView
+            <com.app.merbng.mycodelibs.A_TumbleEditText.custom.RippleView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:paddingLeft="10dp"
                 app:normal="@drawable/icon_love"/>
         </LinearLayout>
 
-    </mr_immortalz.com.stereoview.custom.StereoView>
+    </com.app.merbng.mycodelibs.A_TumbleEditText.custom.StereoView>
 
     <TextView
         android:id="@+id/tv_angle"

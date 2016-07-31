@@ -55,8 +55,11 @@
         <activity android:name=".A_ticker.TickerActivity" />
         <activity android:name=".A_ticker.PerfActivityTicker" />
         <activity android:name=".A_recycleViewRefresh.StudyRecycleRefreshActivity" />
-        <activity android:name=".activitys.MagicButtonActivity"/>
-        <activity android:name=".A_TumbleEditText.mr_immortalz.com.stereoview.TumbeEditTextActivity"/>
+        <activity android:name=".activitys.MagicButtonActivity" />
+        <activity android:name=".A_TumbleEditText.TumbeEditTextActivity" />
+        <activity android:name=".A_TumbleEditText.ImageActivity" />
+        <activity android:name=".A_TumbleEditText.LoginActivity" />
+        <activity android:name=".A_TumbleEditText.SettingActivity" />
         <!-- QQ登陆 -->
         <activity
             android:name="com.tencent.connect.common.AssistActivity"

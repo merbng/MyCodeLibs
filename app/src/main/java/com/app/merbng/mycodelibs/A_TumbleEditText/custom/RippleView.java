@@ -1,4 +1,4 @@
-package com.app.merbng.mycodelibs.A_TumbleEditText.mr_immortalz.com.stereoview.custom;
+package com.app.merbng.mycodelibs.A_TumbleEditText.custom;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -182,7 +182,7 @@ public class RippleView extends View {
         }
     }
 
-    public interface IRippleAnimListener{
+    public interface IRippleAnimListener {
         void onComplete(View view);
     }
 
