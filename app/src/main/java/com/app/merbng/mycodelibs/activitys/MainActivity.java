@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.app.merbng.mycodelibs.A_StudyProcessButton.ProcessButtonActivity;
+import com.app.merbng.mycodelibs.A_TumbleEditText.mr_immortalz.com.stereoview.TumbeEditTextActivity;
 import com.app.merbng.mycodelibs.A_recycleViewRefresh.StudyRecycleRefreshActivity;
 import com.app.merbng.mycodelibs.A_studyRetrofit.StudyRetrofitActivity;
 import com.app.merbng.mycodelibs.A_ticker.TickerActivity;
@@ -96,6 +97,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.magicbuttonactivity://从侧边滑出的Button
                 startActivity(new Intent(mContext, MagicButtonActivity.class));
+                break;
+            case R.id.tumbeedittextactivity://从侧边滑出的Button
+                startActivity(new Intent(mContext, TumbeEditTextActivity.class));
                 break;
 
 

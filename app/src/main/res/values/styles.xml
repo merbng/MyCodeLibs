@@ -15,4 +15,9 @@
         <item name="android:textColor">?colorPrimary</item>
         <item name="android:textSize">50sp</item>
     </style>
+
+    <declare-styleable name="RippleView">
+        <attr name="pressed" format="reference"/>
+        <attr name="normal" format="reference"/>
+    </declare-styleable>
 </resources>
