@@ -11,6 +11,8 @@ import com.app.merbng.mycodelibs.A_studyRetrofit.StudyRetrofitActivity;
 import com.app.merbng.mycodelibs.A_ticker.TickerActivity;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
+import com.app.merbng.mycodelibs.utils.LogUtil;
+import com.app.merbng.mycodelibs.widget.SplashView;
 import com.zhy.changeskin.SkinManager;
 
 public class MainActivity extends BaseActivity {
@@ -22,14 +24,19 @@ public class MainActivity extends BaseActivity {
     }
 
     public void btnClick(View view) {
+        //闪屏图
+        showSplashUrl();
         switch (view.getId()) {
             case R.id.btn_add_logo_qrCode:
+
                 startActivity(new Intent(mContext, LogoQrCodeActivity.class));
                 break;
             case R.id.btn_recycleView:
+
                 startActivity(new Intent(mContext, RecyclerViewActivity.class));
                 break;
             case R.id.btn_seeZoomImg:
+
                 startActivity(new Intent(mContext, SeeZoomImgActivity.class));
                 break;
             case R.id.btn_TipShow:
@@ -112,6 +119,56 @@ public class MainActivity extends BaseActivity {
                 show("夜间模式");
                 break;
         }
+    }
+
+    private void showSplashUrl() {
+        int Numround = (int) Math.round(Math.random() * 10);
+        String url = null;
+        String actionUrl = null;
+        LogUtil.log.e("图："+Numround);
+        switch (Numround) {
+            case 0:
+                url = "http://f7.topitme.com/7/7f/70/1178561279d91707f7o.jpg";
+                actionUrl = "http://f7.topitme.com";
+                break;
+            case 1:
+                url = "http://ff.topitme.com/f/6a/90/1145105479248906afl.jpg";
+                actionUrl = "http://f7.topitme.com";
+                break;
+            case 2:
+                url = "http://f10.topitme.com/o/201101/21/12955798998303.jpg";
+                actionUrl = "http://f7.topitme.com";
+                break;
+            case 3:
+                url = "http://i10.topitme.com/l075/1007532813d981f7d7.jpg";
+                actionUrl = "http://i10.topitme.com";
+                break;
+            case 4:
+                url = "http://f10.topitme.com/l/200912/21/12613633952350.jpg";
+                actionUrl = "http://i10.topitme.com";
+                break;
+            case 5:
+                url = "https://avatars3.githubusercontent.com/u/11256126?v=3&s=460";
+                actionUrl = "https://avatars3.githubusercontent.com";
+                break;
+            case 6:
+                url = "http://imgsrc.baidu.com/forum/pic/item/530d8ad4b31c8701b0dc0207277f9e2f0608ff63.jpg";
+                actionUrl = "http://imgsrc.baidu.com";
+                break;
+            case 7:
+                url = "http://imgsrc.baidu.com/forum/pic/item/caef76094b36acaf62e089647cd98d1001e99c21.jpg";
+                actionUrl = "http://imgsrc.baidu.com";
+                break;
+            case 8:
+                url = "http://img4q.duitang.com/uploads/item/201503/21/20150321233324_eYQSE.jpeg";
+                actionUrl = "http://img4q.duitang.com";
+                break;
+            case 9:
+                url = "http://bizhi.zhuoku.com/2012/01/06/jingxuan/jingxuan063.jpg";
+                actionUrl = "http://bizhi.zhuoku.com";
+                break;
+        }
+        SplashView.updateSplashData(this, url, actionUrl);
     }
 }
 

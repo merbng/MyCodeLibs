@@ -44,7 +44,6 @@ public class BaseActivity extends BaseSkinActivity {
             if (thisActivity instanceof MainActivity) {
                 if ((System.currentTimeMillis() - exitTime) > 2000) {
                     exitTime = System.currentTimeMillis();
-
                     return false;
                 } else {
                     thisActivity.finish();
