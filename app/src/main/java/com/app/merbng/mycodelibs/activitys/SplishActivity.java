@@ -1,17 +1,17 @@
 package com.app.merbng.mycodelibs.activitys;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
 import com.app.merbng.mycodelibs.R;
-import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.utils.LogUtil;
 import com.app.merbng.mycodelibs.widget.SplashView;
 
 /**
  * 闪屏页
  */
-public class SplishActivity extends BaseActivity {
+public class SplishActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,18 +21,19 @@ public class SplishActivity extends BaseActivity {
             @Override
             public void onSplashImageClick(String actionUrl) {
                 LogUtil.log.e("actionUrl：" + actionUrl);
-                Intent intent = new Intent(mContext, MainActivity.class);
+                Intent intent = new Intent(SplishActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
 
             @Override
             public void onSplashViewDismiss(boolean initiativeDismiss) {
-                Intent intent = new Intent(mContext, MainActivity.class);
+                Intent intent = new Intent(SplishActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
         });
-        
+
+
     }
 }
