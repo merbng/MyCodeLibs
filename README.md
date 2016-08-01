@@ -1,6 +1,10 @@
 # MyCodeLibs
 AndroidStudy代码库	
-
+_____________________
+2016年8月1日23:33:47   
+增加闪屏页；  
+SplishActivity   
+_____________________
 2016年8月1日00:01:00   
 3D立体无限旋转容器；  
 TumbeEditTextActivity   
