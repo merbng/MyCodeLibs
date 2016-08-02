@@ -1,52 +1,45 @@
 package com.app.merbng.mycodelibs.activitys;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.app.merbng.mycodelibs.R;
-import com.app.merbng.mycodelibs.utils.LogUtil;
-import com.app.merbng.mycodelibs.widget.SplashView;
+import com.app.merbng.mycodelibs.base.BaseActivity;
 
 import java.util.ArrayList;
 
 import za.co.riggaroo.materialhelptutorial.TutorialItem;
 import za.co.riggaroo.materialhelptutorial.tutorial.MaterialTutorialActivity;
 
-/**
- * 闪屏页
+/**https://github.com/riggaroo/MaterialIntroTutorial
+ * Material Design引导页
  */
-public class SplishActivity extends Activity {
+public class GlideActivity extends BaseActivity {
     private static final int REQUEST_CODE = 1234;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splish);
-        SplashView.showSplashView(this, 3, R.drawable.img_splash, new SplashView.OnSplashViewActionListener() {
-            @Override
-            public void onSplashImageClick(String actionUrl) {
-                LogUtil.log.e("actionUrl：" + actionUrl);
-                Intent intent = new Intent(SplishActivity.this, MainActivity.class);
-                startActivity(intent);
-                loadTutorial();
-            }
+        setContentView(R.layout.activity_glide);
 
+        Button buttonViewTutorial = (Button)findViewById(R.id.buttonViewTutorial);
+        buttonViewTutorial.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onSplashViewDismiss(boolean initiativeDismiss) {
-                Intent intent = new Intent(SplishActivity.this, MainActivity.class);
-                startActivity(intent);
+            public void onClick(View v) {
                 loadTutorial();
             }
         });
+
     }
     public void loadTutorial() {
-        Intent mainAct = new Intent(SplishActivity.this, MaterialTutorialActivity.class);
+        Intent mainAct = new Intent(mContext, MaterialTutorialActivity.class);
         mainAct.putParcelableArrayListExtra(MaterialTutorialActivity.MATERIAL_TUTORIAL_ARG_TUTORIAL_ITEMS, getTutorialItems(this));
         startActivityForResult(mainAct, REQUEST_CODE);
     }
 
-    private  ArrayList<TutorialItem> getTutorialItems(Context context) {
+    private ArrayList<TutorialItem> getTutorialItems(Context context) {
         TutorialItem tutorialItem1 = new TutorialItem(R.string.slide_1_african_story_books, R.string.slide_1_african_story_books,
                 R.color.slide_1, R.drawable.tut_page_1_front,  R.drawable.tut_page_1_background);
 
@@ -71,7 +64,7 @@ public class SplishActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         //    super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK && requestCode == REQUEST_CODE){
-           finish();
+            finish();
         }
     }
 }

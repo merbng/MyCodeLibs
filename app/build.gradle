@@ -63,4 +63,10 @@ dependencies {
     compile 'com.robinhood.ticker:ticker:1.0.1'
     //从侧面 滑出的Button   :minSdkVersion 16
     compile 'com.github.bloder:magic:1.0'
+    //图片不断向中间放大的动画效果
+    compile 'cn.carbs.android:AutoZoomInImageView:1.0.1'
+    //一张静止图片都有动态的效果感觉
+    compile 'com.flaviofaria:kenburnsview:1.0.7'
+    //
+    compile 'za.co.riggaroo:materialhelptutorial:1.+'
 }

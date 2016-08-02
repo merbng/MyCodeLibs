@@ -16,6 +16,40 @@
         android:icon="@drawable/iconfont_main"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
+
+        <!-- QQ登陆 -->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="1105542406" />
+            </intent-filter>
+        </activity>
+        <!-- 新浪微博登陆 -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 微信登陆 -->
+        <!-- 微信回调 -->
+        <activity
+            android:name="com.app.merbng.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name=".activitys.SplishActivity"
             android:label="@string/app_name">
@@ -61,39 +95,10 @@
         <activity android:name=".A_TumbleEditText.ImageActivity" />
         <activity android:name=".A_TumbleEditText.LoginActivity" />
         <activity android:name=".A_TumbleEditText.SettingActivity" />
-        <!-- QQ登陆 -->
-        <activity
-            android:name="com.tencent.connect.common.AssistActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity
-            android:name="com.tencent.tauth.AuthActivity"
-            android:launchMode="singleTask"
-            android:noHistory="true">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data android:scheme="1105542406" />
-            </intent-filter>
-        </activity>
-        <!-- 新浪微博登陆 -->
-        <activity
-            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
-            android:configChanges="keyboardHidden|orientation"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
-        <!-- 微信登陆 -->
-        <!-- 微信回调 -->
-        <activity
-            android:name="com.app.merbng.wxapi.WXEntryActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:exported="true"
-            android:launchMode="singleTop"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> 
+        <activity android:name=".activitys.AutozoomActivity" />
+        <activity android:name=".activitys.KenBurnsViewActivity" />
+        <activity android:name=".activitys.GlideActivity"/>
+        <activity android:name="za.co.riggaroo.materialhelptutorial.tutorial.MaterialTutorialActivity"/>
     </application>
 
 </manifest>

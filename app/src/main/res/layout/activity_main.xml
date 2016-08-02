@@ -262,6 +262,39 @@
 
         <include layout="@layout/view_line" />
 
+        <Button
+            android:id="@+id/autozoominimageview"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="图片不断向中间放大的动画效果"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
+        <Button
+            android:id="@+id/kenburnsviewactivity"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="一张静止图片都有动态的效果感觉"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
+        <Button
+            android:id="@+id/glideactivity"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="引导页"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

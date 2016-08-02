@@ -28,15 +28,12 @@ public class MainActivity extends BaseActivity {
         showSplashUrl();
         switch (view.getId()) {
             case R.id.btn_add_logo_qrCode:
-
                 startActivity(new Intent(mContext, LogoQrCodeActivity.class));
                 break;
             case R.id.btn_recycleView:
-
                 startActivity(new Intent(mContext, RecyclerViewActivity.class));
                 break;
             case R.id.btn_seeZoomImg:
-
                 startActivity(new Intent(mContext, SeeZoomImgActivity.class));
                 break;
             case R.id.btn_TipShow:
@@ -108,8 +105,18 @@ public class MainActivity extends BaseActivity {
             case R.id.tumbeedittextactivity://Android 3D立体无限旋转容器
                 startActivity(new Intent(mContext, TumbeEditTextActivity.class));
                 break;
+            case R.id.autozoominimageview://一种图片不断向中间放大的动画效果
+                startActivity(new Intent(mContext, AutozoomActivity.class));
+                break;
+            case R.id.kenburnsviewactivity://一张静止图片都有动态的效果感觉
+                startActivity(new Intent(mContext, KenBurnsViewActivity.class));
+                break;
+            case R.id.glideactivity://引导
+                startActivity(new Intent(mContext, GlideActivity.class));
+                break;
+            
 
-
+// FIXME: 2016/8/2 
             case R.id.changeSkin://换肤 白天模式
                 SkinManager.getInstance().changeSkin("night");
                 show("白天模式");
@@ -125,7 +132,7 @@ public class MainActivity extends BaseActivity {
         int Numround = (int) Math.round(Math.random() * 10);
         String url = null;
         String actionUrl = null;
-        LogUtil.log.e("图："+Numround);
+        LogUtil.log.e("图：" + Numround);
         switch (Numround) {
             case 0:
                 url = "http://f7.topitme.com/7/7f/70/1178561279d91707f7o.jpg";

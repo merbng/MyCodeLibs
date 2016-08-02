@@ -37,4 +37,14 @@
     <color name="font_gray">#A6AFC6</color>
     <color name="font_blue_deep">#242A38</color>
     <color name="font_white">#ffffff</color>
+    
+    
+    <!--引导-->
+
+    <color name="slide_1">#4f91ff</color>
+    <color name="slide_2">#fb9c25</color>
+    <color name="slide_3">#5ab55d</color>
+    <color name="slide_4">#ea2d6d</color>
+
+    <color name="tutorial_buttonTextColor">#000000</color>
 </resources>
