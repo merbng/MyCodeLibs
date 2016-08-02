@@ -1,6 +1,7 @@
 <resources>
 
     <style name="AppTheme" parent="MyDemo" />
+
     <style name="MyDemo" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">#ffd46c</item>
         <item name="colorPrimaryDark">#512DA8</item>
@@ -11,13 +12,21 @@
     <style name="SelectableItem">
         <item name="android:background">@android:drawable/list_selector_background</item>
     </style>
+
     <style name="TickerTextAppearance">
         <item name="android:textColor">?colorPrimary</item>
         <item name="android:textSize">50sp</item>
     </style>
+    <!--按钮的style-->
+    <style name="btn_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/skin_color_text</item>
+        <item name="android:textColor">@color/skin_color_bg</item>
+    </style>
 
     <declare-styleable name="RippleView">
-        <attr name="pressed" format="reference"/>
-        <attr name="normal" format="reference"/>
+        <attr name="pressed" format="reference" />
+        <attr name="normal" format="reference" />
     </declare-styleable>
 </resources>

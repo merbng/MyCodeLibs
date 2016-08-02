@@ -1,297 +1,218 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/draw_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"> 
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/btn_add_logo_qrCode"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="带logo的二维码"
-            android:textColor="@color/skin_color_bg" />
+            android:text="带logo的二维码" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/btn_recycleView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="recycleView"
-            android:textColor="@color/skin_color_bg" />
+            android:text="recycleView" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/btn_seeZoomImg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="SeeZoomImg"
-            android:textColor="@color/skin_color_bg" />
+            android:text="SeeZoomImg"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/btn_TipShow"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="TipShow"
-            android:textColor="@color/skin_color_bg" />
+            android:text="TipShow"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/btn_titleBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="titleBar"
-            android:textColor="@color/skin_color_bg" />
+            android:text="titleBar"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/btn_zan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="Zan"
-            android:textColor="@color/skin_color_bg" />
+            android:text="Zan"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/btn_viewpager"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="导航栏"
-            android:textColor="@color/skin_color_bg" />
+            android:text="导航栏"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/time_line"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="时间轴"
-            android:textColor="@color/skin_color_bg" />
+            android:text="时间轴"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/Shine_text"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="流光字"
-            android:textColor="@color/skin_color_bg" />
+            android:text="流光字"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/loading"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="Loading"
-            android:textColor="@color/skin_color_bg" />
+            android:text="Loading"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/search"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="Search"
-            android:textColor="@color/skin_color_bg" />
+            android:text="Search"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/toast"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="Toast"
-            android:textColor="@color/skin_color_bg" />
+            android:text="Toast"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/createcircular"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="createCircular"
-            android:textColor="@color/skin_color_bg" />
+            android:text="createCircular"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/studyRecycleView"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="Study RecycleView"
-            android:textColor="@color/skin_color_bg" />
+            android:text="Study RecycleView" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/testGetConnection"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="测试Get请求"
-            android:textColor="@color/skin_color_bg" />
+            android:text="测试Get请求"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/studyRetrofit"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="学习Retrofit"
-            android:textColor="@color/skin_color_bg" />
+            android:text="学习Retrofit"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/StudyRecycleAddHeardFootActivity"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="RecycleView加头加脚"
-            android:textColor="@color/skin_color_bg" />
+            android:text="RecycleView加头加脚"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/AppMsgActivity"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="AppMsgActivity顶部Toast"
-            android:textColor="@color/skin_color_bg" />
+            android:text="AppMsgActivity顶部Toast"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/processButtonActivity"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="进度条Button"
-            android:textColor="@color/skin_color_bg" />
+            android:text="进度条Button"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/TestEditTextActivity"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="EditText值得注意的地方"
-            android:textColor="@color/skin_color_bg" />
+            android:text="EditText值得注意的地方"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/tickeractivityticker"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="滚动ticker"
-            android:textColor="@color/skin_color_bg" />
+            android:text="滚动ticker"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/magicbuttonactivity"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="侧边滑出的Button"
-            android:textColor="@color/skin_color_bg" />
+            android:text="侧边滑出的Button"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/tumbeedittextactivity"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="滚动的EditText"
-            android:textColor="@color/skin_color_bg" />
+            android:text="滚动的EditText"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/autozoominimageview"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="图片不断向中间放大的动画效果"
-            android:textColor="@color/skin_color_bg" />
+            android:text="图片不断向中间放大的动画效果"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/kenburnsviewactivity"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="一张静止图片都有动态的效果感觉"
-            android:textColor="@color/skin_color_bg" />
+            android:text="一张静止图片都有动态的效果感觉"  />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/glideactivity"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/skin_color_text"
+            style="@style/btn_style"
             android:onClick="btnClick"
-            android:text="引导页"
-            android:textColor="@color/skin_color_bg" />
+            android:text="引导页"  />
 
         <include layout="@layout/view_line" />
 
