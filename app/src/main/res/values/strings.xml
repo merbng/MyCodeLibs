@@ -81,13 +81,13 @@
     <string name="time_error">时间有问题</string>
 
     <!--引导-->
-    <string name="slide_1_african_story_books">New African Story Books</string>
-    <string name="slide_2_volunteer_professionals">Created by Volunteer Professionals</string>
-    <string name="slide_3_download_and_go">Download and Read on the go</string>
-    <string name="slide_4_different_languages">Available in different languages</string>
-    <string name="slide_1_african_story_books_subtitle">That anyone can freely translate and distribute.</string>
-    <string name="slide_2_volunteer_professionals_subtitle">On a single day, designers, writers and illustrators meet to create cool books.</string>
-    <string name="slide_3_download_and_go_subtitle">On the bus, in a train, wherever you are - the books are there too.</string>
-    <string name="slide_4_different_languages_subtitle">English, Zulu, Afrikaans, Xhosa and more!</string>
-    <string name="view_sample_tut">View Tutorial Example</string>
+    <string name="slide_1_african_story_books">你的一句轻描淡写，就将我伤到骨子里。</string>
+    <string name="slide_2_volunteer_professionals">你从未顾及我的感受又怎知我难受。</string>
+    <string name="slide_3_download_and_go">我要做奈何桥的守护者、这样我就可以陪你渡过。</string>
+    <string name="slide_4_different_languages">因为有风有雨，所以，幸福更值得珍惜。</string>
+    <string name="slide_1_african_story_books_subtitle">有些事情我们必须放弃，才有精力去迎接更美好的生活。</string>
+    <string name="slide_2_volunteer_professionals_subtitle">切勿贪意外之财，知足者人心常乐。</string>
+    <string name="slide_3_download_and_go_subtitle">成长不就是踩着玻璃渣一点一点的走吗</string>
+    <string name="slide_4_different_languages_subtitle">奇葩同桌欢乐多 毕业之后无话说</string>
+    <string name="view_sample_tut">此时此刻，我不想带着对你感情去开始我的下一段感情</string>
 </resources>
