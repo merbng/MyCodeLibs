@@ -116,18 +116,23 @@ public class QrCodeActivity extends BaseActivity {
                 ContentResolver cr = getContentResolver();
                 try {
                     Bitmap mBitmap = MediaStore.Images.Media.getBitmap(cr, uri);//显得到bitmap图片
-                    //这个地方容易OOM
-                    CodeUtils.analyzeBitmap(mBitmap, new CodeUtils.AnalyzeCallback() {
-                        @Override
-                        public void onAnalyzeSuccess(Bitmap mBitmap, String result) {
-                            tv_albumresult.setText("扫描相册解析结果:" + result);
-                        }
-
-                        @Override
-                        public void onAnalyzeFailed() {
-                            show("解析二维码失败");
-                        }
-                    });
+                    //fixme 这个地方容易OOM
+                    try {
+                        CodeUtils.analyzeBitmap(mBitmap, new CodeUtils.AnalyzeCallback() {
+                            @Override
+                            public void onAnalyzeSuccess(Bitmap mBitmap, String result) {
+                                tv_albumresult.setText("扫描相册解析结果:" + result);
+                            }
+    
+                            @Override
+                            public void onAnalyzeFailed() {
+                                show("解析二维码失败");
+                            }
+                        });
+                    } catch (OutOfMemoryError e) {
+                        tv_albumresult.setText("图片太大！");
+                        e.printStackTrace();
+                    }
 
                     if (mBitmap != null) {
                         mBitmap.recycle();

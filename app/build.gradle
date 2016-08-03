@@ -69,7 +69,8 @@ dependencies {
     compile 'com.flaviofaria:kenburnsview:1.0.7'
     //引导页
     compile 'za.co.riggaroo:materialhelptutorial:1.+'
-
     //二维码扫描&生成
     compile 'cn.yipianfengye.android:zxing-library:1.2'
+    //碎裂效果
+    compile 'com.zys:brokenview:1.0.3'
 }

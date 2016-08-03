@@ -18,4 +18,14 @@
         <item>新浪微博登陆</item>
         <item>微信登陆</item>
     </string-array>
+<!--碎裂效果-->
+     <string-array name="imgArray">
+    <item>@drawable/img1</item>
+    <item>@drawable/img2</item>
+    <item>@drawable/img3</item>
+    <item>@drawable/img4</item>
+    <item>@drawable/img5</item>
+    <item>@drawable/img6</item>
+</string-array>
+
 </resources>
