@@ -114,6 +114,9 @@ public class MainActivity extends BaseActivity {
             case R.id.glideactivity://引导
                 startActivity(new Intent(mContext, GlideActivity.class));
                 break;
+            case R.id.qrcodeactivity://引导
+                startActivity(new Intent(mContext, QrCodeActivity.class));
+                break;
             
 
 // FIXME: 2016/8/2 

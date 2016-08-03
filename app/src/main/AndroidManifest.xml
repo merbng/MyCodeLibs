@@ -98,6 +98,7 @@
         <activity android:name=".activitys.AutozoomActivity" />
         <activity android:name=".activitys.KenBurnsViewActivity" />
         <activity android:name=".activitys.GlideActivity"/>
+        <activity android:name=".activitys.QrCodeActivity"/>
         <activity android:name="za.co.riggaroo.materialhelptutorial.tutorial.MaterialTutorialActivity"/>
     </application>
 

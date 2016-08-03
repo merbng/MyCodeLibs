@@ -67,6 +67,9 @@ dependencies {
     compile 'cn.carbs.android:AutoZoomInImageView:1.0.1'
     //一张静止图片都有动态的效果感觉
     compile 'com.flaviofaria:kenburnsview:1.0.7'
-    //
+    //引导页
     compile 'za.co.riggaroo:materialhelptutorial:1.+'
+
+    //二维码扫描&生成
+    compile 'cn.yipianfengye.android:zxing-library:1.2'
 }

@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫描二维码" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="扫描结果2：" />
+
+    <Button
+        android:id="@+id/btn_scanalbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫描相册中二维码" />
+
+    <TextView
+        android:id="@+id/tv_albumresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="扫描结果：" />
+
+    <ImageView
+        android:id="@+id/imgv_showqrcode"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/sina_icon"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生成二维码" />
+
+    <EditText
+        android:id="@+id/edit_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入内容" />
+
+
+</LinearLayout>
