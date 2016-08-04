@@ -44,7 +44,7 @@
         <!-- 微信登陆 -->
         <!-- 微信回调 -->
         <activity
-            android:name="com.app.merbng.wxapi.WXEntryActivity"
+            android:name=".wxapi.WXEntryActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:launchMode="singleTop"
