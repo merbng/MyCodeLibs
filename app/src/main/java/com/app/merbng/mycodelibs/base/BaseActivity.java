@@ -6,8 +6,12 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.widget.Toast;
 
+import com.app.merbng.mycodelibs.MyCodeLibApplication;
 import com.app.merbng.mycodelibs.activitys.MainActivity;
 import com.zhy.changeskin.base.BaseSkinActivity;
+
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Activity基类
@@ -20,14 +24,35 @@ public class BaseActivity extends BaseSkinActivity {
 
     protected Context mContext;
     protected Activity thisActivity;
+    private List<Activity> closeActivitiesForChangeLoginUser = new LinkedList<Activity>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.mContext = getApplicationContext();
         thisActivity = this;
+        MyCodeLibApplication.getmInstance().addActivity(this);
     }
 
+    /**
+     * 将此activity添加到集合里，方便统一关闭</br>这个方法是为了切换登录用户而同时关闭多个页面
+     */
+    public void addActivityForChangeLoginUser(Activity activity) {
+        closeActivitiesForChangeLoginUser.add(activity);
+    }
+
+    /**
+     * 当Activity结束时从当前集合中移除
+     *
+     * @param activity
+     */
+    public void removeActivity(Activity activity) {
+        if (closeActivitiesForChangeLoginUser.contains(activity)) {
+            closeActivitiesForChangeLoginUser.remove(activity);
+            activity.finish();
+
+        }
+    }
 
     protected void show(String message) {
         Toast.makeText(mContext, message, Toast.LENGTH_SHORT).show();
@@ -51,5 +76,11 @@ public class BaseActivity extends BaseSkinActivity {
             }
         }
         return super.dispatchKeyEvent(event);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        MyCodeLibApplication.getmInstance().exitActivity();
     }
 }

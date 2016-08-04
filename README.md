@@ -1,6 +1,11 @@
 # MyCodeLibs
 AndroidStudy代码库	
 _____________________
+2016年8月3日23:44:19   
+增加碎屏效果&二维码生成/扫描/相册读取；  
+BrokenViewActivity  
+QrCodeActivity   
+_____________________
 2016年8月1日23:33:47   
 增加闪屏页；  
 SplishActivity   
