@@ -73,4 +73,6 @@ dependencies {
     compile 'cn.yipianfengye.android:zxing-library:1.2'
     //碎裂效果
     compile 'com.zys:brokenview:1.0.3'
+    //有趣的Toast
+    compile 'com.sdsmdg.tastytoast:tastytoast:0.0.1'
 }

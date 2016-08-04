@@ -100,7 +100,8 @@
         <activity android:name=".activitys.GlideActivity" />
         <activity android:name=".activitys.QrCodeActivity" />
         <activity android:name="za.co.riggaroo.materialhelptutorial.tutorial.MaterialTutorialActivity" />
-        <activity android:name=".activitys.BrokenViewActivity"></activity>
+        <activity android:name=".activitys.BrokenViewActivity" />
+        <activity android:name=".activitys.TastyToastActivity"/>
     </application>
 
 </manifest>

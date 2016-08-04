@@ -114,8 +114,11 @@ public class MainActivity extends BaseActivity {
             case R.id.glideactivity://引导
                 startActivity(new Intent(mContext, GlideActivity.class));
                 break;
-            case R.id.qrcodeactivity://引导
+            case R.id.qrcodeactivity://二维码生成/扫描
                 startActivity(new Intent(mContext, QrCodeActivity.class));
+                break;
+            case R.id.tastytoastactivity://有趣的Toast
+                startActivity(new Intent(mContext, TastyToastActivity.class));
                 break;
             
 
