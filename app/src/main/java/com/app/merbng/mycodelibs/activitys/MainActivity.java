@@ -27,10 +27,10 @@ public class MainActivity extends BaseActivity {
         //闪屏图
         showSplashUrl();
         switch (view.getId()) {
-            case R.id.btn_add_logo_qrCode:
+            case R.id.btn_add_logo_qrCode://带logo的二维码
                 startActivity(new Intent(mContext, LogoQrCodeActivity.class));
                 break;
-            case R.id.btn_recycleView:
+            case R.id.btn_recycleView://recycleView
                 startActivity(new Intent(mContext, RecyclerViewActivity.class));
                 break;
             case R.id.btn_seeZoomImg:
