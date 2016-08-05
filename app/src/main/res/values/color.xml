@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <color name="toumingwhite">#40FFFFFF</color>
+    <!--透明-->
+    <color name="quantouming">#00FFFFFF</color>
+    <color name="toumingblack">#7F000000</color>
     <color name="skin_window_background_day">#e1e1e1</color>
     <color name="skin_window_background_night">#b1b1b1</color>
     <color name="skin_color_1_night">#8a8a8a</color>
