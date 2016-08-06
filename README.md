@@ -1,6 +1,7 @@
 # MyCodeLibs
 AndroidStudy代码库	
 ![image](https://github.com/Merbn/MyCodeLibs/blob/master/myscreen.png)
+注：二维码为微信公众号；
 _____________________
 2016年8月5日00:26:07   
 有趣的Toast；  
