@@ -120,9 +120,12 @@ public class MainActivity extends BaseActivity {
             case R.id.tastytoastactivity://有趣的Toast
                 startActivity(new Intent(mContext, TastyToastActivity.class));
                 break;
+            case R.id.shareactivity://三方分享
+                startActivity(new Intent(mContext, ShareActivity.class));
+                break;
             
 
-// FIXME: 2016/8/2 
+            // FIXME: 2016/8/2 
             case R.id.changeSkin://换肤 白天模式
                 SkinManager.getInstance().changeSkin("night");
                 show("白天模式");

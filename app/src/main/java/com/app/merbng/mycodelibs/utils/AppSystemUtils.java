@@ -2,6 +2,8 @@ package com.app.merbng.mycodelibs.utils;
 
 import android.app.ActivityManager;
 import android.content.Context;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
 import android.webkit.WebView;
 
 import com.app.merbng.mycodelibs.BuildConfig;
@@ -65,5 +67,22 @@ public class AppSystemUtils {
                 }
             }
         }
+    }
+    /**获取应用名称
+     * @param mContext
+     * @return
+     */
+    public static String getAppName(Context mContext) {
+        PackageManager packageManager = null;
+        ApplicationInfo applicationInfo = null;
+        String applicationName = null;
+        try {
+            packageManager = mContext.getApplicationContext().getPackageManager();
+            applicationInfo = packageManager.getApplicationInfo(mContext.getPackageName(), 0);
+            applicationName = (String) packageManager.getApplicationLabel(applicationInfo);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        return applicationName;
     }
 }

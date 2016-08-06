@@ -90,4 +90,7 @@
     <string name="slide_3_download_and_go_subtitle">成长不就是踩着玻璃渣一点一点的走吗</string>
     <string name="slide_4_different_languages_subtitle">奇葩同桌欢乐多 毕业之后无话说</string>
     <string name="view_sample_tut">此时此刻，我不想带着对你感情去开始我的下一段感情</string>
+    <!--三方分享-->
+    <string name="app_friend">项目好友</string>
+    <string name="create_qr_code">扫码分享</string>
 </resources>

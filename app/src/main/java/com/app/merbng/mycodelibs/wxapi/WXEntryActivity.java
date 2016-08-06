@@ -4,13 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.app.merbng.mycodelibs.Constent;
-import com.app.merbng.mycodelibs.MyCodeLibApplication;
 import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.interfaces.GetCallBack;
 import com.app.merbng.mycodelibs.net.MIQuery;
 import com.tencent.mm.sdk.modelbase.BaseReq;
 import com.tencent.mm.sdk.modelbase.BaseResp;
 import com.tencent.mm.sdk.modelmsg.SendAuth;
+import com.tencent.mm.sdk.modelmsg.SendMessageToWX;
 import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.tencent.mm.sdk.openapi.IWXAPIEventHandler;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
@@ -22,8 +22,7 @@ import org.json.JSONObject;
  * Created by zx on 2016/7/15.
  */
 public class WXEntryActivity extends BaseActivity implements IWXAPIEventHandler {
-    // FIXME: 2016/8/4 SECRET
-    private String SECRET = "";
+
     private IWXAPI api;
     private String openid;
     private String access_token;
@@ -31,7 +30,7 @@ public class WXEntryActivity extends BaseActivity implements IWXAPIEventHandler 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        MyCodeLibApplication.getmInstance().addActivity(this);
+        
         if (api == null) {
             api = WXAPIFactory.createWXAPI(this, Constent.WXAPP_ID, false);
             api.registerApp(Constent.WXAPP_ID);
@@ -63,16 +62,25 @@ public class WXEntryActivity extends BaseActivity implements IWXAPIEventHandler 
     public void onResp(BaseResp resp) {
         switch (resp.errCode) {
             case BaseResp.ErrCode.ERR_OK://同意
+                if(resp instanceof SendAuth.Resp){
                 final String code = ((SendAuth.Resp) resp).code; //即为所需的code
                 //获取Token
                 getToken(code);
+                }else
+                if(resp instanceof SendMessageToWX.Resp){
+                    show("分享成功");
+                    finish();
+                }
 
                 break;
             case BaseResp.ErrCode.ERR_USER_CANCEL://取消
-
+//                发送 取消的消息
+//                EventBusUtils.sendWXLoginFaile();
+                
                 break;
             case BaseResp.ErrCode.ERR_AUTH_DENIED://拒绝
-
+//                  发送 取消的消息
+//                EventBusUtils.sendWXLoginFaile();
                 break;
             default:
                 break;
@@ -100,28 +108,30 @@ public class WXEntryActivity extends BaseActivity implements IWXAPIEventHandler 
 
             @Override
             public void onFail(String msg) {
-                // FIXME: 2016/8/4 失败的通知
+//                发送失败的消息
+//                EventBusUtils.sendWXLoginFaile();
             }
         });
     }
 
     /**
-     * 调用自己app的登陆。
+     * 调用项目登陆。
      */
     private void WClogin() {
 /*        MICreate.otherLogin(openid, Constant.LOGIN_WEIXIN, new GetCallBack.GetCallBackInterface<MIUser>() {
             @Override
             public void onSuccess(MIUser miUser) {
-                if (miUser != null) {//1、有帐号----登陆
+                if (miUser != null) {//1、有我藏帐号----登陆
                     EventBusUtils.sendWXLoginSucc(miUser);
-                } else {//2.无帐号---注册
+                } else {//2.无我藏帐号---注册
                     getUserInfo(access_token, openid);
                 }
             }
 
             @Override
             public void onFail(String s) {
-                EventBusUtils.sendWXLoginFaile();
+//                发送失败的消息
+//                EventBusUtils.sendWXLoginFaile();
             }
         });*/
     }
@@ -132,7 +142,7 @@ public class WXEntryActivity extends BaseActivity implements IWXAPIEventHandler 
      * @param code
      */
     private void getToken(final String code) {
-        MIQuery.WXgetToken(code, SECRET, new GetCallBack.CallBack() {
+        MIQuery.WXgetToken(code, Constent.SECRET, new GetCallBack.CallBack() {
             @Override
             public void onSuccess(String result) {
                 try {
@@ -152,18 +162,21 @@ public class WXEntryActivity extends BaseActivity implements IWXAPIEventHandler 
 
                         @Override
                         public void onFail(String e) {
-                            // FIXME: 2016/8/4 失败的通知
+//                            发送失败的消息
+//                            EventBusUtils.sendWXLoginFaile();
                         }
                     });
                 } catch (JSONException e) {
-                    // FIXME: 2016/8/4 失败的通知
+//                    发送失败的消息
+//                    EventBusUtils.sendWXLoginFaile();
                     e.printStackTrace();
                 }
             }
 
             @Override
             public void onFail(String msg) {
-                // FIXME: 2016/8/4 失败的通知
+//                发送失败的消息
+//                EventBusUtils.sendWXLoginFaile();
             }
         });
     }
@@ -183,10 +196,10 @@ public class WXEntryActivity extends BaseActivity implements IWXAPIEventHandler 
                     final String openid1 = jsonObject.getString("openid");
                     final String nickname = jsonObject.getString("nickname");
                     String headimgurl = jsonObject.getString("headimgurl");
-                    MIQuery.getOtherUserHeardImg(headimgurl, new GetCallBack.CallBack() {
+/*                    MIQuery.getOtherUserHeardImg(headimgurl, new GetCallBack.CallBack() {
                         @Override
                         public void onSuccess(String fileId) {
-/*                            MICreate.otherRegister(openid1, fileId, nickname, Constant.LOGIN_WEIXIN, new GetCallBack.GetCallBackInterface<MIUser>() {
+                            MICreate.otherRegister(openid1, fileId, nickname, Constent.LOGIN_WEIXIN, new GetCallBack.GetCallBackInterface<MIUser>() {
                                 @Override
                                 public void onSuccess(MIUser miUser) {
                                     //注册成功--登陆
@@ -197,24 +210,27 @@ public class WXEntryActivity extends BaseActivity implements IWXAPIEventHandler 
                                 public void onFail(String s) {
                                     EventBusUtils.sendWXLoginFaile();
                                 }
-                            });*/
+                            });
                         }
 
                         @Override
                         public void onFail(String msg) {
-                            // FIXME: 2016/8/4 失败的通知
+                            EventBusUtils.sendWXLoginFaile();
                         }
-                    });
+                    });*/
                 } catch (JSONException e) {
-                    // FIXME: 2016/8/4 失败的通知
+//                    发送失败的消息
+//                    EventBusUtils.sendWXLoginFaile();
                     e.printStackTrace();
                 }
             }
 
             @Override
             public void onFail(String msg) {
-                // FIXME: 2016/8/4 失败的通知
+//                发送失败的消息
+//                EventBusUtils.sendWXLoginFaile();
             }
         });
     }
+
 }

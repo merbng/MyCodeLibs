@@ -288,6 +288,16 @@
 
         <include layout="@layout/view_line" />
 
+        <Button
+            android:id="@+id/shareactivity"
+            style="@style/btn_style"
+            android:onClick="btnClick"
+            android:background="@color/skin_color_text"
+            android:textColor="@color/skin_color_bg"
+            android:text="第三方分享"  />
+
+        <include layout="@layout/view_line" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

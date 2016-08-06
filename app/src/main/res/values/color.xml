@@ -55,4 +55,7 @@
     <!--碎裂-->
     <color name="button">#FF4081</color>
     <color name="buttonPressed">#e72061</color>
+    
+    <!--三方分享-->
+    <color name="text_color_gray">#ff898989</color>
 </resources>

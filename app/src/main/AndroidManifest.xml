@@ -54,6 +54,7 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -99,8 +100,9 @@
         <activity android:name=".activitys.QrCodeActivity" />
         <activity android:name="za.co.riggaroo.materialhelptutorial.tutorial.MaterialTutorialActivity" />
         <activity android:name=".activitys.BrokenViewActivity" />
-        <activity android:name=".activitys.TastyToastActivity"/>
+        <activity android:name=".activitys.TastyToastActivity" />
         <activity android:name=".activitys.Login_ResisterActivity" />
+        <activity android:name=".activitys.ShareActivity"/>
     </application>
 
 </manifest>
