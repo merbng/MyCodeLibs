@@ -7,32 +7,32 @@ _____________________
 2016年8月5日00:26:07    
 * 有趣的Toast；   
 TastyToastActivity    
-:octocat: :arrow_right:
+:octocat: :clock1130:
 2016年8月3日23:44:19   
 * 增加碎屏效果&二维码生成/扫描/相册读取；  
 BrokenViewActivity  
 QrCodeActivity   
-:octocat: :arrow_right:
+:octocat: :clock1130:
 2016年8月2日23:18:38   
 * 增加引导页；  
 GlideActivity   
-:octocat: :arrow_right:
+:octocat: :clock1130:
 2016年8月1日23:33:47   
 * 增加闪屏页；  
 SplishActivity   
-:octocat: :arrow_right:
+:octocat: :clock1130:
 2016年8月1日00:01:00   
 * 3D立体无限旋转容器；  
 TumbeEditTextActivity   
-:octocat: :arrow_right:
+:octocat: :clock1130:
 2016年7月30日02:44:38   
 * 侧边滑出的Button；  
 MagicButtonActivity   
-:octocat: :arrow_right:
+:octocat: :clock1130:
 2016年7月29日00:28:44   
 * 完成滚动的数字；  
 TickerActivity  
-:octocat: :arrow_right:
+:octocat: :clock1130:
 2016年7月28日00:35:56	
 * 增加:RecycleView  
 下拉刷新， 上拉加载
