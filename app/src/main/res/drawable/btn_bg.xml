@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/quantouming" /><!-- 填充的颜色 -->
+            <corners android:radius="4dp" />
+            <padding android:bottom="2dp" android:top="2dp" android:left="8dp" android:right="8dp"></padding>
+            <stroke android:width="0.1dp" android:color="@color/quantouming" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/quantouming" /><!-- 填充的颜色 -->
+            <corners android:radius="4dp" />
+            <padding android:bottom="2dp" android:top="2dp" android:left="8dp" android:right="8dp"></padding>
+            <stroke android:width="0.1dp" android:color="@color/quantouming" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/toumingwhite" /><!-- 填充的颜色 -->
+            <corners android:radius="4dp" />
+            <padding android:bottom="2dp" android:top="2dp" android:left="8dp" android:right="8dp"></padding>
+            <stroke android:width="0.1dp" android:color="@color/toumingwhite" />
+        </shape>
+    </item>
+</selector>

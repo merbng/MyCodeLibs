@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "com.app.merbng.mycodelibs"
@@ -56,7 +56,6 @@ dependencies {
     compile files('libs/open_sdk_r5756_lite.jar')
     //  Picasso 加载图片
     compile 'com.squareup.picasso:picasso:2.5.2'
-    compile files('libs/weiboSDKCore_3.1.4.jar')
     compile project(':weiboSDK')
     compile files('libs/libammsdk.jar')
     // 滚动文本的简单的Android UI组件
