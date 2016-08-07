@@ -4,6 +4,14 @@
 ![image](https://github.com/Merbn/MyCodeLibs/blob/master/myscreen.png)
 注：二维码为微信公众号；
 _____________________
+2016年8月8日00:10:58    
+* MD风格的登陆注册；   
+MaterialLoginActivity    
+:octocat: 
+2016年8月8日00:10:39    
+* 仿即刻首页滚动效果；   
+GalleryActivity    
+:octocat: 
 2016年8月7日19:25:28    
 * 集成三方登陆；   
 Login_ResisterActivity    
