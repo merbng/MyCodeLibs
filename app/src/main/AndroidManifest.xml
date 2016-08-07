@@ -102,8 +102,11 @@
         <activity android:name=".activitys.BrokenViewActivity" />
         <activity android:name=".activitys.TastyToastActivity" />
         <activity android:name=".activitys.Login_ResisterActivity" />
-        <activity android:name=".activitys.ShareActivity"/>
-        <activity android:name=".A_galleryview.GalleryActivity"/>
+        <activity android:name=".activitys.ShareActivity" />
+        <activity android:name=".A_galleryview.GalleryActivity" />
+        <activity android:name=".A_materiallogin.RegisterActivity" />
+        <activity android:name=".A_materiallogin.LoginSuccessActivity" />
+        <activity android:name=".A_materiallogin.MaterialLoginActivity" />
     </application>
 
 </manifest>

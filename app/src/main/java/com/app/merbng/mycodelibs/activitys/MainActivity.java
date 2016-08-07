@@ -2,11 +2,14 @@ package com.app.merbng.mycodelibs.activitys;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.transition.Explode;
 import android.view.View;
 
 import com.app.merbng.mycodelibs.A_StudyProcessButton.ProcessButtonActivity;
 import com.app.merbng.mycodelibs.A_TumbleEditText.TumbeEditTextActivity;
 import com.app.merbng.mycodelibs.A_galleryview.GalleryActivity;
+import com.app.merbng.mycodelibs.A_materiallogin.MaterialLoginActivity;
 import com.app.merbng.mycodelibs.A_recycleViewRefresh.StudyRecycleRefreshActivity;
 import com.app.merbng.mycodelibs.A_studyRetrofit.StudyRetrofitActivity;
 import com.app.merbng.mycodelibs.A_ticker.TickerActivity;
@@ -125,7 +128,20 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(mContext, ShareActivity.class));
                 break;
             case R.id.galleryactivity://仿 【即刻】 app  首页滚动效果
-                startActivity(new Intent(mContext, GalleryActivity.class));
+                Explode explode = new Explode();
+                explode.setDuration(500);
+                getWindow().setExitTransition(explode);
+                getWindow().setEnterTransition(explode);
+                ActivityOptionsCompat oc2 = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
+                startActivity(new Intent(mContext, GalleryActivity.class),oc2.toBundle());
+                break;
+            case R.id.materialloginactivity://MD风格的登陆注册
+                Explode explode2 = new Explode();
+                explode2.setDuration(500);
+                getWindow().setExitTransition(explode2);
+                getWindow().setEnterTransition(explode2);
+                ActivityOptionsCompat oc = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
+                startActivity(new Intent(mContext, MaterialLoginActivity.class),oc.toBundle());
                 break;
             
 

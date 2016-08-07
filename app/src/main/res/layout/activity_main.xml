@@ -12,19 +12,19 @@
             android:id="@+id/btn_add_logo_qrCode"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
             android:onClick="btnClick"
-            android:text="带logo的二维码" />
+            android:text="带logo的二维码"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/btn_recycleView"
             style="@style/btn_style"
-            android:onClick="btnClick"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
-            android:text="recycleView" />
+            android:onClick="btnClick"
+            android:text="recycleView"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
@@ -32,29 +32,29 @@
             android:id="@+id/btn_seeZoomImg"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
             android:onClick="btnClick"
-            android:text="SeeZoomImg"  />
+            android:text="SeeZoomImg"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/btn_TipShow"
             style="@style/btn_style"
-            android:onClick="btnClick"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
-            android:text="TipShow"  />
+            android:onClick="btnClick"
+            android:text="TipShow"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/btn_titleBar"
             style="@style/btn_style"
-            android:onClick="btnClick"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
-            android:text="titleBar"  />
+            android:onClick="btnClick"
+            android:text="titleBar"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
@@ -62,9 +62,9 @@
             android:id="@+id/btn_zan"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
             android:onClick="btnClick"
-            android:text="Zan"  />
+            android:text="Zan"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
@@ -72,9 +72,9 @@
             android:id="@+id/btn_viewpager"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
             android:onClick="btnClick"
-            android:text="导航栏"  />
+            android:text="导航栏"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
@@ -82,9 +82,9 @@
             android:id="@+id/time_line"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
             android:onClick="btnClick"
-            android:text="时间轴"  />
+            android:text="时间轴"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
@@ -92,9 +92,9 @@
             android:id="@+id/Shine_text"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
             android:onClick="btnClick"
-            android:text="流光字"  />
+            android:text="流光字"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
@@ -102,9 +102,9 @@
             android:id="@+id/loading"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
             android:onClick="btnClick"
-            android:text="Loading"  />
+            android:text="Loading"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
@@ -112,69 +112,69 @@
             android:id="@+id/search"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
             android:onClick="btnClick"
-            android:text="Search"  />
+            android:text="Search"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/toast"
             style="@style/btn_style"
-            android:onClick="btnClick"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
-            android:text="Toast"  />
+            android:onClick="btnClick"
+            android:text="Toast"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/createcircular"
             style="@style/btn_style"
-            android:onClick="btnClick"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
-            android:text="createCircular"  />
+            android:onClick="btnClick"
+            android:text="createCircular"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/studyRecycleView"
             style="@style/btn_style"
-            android:onClick="btnClick"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
-            android:text="Study RecycleView" />
+            android:onClick="btnClick"
+            android:text="Study RecycleView"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/testGetConnection"
             style="@style/btn_style"
-            android:onClick="btnClick"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
-            android:text="测试Get请求"  />
+            android:onClick="btnClick"
+            android:text="测试Get请求"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/studyRetrofit"
             style="@style/btn_style"
-            android:onClick="btnClick"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
-            android:text="学习Retrofit"  />
+            android:onClick="btnClick"
+            android:text="学习Retrofit"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/StudyRecycleAddHeardFootActivity"
             style="@style/btn_style"
-            android:onClick="btnClick"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
-            android:text="RecycleView加头加脚"  />
+            android:onClick="btnClick"
+            android:text="RecycleView加头加脚"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
@@ -182,39 +182,39 @@
             android:id="@+id/AppMsgActivity"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
             android:onClick="btnClick"
-            android:text="AppMsgActivity顶部Toast"  />
+            android:text="AppMsgActivity顶部Toast"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/processButtonActivity"
             style="@style/btn_style"
-            android:onClick="btnClick"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
-            android:text="进度条Button"  />
+            android:onClick="btnClick"
+            android:text="进度条Button"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/TestEditTextActivity"
             style="@style/btn_style"
-            android:onClick="btnClick"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
-            android:text="EditText值得注意的地方"  />
+            android:onClick="btnClick"
+            android:text="EditText值得注意的地方"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/tickeractivityticker"
             style="@style/btn_style"
-            android:onClick="btnClick"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
-            android:text="滚动ticker"  />
+            android:onClick="btnClick"
+            android:text="滚动ticker"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
@@ -222,9 +222,9 @@
             android:id="@+id/magicbuttonactivity"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
             android:onClick="btnClick"
-            android:text="侧边滑出的Button"  />
+            android:text="侧边滑出的Button"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
@@ -232,9 +232,9 @@
             android:id="@+id/tumbeedittextactivity"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
             android:onClick="btnClick"
-            android:text="滚动的EditText"  />
+            android:text="滚动的EditText"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
@@ -242,69 +242,79 @@
             android:id="@+id/autozoominimageview"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
             android:onClick="btnClick"
-            android:text="图片不断向中间放大的动画效果"  />
+            android:text="图片不断向中间放大的动画效果"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/kenburnsviewactivity"
             style="@style/btn_style"
-            android:onClick="btnClick"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
-            android:text="一张静止图片都有动态的效果感觉"  />
+            android:onClick="btnClick"
+            android:text="一张静止图片都有动态的效果感觉"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/glideactivity"
             style="@style/btn_style"
-            android:onClick="btnClick"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
-            android:text="引导页"  />
+            android:onClick="btnClick"
+            android:text="引导页"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/qrcodeactivity"
             style="@style/btn_style"
-            android:onClick="btnClick"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
-            android:text="二维码生成-相册扫描"  />
+            android:onClick="btnClick"
+            android:text="二维码生成-相册扫描"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/tastytoastactivity"
             style="@style/btn_style"
-            android:onClick="btnClick"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
-            android:text="有趣的Toast"  />
+            android:onClick="btnClick"
+            android:text="有趣的Toast"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/shareactivity"
             style="@style/btn_style"
-            android:onClick="btnClick"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
-            android:text="第三方分享"  />
+            android:onClick="btnClick"
+            android:text="第三方分享"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/galleryactivity"
             style="@style/btn_style"
-            android:onClick="btnClick"
             android:background="@color/skin_color_text"
-            android:textColor="@color/skin_color_bg"
-            android:text="仿即刻首页滚动效果"  />
+            android:onClick="btnClick"
+            android:text="仿即刻首页滚动效果"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
+        <Button
+            android:id="@+id/materialloginactivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="MD风格的登陆注册"
+            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
