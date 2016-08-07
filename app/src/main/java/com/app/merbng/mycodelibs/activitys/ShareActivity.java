@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -87,6 +88,7 @@ public class ShareActivity extends BaseActivity implements View.OnClickListener,
     }
 
     private void fvbId() {
+        findViewById(R.id.btn_share).setOnClickListener(this);
         popView = LayoutInflater.from(mContext).inflate(R.layout.layout_share, null);
         popView.findViewById(R.id.share_to_sinaweibo).setOnClickListener(this);
         popView.findViewById(R.id.share_to_weixin_friends).setOnClickListener(this);
@@ -117,6 +119,9 @@ public class ShareActivity extends BaseActivity implements View.OnClickListener,
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.btn_share:
+                popWindow.showAsDropDown(v, Gravity.BOTTOM,0,0);
+                break;
             case R.id.share_to_sinaweibo:
                 queryUserCard(Constent.platform_Sina, miUserCardFolder);
                 closePopWindow(popWindow);

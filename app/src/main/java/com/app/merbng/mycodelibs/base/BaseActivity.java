@@ -4,10 +4,10 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.KeyEvent;
-import android.widget.Toast;
 
 import com.app.merbng.mycodelibs.MyCodeLibApplication;
 import com.app.merbng.mycodelibs.activitys.MainActivity;
+import com.sdsmdg.tastytoast.TastyToast;
 import com.zhy.changeskin.base.BaseSkinActivity;
 
 import java.util.LinkedList;
@@ -55,7 +55,8 @@ public class BaseActivity extends BaseSkinActivity {
     }
 
     protected void show(String message) {
-        Toast.makeText(mContext, message, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(mContext, message, Toast.LENGTH_SHORT).show();
+        TastyToast.makeText(mContext,message,TastyToast.LENGTH_SHORT,TastyToast.INFO);
     }
 
     // 按两次返回键退出程序

@@ -30,32 +30,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <LinearLayout
-                android:id="@+id/share_to_send"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dip"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:visibility="gone">
-
-                <com.mystarcloud.app.widget.CircleImageViewB
-                    android:layout_width="50dip"
-                    android:layout_height="50dip"
-                    android:background="@drawable/icon_friend_udp"
-                    android:scaleType="matrix" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dip"
-                    android:gravity="center_vertical"
-                    android:text="@string/app_friend"
-                    android:textColor="@android:color/black"
-                    android:textSize="15sp"
-                    android:textStyle="normal" />
-            </LinearLayout>
-
+ 
             <LinearLayout
                 android:id="@+id/share_to_sinaweibo"
                 android:layout_width="wrap_content"
