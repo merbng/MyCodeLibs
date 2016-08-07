@@ -1,0 +1,78 @@
+http://ittiger.cn/2016/06/24/AndroidStudio%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/
+
+AndroidStudio使用技巧
+发表于 2016-06-24   |   分类于 Android   |   暂无评论
+AndroidStudio使用技巧
+
+本文主要是记录从我使用AndroidStudio以来遇到的一些问题和一些技巧。
+
+初次使用AndroidStudio，第一次创建Android工程编译时会比较慢，这中间涉及到三个过程：
+可能会去下载最新的SDK，所以在创建工程之前可以先将SDK更新完成
+AndroidStudio工程会使用gradle构建，因此会联网下载gradle，这个过程比较慢要耐心等待
+下载工程中的一些依赖包，比如junit
+有时候使用AndroidStudio进行rebuild和clean时，会报错如下：Failed to complete gradle execution cause by...，一般此错误可以通过设置gradle的VM参数解决： -Xmx256m(设置方式为：File > Setting > Gradle > Gradle Vm Option)，如果此方法无效，可以选择直接升级AS的版本到最新版本再试，还有其他可能的原因是工程JDK版本与AS设置的JDK版本不同
+设置AndroidStudio的不同主题背景： File > Setting > Appearance&Behavior > Appearance 下的Theme可以选择你要使用的主题
+设置编辑区的字体和字体大小:File > Setting > Editor > Color&Fonts > Font,在右边需要先将主题另存之后，再去编辑字体和大小
+自定义AS的Logcat里不同级别的日志文字的颜色:File > Setting > Editor > Color&Fonts > Android Logcat,同样需要先另存当前主题之后才能自定义给个级别的日志文字颜色
+鼠标移动到某个变量和类上面显示提示信息的设置：File > Setting > Editor > 点击下面的General,在右边选中Show quick doc on mouse move Delay
+设置代码行号一直显示而不是重启后又不显示了：File > Setting > Editor > General > Appearance,在右边选中Show Line numbers
+快速按Shift键两次，调出文件全局搜索对话框(根据文件名搜索)，可以搜索Java文件和资源文件
+Ctrl+H 全局文本搜索快捷键，可以搜索全部文本内容，包括资源文件
+Ctrl+T：打开某个方法的实现类，打开某个id的资源文件
+工程中设置使用本地安装的gradle进行构建，而不是联网下载gradle最新版本： 打开android-studio/plugins/android/lib/templates/gradle/wrapper/gradle/wrapper/gradle-wrapper.properties，修改
+distributionUrl=file\:/home/zzq/.gradle/distribution/gradle-2.2.1-all.zip
+AndroidStudio启动时默认直接就打开了上次打开的工程，没有像第一次启动那样可以选择，此问题可以这样解决：File > Setting > Appearance & Behavior > System Settings下将Reopen last project on startup的选择取消掉，设置为非选中状态即可
+支持驼峰命令选择File > Setting > Editor > General > Smart Keys，在右边选择Use "CamelHumps" words，此时如果仍然希望当鼠标在单词上双击之后选中整个单词，需要如下设置：File > Setting > Editor > General，在右边取消选中 Honor "CamelHumps" words settings when selecting on double click
+给代码的变量名添加前缀，如非静态成员变量以’m’开头，请如下设置：File > Setting > Editor > Code Style > Java，在右边选择Code Generation，然后给要配置的相关字的添加前缀
+File > Setting > Appearance&Behavior >SystemSetting > HttpProxy下设置代理不起作用时，可以在工程目录下的gradle.properties文件中添加代理设置即可：
+systemProp.http.proxyHost=ip地址
+systemProp.http.proxyPort=端口
+systemProp.https.proxyHost=ip地址
+systemProp.https.proxyPort=端口
+AS创建Module时，在资源目录res下只生成了mipmap等资源文件夹，此文件夹主要是用来存放应用启动图标的，其他的图片资源文件还是应该放在drawable等文件夹中。为了在创建Module时同时也生成对应的drawable文件夹，只需要做如下配置：
+进入Android Studio的安装目录
+依次进入plugins/android/lib/templates/gradle-projects/NewAndroidModule
+用边界器打开recipe.xml.ftl文件，在<mkdir at="${escapeXmlAttribute(resOut)}/drawable" />下方依次加入下面三行配置：
+mkdir at="${escapeXmlAttribute(resOut)}/drawable-hdpi"
+mkdir at="${escapeXmlAttribute(resOut)}/drawable-xhdpi"
+mkdir at="${escapeXmlAttribute(resOut)}/drawable-xxhdpi"
+通过类似的方式还可以在colors.xml文件中生成常用颜色
+在build.gralde中生成自定义配置
+在.gitignore文件中生成自定义忽略文件配置
+配置代码模板， Android Studio中提供了很多方便的活动模板(Live Templates)，例如：输入sout后按enter键，Android Studio会自动帮我们写入System.out.println();其实sout就是AS自带的一个活动模板：
+先打开：File > Setting > Editor > Live Templates
+点击最右侧的加号并选择Template Group
+在弹出的对话框中输入一个活动模板分组的名称，如:custom
+在左侧选中上一步创建的custom分组，点击右边的加号
+选择Live Template，在Abbreviation中对输入模板简写方式，如：sout
+在Description中输入这个活动模板的描述
+在Template Text中输入模板代码，如：System.out.println();
+点击下方的Define按钮，选中Java表示这个模板用于Java代码
+点击右侧的Edit variables
+选择Expression下拉框中的className并勾选Skip if... 这个操作的作用是AS会自动将我们在上一步中用'$'符包裹的className自动替换为当前类不含包含的类名
+点击Apply和ok让设置生效
+至此，我们自定义的custom模板组中的psh活动模板就自定义完成
+Android Studio添加本地jar包依赖，在Module的build.gradle文件中进行如下方式配置
+compile files('libs/TigerDB.jar')添加某个单一jar包的依赖
+compile fileTree(dir: 'libs',include: ['*.jar']) 将libs目录下的jar包全部添加为依赖
+持续更新…
+#Android #AndroidStudio
+ UC浏览器首页滑动动画实现  RecyclerView下拉刷新上拉加载 
+0
+0条评论
+还没有评论，沙发等你来抢
+社交帐号登录:
+微信
+微博
+QQ
+人人
+更多»
+
+
+说点什么吧…
+发布
+tiger正在使用多说
+文章目录  站点概览
+1. AndroidStudio使用技巧
+© 2016  老胡
+由 Hexo 强力驱动  主题 - NexT.Mist
