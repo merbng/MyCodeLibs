@@ -4,6 +4,10 @@
 ![image](https://github.com/Merbn/MyCodeLibs/blob/master/myscreen.png)
 注：二维码为微信公众号；
 _____________________
+2016年8月7日19:25:28    
+* 集成三方登陆；   
+Login_ResisterActivity    
+:octocat: 
 2016年8月7日01:13:42    
 * 集成三方分享；   
 ShareActivity    
