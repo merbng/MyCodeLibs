@@ -22,7 +22,7 @@ public class TipShowActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tips_show);
-        Button btn_one = (Button) findViewById(R.id.button1);
+        Button btn_one = (Button) findViewById(R.id.btn_register);
         Button btn_two = (Button) findViewById(R.id.btn_login_qq);
         Button btn_three = (Button) findViewById(R.id.btn_getInfo);
         Button btn_four = (Button) findViewById(R.id.button4);

@@ -1,12 +1,12 @@
 package com.app.merbng.mycodelibs.activitys;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
 import com.app.merbng.mycodelibs.R;
-import com.app.merbng.mycodelibs.utils.LogUtil;
+import com.app.merbng.mycodelibs.base.BaseActivity;
+import com.app.merbng.mycodelibs.utils.SharedPrefUtils;
 import com.app.merbng.mycodelibs.widget.SplashView;
 
 import java.util.ArrayList;
@@ -17,26 +17,44 @@ import za.co.riggaroo.materialhelptutorial.tutorial.MaterialTutorialActivity;
 /**
  * 闪屏页
  */
-public class SplishActivity extends Activity {
+public class SplishActivity extends BaseActivity {
     private static final int REQUEST_CODE = 1234;
+    private boolean isLoged;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splish);
+        isLoged = SharedPrefUtils.getBoolean(mContext, "isLogin");
         SplashView.showSplashView(this, 3, R.drawable.img_splash, new SplashView.OnSplashViewActionListener() {
             @Override
             public void onSplashImageClick(String actionUrl) {
-                LogUtil.log.e("actionUrl：" + actionUrl);
+                if(!isLoged){//未登录状态
+                    Intent intent = new Intent(SplishActivity.this,
+                            Login_ResisterActivity.class); // 从启动动画ui跳转到主ui
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.excess_fade_anim_in, R.anim.excess_fade_anim_out);
+                    finish();
+                }else {
                 Intent intent = new Intent(SplishActivity.this, MainActivity.class);
                 startActivity(intent);
                 loadTutorial();
+                }
             }
 
             @Override
             public void onSplashViewDismiss(boolean initiativeDismiss) {
-                Intent intent = new Intent(SplishActivity.this, MainActivity.class);
-                startActivity(intent);
-                loadTutorial();
+                if(!isLoged){//未登录状态
+                    Intent intent = new Intent(SplishActivity.this,
+                            Login_ResisterActivity.class); // 从启动动画ui跳转到主ui
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.excess_fade_anim_in, R.anim.excess_fade_anim_out);
+                    finish();
+                }else {
+                    Intent intent = new Intent(SplishActivity.this, MainActivity.class);
+                    startActivity(intent);
+                    loadTutorial();
+                }
             }
         });
     }

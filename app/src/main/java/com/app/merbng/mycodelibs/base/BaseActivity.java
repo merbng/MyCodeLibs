@@ -82,6 +82,5 @@ public class BaseActivity extends BaseSkinActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        MyCodeLibApplication.getmInstance().exitActivity();
     }
 }
