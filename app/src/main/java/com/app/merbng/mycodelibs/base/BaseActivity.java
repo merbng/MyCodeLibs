@@ -1,6 +1,7 @@
 package com.app.merbng.mycodelibs.base;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -25,6 +26,7 @@ public class BaseActivity extends BaseSkinActivity {
     protected Context mContext;
     protected Activity thisActivity;
     private List<Activity> closeActivitiesForChangeLoginUser = new LinkedList<Activity>();
+    public ProgressDialog mProgressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,11 @@ public class BaseActivity extends BaseSkinActivity {
         this.mContext = getApplicationContext();
         thisActivity = this;
         MyCodeLibApplication.getmInstance().addActivity(this);
+        mProgressDialog = new ProgressDialog(mContext);
+        mProgressDialog.setTitle("请稍候...");
+        mProgressDialog.setMax(100);
+        mProgressDialog.setCancelable(true);
+        mProgressDialog.setCanceledOnTouchOutside(true);
     }
 
     /**

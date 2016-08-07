@@ -21,7 +21,7 @@ public class Constent {
     /*新浪微博分享*/
     public static final String SINA_APP_KEY = ""; // 应用的APP_KEY,正式版
     public static final String SINA_REDIRECT_URL = "https://api.weibo.com/oauth2/default.html";// 应用的回调页
-
+    public static final String SINA_SCOPE = "all";
     /*微信分享*/
     
     public static final String SECRET = "";
