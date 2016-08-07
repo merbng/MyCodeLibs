@@ -6,6 +6,7 @@ import android.view.View;
 
 import com.app.merbng.mycodelibs.A_StudyProcessButton.ProcessButtonActivity;
 import com.app.merbng.mycodelibs.A_TumbleEditText.TumbeEditTextActivity;
+import com.app.merbng.mycodelibs.A_galleryview.GalleryActivity;
 import com.app.merbng.mycodelibs.A_recycleViewRefresh.StudyRecycleRefreshActivity;
 import com.app.merbng.mycodelibs.A_studyRetrofit.StudyRetrofitActivity;
 import com.app.merbng.mycodelibs.A_ticker.TickerActivity;
@@ -122,6 +123,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.shareactivity://三方分享
                 startActivity(new Intent(mContext, ShareActivity.class));
+                break;
+            case R.id.galleryactivity://仿 【即刻】 app  首页滚动效果
+                startActivity(new Intent(mContext, GalleryActivity.class));
                 break;
             
 

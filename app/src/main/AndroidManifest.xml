@@ -103,6 +103,7 @@
         <activity android:name=".activitys.TastyToastActivity" />
         <activity android:name=".activitys.Login_ResisterActivity" />
         <activity android:name=".activitys.ShareActivity"/>
+        <activity android:name=".A_galleryview.GalleryActivity"/>
     </application>
 
 </manifest>
