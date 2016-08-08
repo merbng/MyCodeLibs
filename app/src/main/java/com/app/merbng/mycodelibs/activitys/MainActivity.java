@@ -133,7 +133,7 @@ public class MainActivity extends BaseActivity {
                 getWindow().setExitTransition(explode);
                 getWindow().setEnterTransition(explode);
                 ActivityOptionsCompat oc2 = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
-                startActivity(new Intent(mContext, GalleryActivity.class),oc2.toBundle());
+                startActivity(new Intent(mContext, GalleryActivity.class), oc2.toBundle());
                 break;
             case R.id.materialloginactivity://MD风格的登陆注册
                 Explode explode2 = new Explode();
@@ -141,9 +141,17 @@ public class MainActivity extends BaseActivity {
                 getWindow().setExitTransition(explode2);
                 getWindow().setEnterTransition(explode2);
                 ActivityOptionsCompat oc = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
-                startActivity(new Intent(mContext, MaterialLoginActivity.class),oc.toBundle());
+                startActivity(new Intent(mContext, MaterialLoginActivity.class), oc.toBundle());
                 break;
-            
+            case R.id.spinneractivity://自定义下拉框
+                Explode explode3 = new Explode();
+                explode3.setDuration(500);
+                getWindow().setExitTransition(explode3);
+                getWindow().setEnterTransition(explode3);
+                ActivityOptionsCompat oc3 = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
+                startActivity(new Intent(mContext, SpinnerActivity.class), oc3.toBundle());
+                break;
+
 
             // FIXME: 2016/8/2 
             case R.id.changeSkin://换肤 白天模式
@@ -164,23 +172,23 @@ public class MainActivity extends BaseActivity {
         LogUtil.log.e("图：" + Numround);
         switch (Numround) {
             case 0:
-                url = "http://f7.topitme.com/7/7f/70/1178561279d91707f7o.jpg";
+                url = "http://static.cnbetacdn.com/thumb/article/2016/0802/135ab34c04bd4f9.jpg_600x600.jpg";
                 actionUrl = "http://f7.topitme.com";
                 break;
             case 1:
-                url = "http://ff.topitme.com/f/6a/90/1145105479248906afl.jpg";
+                url = "http://static.cnbetacdn.com/thumb/article/2016/0802/1287ae9ff2ee319.jpg_600x600.jpg";
                 actionUrl = "http://f7.topitme.com";
                 break;
             case 2:
-                url = "http://f10.topitme.com/o/201101/21/12955798998303.jpg";
+                url = "http://static.cnbetacdn.com/thumb/article/2016/0802/1cd52f011d9af3d.jpg_600x600.jpg";
                 actionUrl = "http://f7.topitme.com";
                 break;
             case 3:
-                url = "http://i10.topitme.com/l075/1007532813d981f7d7.jpg";
+                url = "http://static.cnbetacdn.com/thumb/article/2016/0802/3b3fff57c1d281d.jpg_600x600.jpg";
                 actionUrl = "http://i10.topitme.com";
                 break;
             case 4:
-                url = "http://f10.topitme.com/l/200912/21/12613633952350.jpg";
+                url = "http://static.cnbetacdn.com/thumb/article/2016/0802/906de4e38b58e87.jpg_600x600.jpg";
                 actionUrl = "http://i10.topitme.com";
                 break;
             case 5:
@@ -188,19 +196,19 @@ public class MainActivity extends BaseActivity {
                 actionUrl = "https://avatars3.githubusercontent.com";
                 break;
             case 6:
-                url = "http://imgsrc.baidu.com/forum/pic/item/530d8ad4b31c8701b0dc0207277f9e2f0608ff63.jpg";
+                url = "http://static.cnbetacdn.com/thumb/article/2016/0802/f691eb5a692e46a.jpg_600x600.jpg";
                 actionUrl = "http://imgsrc.baidu.com";
                 break;
             case 7:
-                url = "http://imgsrc.baidu.com/forum/pic/item/caef76094b36acaf62e089647cd98d1001e99c21.jpg";
+                url = "http://static.cnbetacdn.com/thumb/article/2016/0802/a435c3bb4a61eb3.jpg_600x600.jpg";
                 actionUrl = "http://imgsrc.baidu.com";
                 break;
             case 8:
-                url = "http://img4q.duitang.com/uploads/item/201503/21/20150321233324_eYQSE.jpeg";
+                url = "http://static.cnbetacdn.com/thumb/article/2016/0802/878978d0ae6ec2d.jpg_600x600.jpg";
                 actionUrl = "http://img4q.duitang.com";
                 break;
             case 9:
-                url = "http://bizhi.zhuoku.com/2012/01/06/jingxuan/jingxuan063.jpg";
+                url = "http://static.cnbetacdn.com/thumb/article/2016/0802/faa9017db6a78a2.jpg_600x600.jpg";
                 actionUrl = "http://bizhi.zhuoku.com";
                 break;
         }

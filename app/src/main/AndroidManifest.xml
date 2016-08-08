@@ -104,9 +104,10 @@
         <activity android:name=".activitys.Login_ResisterActivity" />
         <activity android:name=".activitys.ShareActivity" />
         <activity android:name=".A_galleryview.GalleryActivity" />
-        <activity android:name=".A_materiallogin.RegisterActivity" />
+        <activity android:name=".A_materiallogin.RegisterActivity" android:theme="@style/toumingStyle"/>
         <activity android:name=".A_materiallogin.LoginSuccessActivity" />
         <activity android:name=".A_materiallogin.MaterialLoginActivity" />
+        <activity android:name=".activitys.SpinnerActivity" />
     </application>
 
 </manifest>

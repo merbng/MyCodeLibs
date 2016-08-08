@@ -27,5 +27,39 @@
     <item>@drawable/img5</item>
     <item>@drawable/img6</item>
 </string-array>
+<!--自定义下拉框Spinner-->
 
+    <string-array name="number_array">
+        <item name="44">44</item>
+        <item name="45">45</item>
+        <item name="49">49</item>
+        <item name="72">72</item>
+        <item name="73">73</item>
+        <item name="76">76</item>
+        <item name="78">78</item>
+        <item name="79">79</item>
+        <item name="80">80</item>
+        <item name="81">81</item>
+        <item name="42">42</item>
+        <item name="40">40</item>
+        <item name="43">43</item>
+        <item name="46">46</item>
+        <item name="47">47</item>
+        <item name="48">48</item>
+        <item name="71">71</item>
+        <item name="74">74</item>
+        <item name="75">75</item>
+        <item name="77">77</item>
+        <item name="84">84</item>
+        <item name="85">85</item>
+        <item name="86">86</item>
+        <item name="87">87</item>
+        <item name="88">88</item>
+        <item name="89">89</item>
+        <item name="39">39</item>
+        <item name="41">41</item>
+        <item name="810">810</item>
+        <item name="203">203</item>
+        <item name="401">401</item>
+    </string-array>
 </resources>

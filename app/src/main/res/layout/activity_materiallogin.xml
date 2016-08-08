@@ -128,7 +128,7 @@
         android:layout_alignEnd="@id/cv"
         android:layout_alignTop="@id/cv"
         android:layout_marginEnd="-20dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/plus"
         android:transitionName="loginFab"
         app:fabSize="normal" />

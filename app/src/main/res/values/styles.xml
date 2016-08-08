@@ -72,4 +72,19 @@
         <item name="@android:windowEnterAnimation">@anim/popwindow_enter</item>
         <item name="@android:windowExitAnimation">@anim/popwindow_exit</item>
     </style>
+    <!--透明-->
+    <style name="toumingStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 背景颜色及透明程度  -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--  是否有标题  -->
+        <item name="android:windowNoTitle">true</item>
+        <!--  是否浮现在activity之上  -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否模糊  -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
 </resources>

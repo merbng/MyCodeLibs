@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.app.merbng.mycodelibs"
-        minSdkVersion 16
+        minSdkVersion 17
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -74,4 +74,6 @@ dependencies {
     compile 'com.zys:brokenview:1.0.3'
     //有趣的Toast
     compile 'com.sdsmdg.tastytoast:tastytoast:0.0.1'
+//   自定义 spinner
+    compile 'com.github.piotrek1543:CustomSpinner:0.1'
 }

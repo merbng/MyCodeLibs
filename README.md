@@ -5,6 +5,10 @@
 注：二维码为微信公众号；
 _____________________
 2016年8月8日00:10:58    
+* 自定义下拉框Spinner；   
+Spinneractivity    
+:octocat: 
+2016年8月8日00:10:58    
 * MD风格的登陆注册；   
 MaterialLoginActivity    
 :octocat: 

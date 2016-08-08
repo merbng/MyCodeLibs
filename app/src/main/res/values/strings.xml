@@ -93,4 +93,9 @@
     <!--三方分享-->
     <string name="app_friend">项目好友</string>
     <string name="create_qr_code">扫码分享</string>
+    
+    <!--自定义Spinner-->
+    <string name="color_spinner_hint">Choose a number</string>
+    <string name="action_spinner_open">Spinner was opened</string>
+    <string name="action_spinner_closed">Spinner was closed</string>
 </resources>
