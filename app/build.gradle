@@ -76,4 +76,6 @@ dependencies {
     compile 'com.sdsmdg.tastytoast:tastytoast:0.0.1'
 //   自定义 spinner
     compile 'com.github.piotrek1543:CustomSpinner:0.1'
+//    顶部snackbar
+    compile 'com.androidadvance:topsnackbar:0.0.8'
 }

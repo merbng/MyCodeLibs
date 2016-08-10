@@ -151,6 +151,14 @@ public class MainActivity extends BaseActivity {
                 ActivityOptionsCompat oc3 = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
                 startActivity(new Intent(mContext, SpinnerActivity.class), oc3.toBundle());
                 break;
+            case R.id.snackbartopactivity://顶部Snackbar
+                Explode explode4 = new Explode();
+                explode4.setDuration(500);
+                getWindow().setExitTransition(explode4);
+                getWindow().setEnterTransition(explode4);
+                ActivityOptionsCompat oc4 = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
+                startActivity(new Intent(mContext, SnackbarTopActivity.class), oc4.toBundle());
+                break;
 
 
             // FIXME: 2016/8/2 

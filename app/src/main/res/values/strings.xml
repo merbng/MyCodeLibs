@@ -98,4 +98,5 @@
     <string name="color_spinner_hint">Choose a number</string>
     <string name="action_spinner_open">Spinner was opened</string>
     <string name="action_spinner_closed">Spinner was closed</string>
+    <string name="title_activity_snackbar_top">SnackbarTopActivity</string>
 </resources>
