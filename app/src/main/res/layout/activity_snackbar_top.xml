@@ -1,6 +1,47 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_openSnack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="打开顶部SnackBar" />
+
+        <Button
+            android:id="@+id/btn_closeSnack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btn_openSnack"
+            android:layout_centerVertical="true"
+            android:text="关闭顶部SnackBar" />
+
+        <Button
+            android:id="@+id/btn_Snack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btn_closeSnack"
+            android:layout_centerVertical="true"
+            android:text="原生的SnackBar" />
+
+        <Button
+            android:id="@+id/btn_Snack_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btn_Snack"
+            android:layout_centerVertical="true"
+            android:text="SnackBar1" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
