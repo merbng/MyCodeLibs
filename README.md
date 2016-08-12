@@ -4,13 +4,13 @@
 ![image](https://github.com/Merbn/MyCodeLibs/blob/master/myscreen.png)
 注：二维码为微信公众号；
 _____________________
-2016年8月10日18:07:55
-* 顶部Snackbar；
-SnackbarTopActivity
+2016年8月10日18:07:55    
+* 顶部Snackbar；   
+SnackbarTopActivity    
 :octocat:
-2016年8月8日23:57:59
-* 自定义下拉框Spinner；
-Spinneractivity
+2016年8月8日23:57:59    
+* 自定义下拉框Spinner；   
+Spinneractivity    
 :octocat:
 2016年8月8日00:10:58    
 * MD风格的登陆注册；   
