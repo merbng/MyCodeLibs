@@ -20,22 +20,23 @@ import com.app.merbng.mycodelibs.widget.SplashView;
 import com.zhy.changeskin.SkinManager;
 
 public class MainActivity extends BaseActivity {
-
+    ActivityOptionsCompat aoc;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Explode explode = new Explode();
+        explode.setDuration(500);
+        getWindow().setExitTransition(explode);
+        getWindow().setEnterTransition(explode);
+          aoc = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
     }
 
     public void btnClick(View view) {
         //闪屏图
         showSplashUrl();
         //进入动画
-        Explode explode = new Explode();
-        explode.setDuration(500);
-        getWindow().setExitTransition(explode);
-        getWindow().setEnterTransition(explode);
-        ActivityOptionsCompat aoc = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
+
         switch (view.getId()) {
             case R.id.btn_add_logo_qrCode://带logo的二维码
                 startActivity(new Intent(mContext, LogoQrCodeActivity.class));

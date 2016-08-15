@@ -107,7 +107,7 @@
                     android:background="@drawable/bt_shape"
                     android:stateListAnimator="@drawable/state_list_animator_z"
                     android:text="登陆"
-                    android:textColor="#d3d3d3"></Button>
+                    android:textColor="#d3d3d3"/>
             </RelativeLayout>
 
             <TextView

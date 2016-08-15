@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.transition.Transition;
 import android.transition.TransitionInflater;
@@ -13,9 +14,8 @@ import android.view.ViewAnimationUtils;
 import android.view.animation.AccelerateInterpolator;
 
 import com.app.merbng.mycodelibs.R;
-import com.app.merbng.mycodelibs.base.BaseActivity;
 
-public class RegisterActivity extends BaseActivity {
+public class RegisterActivity extends AppCompatActivity {
 
 
     FloatingActionButton fab;

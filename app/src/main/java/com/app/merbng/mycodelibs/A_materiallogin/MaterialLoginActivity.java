@@ -6,6 +6,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.transition.Explode;
 import android.view.View;
@@ -19,7 +20,7 @@ import com.app.merbng.mycodelibs.base.BaseActivity;
  * MD风格的登陆注册页
  * https://github.com/fanrunqi/MaterialLogin
  */
-public class MaterialLoginActivity extends BaseActivity implements View.OnClickListener {
+public class MaterialLoginActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btGo;
     private CardView cv;
