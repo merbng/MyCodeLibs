@@ -162,6 +162,9 @@ public class MainActivity extends BaseActivity {
         }
     }
 
+    /**
+     * 闪屏页图
+     */
     private void showSplashUrl() {
         int Numround = (int) Math.round(Math.random() * 10);
         String url = null;
