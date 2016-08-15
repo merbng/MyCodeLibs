@@ -30,6 +30,12 @@ public class MainActivity extends BaseActivity {
     public void btnClick(View view) {
         //闪屏图
         showSplashUrl();
+        //进入动画
+        Explode explode = new Explode();
+        explode.setDuration(500);
+        getWindow().setExitTransition(explode);
+        getWindow().setEnterTransition(explode);
+        ActivityOptionsCompat aoc = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
         switch (view.getId()) {
             case R.id.btn_add_logo_qrCode://带logo的二维码
                 startActivity(new Intent(mContext, LogoQrCodeActivity.class));
@@ -76,28 +82,28 @@ public class MainActivity extends BaseActivity {
             case R.id.testGetConnection://测试Get请求
                 startActivity(new Intent(mContext, TestGetConnection.class));
                 break;
-            case R.id.studyRetrofit://学习Retrofit
+            case R.id.studyretrofit://学习Retrofit
                 startActivity(new Intent(mContext, StudyRetrofitActivity.class));
                 break;
-            case R.id.StudyRecycleAddHeardFootActivity://RecycleView加头加脚
+            case R.id.recycleaddheardfootactivity://RecycleView加头加脚
                 startActivity(new Intent(mContext, StudyRecycleRefreshActivity.class));
                 break;
-            case R.id.AppMsgActivity://AppMsgActivity顶部Toast
+            case R.id.appmsgactivity://AppMsgActivity顶部Toast
                 startActivity(new Intent(mContext, AppMsgActivity.class));
                 break;
-            case R.id.processButtonActivity://进度条Button
+            case R.id.processbuttonactivity://进度条Button
                 startActivity(new Intent(mContext, ProcessButtonActivity.class));
                 break;
-            case R.id.QQLoginActivity://登陆
+            case R.id.qqloginactivity://登陆
                 startActivity(new Intent(mContext, QQLoginActivity.class));
                 break;
-            case R.id.SinaLoginActivity://微博登陆
+            case R.id.sinaloginactivity://微博登陆
                 startActivity(new Intent(mContext, SinaLoginActivity.class));
                 break;
-            case R.id.WeixinLoginActivity://微信登陆
+            case R.id.weixinloginactivity://微信登陆
                 startActivity(new Intent(mContext, WeixinLoginActivity.class));
                 break;
-            case R.id.TestEditTextActivity://EditText值得注意的地方
+            case R.id.testedittextactivity://EditText值得注意的地方
                 startActivity(new Intent(mContext, TestEditTextActivity.class));
                 break;
             case R.id.tickeractivityticker://滚动文本的简单的Android UI组件
@@ -128,36 +134,19 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(mContext, ShareActivity.class));
                 break;
             case R.id.galleryactivity://仿 【即刻】 app  首页滚动效果
-                Explode explode = new Explode();
-                explode.setDuration(500);
-                getWindow().setExitTransition(explode);
-                getWindow().setEnterTransition(explode);
-                ActivityOptionsCompat oc2 = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
-                startActivity(new Intent(mContext, GalleryActivity.class), oc2.toBundle());
+                startActivity(new Intent(mContext, GalleryActivity.class), aoc.toBundle());
                 break;
             case R.id.materialloginactivity://MD风格的登陆注册
-                Explode explode2 = new Explode();
-                explode2.setDuration(500);
-                getWindow().setExitTransition(explode2);
-                getWindow().setEnterTransition(explode2);
-                ActivityOptionsCompat oc = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
-                startActivity(new Intent(mContext, MaterialLoginActivity.class), oc.toBundle());
+                startActivity(new Intent(mContext, MaterialLoginActivity.class), aoc.toBundle());
                 break;
             case R.id.spinneractivity://自定义下拉框
-                Explode explode3 = new Explode();
-                explode3.setDuration(500);
-                getWindow().setExitTransition(explode3);
-                getWindow().setEnterTransition(explode3);
-                ActivityOptionsCompat oc3 = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
-                startActivity(new Intent(mContext, SpinnerActivity.class), oc3.toBundle());
+                startActivity(new Intent(mContext, SpinnerActivity.class), aoc.toBundle());
                 break;
             case R.id.snackbartopactivity://顶部Snackbar
-                Explode explode4 = new Explode();
-                explode4.setDuration(500);
-                getWindow().setExitTransition(explode4);
-                getWindow().setEnterTransition(explode4);
-                ActivityOptionsCompat oc4 = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
-                startActivity(new Intent(mContext, SnackbarTopActivity.class), oc4.toBundle());
+                startActivity(new Intent(mContext, SnackbarTopActivity.class), aoc.toBundle());
+                break;
+            case R.id.editanimactivity://修改个人资料--编辑框右侧滑出动画
+                startActivity(new Intent(mContext, EditAnimActivity.class), aoc.toBundle());
                 break;
 
 

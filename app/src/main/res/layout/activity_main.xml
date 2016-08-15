@@ -159,7 +159,7 @@
         <include layout="@layout/view_line" />
 
         <Button
-            android:id="@+id/studyRetrofit"
+            android:id="@+id/studyretrofit"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
             android:onClick="btnClick"
@@ -169,7 +169,7 @@
         <include layout="@layout/view_line" />
 
         <Button
-            android:id="@+id/StudyRecycleAddHeardFootActivity"
+            android:id="@+id/recycleaddheardfootactivity"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
             android:onClick="btnClick"
@@ -179,7 +179,7 @@
         <include layout="@layout/view_line" />
 
         <Button
-            android:id="@+id/AppMsgActivity"
+            android:id="@+id/appmsgactivity"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
             android:onClick="btnClick"
@@ -189,7 +189,7 @@
         <include layout="@layout/view_line" />
 
         <Button
-            android:id="@+id/processButtonActivity"
+            android:id="@+id/processbuttonactivity"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
             android:onClick="btnClick"
@@ -199,7 +199,7 @@
         <include layout="@layout/view_line" />
 
         <Button
-            android:id="@+id/TestEditTextActivity"
+            android:id="@+id/testedittextactivity"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
             android:onClick="btnClick"
@@ -338,6 +338,16 @@
 
         <include layout="@layout/view_line" />
 
+        <Button
+            android:id="@+id/editanimactivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="编辑框右侧滑出动画"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -345,7 +355,7 @@
 
 
             <Button
-                android:id="@+id/QQLoginActivity"
+                android:id="@+id/qqloginactivity"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
@@ -357,7 +367,7 @@
 
 
             <Button
-                android:id="@+id/SinaLoginActivity"
+                android:id="@+id/sinaloginactivity"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
@@ -369,7 +379,7 @@
 
 
             <Button
-                android:id="@+id/WeixinLoginActivity"
+                android:id="@+id/weixinloginactivity"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
