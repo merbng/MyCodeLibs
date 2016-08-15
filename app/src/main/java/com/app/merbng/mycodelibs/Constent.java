@@ -6,6 +6,8 @@ import android.os.Environment;
  * Created by zx on 2016/8/4.
  */
 public class Constent {
+    public static int  PHONE_WHITH;
+    public static int  PHONE_HEIGHT;
     /*三方分享*/
 //    分享的url
     public static final String USERCARDFOLDERDETAIL_SHARE = "https://api.mystarcloud.com/1.0/share/cards?userCardId=";

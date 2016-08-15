@@ -114,6 +114,10 @@
             android:name=".activitys.SnackbarTopActivity"
             android:label="@string/title_activity_snackbar_top" >
         </activity>
+        <activity
+            android:name=".activitys.EditAnimActivity"
+            android:label="@string/title_activity_edit_anim" >
+        </activity>
     </application>
 
 </manifest>

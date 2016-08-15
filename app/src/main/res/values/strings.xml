@@ -99,4 +99,5 @@
     <string name="action_spinner_open">Spinner was opened</string>
     <string name="action_spinner_closed">Spinner was closed</string>
     <string name="title_activity_snackbar_top">SnackbarTopActivity</string>
+    <string name="title_activity_edit_anim">EditAnimActivity</string>
 </resources>

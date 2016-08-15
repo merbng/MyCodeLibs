@@ -1,12 +1,15 @@
 package com.app.merbng.mycodelibs.utils;
 
+import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
+import android.util.DisplayMetrics;
 import android.webkit.WebView;
 
 import com.app.merbng.mycodelibs.BuildConfig;
+import com.app.merbng.mycodelibs.Constent;
 
 import java.lang.reflect.Field;
 import java.util.List;
@@ -46,7 +49,7 @@ public class AppSystemUtils {
                     e.printStackTrace();
                 }
             }
-        }else {
+        } else {
             try {
                 Field sConfigCallback = Class.forName("android.webkit.BrowserFrame").getDeclaredField("sConfigCallback");
                 if (sConfigCallback != null) {
@@ -68,7 +71,10 @@ public class AppSystemUtils {
             }
         }
     }
-    /**获取应用名称
+
+    /**
+     * 获取应用名称
+     *
      * @param mContext
      * @return
      */
@@ -84,5 +90,22 @@ public class AppSystemUtils {
             e.printStackTrace();
         }
         return applicationName;
+    }
+
+    public static int getPhoneWidth(Activity mContext) {
+        // 获得手机宽高
+        DisplayMetrics dm = new DisplayMetrics();
+        mContext.getWindowManager().getDefaultDisplay().getMetrics(dm);
+        Constent.PHONE_WHITH = dm.widthPixels;
+        Constent.PHONE_HEIGHT = dm.heightPixels;
+        return Constent.PHONE_WHITH;
+    }
+
+    public static int getPhoneHight(Activity mContext) {
+        // 获得手机宽高
+        DisplayMetrics dm = new DisplayMetrics();
+        mContext.getWindowManager().getDefaultDisplay().getMetrics(dm);
+        Constent.PHONE_HEIGHT = dm.heightPixels;
+        return Constent.PHONE_HEIGHT;
     }
 }
