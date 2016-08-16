@@ -18,6 +18,7 @@ import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.utils.LogUtil;
 import com.app.merbng.mycodelibs.widget.SplashView;
+import com.janggwa.zkw.golddrop.GoldAnimationActivity;
 import com.zhy.changeskin.SkinManager;
 
 public class MainActivity extends BaseActivity {
@@ -148,6 +149,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.specialprogressbaractivity://一个炫酷的进度条效果实现
                 openActivity(SpecialProgressBarActivity.class);
+                break;
+            case R.id.goldanimationactivity://掉红包
+                openActivity(GoldAnimationActivity.class);
                 break;
 
 
