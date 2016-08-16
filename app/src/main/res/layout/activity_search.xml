@@ -53,13 +53,13 @@
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_gravity="center"
-        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_margin="0dp"
         android:scaleType="centerInside"
         android:src="@drawable/skin_ic_search"
         cjj:elevation="12dp"
-        cjj:backgroundTint="#ffffffff"
+        cjj:backgroundTint="#00c3f4"
         cjj:pressedTranslationZ="4dp"
-        cjj:rippleColor="#efefef" />
+        cjj:rippleColor="#1afffb" />
 
 
 </io.codetail.widget.RevealFrameLayout>

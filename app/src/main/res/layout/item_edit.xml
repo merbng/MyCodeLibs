@@ -17,9 +17,9 @@
             android:layout_weight="1" />
 
         <Button
+            android:id="@+id/btn_ok"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:onClick="onConfirmClick"
             android:text="确定" />
     </LinearLayout>
 

@@ -13,7 +13,6 @@
         android:layout_gravity="center_vertical"
         android:background="@color/custom"
         android:gravity="center"
-        android:onClick="onEditClick"
         android:orientation="horizontal"
         android:paddingLeft="12dp"
         android:paddingRight="12dp">
