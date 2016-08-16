@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.app.merbng.mycodelibs">
+    package="com.app.merbng.mycodelibs" >
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -14,7 +14,7 @@
         android:allowBackup="true"
         android:icon="@drawable/iconfont_main"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
 
         <!-- QQ登陆 -->
         <activity
@@ -24,7 +24,7 @@
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
-            android:noHistory="true">
+            android:noHistory="true" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -51,7 +51,7 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name=".activitys.SplishActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -63,7 +63,7 @@
         <activity android:name=".activitys.TipShowActivity" />
         <activity android:name=".activitys.LogoQrCodeActivity" />
         <activity android:name=".activitys.RecyclerViewActivity" />
-        <activity android:name=".activitys.SeeZoomImgActivity" />
+        <activity android:name=".activitys.StartAnimActivity" />
         <activity android:name=".activitys.ZanActivity" />
         <activity android:name=".activitys.TabActivity" />
         <activity android:name=".activitys.TimeLineActivity" />
@@ -113,6 +113,10 @@
         <activity android:name=".activitys.SnackbarTopActivity" />
         <activity android:name=".activitys.EditAnimActivity" />
         <activity android:name=".activitys.SpecialProgressBarActivity" />
+        <activity
+            android:name=".activitys.StartAnimOtherActivity"
+            android:label="@string/title_activity_start_anim_other" >
+        </activity>
     </application>
 
 </manifest>

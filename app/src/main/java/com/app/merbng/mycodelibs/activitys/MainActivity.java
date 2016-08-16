@@ -1,6 +1,7 @@
 package com.app.merbng.mycodelibs.activitys;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.transition.Explode;
@@ -26,11 +27,6 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Explode explode = new Explode();
-        explode.setDuration(500);
-        getWindow().setExitTransition(explode);
-        getWindow().setEnterTransition(explode);
-        aoc = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
     }
 
     public void btnClick(View view) {
@@ -40,118 +36,118 @@ public class MainActivity extends BaseActivity {
 
         switch (view.getId()) {
             case R.id.btn_add_logo_qrCode://带logo的二维码
-                startActivity(new Intent(mContext, LogoQrCodeActivity.class));
+                openActivity(LogoQrCodeActivity.class);
                 break;
             case R.id.btn_recycleView://recycleView
-                startActivity(new Intent(mContext, RecyclerViewActivity.class));
+                openActivity(RecyclerViewActivity.class);
                 break;
-            case R.id.btn_seeZoomImg:
-                startActivity(new Intent(mContext, SeeZoomImgActivity.class));
+            case R.id.startanimactivity://跳转  动画
+                openActivity(StartAnimActivity.class);
                 break;
             case R.id.btn_TipShow:
-                startActivity(new Intent(mContext, TipShowActivity.class));
+                openActivity(TipShowActivity.class);
                 break;
             case R.id.btn_titleBar:
-                startActivity(new Intent(mContext, TitleBarActivity.class));
+                openActivity(TitleBarActivity.class);
                 break;
             case R.id.btn_zan:
-                startActivity(new Intent(mContext, ZanActivity.class));
+                openActivity(ZanActivity.class);
                 break;
             case R.id.btn_viewpager:
-                startActivity(new Intent(mContext, TabActivity.class));
+                openActivity(TabActivity.class);
                 break;
             case R.id.time_line:
-                startActivity(new Intent(mContext, TimeLineActivity.class));
+                openActivity(TimeLineActivity.class);
                 break;
             case R.id.Shine_text:
-                startActivity(new Intent(mContext, ShineTextActivity.class));
+                openActivity(ShineTextActivity.class);
                 break;
             case R.id.loading:
-                startActivity(new Intent(mContext, LoadingActivity.class));
+                openActivity(LoadingActivity.class);
                 break;
             case R.id.search:
-                startActivity(new Intent(mContext, SearchActivity.class));
+                openActivity(SearchActivity.class);
                 break;
             case R.id.toast:
-                startActivity(new Intent(mContext, ToastActivity.class));
+                openActivity(ToastActivity.class);
                 break;
             case R.id.createcircular://圆形缩放
-                startActivity(new Intent(mContext, CreateCircularActivity.class));
+                openActivity(CreateCircularActivity.class);
                 break;
             case R.id.studyRecycleView://学习RecycleView
-                startActivity(new Intent(mContext, StudyRecycleActivity.class));
+                openActivity(StudyRecycleActivity.class);
                 break;
             case R.id.testGetConnection://测试Get请求
-                startActivity(new Intent(mContext, TestGetConnection.class));
+                openActivity(TestGetConnection.class);
                 break;
             case R.id.studyretrofit://学习Retrofit
-                startActivity(new Intent(mContext, StudyRetrofitActivity.class));
+                openActivity(StudyRetrofitActivity.class);
                 break;
             case R.id.recycleaddheardfootactivity://RecycleView加头加脚
-                startActivity(new Intent(mContext, StudyRecycleRefreshActivity.class));
+                openActivity(StudyRecycleRefreshActivity.class);
                 break;
             case R.id.appmsgactivity://AppMsgActivity顶部Toast
-                startActivity(new Intent(mContext, AppMsgActivity.class));
+                openActivity(AppMsgActivity.class);
                 break;
             case R.id.processbuttonactivity://进度条Button
-                startActivity(new Intent(mContext, ProcessButtonActivity.class));
+                openActivity(ProcessButtonActivity.class);
                 break;
             case R.id.qqloginactivity://登陆
-                startActivity(new Intent(mContext, QQLoginActivity.class));
+                openActivity(QQLoginActivity.class);
                 break;
             case R.id.sinaloginactivity://微博登陆
-                startActivity(new Intent(mContext, SinaLoginActivity.class));
+                openActivity(SinaLoginActivity.class);
                 break;
             case R.id.weixinloginactivity://微信登陆
-                startActivity(new Intent(mContext, WeixinLoginActivity.class));
+                openActivity(WeixinLoginActivity.class);
                 break;
             case R.id.testedittextactivity://EditText值得注意的地方
-                startActivity(new Intent(mContext, TestEditTextActivity.class));
+                openActivity(TestEditTextActivity.class);
                 break;
             case R.id.tickeractivityticker://滚动文本的简单的Android UI组件
-                startActivity(new Intent(mContext, TickerActivity.class));
+                openActivity(TickerActivity.class);
                 break;
             case R.id.magicbuttonactivity://从侧边滑出的Button
-                startActivity(new Intent(mContext, MagicButtonActivity.class));
+                openActivity(MagicButtonActivity.class);
                 break;
             case R.id.tumbeedittextactivity://Android 3D立体无限旋转容器
-                startActivity(new Intent(mContext, TumbeEditTextActivity.class));
+                openActivity(TumbeEditTextActivity.class);
                 break;
             case R.id.autozoominimageview://一种图片不断向中间放大的动画效果
-                startActivity(new Intent(mContext, AutozoomActivity.class));
+                openActivity(AutozoomActivity.class);
                 break;
             case R.id.kenburnsviewactivity://一张静止图片都有动态的效果感觉
-                startActivity(new Intent(mContext, KenBurnsViewActivity.class));
+                openActivity(KenBurnsViewActivity.class);
                 break;
             case R.id.glideactivity://引导
-                startActivity(new Intent(mContext, GlideActivity.class));
+                openActivity(GlideActivity.class);
                 break;
             case R.id.qrcodeactivity://二维码生成/扫描
-                startActivity(new Intent(mContext, QrCodeActivity.class));
+                openActivity(QrCodeActivity.class);
                 break;
             case R.id.tastytoastactivity://有趣的Toast
-                startActivity(new Intent(mContext, TastyToastActivity.class));
+                openActivity(TastyToastActivity.class);
                 break;
             case R.id.shareactivity://三方分享
-                startActivity(new Intent(mContext, ShareActivity.class));
+                openActivity(ShareActivity.class);
                 break;
             case R.id.galleryactivity://仿 【即刻】 app  首页滚动效果
-                startActivity(new Intent(mContext, GalleryActivity.class), aoc.toBundle());
+                openActivity(GalleryActivity.class);
                 break;
             case R.id.materialloginactivity://MD风格的登陆注册
-                startActivity(new Intent(mContext, MaterialLoginActivity.class), aoc.toBundle());
+                openActivity(MaterialLoginActivity.class);
                 break;
             case R.id.spinneractivity://自定义下拉框
-                startActivity(new Intent(mContext, SpinnerActivity.class), aoc.toBundle());
+                openActivity(SpinnerActivity.class);
                 break;
             case R.id.snackbartopactivity://顶部Snackbar
-                startActivity(new Intent(mContext, SnackbarTopActivity.class), aoc.toBundle());
+                openActivity(SnackbarTopActivity.class);
                 break;
             case R.id.editanimactivity://修改个人资料--编辑框右侧滑出动画
-                startActivity(new Intent(mContext, EditAnimActivity.class), aoc.toBundle());
+                openActivity(EditAnimActivity.class);
                 break;
             case R.id.specialprogressbaractivity://一个炫酷的进度条效果实现
-                startActivity(new Intent(mContext, SpecialProgressBarActivity.class), aoc.toBundle());
+                openActivity(SpecialProgressBarActivity.class);
                 break;
 
 
@@ -218,6 +214,24 @@ public class MainActivity extends BaseActivity {
                 break;
         }
         SplashView.updateSplashData(this, url, actionUrl);
+    }
+
+    /**
+     * 打开新页面（适配）
+     *
+     * @param target
+     */
+    private void openActivity(Class<?> target) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {//5.0以上
+            Explode explode = new Explode();
+            explode.setDuration(1000);
+            getWindow().setExitTransition(explode);
+            getWindow().setEnterTransition(explode);
+            aoc = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
+            startActivity(new Intent(mContext, target.getClass()), aoc.toBundle());
+        } else {
+            startActivity(new Intent(thisActivity, target));
+        }
     }
 }
 

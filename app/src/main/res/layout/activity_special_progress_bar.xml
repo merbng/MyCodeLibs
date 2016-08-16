@@ -22,7 +22,7 @@
         android:onClick="btnClick"
         android:text="reset" />
 
-    <me.wangyuwei.slackloadingview.SlackLoadingView
+    <com.app.merbng.mycodelibs.A_progressBar.SlackLoadingView
         android:id="@+id/loading_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

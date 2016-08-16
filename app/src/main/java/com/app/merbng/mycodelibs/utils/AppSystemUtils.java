@@ -2,11 +2,17 @@ package com.app.merbng.mycodelibs.utils;
 
 import android.app.Activity;
 import android.app.ActivityManager;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.os.Build;
+import android.os.PowerManager;
 import android.util.DisplayMetrics;
 import android.webkit.WebView;
+import android.widget.Toast;
 
 import com.app.merbng.mycodelibs.BuildConfig;
 import com.app.merbng.mycodelibs.Constent;
@@ -107,5 +113,57 @@ public class AppSystemUtils {
         mContext.getWindowManager().getDefaultDisplay().getMetrics(dm);
         Constent.PHONE_HEIGHT = dm.heightPixels;
         return Constent.PHONE_HEIGHT;
+    }
+
+    /**
+     * 检测屏幕是否开启
+     *
+     * @param context 上下文
+     * @return 是否屏幕开启
+     */
+    public static boolean isScreenOn(Context context) {
+        Context appContext = context.getApplicationContext();
+        PowerManager pm = (PowerManager) appContext.getSystemService(Context.POWER_SERVICE);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT_WATCH) {
+            return pm.isInteractive();
+        } else {
+            // noinspection all
+            return pm.isScreenOn();
+        }
+    }
+    /**
+     * 获取进程名称
+     *
+     * @param context 上下文
+     * @return 进程名称
+     */
+    public static String getProcessName(Context context) {
+        int pid = android.os.Process.myPid();
+        ActivityManager manager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        List<ActivityManager.RunningAppProcessInfo> infos = manager.getRunningAppProcesses();
+        if (infos != null) {
+            for (ActivityManager.RunningAppProcessInfo processInfo : infos) {
+                if (processInfo.pid == pid) {
+                    return processInfo.processName;
+                }
+            }
+        }
+        return null;
+    }
+
+    /**给我评分
+     * @param mContext
+     */
+    public static void giveMePingFen(Context mContext){
+        try {
+            Uri uri = Uri.parse("market://details?id=" + mContext.getPackageName());
+            Intent intent_pingfen = new Intent(Intent.ACTION_VIEW, uri);
+            intent_pingfen.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            mContext.startActivity(intent_pingfen);
+        } catch (ActivityNotFoundException e) {
+            Toast.makeText(mContext, "Couldn't launch the market !",
+                    Toast.LENGTH_SHORT).show();
+        }
     }
 }

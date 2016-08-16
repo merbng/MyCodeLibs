@@ -101,4 +101,10 @@
     <string name="title_activity_snackbar_top">SnackbarTopActivity</string>
     <string name="title_activity_edit_anim">EditAnimActivity</string>
     <string name="title_activity_special_progress_bar">SpecialProgressBarActivity</string>
+
+    <!--跳转动画-->
+    <string name="main_prompt">动画显示: (1)角度滑动 (2)爆炸效果</string>
+    <string name="other_transition_name">transition_reveal</string>
+    <string name="other_text">广告\n(Advertisement)</string>
+    <string name="title_activity_start_anim_other">StartAnimOtherActivity</string>
 </resources>

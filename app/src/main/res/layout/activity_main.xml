@@ -29,11 +29,12 @@
         <include layout="@layout/view_line" />
 
         <Button
-            android:id="@+id/btn_seeZoomImg"
+            android:id="@+id/startanimactivity"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
             android:onClick="btnClick"
-            android:text="SeeZoomImg"
+            android:text="跳转  动画"
+            android:transitionName="@string/other_transition_name"
             android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
