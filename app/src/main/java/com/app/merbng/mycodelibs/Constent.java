@@ -6,8 +6,8 @@ import android.os.Environment;
  * Created by zx on 2016/8/4.
  */
 public class Constent {
-    public static int  PHONE_WHITH;
-    public static int  PHONE_HEIGHT;
+    public static int PHONE_WHITH;
+    public static int PHONE_HEIGHT;
     /*三方分享*/
 //    分享的url
     public static final String USERCARDFOLDERDETAIL_SHARE = "https://api.mystarcloud.com/1.0/share/cards?userCardId=";
@@ -25,7 +25,7 @@ public class Constent {
     public static final String SINA_REDIRECT_URL = "https://api.weibo.com/oauth2/default.html";// 应用的回调页
     public static final String SINA_SCOPE = "all";
     /*微信分享*/
-    
+
     public static final String SECRET = "";
     public static final String WXAPP_ID = "";
     // 第三方注册

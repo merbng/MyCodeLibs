@@ -228,7 +228,7 @@ public class MainActivity extends BaseActivity {
             getWindow().setExitTransition(explode);
             getWindow().setEnterTransition(explode);
             aoc = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
-            startActivity(new Intent(mContext, target.getClass()), aoc.toBundle());
+            startActivity(new Intent(mContext, target), aoc.toBundle());
         } else {
             startActivity(new Intent(thisActivity, target));
         }
