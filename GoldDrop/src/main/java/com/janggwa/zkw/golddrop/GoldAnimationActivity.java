@@ -21,8 +21,9 @@ import android.widget.TextView;
 import java.util.Timer;
 import java.util.TimerTask;
 
-/**
+/**掉红包
  * Created by zkw on 16/8/10.
+ * https://github.com/JangGwa/GoldDrop
  */
 
 public class GoldAnimationActivity extends Activity {
