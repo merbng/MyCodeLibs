@@ -21,6 +21,7 @@ import com.zhy.changeskin.SkinManager;
 
 public class MainActivity extends BaseActivity {
     ActivityOptionsCompat aoc;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +30,7 @@ public class MainActivity extends BaseActivity {
         explode.setDuration(500);
         getWindow().setExitTransition(explode);
         getWindow().setEnterTransition(explode);
-          aoc = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
+        aoc = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
     }
 
     public void btnClick(View view) {
@@ -148,6 +149,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.editanimactivity://修改个人资料--编辑框右侧滑出动画
                 startActivity(new Intent(mContext, EditAnimActivity.class), aoc.toBundle());
+                break;
+            case R.id.specialprogressbaractivity://一个炫酷的进度条效果实现
+                startActivity(new Intent(mContext, SpecialProgressBarActivity.class), aoc.toBundle());
                 break;
 
 
