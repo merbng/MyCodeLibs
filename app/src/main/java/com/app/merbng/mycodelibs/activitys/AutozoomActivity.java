@@ -8,7 +8,8 @@ import com.app.merbng.mycodelibs.base.BaseActivity;
 
 import cn.carbs.android.autozoominimageview.library.AutoZoomInImageView;
 
-/**图片不断向中间放大的动画效果
+/**
+ * 图片不断向中间放大的动画效果
  * https://github.com/Carbs0126/AutoZoomInImageView
  */
 public class AutozoomActivity extends BaseActivity {
@@ -30,15 +31,17 @@ public class AutozoomActivity extends BaseActivity {
                 zoomInImageView.init()
                         .setScaleDelta(0.2f)//放大的系数是原来的（1 + 0.2）倍
                         .setDurationMillis(11500)//动画的执行时间为1500毫秒
-                        .setOnZoomListener(new AutoZoomInImageView.OnZoomListener(){
+                        .setOnZoomListener(new AutoZoomInImageView.OnZoomListener() {
                             @Override
                             public void onStart(View view) {
                                 //放大动画开始时的回调
                             }
+
                             @Override
                             public void onUpdate(View view, float progress) {
                                 //放大动画进行过程中的回调 progress取值范围是[0,1]
                             }
+
                             @Override
                             public void onEnd(View view) {
                                 //放大动画结束时的回调
