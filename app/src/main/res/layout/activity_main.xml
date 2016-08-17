@@ -369,6 +369,16 @@
 
         <include layout="@layout/view_line" />
 
+        <Button
+            android:id="@+id/tipswindowactivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="仿360底部提示"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

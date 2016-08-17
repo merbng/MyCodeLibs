@@ -107,4 +107,5 @@
     <string name="other_transition_name">transition_reveal</string>
     <string name="other_text">广告\n(Advertisement)</string>
     <string name="title_activity_start_anim_other">StartAnimOtherActivity</string>
+    <string name="title_activity_tips_window">TipsWindowActivity</string>
 </resources>

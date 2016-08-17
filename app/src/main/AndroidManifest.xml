@@ -113,8 +113,11 @@
         <activity android:name=".activitys.SnackbarTopActivity" />
         <activity android:name=".activitys.EditAnimActivity" />
         <activity android:name=".activitys.SpecialProgressBarActivity" />
+        <activity android:name=".activitys.StartAnimOtherActivity" />
         <activity
-            android:name=".activitys.StartAnimOtherActivity"/>
+            android:name=".activitys.TipsWindowActivity"
+            android:label="@string/title_activity_tips_window" >
+        </activity>
     </application>
 
 </manifest>

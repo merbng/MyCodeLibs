@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ll"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_clear"
+        android:text="清除"
+        android:layout_gravity="center_vertical" />
+
+</LinearLayout>
