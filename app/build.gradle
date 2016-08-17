@@ -82,4 +82,6 @@ dependencies {
     compile 'com.androidadvance:topsnackbar:0.0.8'
     compile 'com.github.JakeWharton:ViewPagerIndicator:2.4.1@aar'
     compile project(':GoldDrop')
+    //  一个简单的投票排名对比图
+    compile project(':comparsechart')
 }

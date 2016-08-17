@@ -156,6 +156,9 @@ public class MainActivity extends BaseActivity {
             case R.id.tipswindowactivity://仿360底部提示
                 openActivity(TipsWindowActivity.class);
                 break;
+            case R.id.votecomparisonactivity://一个简单的投票排名对比图
+                openActivity(VoteComparisonActivity.class);
+                break;
 
 
             // FIXME: 2016/8/2 
