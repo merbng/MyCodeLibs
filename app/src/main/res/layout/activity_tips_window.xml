@@ -6,23 +6,26 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/quantouming"
         android:paddingTop="39dp">
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="230dp">
 
+            <ImageView
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_hu" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
                 android:background="#fff">
 
-                <View
-                    android:id="@+id/view2"
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:background="@drawable/icon_huxing" />
 
                 <TextView
                     android:id="@+id/textView2"
@@ -50,15 +53,17 @@
                     <Button
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
                         android:layout_weight="1"
                         android:background="#afbbbc"
                         android:text="取消" />
 
                     <Button
                         android:layout_width="0dp"
-                        android:background="#03dbc1"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
                         android:layout_weight="1"
+                        android:background="#03dbc1"
                         android:text="确定" />
                 </LinearLayout>
 
@@ -92,6 +97,6 @@
         android:layout_width="90dp"
         android:layout_height="90dp"
         android:layout_gravity="center_horizontal|top"
-        android:background="@drawable/github" />
+        android:background="@drawable/twitter" />
 
 </FrameLayout>
