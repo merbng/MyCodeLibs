@@ -16,6 +16,8 @@ import android.widget.Toast;
 
 import com.app.merbng.mycodelibs.BuildConfig;
 import com.app.merbng.mycodelibs.Constent;
+import com.app.merbng.mycodelibs.R;
+import com.app.merbng.mycodelibs.activitys.SplishActivity;
 
 import java.lang.reflect.Field;
 import java.util.List;
@@ -132,6 +134,7 @@ public class AppSystemUtils {
             return pm.isScreenOn();
         }
     }
+
     /**
      * 获取进程名称
      *
@@ -152,10 +155,12 @@ public class AppSystemUtils {
         return null;
     }
 
-    /**给我评分
+    /**
+     * 给我评分
+     *
      * @param mContext
      */
-    public static void giveMePingFen(Context mContext){
+    public static void giveMePingFen(Context mContext) {
         try {
             Uri uri = Uri.parse("market://details?id=" + mContext.getPackageName());
             Intent intent_pingfen = new Intent(Intent.ACTION_VIEW, uri);
@@ -165,5 +170,67 @@ public class AppSystemUtils {
             Toast.makeText(mContext, "Couldn't launch the market !",
                     Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public static final String ACTION_ADD_SHORTCUT = "com.android.launcher.action.INSTALL_SHORTCUT";
+
+    /**
+     * 添加快捷方式
+     *
+     * @param name
+     */
+    private void addShortcut(Context mContext, String name) {
+        Intent addShortcutIntent = new Intent(ACTION_ADD_SHORTCUT);
+
+        // 不允许重复创建
+        addShortcutIntent.putExtra("duplicate", false);// 经测试不是根据快捷方式的名字判断重复的
+        // 应该是根据快链的Intent来判断是否重复的,即Intent.EXTRA_SHORTCUT_INTENT字段的value
+        // 但是名称不同时，虽然有的手机系统会显示Toast提示重复，仍然会建立快链
+        // 屏幕上没有空间时会提示
+        // 注意：重复创建的行为MIUI和三星手机上不太一样，小米上似乎不能重复创建快捷方式
+
+        // 名字
+        addShortcutIntent.putExtra(Intent.EXTRA_SHORTCUT_NAME, name);
+
+        // 图标
+        addShortcutIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE,
+                Intent.ShortcutIconResource.fromContext(mContext,
+                        R.drawable.ic_action_cancel));
+
+        // 设置关联程序
+        Intent launcherIntent = new Intent(Intent.ACTION_MAIN);
+        launcherIntent.setClass(mContext, SplishActivity.class);
+        launcherIntent.addCategory(Intent.CATEGORY_LAUNCHER);
+
+        addShortcutIntent
+                .putExtra(Intent.EXTRA_SHORTCUT_INTENT, launcherIntent);
+
+        // 发送广播
+        mContext.sendBroadcast(addShortcutIntent);
+    }
+
+    public static final String ACTION_REMOVE_SHORTCUT = "com.android.launcher.action.UNINSTALL_SHORTCUT";
+
+    /**
+     * 移除快捷方式
+     *
+     * @param mContext
+     * @param name
+     */
+    private void removeShortcut(Context mContext, String name) {
+        // remove shortcut的方法在小米系统上不管用，在三星上可以移除
+        Intent intent = new Intent(ACTION_REMOVE_SHORTCUT);
+
+        // 名字
+        intent.putExtra(Intent.EXTRA_SHORTCUT_NAME, name);
+
+        // 设置关联程序
+        Intent launcherIntent = new Intent(mContext,
+                SplishActivity.class).setAction(Intent.ACTION_MAIN);
+
+        intent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, launcherIntent);
+
+        // 发送广播
+        mContext.sendBroadcast(intent);
     }
 }
