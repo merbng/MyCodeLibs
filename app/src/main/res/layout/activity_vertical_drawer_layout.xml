@@ -34,11 +34,10 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <TextView
+            <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="this is content"
-                android:textSize="30sp"/>
+                android:background="@drawable/iconfont_login_bg"
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
         <LinearLayout
@@ -49,11 +48,10 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <TextView
+            <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="this is drawer"
-                android:textSize="30sp"/>
+                android:background="@drawable/iconfont_main"
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
     </com.app.merbng.mycodelibs.widget.VerticalDrawerLayout>
