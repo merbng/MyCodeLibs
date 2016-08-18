@@ -108,4 +108,5 @@
     <string name="other_text">广告\n(Advertisement)</string>
     <string name="title_activity_start_anim_other">StartAnimOtherActivity</string>
     <string name="title_activity_tips_window">TipsWindowActivity</string>
+    <string name="title_activity_vertical_drawer_layout">VerticalDrawerLayoutActivity</string>
 </resources>

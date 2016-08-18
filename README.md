@@ -3,14 +3,22 @@
 [我的博客](http://blog.csdn.net/merbn):running:
 ![image](https://github.com/Merbn/MyCodeLibs/blob/master/myscreen.png)
 注：二维码为微信公众号；
-_____________________    
+_____________________
+2016年8月18日15:04:27
+* 竖直的DrawerLayout
+VerticalDrawerLayoutActivity
+:octocat:
 2016年8月18日01:19:03    
 * 一个简单的投票排名对比图    
 VoteComparisonActivity    
 :octocat:
 2016年8月17日00:25:09    
 * 掉红包动画    
-GoldAnimationActivity    
+GoldAnimationActivity
+:octocat:
+2016年8月17日00:25:09
+* 掉红包动画
+GoldAnimationActivity
 :octocat:
 2016年8月15日17:40:02    
 * 编辑框右侧滑出动画    

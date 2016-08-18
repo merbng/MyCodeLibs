@@ -159,6 +159,9 @@ public class MainActivity extends BaseActivity {
             case R.id.votecomparisonactivity://一个简单的投票排名对比图
                 openActivity(VoteComparisonActivity.class);
                 break;
+            case R.id.verticaldrawerlayoutactivity://竖直的DrawerLayout
+                openActivity(VerticalDrawerLayoutActivity.class);
+                break;
 
 
             // FIXME: 2016/8/2 
