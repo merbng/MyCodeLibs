@@ -125,6 +125,10 @@
             android:name=".activitys.SuggestActivity"
             android:label="@string/title_activity_suggest" >
         </activity>
+        <activity
+            android:name=".activitys.RevealColorViewActivity"
+            android:label="@string/title_activity_reveal_color_view" >
+        </activity>
     </application>
 
 </manifest>

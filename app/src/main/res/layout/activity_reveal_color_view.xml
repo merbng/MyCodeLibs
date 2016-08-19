@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3">
+
+        <com.app.merbng.mycodelibs.widget.RevealColorView
+            android:id="@+id/reveal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#212121" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="64dip"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="16dip"
+            android:paddingLeft="72dip"
+            android:text="Reveal Color Demo"
+            android:textColor="#DDFFFFFF"
+            android:textSize="36sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dip"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dip"
+            android:orientation="horizontal"
+            android:paddingLeft="72dip"
+            android:paddingRight="16dip">
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_marginRight="8dip"
+                android:layout_weight="0.6"
+                android:background="@drawable/selector_btn_orange_solid"
+                android:tag="#8bc34a"
+                android:text="1"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_marginRight="8dip"
+                android:layout_weight="0.6"
+                android:background="@drawable/selector_btn_orange_solid"
+                android:tag="#3f51b5"
+                android:text="2"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_marginRight="8dip"
+                android:layout_weight="0.6"
+                android:background="@drawable/selector_btn_orange_solid"
+                android:tag="#00bcd4"
+                android:text="3"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_weight="0.6"
+                android:background="@drawable/selector_btn_orange_solid"
+                android:tag="#e91e63"
+                android:text="4"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3"
+        android:paddingLeft="72dip"
+        android:paddingTop="16dip"
+        android:text="A simple demo on how to use reveal color view." />
+
+</LinearLayout>

@@ -168,6 +168,9 @@ public class MainActivity extends BaseActivity {
             case R.id.suggestactivity://意见反馈
                 openActivity(SuggestActivity.class);
                 break;
+            case R.id.revealcolorviewactivity://Banner动画
+                openActivity(RevealColorViewActivity.class);
+                break;
 
 
             // FIXME: 2016/8/2 
