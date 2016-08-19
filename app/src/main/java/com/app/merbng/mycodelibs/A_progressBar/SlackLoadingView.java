@@ -126,7 +126,7 @@ public class SlackLoadingView extends View {
 
     }
 
-    private void drawCRLC(Canvas canvas, float startX, float startY, float stopX, float stopY,  Paint paint, int rotate) {
+    private void drawCRLC(Canvas canvas, float startX, float startY, float stopX, float stopY, Paint paint, int rotate) {
         canvas.rotate(rotate, mWidth / 2, mHeight / 2);
         canvas.drawArc(new RectF(startX - mCircleRadius, startY - mCircleRadius, startX + mCircleRadius, startY + mCircleRadius), 180, 180, true, mPaint);
         canvas.drawLine(startX, startY, stopX, stopY, paint);
@@ -134,19 +134,19 @@ public class SlackLoadingView extends View {
         canvas.rotate(-rotate, mWidth / 2, mHeight / 2);
     }
 
-    private void drawCR(Canvas canvas, float x, float y,  Paint paint, int rotate) {
+    private void drawCR(Canvas canvas, float x, float y, Paint paint, int rotate) {
         canvas.rotate(rotate, mWidth / 2, mHeight / 2);
         canvas.drawCircle(x, y, mCircleRadius, paint);
         canvas.rotate(-rotate, mWidth / 2, mHeight / 2);
     }
 
-    private void drawCRCC(Canvas canvas, float x, float y,  Paint paint, int rotate) {
+    private void drawCRCC(Canvas canvas, float x, float y, Paint paint, int rotate) {
         canvas.rotate(rotate, mWidth / 2, mHeight / 2);
         canvas.drawCircle(x, y, mCircleRadius, paint);
         canvas.rotate(-rotate, mWidth / 2, mHeight / 2);
     }
 
-    private void drawLC(Canvas canvas, float startX, float startY, float stopX, float stopY,  Paint paint, int rotate) {
+    private void drawLC(Canvas canvas, float startX, float startY, float stopX, float stopY, Paint paint, int rotate) {
         canvas.rotate(rotate, mWidth / 2, mHeight / 2);
         canvas.drawArc(new RectF(startX - mCircleRadius, startY - mCircleRadius, startX + mCircleRadius, startY + mCircleRadius), 0, 180, true, mPaint);
         canvas.drawLine(startX, startY, stopX, stopY, paint);

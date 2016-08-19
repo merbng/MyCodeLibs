@@ -50,7 +50,6 @@ public abstract class SmoothViewGroup extends ViewGroup {
 
     /**
      * 开启滑动
-     *
      */
     public void startSmooth() {
 
