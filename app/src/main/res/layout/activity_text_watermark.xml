@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgv_addWather"
+        android:layout_width="wrap_content"
+        android:maxHeight="300dp"
+        android:layout_height="300dp" />
+
+    <Button
+        android:id="@+id/btn_addWather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imgv_addWather"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="68dp"
+        android:text="添加水印" />
+
+    <Button
+        android:id="@+id/btn_randomColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn_addWather"
+        android:layout_marginEnd="64dp"
+        android:text="随机背景图" />
+
+</RelativeLayout>

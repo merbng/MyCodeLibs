@@ -162,6 +162,12 @@ public class MainActivity extends BaseActivity {
             case R.id.verticaldrawerlayoutactivity://竖直的DrawerLayout
                 openActivity(VerticalDrawerLayoutActivity.class);
                 break;
+            case R.id.textwatermarkactivity://图片加文字水印
+                openActivity(TextWatermarkActivity.class);
+                break;
+            case R.id.suggestactivity://意见反馈
+                openActivity(SuggestActivity.class);
+                break;
 
 
             // FIXME: 2016/8/2 

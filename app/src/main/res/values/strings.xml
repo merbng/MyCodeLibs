@@ -109,4 +109,8 @@
     <string name="title_activity_start_anim_other">StartAnimOtherActivity</string>
     <string name="title_activity_tips_window">TipsWindowActivity</string>
     <string name="title_activity_vertical_drawer_layout">VerticalDrawerLayoutActivity</string>
+    <string name="title_activity_text_watermark">TextWatermarkActivity</string>
+    <string name="title_activity_suggest">SuggestActivity</string>
+    <!--建议-->
+    <string name="suggestion_add_img">添加图片（选填）</string>
 </resources>

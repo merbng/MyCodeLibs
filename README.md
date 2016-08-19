@@ -4,6 +4,10 @@
 ![image](https://github.com/Merbn/MyCodeLibs/blob/master/myscreen.png)
 注：二维码为微信公众号；
 _____________________
+2016年8月19日14:00:01
+* 图片加文字水印
+TextWatermarkActivity
+:octocat:
 2016年8月18日15:04:27
 * 竖直的DrawerLayout
 VerticalDrawerLayoutActivity

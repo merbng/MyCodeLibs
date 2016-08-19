@@ -399,6 +399,26 @@
 
         <include layout="@layout/view_line" />
 
+        <Button
+            android:id="@+id/textwatermarkactivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="图片加文字水印"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
+        <Button
+            android:id="@+id/suggestactivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="意见反馈"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

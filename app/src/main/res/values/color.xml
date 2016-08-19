@@ -58,4 +58,8 @@
     
     <!--三方分享-->
     <color name="text_color_gray">#ff898989</color>
+    <!--建议-->
+    <color name="orange500">#ff9800</color>
+    <color name="black">#000</color>
+    <color name="orange700">#FFFFC875</color>
 </resources>
