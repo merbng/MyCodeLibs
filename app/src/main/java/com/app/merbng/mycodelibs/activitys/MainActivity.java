@@ -174,6 +174,9 @@ public class MainActivity extends BaseActivity {
             case R.id.editdialogactivity://带编辑框的Dialog
                 openActivity(EditDialogActivity.class);
                 break;
+            case R.id.materialdialogactivity://MD风格的Dialog
+                openActivity(MaterialDialogActivity.class);
+                break;
 
 
             // FIXME: 2016/8/2 

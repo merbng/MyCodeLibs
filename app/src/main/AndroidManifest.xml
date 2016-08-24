@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.app.merbng.mycodelibs" >
+    package="com.app.merbng.mycodelibs">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -14,7 +14,7 @@
         android:allowBackup="true"
         android:icon="@drawable/iconfont_main"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
 
         <!-- QQ登陆 -->
         <activity
@@ -24,7 +24,7 @@
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
-            android:noHistory="true" >
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -51,7 +51,7 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name=".activitys.SplishActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -117,22 +117,11 @@
         <activity android:name=".activitys.TipsWindowActivity" />
         <activity android:name=".activitys.VoteComparisonActivity" />
         <activity android:name=".activitys.VerticalDrawerLayoutActivity" />
-        <activity
-            android:name=".activitys.TextWatermarkActivity"
-            android:label="@string/title_activity_text_watermark" >
-        </activity>
-        <activity
-            android:name=".activitys.SuggestActivity"
-            android:label="@string/title_activity_suggest" >
-        </activity>
-        <activity
-            android:name=".activitys.RevealColorViewActivity"
-            android:label="@string/title_activity_reveal_color_view" >
-        </activity>
-        <activity
-            android:name=".activitys.EditDialogActivity"
-            android:label="@string/title_activity_edit_dialog" >
-        </activity>
+        <activity android:name=".activitys.EditDialogActivity" />
+        <activity android:name=".activitys.TextWatermarkActivity" />
+        <activity android:name=".activitys.SuggestActivity" />
+        <activity android:name=".activitys.RevealColorViewActivity" />
+        <activity android:name=".activitys.MaterialDialogActivity" />
     </application>
 
 </manifest>
