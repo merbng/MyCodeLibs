@@ -4,21 +4,29 @@
 ![image](https://github.com/Merbn/MyCodeLibs/blob/master/myscreen.png)
 注：二维码为微信公众号；
 _____________________
-2016年8月24日09:01:00
-* 带编辑框的Dialog
-EditDialogActivity
+2016年8月25日00:21:10    
+* ButtonView    
+ButtonViewActivity    
 :octocat:
-2016年8月19日16:16:24
-* Banner动画
-RevealColorViewActivity
+2016年8月25日00:07:13    
+* MD风格的Dialog    
+MaterialDialogActivity    
 :octocat:
-2016年8月19日14:00:01
-* 图片加文字水印
-TextWatermarkActivity
+2016年8月24日09:01:00    
+* 带编辑框的Dialog    
+EditDialogActivity    
 :octocat:
-2016年8月18日15:04:27
-* 竖直的DrawerLayout
-VerticalDrawerLayoutActivity
+2016年8月19日16:16:24    
+* Banner动画    
+RevealColorViewActivity    
+:octocat:
+2016年8月19日14:00:01    
+* 图片加文字水印    
+TextWatermarkActivity    
+:octocat:
+2016年8月18日15:04:27    
+* 竖直的DrawerLayout    
+VerticalDrawerLayoutActivity    
 :octocat:
 2016年8月18日01:19:03    
 * 一个简单的投票排名对比图    
