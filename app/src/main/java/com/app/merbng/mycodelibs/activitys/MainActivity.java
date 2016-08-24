@@ -177,6 +177,9 @@ public class MainActivity extends BaseActivity {
             case R.id.materialdialogactivity://MD风格的Dialog
                 openActivity(MaterialDialogActivity.class);
                 break;
+            case R.id.buttonviewactivity://Button View
+                openActivity(ButtonViewActivity.class);
+                break;
 
 
             // FIXME: 2016/8/2 

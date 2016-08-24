@@ -122,6 +122,7 @@
         <activity android:name=".activitys.SuggestActivity" />
         <activity android:name=".activitys.RevealColorViewActivity" />
         <activity android:name=".activitys.MaterialDialogActivity" />
+        <activity android:name=".activitys.ButtonViewActivity" />
     </application>
 
 </manifest>

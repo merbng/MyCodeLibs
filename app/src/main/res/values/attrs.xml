@@ -9,4 +9,13 @@
                 <enum name="plus" value="3"/>
             </attr>
         </declare-styleable>
+    <!--Button VIew-->
+    <declare-styleable name="ButtonView">
+        <attr name="text" format="string"/>
+        <attr name="text_color" format="color"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="stroke_size" format="dimension"/>
+        <attr name="stroke_color" format="color"/>
+        <attr name="arc_color" format="color"/>
+    </declare-styleable>
 </resources>

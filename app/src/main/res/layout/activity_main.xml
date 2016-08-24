@@ -34,8 +34,8 @@
             android:background="@color/skin_color_text"
             android:onClick="btnClick"
             android:text="跳转  动画"
-            android:transitionName="@string/other_transition_name"
-            android:textColor="@color/skin_color_bg" />
+            android:textColor="@color/skin_color_bg"
+            android:transitionName="@string/other_transition_name" />
 
         <include layout="@layout/view_line" />
 
@@ -439,7 +439,6 @@
 
         <include layout="@layout/view_line" />
 
-        <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/materialdialogactivity"
@@ -447,6 +446,16 @@
             android:background="@color/skin_color_text"
             android:onClick="btnClick"
             android:text="MD风格的Dialog"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
+        <Button
+            android:id="@+id/buttonviewactivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="Button View"
             android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
