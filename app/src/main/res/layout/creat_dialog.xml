@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_alert_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="创建新的专辑"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/line"
+            style="@style/line_h"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layout_m"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:paddingTop="10dp">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:id="@+id/til_input"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                android:layout_weight="1.0"
+                android:background="@color/bg_white"
+                app:counterOverflowTextAppearance="@style/introduction_text_err"
+                app:counterTextAppearance="@style/introduction_text_nomol">
+
+            <EditText
+                android:id="@+id/creat_box_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_field"
+                android:maxLines="3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_color_gray"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/font_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/creat_box_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_alertbutton_left"
+            android:text="取消" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:background="@color/weixin_gray" />
+
+        <Button
+            android:id="@+id/creat_box_commit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/app_red_light"
+            android:textSize="15sp"
+            android:background="@drawable/bg_alertbutton_right"
+            android:text="确定" />
+    </LinearLayout>
+
+</LinearLayout>

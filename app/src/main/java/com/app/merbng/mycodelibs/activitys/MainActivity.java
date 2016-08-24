@@ -171,6 +171,9 @@ public class MainActivity extends BaseActivity {
             case R.id.revealcolorviewactivity://Banner动画
                 openActivity(RevealColorViewActivity.class);
                 break;
+            case R.id.editdialogactivity://带编辑框的Dialog
+                openActivity(EditDialogActivity.class);
+                break;
 
 
             // FIXME: 2016/8/2 

@@ -129,6 +129,10 @@
             android:name=".activitys.RevealColorViewActivity"
             android:label="@string/title_activity_reveal_color_view" >
         </activity>
+        <activity
+            android:name=".activitys.EditDialogActivity"
+            android:label="@string/title_activity_edit_dialog" >
+        </activity>
     </application>
 
 </manifest>

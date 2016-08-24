@@ -4,6 +4,10 @@
 ![image](https://github.com/Merbn/MyCodeLibs/blob/master/myscreen.png)
 注：二维码为微信公众号；
 _____________________
+2016年8月24日09:01:00
+* 带编辑框的Dialog
+EditDialogActivity
+:octocat:
 2016年8月19日16:16:24
 * Banner动画
 RevealColorViewActivity

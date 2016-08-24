@@ -11,6 +11,8 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.PowerManager;
 import android.util.DisplayMetrics;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.webkit.WebView;
 import android.widget.Toast;
 
@@ -232,5 +234,16 @@ public class AppSystemUtils {
 
         // 发送广播
         mContext.sendBroadcast(intent);
+    }
+
+    /**隐藏键盘
+     * @param context
+     * @param v
+     */
+    public static void hideKeyBoard(Context context, View v) {
+
+        InputMethodManager imm = (InputMethodManager) context
+                .getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
     }
 }

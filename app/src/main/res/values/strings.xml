@@ -114,4 +114,5 @@
     <!--建议-->
     <string name="suggestion_add_img">添加图片（选填）</string>
     <string name="title_activity_reveal_color_view">RevealColorViewActivity</string>
+    <string name="title_activity_edit_dialog">EditDialogActivity</string>
 </resources>
