@@ -4,9 +4,13 @@
 ![image](https://github.com/Merbn/MyCodeLibs/blob/master/myscreen.png)
 注：二维码为微信公众号；
 _____________________
-2016年8月25日00:21:10    
-* ButtonView    
-ButtonViewActivity    
+2016年8月26日13:57:04
+* ViewPagerCard
+ViewPagerCardActivity
+:octocat:
+2016年8月25日00:21:10
+* ButtonView
+ButtonViewActivity
 :octocat:
 2016年8月25日00:07:13    
 * MD风格的Dialog    

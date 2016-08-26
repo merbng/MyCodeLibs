@@ -14,6 +14,7 @@ import com.app.merbng.mycodelibs.A_materiallogin.MaterialLoginActivity;
 import com.app.merbng.mycodelibs.A_recycleViewRefresh.StudyRecycleRefreshActivity;
 import com.app.merbng.mycodelibs.A_studyRetrofit.StudyRetrofitActivity;
 import com.app.merbng.mycodelibs.A_ticker.TickerActivity;
+import com.app.merbng.mycodelibs.A_viewpagerCard.ViewPagerCardActivity;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.utils.LogUtil;
@@ -179,6 +180,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.buttonviewactivity://Button View
                 openActivity(ButtonViewActivity.class);
+                break;
+            case R.id.viewpagercardactivity://ViewPagerCard
+                openActivity(ViewPagerCardActivity.class);
                 break;
 
 
