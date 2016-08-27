@@ -4,6 +4,10 @@
 ![image](https://github.com/Merbn/MyCodeLibs/blob/master/myscreen.png)
 注：二维码为微信公众号；
 _____________________
+=====================
+
+[![](https://jitpack.io/v/rey5137/material.svg)](https://github.com/Merbn/MyCodeLibs) [![Download](https://api.bintray.com/packages/rey5137/maven/material/images/download.svg)](https://github.com/Merbn/MyCodeLibs)  [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Material-brightgreen.svg?style=flat)](https://github.com/Merbn/MyCodeLibs)
+
 2016年8月26日13:57:04
 * ViewPagerCard
 ViewPagerCardActivity
