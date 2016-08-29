@@ -8,7 +8,16 @@
         <item name="colorAccent">#4caf50</item>
         <item name="android:windowBackground">@color/skin_window_background_day</item>
     </style>
-
+    <style name="have_light_dialog" parent="@style/Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Actionbar -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- Status bar color -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- Window color -->
+        <item name="android:windowBackground">@color/dim_foreground_material_dark</item>
+    </style>
     <style name="SelectableItem">
         <item name="android:background">@android:drawable/list_selector_background</item>
     </style>

@@ -89,4 +89,7 @@
     <color name="app_red_light">#ec584e</color>
     <!--Button view-->
     <color name="arcColor">#00F5FF</color>
+    <!--我的二维码-->
+    <color name="dialog_name">#1E1E1E</color>
+    <color name="account_text">#3C3C3C</color>
 </resources>

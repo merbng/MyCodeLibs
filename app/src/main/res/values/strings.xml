@@ -120,4 +120,7 @@
     <string name="contributors">Contributors</string>
     <string name="see_the_sauce">See the Sauce</string>
     <string name="title_activity_view_pager_card">ViewPagerCardActivity</string>
+    <string name="title_activity_my_qr_code">MyQrCodeActivity</string>
+    <!--我的二维码-->
+    <string name="scan_qr_see_mycollect_card">一&#160;扫二维码&#160;&#160;关注我&#160;一</string>
 </resources>
