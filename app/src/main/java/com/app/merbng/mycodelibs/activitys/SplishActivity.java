@@ -3,6 +3,7 @@ package com.app.merbng.mycodelibs.activitys;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
@@ -17,7 +18,7 @@ import za.co.riggaroo.materialhelptutorial.tutorial.MaterialTutorialActivity;
 /**
  * 闪屏页
  */
-public class SplishActivity extends BaseActivity {
+public class SplishActivity extends AppCompatActivity {
     private static final int REQUEST_CODE = 1234;
     private boolean isLoged;
 
@@ -25,7 +26,7 @@ public class SplishActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splish);
-        isLoged = SharedPrefUtils.getBoolean(mContext, "isLogin");
+        isLoged = SharedPrefUtils.getBoolean(this, "isLogin");
         SplashView.showSplashView(this, 3, R.drawable.img_splash, new SplashView.OnSplashViewActionListener() {
             @Override
             public void onSplashImageClick(String actionUrl) {

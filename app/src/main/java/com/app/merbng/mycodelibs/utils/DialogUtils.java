@@ -95,4 +95,43 @@ public class DialogUtils {
         });
         return loadingDialog;
     }
+
+    public interface IOkCallBack {
+        void okClick();
+
+        void noClick();
+    }
+
+    /**
+     * MD风格的Dialog
+     * 提示框
+     *
+     * @param title
+     * @param content
+     * @param callBack
+     */
+    public static android.support.v7.app.AlertDialog.Builder MDStyleDialog(Context mContext, String title, String content, final IOkCallBack callBack) {
+        // 为响应点击事件来创建个弹窗
+        android.support.v7.app.AlertDialog.Builder dialog = new android.support.v7.app.AlertDialog.Builder(mContext);
+        dialog.setTitle(title);
+        // 设置弹窗内容
+        dialog.setMessage(content);
+        // 设置弹窗的确定按键
+        dialog.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                callBack.okClick();
+            }
+        }).create();
+        // 设置弹窗的取消按键
+        dialog.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                callBack.noClick();
+            }
+        }).create();
+        // 展示弹窗
+        return dialog;
+    }
+
 }

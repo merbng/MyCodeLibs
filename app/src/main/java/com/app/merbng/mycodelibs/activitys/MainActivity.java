@@ -17,6 +17,7 @@ import com.app.merbng.mycodelibs.A_ticker.TickerActivity;
 import com.app.merbng.mycodelibs.A_viewpagerCard.ViewPagerCardActivity;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
+import com.app.merbng.mycodelibs.utils.DialogUtils;
 import com.app.merbng.mycodelibs.utils.LogUtil;
 import com.app.merbng.mycodelibs.widget.SplashView;
 import com.janggwa.zkw.golddrop.GoldAnimationActivity;
@@ -183,6 +184,21 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.viewpagercardactivity://ViewPagerCard
                 openActivity(ViewPagerCardActivity.class);
+                break;
+            case R.id.myqrcodeactivity://我的二维码
+                DialogUtils.createEditDialog(mContext, "提示", "请输昵称", "Merbng", new DialogUtils.GetUrlName() {
+                    @Override
+                    public void getname(String str) {
+                        Intent intent_qrcode = new Intent(mContext, MyQrCodeActivity.class);
+                        intent_qrcode.putExtra(MyQrCodeActivity.USERID_KEY, "https://github.com/Merbn");
+                        intent_qrcode.putExtra(MyQrCodeActivity.NICKNAME_KEY, str);
+                        intent_qrcode.putExtra(MyQrCodeActivity.COVER_KEY, "https://avatars3.githubusercontent.com/u/11256126?v=3&s=460");
+                        intent_qrcode.putExtra(MyQrCodeActivity.INTRO_KEY, "一直以来，不敢止步。");
+                        intent_qrcode.putExtra(MyQrCodeActivity.TYPE, MyQrCodeActivity.TYPE_HEARD);
+                        mContext.startActivity(intent_qrcode);
+                    }
+                }).show();
+
                 break;
 
 
