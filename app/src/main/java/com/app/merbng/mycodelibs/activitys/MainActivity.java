@@ -186,19 +186,13 @@ public class MainActivity extends BaseActivity {
                 openActivity(ViewPagerCardActivity.class);
                 break;
             case R.id.myqrcodeactivity://我的二维码
-                DialogUtils.createEditDialog(mContext, "提示", "请输昵称", "Merbng", new DialogUtils.GetUrlName() {
-                    @Override
-                    public void getname(String str) {
-                        Intent intent_qrcode = new Intent(mContext, MyQrCodeActivity.class);
-                        intent_qrcode.putExtra(MyQrCodeActivity.USERID_KEY, "https://github.com/Merbn");
-                        intent_qrcode.putExtra(MyQrCodeActivity.NICKNAME_KEY, str);
-                        intent_qrcode.putExtra(MyQrCodeActivity.COVER_KEY, "https://avatars3.githubusercontent.com/u/11256126?v=3&s=460");
-                        intent_qrcode.putExtra(MyQrCodeActivity.INTRO_KEY, "一直以来，不敢止步。");
-                        intent_qrcode.putExtra(MyQrCodeActivity.TYPE, MyQrCodeActivity.TYPE_HEARD);
-                        mContext.startActivity(intent_qrcode);
-                    }
-                }).show();
-
+                Intent intent_qrcode = new Intent(mContext, MyQrCodeActivity.class);
+                intent_qrcode.putExtra(MyQrCodeActivity.USERID_KEY, "https://github.com/Merbn");
+                intent_qrcode.putExtra(MyQrCodeActivity.NICKNAME_KEY, "Merbng");
+                intent_qrcode.putExtra(MyQrCodeActivity.COVER_KEY, "https://avatars3.githubusercontent.com/u/11256126?v=3&s=460");
+                intent_qrcode.putExtra(MyQrCodeActivity.INTRO_KEY, "一直以来，不敢止步。");
+                intent_qrcode.putExtra(MyQrCodeActivity.TYPE, MyQrCodeActivity.TYPE_HEARD);
+                mContext.startActivity(intent_qrcode);
                 break;
 
 

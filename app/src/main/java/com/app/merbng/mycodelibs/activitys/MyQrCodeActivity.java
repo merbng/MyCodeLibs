@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
+import com.app.merbng.mycodelibs.utils.DialogUtils;
 import com.app.merbng.mycodelibs.utils.QRUtils;
 import com.bumptech.glide.Glide;
 
@@ -65,6 +66,17 @@ public class MyQrCodeActivity extends BaseActivity implements View.OnTouchListen
         tv_intro = (TextView) findViewById(R.id.code_tv_intro);
         tv_bottom = (TextView) findViewById(R.id.tv_bottom);
         ll_heard = (LinearLayout) findViewById(R.id.ll_heard);
+        ll_heard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DialogUtils.createEditDialog(mContext, "提示", "请输昵称", "Merbng", new DialogUtils.GetUrlName() {
+                    @Override
+                    public void getname(String str) {
+                        show(str);
+                    }
+                }).show();
+            }
+        });
     }
 
     public void init() {

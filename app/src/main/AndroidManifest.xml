@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.app.merbng.mycodelibs" >
+    package="com.app.merbng.mycodelibs">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -14,7 +14,7 @@
         android:allowBackup="true"
         android:icon="@drawable/iconfont_main"
         android:label="@string/app_name"
-        android:theme="@style/have_light_dialog">
+        android:theme="@style/AppTheme">
 
         <!-- QQ登陆 -->
         <activity
@@ -24,7 +24,7 @@
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
-            android:noHistory="true" >
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -47,11 +47,11 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name=".activitys.SplishActivity"
-            android:theme="@style/AppTheme"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -123,14 +123,8 @@
         <activity android:name=".activitys.RevealColorViewActivity" />
         <activity android:name=".activitys.MaterialDialogActivity" />
         <activity android:name=".activitys.ButtonViewActivity" />
-        <activity
-            android:name=".A_viewpagerCard.ViewPagerCardActivity"
-            android:label="@string/title_activity_view_pager_card" >
-        </activity>
-        <activity
-            android:name=".activitys.MyQrCodeActivity"
-            android:label="@string/title_activity_my_qr_code" >
-        </activity>
+        <activity android:name=".A_viewpagerCard.ViewPagerCardActivity" />
+        <activity android:name=".activitys.MyQrCodeActivity" />
     </application>
 
 </manifest>
