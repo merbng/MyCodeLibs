@@ -14,7 +14,7 @@
         android:allowBackup="true"
         android:icon="@drawable/iconfont_main"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/have_light_dialog">
 
         <!-- QQ登陆 -->
         <activity
@@ -47,8 +47,7 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activitys.SplishActivity"
             android:label="@string/app_name" >
@@ -126,6 +125,10 @@
         <activity
             android:name=".A_viewpagerCard.ViewPagerCardActivity"
             android:label="@string/title_activity_view_pager_card" >
+        </activity>
+        <activity
+            android:name=".activitys.MyQrCodeActivity"
+            android:label="@string/title_activity_my_qr_code" >
         </activity>
     </application>
 
