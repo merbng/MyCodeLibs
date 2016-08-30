@@ -22,7 +22,8 @@ import com.app.merbng.mycodelibs.interfaces.MyItemDialogListener;
 
 import java.util.List;
 
-/**
+/**material风格，ios风格，传入context构建，在任意界面弹出，以及dialog样式的activity
+ * https://github.com/glassLake/DialogUtils
  * Created by zx on 2016/8/30.
  */
 public class StytledDialogUtils {
