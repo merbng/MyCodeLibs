@@ -73,9 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:background="@null"
-                android:scaleType="matrix"
-                tools:ignore="ContentDescription" />
+                android:scaleType="matrix" />
 
             <TextView
                 android:id="@+id/tv_bottom"

@@ -1,6 +1,8 @@
 package com.app.merbng.mycodelibs.activitys;
 
+import android.content.res.AssetFileDescriptor;
 import android.graphics.BitmapFactory;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Message;
 import android.view.MotionEvent;
@@ -15,6 +17,8 @@ import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.utils.DialogUtils;
 import com.app.merbng.mycodelibs.utils.QRUtils;
 import com.bumptech.glide.Glide;
+
+import java.io.IOException;
 
 /**
  * 我的二维码
@@ -73,6 +77,21 @@ public class MyQrCodeActivity extends BaseActivity implements View.OnTouchListen
                     @Override
                     public void getname(String str) {
                         show(str);
+                        try {
+                            AssetFileDescriptor fileDescriptor = getAssets().openFd("video.mp4");
+                            MediaPlayer mediaPlayer = new MediaPlayer();
+
+                            mediaPlayer.setDataSource(fileDescriptor.getFileDescriptor(),
+
+                                    fileDescriptor.getStartOffset(),
+
+                                    fileDescriptor.getLength());
+
+                            mediaPlayer.prepare();
+                            mediaPlayer.start();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
                 }).show();
             }

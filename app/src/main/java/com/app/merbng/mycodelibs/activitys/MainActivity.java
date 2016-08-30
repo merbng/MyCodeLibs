@@ -1,5 +1,6 @@
 package com.app.merbng.mycodelibs.activitys;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -192,7 +193,7 @@ public class MainActivity extends BaseActivity {
                 intent_qrcode.putExtra(MyQrCodeActivity.COVER_KEY, "https://avatars3.githubusercontent.com/u/11256126?v=3&s=460");
                 intent_qrcode.putExtra(MyQrCodeActivity.INTRO_KEY, "一直以来，不敢止步。");
                 intent_qrcode.putExtra(MyQrCodeActivity.TYPE, MyQrCodeActivity.TYPE_HEARD);
-                mContext.startActivity(intent_qrcode);
+                startActivity(intent_qrcode);
                 break;
 
 
