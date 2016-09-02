@@ -186,6 +186,9 @@ public class MainActivity extends BaseActivity {
             case R.id.viewpagercardactivity://ViewPagerCard
                 openActivity(ViewPagerCardActivity.class);
                 break;
+            case R.id.bottommenuactivity://bottommenuactivity
+                openActivity(BottomMenuActivity.class);
+                break;
             case R.id.myqrcodeactivity://我的二维码
                 Intent intent_qrcode = new Intent(mContext, MyQrCodeActivity.class);
                 intent_qrcode.putExtra(MyQrCodeActivity.USERID_KEY, "https://github.com/Merbn");

@@ -471,6 +471,16 @@
         <include layout="@layout/view_line" />
 
         <Button
+            android:id="@+id/bottommenuactivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="bottommenuactivity"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
+        <Button
             android:id="@+id/myqrcodeactivity"
             style="@style/btn_style"
             android:background="@color/skin_color_text"

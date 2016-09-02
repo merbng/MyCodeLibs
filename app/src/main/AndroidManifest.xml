@@ -125,6 +125,7 @@
         <activity android:name=".activitys.ButtonViewActivity" />
         <activity android:name=".A_viewpagerCard.ViewPagerCardActivity" />
         <activity android:name=".activitys.MyQrCodeActivity" />
+        <activity android:name=".activitys.BottomMenuActivity" />
     </application>
 
 </manifest>
