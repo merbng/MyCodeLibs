@@ -1,6 +1,5 @@
 package com.app.merbng.mycodelibs.activitys;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -16,9 +15,9 @@ import com.app.merbng.mycodelibs.A_recycleViewRefresh.StudyRecycleRefreshActivit
 import com.app.merbng.mycodelibs.A_studyRetrofit.StudyRetrofitActivity;
 import com.app.merbng.mycodelibs.A_ticker.TickerActivity;
 import com.app.merbng.mycodelibs.A_viewpagerCard.ViewPagerCardActivity;
+import com.app.merbng.mycodelibs.A_windowManager.UcNotifyActivity;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
-import com.app.merbng.mycodelibs.utils.DialogUtils;
 import com.app.merbng.mycodelibs.utils.LogUtil;
 import com.app.merbng.mycodelibs.widget.SplashView;
 import com.janggwa.zkw.golddrop.GoldAnimationActivity;
@@ -188,6 +187,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.bottommenuactivity://bottommenuactivity
                 openActivity(BottomMenuActivity.class);
+                break;
+            case R.id.ucnotifyactivity://仿Uc  监听粘贴板
+                openActivity(UcNotifyActivity.class);
                 break;
             case R.id.myqrcodeactivity://我的二维码
                 Intent intent_qrcode = new Intent(mContext, MyQrCodeActivity.class);

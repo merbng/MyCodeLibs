@@ -147,4 +147,9 @@
     <style name="notitle" >
         <item name="android:windowNoTitle">true</item>
     </style>
+    <!--仿UC 监听粘贴板-->
+    <style name="NotificationAnim">
+        <item name="android:windowEnterAnimation">@anim/anim_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_out</item>
+    </style>
 </resources>

@@ -126,6 +126,7 @@
         <activity android:name=".A_viewpagerCard.ViewPagerCardActivity" />
         <activity android:name=".activitys.MyQrCodeActivity" />
         <activity android:name=".activitys.BottomMenuActivity" />
+        <activity android:name=".A_windowManager.UcNotifyActivity" />
     </application>
 
 </manifest>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:layout_gravity="center|right"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bad" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="快速搜索"
+                android:textColor="#8d9ffe"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="显示内容"
+                android:textColor="#8F8F8F"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_action_cancel" />
+
+    </LinearLayout>
+</LinearLayout>
