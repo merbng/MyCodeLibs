@@ -21,43 +21,50 @@ import za.co.riggaroo.materialhelptutorial.tutorial.MaterialTutorialActivity;
 public class SplishActivity extends AppCompatActivity {
     private static final int REQUEST_CODE = 1234;
     private boolean isLoged;
+    private boolean isFastOpen=true;//是否快速进入
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splish);
         isLoged = SharedPrefUtils.getBoolean(this, "isLogin");
-        SplashView.showSplashView(this, 3, R.drawable.img_splash, new SplashView.OnSplashViewActionListener() {
-            @Override
-            public void onSplashImageClick(String actionUrl) {
-                if(!isLoged){//未登录状态
-                    Intent intent = new Intent(SplishActivity.this,
-                            Login_ResisterActivity.class); // 从启动动画ui跳转到主ui
-                    startActivity(intent);
-                    overridePendingTransition(R.anim.excess_fade_anim_in, R.anim.excess_fade_anim_out);
-                    finish();
-                }else {
-                Intent intent = new Intent(SplishActivity.this, MainActivity.class);
-                startActivity(intent);
-                loadTutorial();
-                }
-            }
-
-            @Override
-            public void onSplashViewDismiss(boolean initiativeDismiss) {
-                if(!isLoged){//未登录状态
-                    Intent intent = new Intent(SplishActivity.this,
-                            Login_ResisterActivity.class); // 从启动动画ui跳转到主ui
-                    startActivity(intent);
-                    overridePendingTransition(R.anim.excess_fade_anim_in, R.anim.excess_fade_anim_out);
-                    finish();
-                }else {
+        if (!isFastOpen) {
+            SplashView.showSplashView(this, 3, R.drawable.img_splash, new SplashView.OnSplashViewActionListener() {
+                @Override
+                public void onSplashImageClick(String actionUrl) {
+                    if(!isLoged){//未登录状态
+                        Intent intent = new Intent(SplishActivity.this,
+                                Login_ResisterActivity.class); // 从启动动画ui跳转到主ui
+                        startActivity(intent);
+                        overridePendingTransition(R.anim.excess_fade_anim_in, R.anim.excess_fade_anim_out);
+                        finish();
+                    }else {
                     Intent intent = new Intent(SplishActivity.this, MainActivity.class);
                     startActivity(intent);
                     loadTutorial();
+                    }
                 }
-            }
-        });
+
+                @Override
+                public void onSplashViewDismiss(boolean initiativeDismiss) {
+                    if(!isLoged){//未登录状态
+                        Intent intent = new Intent(SplishActivity.this,
+                                Login_ResisterActivity.class); // 从启动动画ui跳转到主ui
+                        startActivity(intent);
+                        overridePendingTransition(R.anim.excess_fade_anim_in, R.anim.excess_fade_anim_out);
+                        finish();
+                    }else {
+                        Intent intent = new Intent(SplishActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        loadTutorial();
+                    }
+                }
+            });
+        }else {
+            Intent intent = new Intent(SplishActivity.this, MainActivity.class);
+            startActivity(intent);
+            loadTutorial();
+        }
     }
     public void loadTutorial() {
         Intent mainAct = new Intent(SplishActivity.this, MaterialTutorialActivity.class);

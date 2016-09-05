@@ -17,7 +17,6 @@ public class UcNotifyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ucnotify);
-        startService(new Intent(this, ClipboardService.class));
     }
 
     public void show(View view) {
