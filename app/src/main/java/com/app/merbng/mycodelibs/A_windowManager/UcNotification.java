@@ -1,67 +1,54 @@
 package com.app.merbng.mycodelibs.A_windowManager;
 
 /**
- * Created by cxm on 2016/8/15.
+ * 监听粘贴板复制链接弹出的通知
  */
+
 import android.content.Context;
+import android.graphics.PixelFormat;
 import android.os.Handler;
 import android.os.Message;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.app.merbng.mycodelibs.R;
 
-
-public class UcNotification  {
-
-
-
-    private static final int DISMISS_INTERVAL = 3000;
-
+public class UcNotification {
+    private static final int DISMISS_INTERVAL = 8000;
     private WindowManager mWindowManager;
     private WindowManager.LayoutParams mWindowParams;
     private View mContentView;
+    private ProgressBar progress;
     private Context mContext;
-
-
     private boolean isShowing = false;
-
     private OnClickNotificationListener mOnClickNotificationListener;
-
     private TextView mTvContent;
-
-
 
     public UcNotification(Builder builder) {
         mContext = builder.getContext();
-
-
-
         mWindowManager = (WindowManager)
                 mContext.getSystemService(Context.WINDOW_SERVICE);
         mWindowParams = new WindowManager.LayoutParams();
+        mWindowParams.format= PixelFormat.RGBA_8888;
         mWindowParams.type = WindowManager.LayoutParams.TYPE_TOAST;// 系统提示window
         mWindowParams.gravity = Gravity.CENTER | Gravity.RIGHT;
         mWindowParams.width = WindowManager.LayoutParams.WRAP_CONTENT;
         mWindowParams.height = WindowManager.LayoutParams.WRAP_CONTENT;
-        mWindowParams.flags =
-                WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL |
-                        WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS;
+        mWindowParams.flags = WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL |
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS;
         mWindowParams.alpha = 0.95f;
         //设置进入和退出动画
         mWindowParams.windowAnimations = R.style.NotificationAnim;
         mWindowParams.x = 0;
         mWindowParams.y = 0;
-
         setContentView(mContext, builder);
     }
 
-
     private static final int HIDE_WINDOW = 0;
-
     private Handler mHandler = new Handler(new Handler.Callback() {
         @Override
         public boolean handleMessage(Message msg) {
@@ -80,23 +67,16 @@ public class UcNotification  {
      * @param context
      */
     private void setContentView(Context context, Builder builder) {
-        mContentView = LayoutInflater.from(context).inflate(R.layout.layout_notification, null);
-
-
-
-
+        mContentView = LayoutInflater.from(context).inflate(R.layout.layout_clip_notification, null);
         mTvContent = (TextView) mContentView.findViewById(R.id.tv_content);
-
-
+        progress = (ProgressBar) mContentView.findViewById(R.id.progress);
         setOnClickNotificationListener(builder.listener);
         setContent(builder.content);
-
-
         mContentView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mOnClickNotificationListener.onClickThenDismiss(mTvContent.getText().toString());
-                dismiss();
+                mOnClickNotificationListener.onClickThenDismiss(progress,mContentView);
+
             }
         });
     }
@@ -104,7 +84,6 @@ public class UcNotification  {
     private void setOnClickNotificationListener(OnClickNotificationListener listener) {
         mOnClickNotificationListener = listener;
     }
-
 
     public void show() {
         if (!isShowing) {
@@ -138,19 +117,9 @@ public class UcNotification  {
         mHandler.sendEmptyMessageDelayed(HIDE_WINDOW, DISMISS_INTERVAL);
     }
 
-
-
-
-
-
-
-
     public void setContent(String content) {
-        mTvContent.setText(content);
+//        mTvContent.setText(content);
     }
-
-
-
 
     public static class Builder {
 
@@ -158,9 +127,7 @@ public class UcNotification  {
 
         private String content = "";
 
-
         private OnClickNotificationListener listener;
-
 
         public Context getContext() {
             return context;
@@ -171,35 +138,26 @@ public class UcNotification  {
             return this;
         }
 
-
-        public Builder setOnClickNotificationListener(OnClickNotificationListener listener){
+        public Builder setOnClickNotificationListener(OnClickNotificationListener listener) {
             this.listener = listener;
             return this;
         }
-
 
         public Builder setContent(String content) {
             this.content = content;
             return this;
         }
 
-
-
         public UcNotification build() {
 
             if (null == context)
                 throw new IllegalArgumentException("The context is Null.");
-
             return new UcNotification(this);
         }
-
-
     }
 
     public interface OnClickNotificationListener {
-            void onClickThenDismiss(String clipString);
+        void onClickThenDismiss(ProgressBar progress,View mContentView );
     }
-
-
 }
 
