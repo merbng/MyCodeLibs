@@ -39,7 +39,7 @@ public class ButtonView extends View implements View.OnClickListener {
     private ValueAnimator valueAnimator;
 
     private int textSize = 20;
-    private int textColor = R.color.colorAccent;
+    private int textColor = R.color.bg_white;
     private int strokeSize = 2;
     private int strokeColor = R.color.colorAccent;
     private int arcColor = R.color.arcColor;

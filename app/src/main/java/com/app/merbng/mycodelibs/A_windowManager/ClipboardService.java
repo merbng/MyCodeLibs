@@ -53,9 +53,7 @@ public class ClipboardService extends Service {
 
                     String s = text.toString();
 
-
                     if (!TextUtils.equals(s, clipString)) {
-
 
                         final UcNotification notification =
                                 new UcNotification.Builder()

@@ -8,6 +8,7 @@
         <item name="colorAccent">#4caf50</item>
         <item name="android:windowBackground">@color/skin_window_background_day</item>
     </style>
+
     <style name="have_light_dialog" parent="@style/Base.Theme.AppCompat.Light.DarkActionBar">
         <!-- Actionbar -->
         <item name="windowActionBar">false</item>
@@ -18,6 +19,7 @@
         <!-- Window color -->
         <item name="android:windowBackground">@color/dim_foreground_material_dark</item>
     </style>
+
     <style name="SelectableItem">
         <item name="android:background">@android:drawable/list_selector_background</item>
     </style>
@@ -36,9 +38,9 @@
         <attr name="pressed" format="reference" />
         <attr name="normal" format="reference" />
     </declare-styleable>
-<!--碎裂效果-->
+    <!--碎裂效果-->
 
-    <style name="ToggleButton" >
+    <style name="ToggleButton">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_alignParentRight">true</item>
@@ -59,7 +61,7 @@
         <item name="android:textSize">17sp</item>
     </style>
 
-    <style name="SeekBarTextLeft" >
+    <style name="SeekBarTextLeft">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_alignParentLeft">true</item>
@@ -68,7 +70,7 @@
         <item name="android:textSize">17sp</item>
     </style>
 
-    <style name="SeekBarTextRight" >
+    <style name="SeekBarTextRight">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_alignParentRight">true</item>
@@ -76,7 +78,7 @@
         <item name="android:gravity">right</item>
         <item name="android:textSize">17sp</item>
     </style>
-<!--三方分享-->
+    <!--三方分享-->
     <style name="popwindowStyle" parent="android:Animation">
         <item name="@android:windowEnterAnimation">@anim/popwindow_enter</item>
         <item name="@android:windowExitAnimation">@anim/popwindow_exit</item>
@@ -97,13 +99,15 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
     </style>
     <!-- 跳转动画-->
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
     <!--建议-->
     <style name="suggest_text_err">
         <item name="android:textColor">@color/red_error</item>
         <item name="android:textSize">14sp</item>
     </style>
+
     <style name="suggest_text_nomol">
         <item name="android:textColor">@color/orange500</item>
         <item name="android:textSize">14sp</item>
@@ -116,15 +120,18 @@
         <item name="android:windowIsFloating">true</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
+
     <style name="line_h">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0.2dp</item>
         <item name="android:background">#eaeaea</item>
     </style>
+
     <style name="introduction_text_err">
         <item name="android:textColor">@color/red_error</item>
         <item name="android:textSize">14sp</item>
     </style>
+
     <style name="introduction_text_nomol">
         <item name="android:textColor">@color/custom</item>
         <item name="android:textSize">14sp</item>
@@ -136,15 +143,19 @@
     <!--仿ios dialog-->
 
     <style name="mystyle" parent="android:Animation">
-        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>  //进入时的动画
-        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>    //退出时的动画
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        //进入时的动画
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+        //退出时的动画
     </style>
 
     <style name="dialog_center" parent="android:Animation">
-        <item name="@android:windowEnterAnimation">@anim/dialog_enter_center</item>  //进入时的动画
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter_center</item>
+        //进入时的动画
         <!--  <item name="@android:windowExitAnimation">@anim/dialog_exit_center</item>    //退出时的动画-->
     </style>
-    <style name="notitle" >
+
+    <style name="notitle">
         <item name="android:windowNoTitle">true</item>
     </style>
     <!--仿UC 监听粘贴板-->
@@ -152,4 +163,5 @@
         <item name="android:windowEnterAnimation">@anim/anim_in</item>
         <item name="android:windowExitAnimation">@anim/anim_out</item>
     </style>
+
 </resources>

@@ -16,7 +16,7 @@
     <dimen name="sp_12">12sp</dimen>
     <dimen name="sp_14">14sp</dimen>
     <dimen name="sp_16">16sp</dimen>
-<!--物理引擎-->
+    <!--物理引擎-->
 
     <!--标题文字大小-->
     <dimen name="textSize_alert_title">22sp</dimen>
@@ -50,4 +50,5 @@
     <dimen name="elevation_large">8dp</dimen>
     <!--viewpagerCard-->
     <dimen name="card_padding">60dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>
