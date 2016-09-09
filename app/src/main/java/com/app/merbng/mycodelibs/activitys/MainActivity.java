@@ -194,6 +194,9 @@ public class MainActivity extends BaseActivity {
             case R.id.meituanshopingactivity://仿美团  购物车动画
                 openActivity(MeiTuanShopingActivity.class);
                 break;
+            case R.id.beziercurveanimateractivity://把商品添加到购物车的动画效果（贝塞尔曲线）
+                openActivity(BeziercurveanimaterActivity.class);
+                break;
             case R.id.myqrcodeactivity://我的二维码
                 Intent intent_qrcode = new Intent(mContext, MyQrCodeActivity.class);
                 intent_qrcode.putExtra(MyQrCodeActivity.USERID_KEY, "https://github.com/Merbn");

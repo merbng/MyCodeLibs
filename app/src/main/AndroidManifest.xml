@@ -127,6 +127,8 @@
         <activity android:name=".activitys.MyQrCodeActivity" />
         <activity android:name=".activitys.BottomMenuActivity" />
         <activity android:name=".A_windowManager.UcNotifyActivity" />
+        <activity android:name=".activitys.MeiTuanShopingActivity" />
+        <activity android:name=".activitys.BeziercurveanimaterActivity" />
         <activity
             android:name=".activitys.StudyBuildModelActivity"
             android:theme="@style/AppTheme" />
@@ -136,7 +138,6 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".activitys.MeiTuanShopingActivity"></activity>
     </application>
 
 </manifest>
