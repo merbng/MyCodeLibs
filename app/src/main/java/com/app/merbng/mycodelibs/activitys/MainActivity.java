@@ -191,6 +191,9 @@ public class MainActivity extends BaseActivity {
             case R.id.ucnotifyactivity://仿Uc  监听粘贴板
                 openActivity(UcNotifyActivity.class);
                 break;
+            case R.id.meituanshopingactivity://仿美团  购物车动画
+                openActivity(MeiTuanShopingActivity.class);
+                break;
             case R.id.myqrcodeactivity://我的二维码
                 Intent intent_qrcode = new Intent(mContext, MyQrCodeActivity.class);
                 intent_qrcode.putExtra(MyQrCodeActivity.USERID_KEY, "https://github.com/Merbn");

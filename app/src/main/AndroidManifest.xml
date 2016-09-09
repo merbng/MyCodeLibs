@@ -127,13 +127,16 @@
         <activity android:name=".activitys.MyQrCodeActivity" />
         <activity android:name=".activitys.BottomMenuActivity" />
         <activity android:name=".A_windowManager.UcNotifyActivity" />
-        <activity android:name=".activitys.StudyBuildModelActivity"
+        <activity
+            android:name=".activitys.StudyBuildModelActivity"
             android:theme="@style/AppTheme" />
 
         <service
             android:name=".A_windowManager.ClipboardService"
             android:enabled="true"
             android:exported="true" />
+
+        <activity android:name=".activitys.MeiTuanShopingActivity"></activity>
     </application>
 
 </manifest>
