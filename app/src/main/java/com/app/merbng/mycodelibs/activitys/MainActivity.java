@@ -200,6 +200,9 @@ public class MainActivity extends BaseActivity {
             case R.id.zananimactivity://赞放大动画
                 openActivity(ZanAnimActivity.class);
                 break;
+            case R.id.switchbuttonactivity://夜间模式切换按钮
+                openActivity(SwitchButtonActivity.class);
+                break;
             case R.id.myqrcodeactivity://我的二维码
                 Intent intent_qrcode = new Intent(mContext, MyQrCodeActivity.class);
                 intent_qrcode.putExtra(MyQrCodeActivity.USERID_KEY, "https://github.com/Merbn");

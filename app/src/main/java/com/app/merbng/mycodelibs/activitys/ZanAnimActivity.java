@@ -20,9 +20,6 @@ public class ZanAnimActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zan_anim);
-
-        LayoutInflater inflater = getLayoutInflater();
-
         mDongHua = (ImageView) findViewById(R.id.donghua);
 
         mDongHua.setOnClickListener(new View.OnClickListener() {

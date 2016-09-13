@@ -138,7 +138,8 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".activitys.ZanAnimActivity"></activity>
+        <activity android:name=".activitys.ZanAnimActivity" />
+        <activity android:name=".activitys.SwitchButtonActivity" />
     </application>
 
 </manifest>
