@@ -140,6 +140,7 @@
 
         <activity android:name=".activitys.ZanAnimActivity" />
         <activity android:name=".activitys.SwitchButtonActivity" />
+        <activity android:name=".activitys.BottomSheetDialogActivity"/>
     </application>
 
 </manifest>
