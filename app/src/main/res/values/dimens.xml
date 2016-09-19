@@ -51,4 +51,12 @@
     <!--viewpagerCard-->
     <dimen name="card_padding">60dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <!--广告页-->
+    <dimen name="default_padding">8dp</dimen>
+    <dimen name="default_quadruple_padding">32dp</dimen>
+    <dimen name="default_half_padding">4dp</dimen>
+    <dimen name="default_double_padding">16dp</dimen>
+    <dimen name="default_triple_padding">24dp</dimen>
+    <dimen name="logo_width_height">36dp</dimen>
+    <dimen name="dp8">8dp</dimen>
 </resources>

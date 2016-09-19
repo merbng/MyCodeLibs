@@ -4,7 +4,8 @@
 
     <style name="MyDemo" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">#ffd46c</item>
-        <item name="colorPrimaryDark">#512DA8</item>
+        <!--状态栏颜色-->
+        <item name="colorPrimaryDark">@color/custom</item>
         <item name="colorAccent">#4caf50</item>
         <item name="android:windowBackground">@color/skin_window_background_day</item>
     </style>

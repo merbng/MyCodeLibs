@@ -92,4 +92,10 @@
     <!--我的二维码-->
     <color name="dialog_name">#1E1E1E</color>
     <color name="account_text">#3C3C3C</color>
+    <!--广告页-->
+    <color name="transparent_black_deep">#7F000000</color>
+    <color name="text_color_white">#ffffffff</color>
+    <!--半透明-->
+    <color name="translucency">#8FFFFFFF</color>
+    <color name="grey800">#424242</color>
 </resources>
