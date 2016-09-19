@@ -7,6 +7,7 @@ import com.app.merbng.mycodelibs.R;
 
 /**
  * 夜间模式切换按钮
+ * https://github.com/BaymaxTong/SwitchButton
  */
 public class SwitchButtonActivity extends AppCompatActivity {
 

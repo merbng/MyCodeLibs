@@ -48,7 +48,7 @@ public class MeiTuanShopingActivity extends BaseActivity {
         mList.add(R.drawable.img2);
         mList.add(R.drawable.img3);
         mList.add(R.drawable.img4);
-        CommonAdapter<Integer> mAdapter = new CommonAdapter<Integer>(this, R.layout.item, mList) {
+        CommonAdapter<Integer> mAdapter = new CommonAdapter<Integer>(this, R.layout.item_shop, mList) {
             @Override
             protected void convert(final ViewHolder holder, Integer integer, int position) {
                 holder.setImageResource(R.id.iv, integer);

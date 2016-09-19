@@ -19,6 +19,7 @@ import android.widget.TextView;
 
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
+import com.app.merbng.mycodelibs.utils.LogUtil;
 
 import java.util.ArrayList;
 
@@ -71,7 +72,7 @@ public class BeziercurveanimaterActivity extends BaseActivity {
         @Override
         public MyVH onCreateViewHolder(ViewGroup parent, int viewType) {
             LayoutInflater inflater = LayoutInflater.from(mContext);
-            View itemView = inflater.inflate(R.layout.item, parent, false);
+            View itemView = inflater.inflate(R.layout.item_bezier, parent, false);
             MyVH myVH = new MyVH(itemView);
             return myVH;
         }
@@ -79,6 +80,7 @@ public class BeziercurveanimaterActivity extends BaseActivity {
         @Override
         public void onBindViewHolder(final MyVH holder, final int position) {
             holder.iv.setImageBitmap(bitmapList.get(position));
+            holder.iv.setImageResource(R.drawable.ebo);
             holder.buy.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -95,9 +97,10 @@ public class BeziercurveanimaterActivity extends BaseActivity {
 
     /**
      * ★★★★★把商品添加到购物车的动画效果★★★★★
+     *
      * @param iv
      */
-    private void addCart( ImageView iv) {
+    private void addCart(ImageView iv) {
 //      一、创造出执行动画的主题---imageview
         //代码new一个imageview，图片资源是上面的imageview的图片
         // (这个图片就是执行动画的图片，从开始位置出发，经过一个抛物线（贝塞尔曲线），移动到购物车里)
