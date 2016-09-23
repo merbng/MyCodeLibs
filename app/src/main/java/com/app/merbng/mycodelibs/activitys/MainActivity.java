@@ -202,6 +202,7 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.switchbuttonactivity://夜间模式切换按钮
                 openActivity(SwitchButtonActivity.class);
+                break;
             case R.id.bottomsheetdialogactivity://BottomSheet
                 openActivity(BottomSheetDialogActivity.class);
                 break;
