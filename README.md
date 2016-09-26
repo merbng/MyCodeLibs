@@ -9,36 +9,36 @@ _____________________
 [![](https://jitpack.io/v/rey5137/material.svg)](https://github.com/Merbn/MyCodeLibs) [![Download](https://api.bintray.com/packages/rey5137/maven/material/images/download.svg)](https://github.com/Merbn/MyCodeLibs)  [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Material-brightgreen.svg?style=flat)](https://github.com/Merbn/MyCodeLibs)
 
 2016年9月26日18:36:39
-* 将时间戳转换为友好显示的时间,用于聊天
-`MinutesAgoActivity`
+* 将时间戳转换为友好显示的时间,用于聊天  
+`MinutesAgoActivity`  
 :octocat:
 2016年9月18日00:04:42
-* BottomSheetDialog
-`BottomSheetDialogActivity`
+* BottomSheetDialog  
+`BottomSheetDialogActivity`  
 :octocat:
 2016年9月18日00:05:17
-* 夜间模式切换按钮
-`SwitchButtonActivity`
+* 夜间模式切换按钮  
+`SwitchButtonActivity`  
 :octocat:
 2016年9月10日00:59:16
 * 仿美团  购物车动画
 `MeiTuanShopingActivity`
 :octocat:
 2016年8月26日13:57:04
-* ViewPagerCard
-`ViewPagerCardActivity`
+* ViewPagerCard  
+`ViewPagerCardActivity`  
 :octocat:
 2016年8月25日00:21:10
-* ButtonView
-`ButtonViewActivity`
+* ButtonView  
+`ButtonViewActivity`  
 :octocat:
 2016年8月25日00:07:13
-* MD风格的Dialog
-`MaterialDialogActivity`
+* MD风格的Dialog  
+`MaterialDialogActivity`  
 :octocat:
 2016年8月24日09:01:00
-* 带编辑框的Dialog
-`EditDialogActivity`
+* 带编辑框的Dialog  
+`EditDialogActivity`  
 :octocat:
 2016年8月19日16:16:24    
 * Banner动画    
