@@ -8,6 +8,10 @@ _____________________
 
 [![](https://jitpack.io/v/rey5137/material.svg)](https://github.com/Merbn/MyCodeLibs) [![Download](https://api.bintray.com/packages/rey5137/maven/material/images/download.svg)](https://github.com/Merbn/MyCodeLibs)  [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Material-brightgreen.svg?style=flat)](https://github.com/Merbn/MyCodeLibs)
 
+2016年9月26日18:36:39
+* 将时间戳转换为友好显示的时间,用于聊天
+MinutesAgoActivity
+:octocat:
 2016年9月18日00:04:42
 * BottomSheetDialog
 BottomSheetDialogActivity
@@ -29,11 +33,11 @@ ViewPagerCardActivity
 ButtonViewActivity
 :octocat:
 2016年8月25日00:07:13
-* MD风格的Dialog    
+* MD风格的Dialog
 MaterialDialogActivity
 :octocat:
 2016年8月24日09:01:00
-* 带编辑框的Dialog    
+* 带编辑框的Dialog
 EditDialogActivity
 :octocat:
 2016年8月19日16:16:24    
