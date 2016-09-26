@@ -117,6 +117,6 @@ MagicButtonActivity
 * 完成滚动的数字；  
 TickerActivity  
 :octocat: 
-2016年7月28日00:35:56	
-* 增加:RecycleView  
-下拉刷新， 上拉加载
+1.2016年7月28日00:35:56
+* 增加:RecycleView下拉刷新， 上拉加载
+:octocat:
