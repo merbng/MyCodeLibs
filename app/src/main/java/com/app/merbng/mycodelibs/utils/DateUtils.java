@@ -5,17 +5,53 @@ import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.text.TextUtils;
 import android.widget.Toast;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 /**
  * Created by zx on 2016/8/4.
  */
 public class DateUtils {
+    /**
+     * 获取当前时间
+     *
+     * @return
+     */
+    public static String getCurrentUTCTime() {
+        Date currentTime = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss SSS", Locale.getDefault());
+        return formatter.format(currentTime);
+    }
+    /**
+     * 时间转长整形
+     *
+     * @param time
+     * @return
+     */
+    public static long string2long(String time) {
+        if (TextUtils.isEmpty(time)) {
+            return 0l;
+        }
+        try {
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss SSS", Locale.getDefault());
+            return simpleDateFormat.parse(time).getTime();
+        } catch (ParseException e) {
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
+            try {
+                return simpleDateFormat.parse(time).getTime();
+            } catch (ParseException exception) {
+                LogUtil.log.e("Parser time fail!");
+                return -1;
+            }
+        }
+    }
     public static String dateToString(Date date) {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
         if (date != null) {
@@ -68,5 +104,72 @@ public class DateUtils {
         am.cancel(pi);
         // 设置每一天的计时器
         am.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pi);
+    }
+//    ----------------------------------------------------------------------------------------------------------------------------
+    /**
+     * 将时间戳转换为友好显示的时间
+     * @param time
+     * @return
+     */
+    public static String convertTimeToFriendly(long time) {
+        String str = "";
+        long currentTime = System.currentTimeMillis();
+        long dxTime = currentTime - time;
+        if(dxTime < 60 * 1000) {
+            //几秒前
+            str = "刚刚";
+        }else if(60 * 1000 < dxTime && dxTime < 60*60*1000){
+            //几分钟前
+            str = (int)(dxTime / (60*1000)) + "分钟前";
+        }else if(dxTime > 60*60*1000){
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+            Date d = new Date(time);
+            Date cd = new Date(currentTime);
+            String currentStr = sdf.format(cd);
+            String timeStr = sdf.format(d);
+            if(currentStr.split(" ")[0].equals(timeStr.split(" ")[0])) {
+                str = "今天"+timeStr.substring(11);
+            }else if(Integer.parseInt(currentStr.substring(8, 9)) - Integer.parseInt(timeStr.substring(8, 9)) == 1) {
+                str = "昨天"+timeStr.substring(11);
+            }else if(Integer.parseInt(currentStr.substring(8, 9)) - Integer.parseInt(timeStr.substring(8, 9)) == 2) {
+                str = "前天"+timeStr.substring(11);
+            }else {
+                str = timeStr.substring(5);
+            }
+        }
+        return str;
+    }
+    /**
+     * 将时间戳转换为友好显示的时间,用于聊天
+     * @param time
+     * @return
+     */
+    public static String convertTimeToFriendlyForChat(long time) {
+        String str = "";
+        long currentTime = System.currentTimeMillis();
+        long dxTime = currentTime - time;
+        if(dxTime < 60 * 1000) {
+            //几秒前
+            str = "";
+        }else if(60 * 1000 < dxTime && dxTime < 60*60*1000){
+            //几分钟前
+            str = (int)(dxTime / (60*1000)) + "分钟前";
+        }else if(dxTime > 60*60*1000){
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+            Date d = new Date(time);
+            Date cd = new Date(currentTime);
+            String currentStr = sdf.format(cd);
+            String timeStr = sdf.format(d);
+            if(currentStr.split(" ")[0].equals(timeStr.split(" ")[0])) {
+                str = "今天"+timeStr.substring(11);
+            }else if(Integer.parseInt(currentStr.substring(8, 9)) - Integer.parseInt(timeStr.substring(8, 9)) == 1) {
+                str = "昨天"+timeStr.substring(11);
+            }else if(Integer.parseInt(currentStr.substring(8, 9)) - Integer.parseInt(timeStr.substring(8, 9)) == 2) {
+                str = "前天"+timeStr.substring(11);
+            }else {
+                str = timeStr.substring(5);
+            }
+        }
+        return str;
     }
 }
