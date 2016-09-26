@@ -22,7 +22,7 @@ _____________________
 :octocat:
 2016年9月10日00:59:16
 * 仿美团  购物车动画
-`MeiTuanShopingActivity`
+`MeiTuanShopingActivity`  
 :octocat:
 2016年8月26日13:57:04
 * ViewPagerCard  
