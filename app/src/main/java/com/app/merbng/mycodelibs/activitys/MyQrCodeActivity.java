@@ -75,8 +75,19 @@ public class MyQrCodeActivity extends BaseActivity implements View.OnTouchListen
             @Override
             public void onClick(View v) {
                 new ImageZoomHelper(MyQrCodeActivity.this, ll_heard);
-                userDetail_img.setVisibility(View.INVISIBLE);
-                ll_heard.setVisibility(View.INVISIBLE);
+                if (ll_heard.isShown()) {
+                    userDetail_img.setVisibility(View.INVISIBLE);
+                    ll_heard.setVisibility(View.INVISIBLE);
+                }else {
+                    userDetail_img.setVisibility(View.VISIBLE);
+                    ll_heard.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+        userDetail_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new ImageZoomHelper(MyQrCodeActivity.this, userDetail_img);
             }
         });
     }
@@ -125,7 +136,9 @@ public class MyQrCodeActivity extends BaseActivity implements View.OnTouchListen
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
-            finish();
+//            finish();
+            userDetail_img.setVisibility(View.VISIBLE);
+            ll_heard.setVisibility(View.VISIBLE);
         }
         return false;
     }
