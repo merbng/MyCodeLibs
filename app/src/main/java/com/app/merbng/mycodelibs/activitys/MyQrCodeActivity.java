@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.utils.DialogUtils;
+import com.app.merbng.mycodelibs.utils.ImageZoomHelper;
 import com.app.merbng.mycodelibs.utils.QRUtils;
 import com.bumptech.glide.Glide;
 
@@ -73,27 +74,9 @@ public class MyQrCodeActivity extends BaseActivity implements View.OnTouchListen
         ll_heard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogUtils.createEditDialog(mContext, "提示", "请输昵称", "Merbng", new DialogUtils.GetUrlName() {
-                    @Override
-                    public void getname(String str) {
-                        show(str);
-                        try {
-                            AssetFileDescriptor fileDescriptor = getAssets().openFd("video.mp4");
-                            MediaPlayer mediaPlayer = new MediaPlayer();
-
-                            mediaPlayer.setDataSource(fileDescriptor.getFileDescriptor(),
-
-                                    fileDescriptor.getStartOffset(),
-
-                                    fileDescriptor.getLength());
-
-                            mediaPlayer.prepare();
-                            mediaPlayer.start();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }).show();
+                new ImageZoomHelper(MyQrCodeActivity.this, ll_heard);
+                userDetail_img.setVisibility(View.INVISIBLE);
+                ll_heard.setVisibility(View.INVISIBLE);
             }
         });
     }
