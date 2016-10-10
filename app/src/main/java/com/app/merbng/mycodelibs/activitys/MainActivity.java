@@ -212,6 +212,9 @@ public class MainActivity extends BaseActivity {
             case R.id.authcodecountdownactivity://验证码倒计时
                 openActivity(AuthCodeCountdownActivity.class);
                 break;
+            case R.id.circlemenuactivity://圆形菜单动画
+                openActivity(CircleMenuActivity.class);
+                break;
             case R.id.myqrcodeactivity://我的二维码
                 Intent intent_qrcode = new Intent(mContext, MyQrCodeActivity.class);
                 intent_qrcode.putExtra(MyQrCodeActivity.USERID_KEY, "https://github.com/Merbn");
