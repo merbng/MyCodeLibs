@@ -143,7 +143,8 @@
         <activity android:name=".activitys.SwitchButtonActivity" />
         <activity android:name=".activitys.BottomSheetDialogActivity" />
         <activity android:name=".activitys.OpenAdvActivity" />
-        <activity android:name=".activitys.MinutesAgoActivity"></activity>
+        <activity android:name=".activitys.MinutesAgoActivity" />
+        <activity android:name=".activitys.AuthCodeCountdownActivity"></activity>
     </application>
 
 </manifest>
