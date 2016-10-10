@@ -9,12 +9,12 @@ _____________________
 [![](https://jitpack.io/v/rey5137/material.svg)](https://github.com/Merbn/MyCodeLibs) [![Download](https://api.bintray.com/packages/rey5137/maven/material/images/download.svg)](https://github.com/Merbn/MyCodeLibs)  [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Material-brightgreen.svg?style=flat)](https://github.com/Merbn/MyCodeLibs)
 
 2016年10月10日14:41:34
-* 验证码倒计时
-`AuthCodeCountdownActivity`
+* 验证码倒计时  
+`AuthCodeCountdownActivity`  
 :octocat:
 2016年10月9日13:47:58
-* 我的二维码点击头像显示查看图片效果
-`MyQrCodeActivity`
+* 我的二维码点击头像显示查看图片效果  
+`MyQrCodeActivity`  
 :octocat:
 2016年9月26日18:36:39
 * 将时间戳转换为友好显示的时间,用于聊天  
