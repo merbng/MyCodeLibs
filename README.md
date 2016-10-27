@@ -8,6 +8,10 @@ _____________________
 
 [![](https://jitpack.io/v/rey5137/material.svg)](https://github.com/Merbn/MyCodeLibs) [![Download](https://api.bintray.com/packages/rey5137/maven/material/images/download.svg)](https://github.com/Merbn/MyCodeLibs)  [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Material-brightgreen.svg?style=flat)](https://github.com/Merbn/MyCodeLibs)
 
+2016年10月27日23:18:41  
+* 图文环绕  
+ImgTextSoundActivity  
+:octocat:
 2016年9月18日00:04:42
 * BottomSheetDialog
 BottomSheetDialogActivity
