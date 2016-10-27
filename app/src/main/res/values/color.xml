@@ -98,4 +98,8 @@
     <!--半透明-->
     <color name="translucency">#8FFFFFFF</color>
     <color name="grey800">#424242</color>
+    <!--验证码倒计时-->
+    <color name="num_line">#B4B4B4</color>
+    <color name="dialog_button">#646464</color>
+    <color name="dialog_hint">#969696</color>
 </resources>

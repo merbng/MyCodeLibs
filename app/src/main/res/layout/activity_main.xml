@@ -551,6 +551,36 @@
         <include layout="@layout/view_line" />
 
         <Button
+            android:id="@+id/minutesagoactivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="几小时后/几分钟后"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
+        <Button
+            android:id="@+id/authcodecountdownactivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="验证码倒计时"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
+        <Button
+            android:id="@+id/circlemenuactivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="圆形菜单动画"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
+        <Button
             android:id="@+id/imgtextsoundactivity"
             style="@style/btn_style"
             android:background="@color/skin_color_text"

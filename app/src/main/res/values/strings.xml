@@ -125,4 +125,7 @@
     <string name="scan_qr_see_mycollect_card">一&#160;扫二维码&#160;&#160;关注我&#160;一</string>
     <string name="title_activity_bottom_menu">BottomMenuActivity</string>
     <string name="title_activity_study_build_model">StudyBuildModelActivity</string>
+    <!--验证码倒计时-->
+    <string name="get_authcode">获取验证码</string>
+    <string name="regist_phonenumber">请输入手机号</string>
 </resources>

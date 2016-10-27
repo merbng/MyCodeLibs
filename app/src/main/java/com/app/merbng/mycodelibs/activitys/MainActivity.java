@@ -206,6 +206,15 @@ public class MainActivity extends BaseActivity {
             case R.id.bottomsheetdialogactivity://BottomSheet
                 openActivity(BottomSheetDialogActivity.class);
                 break;
+            case R.id.minutesagoactivity://几分钟后/几小时后
+                openActivity(MinutesAgoActivity.class);
+                break;
+            case R.id.authcodecountdownactivity://验证码倒计时
+                openActivity(AuthCodeCountdownActivity.class);
+                break;
+            case R.id.circlemenuactivity://圆形菜单动画
+                openActivity(CircleMenuActivity.class);
+                break;
             case R.id.imgtextsoundactivity://图文环绕
                 openActivity(ImgTextSoundActivity.class);
                 break;
