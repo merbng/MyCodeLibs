@@ -9,6 +9,7 @@
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
     <application
         android:name=".MyCodeLibApplication"
         android:allowBackup="true"
@@ -140,8 +141,9 @@
 
         <activity android:name=".activitys.ZanAnimActivity" />
         <activity android:name=".activitys.SwitchButtonActivity" />
-        <activity android:name=".activitys.BottomSheetDialogActivity"/>
-        <activity android:name=".activitys.OpenAdvActivity"/>
+        <activity android:name=".activitys.BottomSheetDialogActivity" />
+        <activity android:name=".activitys.OpenAdvActivity" />
+        <activity android:name=".activitys.ImgTextSoundActivity"/>
     </application>
 
 </manifest>

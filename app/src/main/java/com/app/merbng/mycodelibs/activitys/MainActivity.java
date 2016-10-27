@@ -206,6 +206,9 @@ public class MainActivity extends BaseActivity {
             case R.id.bottomsheetdialogactivity://BottomSheet
                 openActivity(BottomSheetDialogActivity.class);
                 break;
+            case R.id.imgtextsoundactivity://图文环绕
+                openActivity(ImgTextSoundActivity.class);
+                break;
             case R.id.myqrcodeactivity://我的二维码
                 Intent intent_qrcode = new Intent(mContext, MyQrCodeActivity.class);
                 intent_qrcode.putExtra(MyQrCodeActivity.USERID_KEY, "https://github.com/Merbn");
