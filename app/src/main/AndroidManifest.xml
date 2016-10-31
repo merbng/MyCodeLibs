@@ -145,8 +145,9 @@
         <activity android:name=".activitys.OpenAdvActivity" />
         <activity android:name=".activitys.MinutesAgoActivity" />
         <activity android:name=".activitys.AuthCodeCountdownActivity" />
-        <activity android:name=".activitys.CircleMenuActivity"></activity>
+        <activity android:name=".activitys.CircleMenuActivity"/>
         <activity android:name=".activitys.ImgTextSoundActivity"/>
+        <activity android:name=".fragments.statefragment.StateColorActivity"/>
         <activity android:name=".activitys.UndoEditActivity"
             android:theme="@style/toumingStyle" />
         <activity android:name=".A_edittextfirework.EditFireWorkActivity" />

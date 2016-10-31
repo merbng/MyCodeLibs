@@ -1,5 +1,6 @@
 package com.app.merbng.mycodelibs.activitys;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -19,11 +20,14 @@ import com.app.merbng.mycodelibs.A_viewpagerCard.ViewPagerCardActivity;
 import com.app.merbng.mycodelibs.A_windowManager.UcNotifyActivity;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
+import com.app.merbng.mycodelibs.fragments.statefragment.StateColorActivity;
 import com.app.merbng.mycodelibs.utils.AppFunctionUtils;
 import com.app.merbng.mycodelibs.utils.LogUtil;
 import com.app.merbng.mycodelibs.widget.SplashView;
 import com.janggwa.zkw.golddrop.GoldAnimationActivity;
 import com.zhy.changeskin.SkinManager;
+
+import qiu.niorgai.StatusBarCompat;
 
 public class MainActivity extends BaseActivity {
     ActivityOptionsCompat aoc;
@@ -228,6 +232,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.imgtextsoundactivity://图文环绕
                 openActivity(ImgTextSoundActivity.class);
+                break;
+            case R.id.statecoloractivity://图文环绕
+                openActivity(StateColorActivity.class);
                 break;
             case R.id.myqrcodeactivity://我的二维码
                 Intent intent_qrcode = new Intent(mContext, MyQrCodeActivity.class);

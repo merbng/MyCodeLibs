@@ -105,4 +105,7 @@
     <color name="dialog_hint">#969696</color>
     <!--分享-->
     <color name="body_text_color">#222222</color>
+    <!--状态栏-->
+    <color name="colorBlack">#000000</color>
+    <color name="colorBackground">#319bd2</color>
 </resources>

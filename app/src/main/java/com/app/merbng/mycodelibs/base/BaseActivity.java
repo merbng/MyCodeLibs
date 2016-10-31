@@ -20,6 +20,8 @@ import java.lang.ref.WeakReference;
 import java.util.LinkedList;
 import java.util.List;
 
+import qiu.niorgai.StatusBarCompat;
+
 /**
  * Activity基类
  *
