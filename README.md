@@ -8,9 +8,21 @@ _____________________
 
 [![](https://jitpack.io/v/rey5137/material.svg)](https://github.com/Merbn/MyCodeLibs) [![Download](https://api.bintray.com/packages/rey5137/maven/material/images/download.svg)](https://github.com/Merbn/MyCodeLibs)  [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Material-brightgreen.svg?style=flat)](https://github.com/Merbn/MyCodeLibs)
 
+2016年10月31日18:29:39
+* 透明状态栏
+`StateColorActivity`
+:octocat:
+2016年10月17日17:22:19
+* EditText的撤销和恢复（反撤销）
+`UndoEditActivity`
+:octocat:
+2016年10月17日17:21:24
+* 输入框烟花效果
+`EditFireWorkActivity`
+:octocat:
 2016年10月10日14:41:34
-* 验证码倒计时  
-`AuthCodeCountdownActivity`  
+* 验证码倒计时
+`AuthCodeCountdownActivity`
 :octocat:
 2016年10月9日13:47:58
 * 我的二维码点击头像显示查看图片效果  
