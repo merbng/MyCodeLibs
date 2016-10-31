@@ -3,7 +3,8 @@ package com.app.merbng.mycodelibs.utils;
 import android.content.Context;
 
 public class SharedPrefUtils {
-     
+
+    private static final String SP_RECENT_SHARED_PACKAGE = "recentSharedPackage";//最近使用的分享程序
 
     public static void putBoolean(Context context, String key, boolean flag) {
         context.getApplicationContext().getSharedPreferences("MerbngKey", Context.MODE_PRIVATE)
@@ -86,5 +87,12 @@ public class SharedPrefUtils {
     public static void removeInfo(Context context, String key) {
         context.getApplicationContext().getSharedPreferences("MerbngKey", Context.MODE_PRIVATE)
                 .edit().remove(key).commit();
+    }
+    public static String getRecentSharedPackage(Context mContext) {
+        return SharedPrefUtils.getString(mContext,SP_RECENT_SHARED_PACKAGE);
+    }
+
+    public static void putRecentSharedPackage(Context mContext,String recentSharedPackage) {
+        SharedPrefUtils.setAny(mContext,SP_RECENT_SHARED_PACKAGE, recentSharedPackage);
     }
 }

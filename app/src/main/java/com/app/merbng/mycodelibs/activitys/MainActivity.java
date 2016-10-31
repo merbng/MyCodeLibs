@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.app.merbng.mycodelibs.A_StudyProcessButton.ProcessButtonActivity;
 import com.app.merbng.mycodelibs.A_TumbleEditText.TumbeEditTextActivity;
+import com.app.merbng.mycodelibs.A_edittextfirework.EditFireWorkActivity;
 import com.app.merbng.mycodelibs.A_galleryview.GalleryActivity;
 import com.app.merbng.mycodelibs.A_materiallogin.MaterialLoginActivity;
 import com.app.merbng.mycodelibs.A_recycleViewRefresh.StudyRecycleRefreshActivity;
@@ -18,6 +19,7 @@ import com.app.merbng.mycodelibs.A_viewpagerCard.ViewPagerCardActivity;
 import com.app.merbng.mycodelibs.A_windowManager.UcNotifyActivity;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
+import com.app.merbng.mycodelibs.utils.AppFunctionUtils;
 import com.app.merbng.mycodelibs.utils.LogUtil;
 import com.app.merbng.mycodelibs.widget.SplashView;
 import com.janggwa.zkw.golddrop.GoldAnimationActivity;
@@ -214,6 +216,15 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.circlemenuactivity://圆形菜单动画
                 openActivity(CircleMenuActivity.class);
+                break;
+            case R.id.editfireworkactivity://输入框动画
+                openActivity(EditFireWorkActivity.class);
+                break;
+            case R.id.undoeditactivity://EditText的撤销和恢复（反撤销）
+                openActivity(UndoEditActivity.class);
+                break;
+            case R.id.share://EditText的撤销和恢复（反撤销）
+                AppFunctionUtils.share(MainActivity.this);
                 break;
             case R.id.myqrcodeactivity://我的二维码
                 Intent intent_qrcode = new Intent(mContext, MyQrCodeActivity.class);

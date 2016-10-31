@@ -87,6 +87,7 @@
     <color name="bgColor_actionsheet_cancel_nor">#ffffff</color>
     <color name="weixin_gray">#e5e6e6</color>
     <color name="app_red_light">#ec584e</color>
+    <color name="red_error">#ec584e</color>
     <!--Button view-->
     <color name="arcColor">#00F5FF</color>
     <!--我的二维码-->
@@ -102,4 +103,6 @@
     <color name="num_line">#B4B4B4</color>
     <color name="dialog_button">#646464</color>
     <color name="dialog_hint">#969696</color>
+    <!--分享-->
+    <color name="body_text_color">#222222</color>
 </resources>

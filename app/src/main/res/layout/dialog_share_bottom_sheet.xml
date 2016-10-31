@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding">
+
+    <TextView
+        android:id="@+id/recent_shared_title"
+        style="@style/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:text="最近使用" />
+
+    <LinearLayout
+        android:id="@+id/recent_shared_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_padding">
+
+        <ImageView
+            android:id="@+id/recent_shared_logo"
+            android:layout_width="@dimen/large_listitem_icon_height"
+            android:layout_height="@dimen/large_listitem_icon_height"
+            android:src="@drawable/iconfont_main" />
+
+        <TextView
+            android:id="@+id/recent_shared_label"
+            style="@style/body_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/default_padding"
+            tools:text="星星共享" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:text="分享到" />
+
+    <android.support.v7.widget.RecyclerView xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/shared_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/listitem_share" />
+</LinearLayout>

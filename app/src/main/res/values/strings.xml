@@ -128,4 +128,8 @@
     <!--验证码倒计时-->
     <string name="get_authcode">获取验证码</string>
     <string name="regist_phonenumber">请输入手机号</string>
+    <!--edit撤销与恢复-->
+    <string name="action_redo">重做</string>
+    <string name="action_undo">撤销</string>
+    <string name="action_clear">清除撤销记录</string>
 </resources>
