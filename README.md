@@ -20,6 +20,10 @@ _____________________
 * 将时间戳转换为友好显示的时间,用于聊天  
 `MinutesAgoActivity`  
 :octocat:
+2016年10月27日23:18:41  
+* 图文环绕  
+ImgTextSoundActivity  
+:octocat:
 2016年9月18日00:04:42
 * BottomSheetDialog  
 `BottomSheetDialogActivity`  

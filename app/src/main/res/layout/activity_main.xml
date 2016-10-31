@@ -581,6 +581,20 @@
         <include layout="@layout/view_line" />
 
         <Button
+            android:id="@+id/imgtextsoundactivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="图文环绕"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
             android:id="@+id/editfireworkactivity"
             style="@style/btn_style"
             android:background="@color/skin_color_text"

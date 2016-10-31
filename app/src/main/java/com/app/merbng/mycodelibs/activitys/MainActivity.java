@@ -226,6 +226,9 @@ public class MainActivity extends BaseActivity {
             case R.id.share://EditText的撤销和恢复（反撤销）
                 AppFunctionUtils.share(MainActivity.this);
                 break;
+            case R.id.imgtextsoundactivity://图文环绕
+                openActivity(ImgTextSoundActivity.class);
+                break;
             case R.id.myqrcodeactivity://我的二维码
                 Intent intent_qrcode = new Intent(mContext, MyQrCodeActivity.class);
                 intent_qrcode.putExtra(MyQrCodeActivity.USERID_KEY, "https://github.com/Merbn");
