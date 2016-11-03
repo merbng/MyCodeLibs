@@ -10,6 +10,7 @@ import android.view.View;
 import com.app.merbng.mycodelibs.A_StudyProcessButton.ProcessButtonActivity;
 import com.app.merbng.mycodelibs.A_TumbleEditText.TumbeEditTextActivity;
 import com.app.merbng.mycodelibs.A_galleryview.GalleryActivity;
+import com.app.merbng.mycodelibs.A_loadProgress.LoadProssActivity;
 import com.app.merbng.mycodelibs.A_materiallogin.MaterialLoginActivity;
 import com.app.merbng.mycodelibs.A_recycleViewRefresh.StudyRecycleRefreshActivity;
 import com.app.merbng.mycodelibs.A_studyRetrofit.StudyRetrofitActivity;
@@ -217,6 +218,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.imgtextsoundactivity://图文环绕
                 openActivity(ImgTextSoundActivity.class);
+                break;
+            case R.id.loadprossactivity://加载进度条
+                openActivity(LoadProssActivity.class);
                 break;
             case R.id.myqrcodeactivity://我的二维码
                 Intent intent_qrcode = new Intent(mContext, MyQrCodeActivity.class);
