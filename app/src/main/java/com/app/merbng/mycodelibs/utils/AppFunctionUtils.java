@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 
+import com.app.merbng.mycodelibs.A_SharedBottomSheetDialog.SharedBottomSheetDialog;
+import com.app.merbng.mycodelibs.Constent;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.activitys.SplishActivity;
 
@@ -48,5 +50,22 @@ public class AppFunctionUtils {
         tutorialItems.add(tutorialItem4);
 
         return tutorialItems;
+    }
+
+    /**分享
+     * @param localContext
+     */
+    public static void share(Context localContext) {
+        SharedBottomSheetDialog.Builder builder = new SharedBottomSheetDialog.Builder(localContext).setTitle("Android 学习库")
+                .setUrl(Constent.SHARE);
+        builder.setImgUrl("http://static.cnbetacdn.com/thumb/article/2016/0802/faa9017db6a78a2.jpg_600x600.jpg");
+        builder.show();
+//        localContext.startActivity(shareText(Constent.SHARE));
+    }
+    public static Intent shareText(String url) {
+        Intent localIntent = new Intent("android.intent.action.SEND");
+        localIntent.setType("text/plain");
+        localIntent.putExtra("android.intent.extra.TEXT", url);
+        return localIntent;
     }
 }

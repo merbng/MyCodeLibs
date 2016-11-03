@@ -1,5 +1,6 @@
 package com.app.merbng.mycodelibs.activitys;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.view.View;
 
 import com.app.merbng.mycodelibs.A_StudyProcessButton.ProcessButtonActivity;
 import com.app.merbng.mycodelibs.A_TumbleEditText.TumbeEditTextActivity;
+import com.app.merbng.mycodelibs.A_edittextfirework.EditFireWorkActivity;
 import com.app.merbng.mycodelibs.A_galleryview.GalleryActivity;
 import com.app.merbng.mycodelibs.A_loadProgress.LoadProssActivity;
 import com.app.merbng.mycodelibs.A_materiallogin.MaterialLoginActivity;
@@ -19,10 +21,14 @@ import com.app.merbng.mycodelibs.A_viewpagerCard.ViewPagerCardActivity;
 import com.app.merbng.mycodelibs.A_windowManager.UcNotifyActivity;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
+import com.app.merbng.mycodelibs.fragments.statefragment.StateColorActivity;
+import com.app.merbng.mycodelibs.utils.AppFunctionUtils;
 import com.app.merbng.mycodelibs.utils.LogUtil;
 import com.app.merbng.mycodelibs.widget.SplashView;
 import com.janggwa.zkw.golddrop.GoldAnimationActivity;
 import com.zhy.changeskin.SkinManager;
+
+import qiu.niorgai.StatusBarCompat;
 
 public class MainActivity extends BaseActivity {
     ActivityOptionsCompat aoc;
@@ -216,8 +222,20 @@ public class MainActivity extends BaseActivity {
             case R.id.circlemenuactivity://圆形菜单动画
                 openActivity(CircleMenuActivity.class);
                 break;
+            case R.id.editfireworkactivity://输入框动画
+                openActivity(EditFireWorkActivity.class);
+                break;
+            case R.id.undoeditactivity://EditText的撤销和恢复（反撤销）
+                openActivity(UndoEditActivity.class);
+                break;
+            case R.id.share://EditText的撤销和恢复（反撤销）
+                AppFunctionUtils.share(MainActivity.this);
+                break;
             case R.id.imgtextsoundactivity://图文环绕
                 openActivity(ImgTextSoundActivity.class);
+                break;
+            case R.id.statecoloractivity://图文环绕
+                openActivity(StateColorActivity.class);
                 break;
             case R.id.loadprossactivity://加载进度条
                 openActivity(LoadProssActivity.class);

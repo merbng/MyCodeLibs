@@ -59,4 +59,16 @@
     <dimen name="default_triple_padding">24dp</dimen>
     <dimen name="logo_width_height">36dp</dimen>
     <dimen name="dp8">8dp</dimen>
+    <!--分享-->
+
+    <dimen name="drawer_header_item_height">56dp</dimen>
+    <dimen name="large_listitem_icon_height">40dp</dimen>
+    <dimen name="large_listitem_icon_width">40dp</dimen>
+    <dimen name="simple_listitem_icon_height">32.0dip</dimen>
+    <dimen name="simple_listitem_icon_width">32.0dip</dimen>
+    <dimen name="header_icon_height">80.0dip</dimen>
+    <dimen name="header_icon_width">80.0dip</dimen>
+    <dimen name="single_pad">8.0dip</dimen>
+    <!--状态栏-->
+    <dimen name="card_margin">16dp</dimen>
 </resources>

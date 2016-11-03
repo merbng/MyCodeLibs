@@ -11,6 +11,7 @@ public class Constent {
     /*三方分享*/
 //    分享的url
     public static final String USERCARDFOLDERDETAIL_SHARE = "https://api.mystarcloud.com/1.0/share/cards?userCardId=";
+    public static final String SHARE = "https://github.com/Merbn/MyCodeLibs";
 
     public static final String SYSTEM_SHARE = "SystemShare";
     public static final String platform_QQ = "qq";

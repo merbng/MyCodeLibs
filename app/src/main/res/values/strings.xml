@@ -128,4 +128,21 @@
     <!--验证码倒计时-->
     <string name="get_authcode">获取验证码</string>
     <string name="regist_phonenumber">请输入手机号</string>
+    <!--edit撤销与恢复-->
+    <string name="action_redo">重做</string>
+    <string name="action_undo">撤销</string>
+    <string name="action_clear">清除撤销记录</string>
+    <!--状态栏-->
+    <string name="title_activity_margin_compat">MarginCompatActivity</string>
+    <string name="title_activity_parent_compat">ParentCompatActivity</string>
+    <string name="title_activity_content_compat">ContentCompatActivity</string>
+    <string name="title_activity_content_compat_translucent">ContentCompatTranslucentActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="cheese_ipsum">Jarlsberg lancashire edam. Dolcelatte hard cheese brie st. agur blue
+    cheese caerphilly bavarian bergkase cheese and biscuits mascarpone. Cheeseburger swiss bavarian
+    bergkase cream cheese fromage frais cheesy feet port-salut airedale. St. agur blue cheese rubber
+    cheese caerphilly cheddar cheesecake cream cheese manchego lancashire. Roquefort squirty cheese
+    the big cheese.</string>
 </resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/default_padding">
+
+
+    <ImageView
+        android:id="@+id/recent_shared_logo"
+        android:layout_width="@dimen/large_listitem_icon_height"
+        android:layout_height="@dimen/large_listitem_icon_height"
+        android:src="@drawable/iconfont_main" />
+
+    <TextView
+        android:id="@+id/recent_shared_label"
+        style="@style/body_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/default_padding"
+        tools:text="星星共享" />
+
+</LinearLayout>
