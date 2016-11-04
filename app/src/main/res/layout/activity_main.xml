@@ -600,10 +600,6 @@
 
         <include layout="@layout/view_line" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
         <Button
             android:id="@+id/editfireworkactivity"
             style="@style/btn_style"
@@ -620,6 +616,26 @@
             android:background="@color/skin_color_text"
             android:onClick="btnClick"
             android:text="EditText的撤销和恢复（反撤销）"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
+        <Button
+            android:id="@+id/statecoloractivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="状态栏颜色"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
+        <Button
+            android:id="@+id/circleimageactivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="圆形图ImageVIew"
             android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />

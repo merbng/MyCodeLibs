@@ -145,16 +145,19 @@
         <activity android:name=".activitys.OpenAdvActivity" />
         <activity android:name=".activitys.MinutesAgoActivity" />
         <activity android:name=".activitys.AuthCodeCountdownActivity" />
-        <activity android:name=".activitys.CircleMenuActivity"/>
-        <activity android:name=".activitys.ImgTextSoundActivity"/>
-        <activity android:name=".fragments.statefragment.StateColorActivity"/>
-        <activity android:name=".activitys.UndoEditActivity"
+        <activity android:name=".activitys.CircleMenuActivity" />
+        <activity android:name=".activitys.ImgTextSoundActivity" />
+        <activity android:name=".fragments.statefragment.StateColorActivity" />
+        <activity
+            android:name=".activitys.UndoEditActivity"
             android:theme="@style/toumingStyle" />
         <activity android:name=".A_edittextfirework.EditFireWorkActivity" />
-        <activity android:name=".A_loadProgress.ImageListActivity"/>
-        <activity android:name=".A_loadProgress.CircleShowActivity"/>
-        <activity android:name=".A_loadProgress.RectShowActivity"/>
-        <activity android:name=".A_loadProgress.DifferentActivity"/>
+        <activity android:name=".A_loadProgress.ImageListActivity" />
+        <activity android:name=".A_loadProgress.CircleShowActivity" />
+        <activity android:name=".A_loadProgress.RectShowActivity" />
+        <activity android:name=".A_loadProgress.DifferentActivity" />
+        <activity android:name=".A_loadProgress.LoadProssActivity" />
+        <activity android:name=".activitys.CircleImageActivity"/>
     </application>
 
 </manifest>

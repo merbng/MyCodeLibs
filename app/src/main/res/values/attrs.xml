@@ -32,4 +32,10 @@
         <attr name="spotPadding" format="reference|dimension"/>
         <attr name="duration" format="reference|integer" />
     </declare-styleable>
+    <!--圆角-->
+    <declare-styleable name="BezelImageView">
+        <attr name="maskDrawable" format="reference" />
+        <attr name="borderDrawable" format="reference" />
+        <attr name="desaturateOnPress" format="boolean" />
+    </declare-styleable>
 </resources>
