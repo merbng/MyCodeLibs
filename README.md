@@ -8,6 +8,10 @@ _____________________
 
 [![](https://jitpack.io/v/rey5137/material.svg)](https://github.com/Merbn/MyCodeLibs) [![Download](https://api.bintray.com/packages/rey5137/maven/material/images/download.svg)](https://github.com/Merbn/MyCodeLibs)  [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Material-brightgreen.svg?style=flat)](https://github.com/Merbn/MyCodeLibs)
 
+2016年11月4日16:40:45
+* 谷歌原生圆形ImageView
+`CircleImageActivity`
+:octocat:
 2016年10月31日18:29:39
 * 透明状态栏
 `StateColorActivity`
