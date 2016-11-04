@@ -639,6 +639,16 @@
             android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
+
+        <Button
+            android:id="@+id/weatheranimationactivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="下雪动画"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content">

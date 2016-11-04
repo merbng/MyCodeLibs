@@ -6,7 +6,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
-import com.app.merbng.mycodelibs.A_loadProgress.adapter.CIrcleAdapter;
 import com.app.merbng.mycodelibs.A_loadProgress.bean.CircleLoadInfo;
 import com.app.merbng.mycodelibs.R;
 import com.jpeng.progress.enums.CircleStyle;
@@ -52,6 +51,5 @@ public class CircleShowActivity extends AppCompatActivity {
         CircleLoadInfo info5 = new CircleLoadInfo("园环风格", "两种不同的园风格", "http://pic.paopaoche.net/up/2015-6/201569164043.jpg");
         info5.setStyle(CircleStyle.FAN);
         list.add(info5);
-        mListView.setAdapter(new CIrcleAdapter(this,R.layout.item_list,list));
     }
 }

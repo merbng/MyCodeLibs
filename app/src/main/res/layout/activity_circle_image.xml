@@ -12,10 +12,21 @@
     tools:context="com.app.merbng.mycodelibs.activitys.CircleImageActivity">
 
     <com.app.merbng.mycodelibs.widget.BezelImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@color/colorAccent"
-        android:background="@drawable/github"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/iconfont_login_bg"
         android:layout_centerInParent="true"
+        android:id="@+id/img1"
+        android:scaleType="centerCrop"
         app:maskDrawable="@drawable/rounded_corners_mask" />
+
+    <com.app.merbng.mycodelibs.widget.BezelImageView
+        android:layout_width="50dp"
+        android:layout_marginTop="@dimen/dp_22"
+        android:layout_height="50dp"
+        android:layout_below="@+id/img1"
+        android:src="@drawable/tut_page_1_background"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        app:maskDrawable="@drawable/rounded_corners_mask2" />
 </RelativeLayout>
