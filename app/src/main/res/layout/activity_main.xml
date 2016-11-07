@@ -649,6 +649,16 @@
             android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
+
+        <Button
+            android:id="@+id/imagespanactivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="图文"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
