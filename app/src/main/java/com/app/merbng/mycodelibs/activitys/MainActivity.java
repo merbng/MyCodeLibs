@@ -10,6 +10,7 @@ import android.view.View;
 
 import com.app.merbng.mycodelibs.A_StudyProcessButton.ProcessButtonActivity;
 import com.app.merbng.mycodelibs.A_TumbleEditText.TumbeEditTextActivity;
+import com.app.merbng.mycodelibs.A_WeatherAnimation.WeatherAnimationActivity;
 import com.app.merbng.mycodelibs.A_edittextfirework.EditFireWorkActivity;
 import com.app.merbng.mycodelibs.A_galleryview.GalleryActivity;
 import com.app.merbng.mycodelibs.A_loadProgress.LoadProssActivity;
@@ -69,7 +70,7 @@ public class MainActivity extends BaseActivity {
             case R.id.time_line:
                 openActivity(TimeLineActivity.class);
                 break;
-            case R.id.Shine_text:
+            case R.id.Shine_text://流光字
                 openActivity(ShineTextActivity.class);
                 break;
             case R.id.loading:
@@ -239,6 +240,18 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.loadprossactivity://加载进度条
                 openActivity(LoadProssActivity.class);
+                break;
+            case R.id.circleimageactivity://加载进度条
+                openActivity(CircleImageActivity.class);
+                break;
+            case R.id.weatheranimationactivity://下雪动画
+                openActivity(WeatherAnimationActivity.class);
+                break;
+            case R.id.imagespanactivity://下雪动画
+                openActivity(ImageSpanActivity.class);
+                break;
+            case R.id.randomtextviewactivity://滚动显示TextView的数字
+                openActivity(RandomTextViewActivity.class);
                 break;
             case R.id.myqrcodeactivity://我的二维码
                 Intent intent_qrcode = new Intent(mContext, MyQrCodeActivity.class);
