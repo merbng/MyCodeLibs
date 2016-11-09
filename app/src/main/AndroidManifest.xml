@@ -159,7 +159,8 @@
         <activity android:name=".A_loadProgress.LoadProssActivity" />
         <activity android:name=".activitys.CircleImageActivity" />
         <activity android:name=".A_WeatherAnimation.WeatherAnimationActivity" />
-        <activity android:name=".activitys.ImageSpanActivity"></activity>
+        <activity android:name=".activitys.ImageSpanActivity" />
+        <activity android:name=".activitys.RandomTextViewActivity"/>
     </application>
 
 </manifest>
