@@ -161,7 +161,9 @@
         <activity android:name=".A_WeatherAnimation.WeatherAnimationActivity" />
         <activity android:name=".activitys.ImageSpanActivity" />
         <activity android:name=".activitys.RandomTextViewActivity" />
-        <activity android:name=".activitys.Layout3DActivity"></activity>
+        <activity android:name=".A_3D.Layout3DActivity" />
+        <activity android:name=".A_3D.WeatherActivity" />
+        <activity android:name=".A_3D.UserCenterActivity" />
     </application>
 
 </manifest>
