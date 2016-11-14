@@ -253,6 +253,9 @@ public class MainActivity extends BaseActivity {
             case R.id.randomtextviewactivity://滚动显示TextView的数字
                 openActivity(RandomTextViewActivity.class);
                 break;
+            case R.id.layout3dactivity://一秒让你的view拥有3D效果
+                openActivity(Layout3DActivity.class);
+                break;
             case R.id.myqrcodeactivity://我的二维码
                 Intent intent_qrcode = new Intent(mContext, MyQrCodeActivity.class);
                 intent_qrcode.putExtra(MyQrCodeActivity.USERID_KEY, "https://github.com/Merbn");

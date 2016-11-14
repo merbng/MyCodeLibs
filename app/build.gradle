@@ -102,4 +102,5 @@ dependencies {
     compile 'ren.qinc.edit:lib:0.0.3'
     //   状态栏
     compile 'com.github.niorgai:StatusBarCompat:2.0.0'
+    compile 'com.github.githubwing:ThreeDLayout:1.0.0'
 }
