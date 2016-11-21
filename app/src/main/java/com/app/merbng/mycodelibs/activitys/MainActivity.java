@@ -1,9 +1,9 @@
 package com.app.merbng.mycodelibs.activitys;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Message;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.transition.Explode;
 import android.view.View;
@@ -25,20 +25,32 @@ import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.fragments.statefragment.StateColorActivity;
 import com.app.merbng.mycodelibs.utils.AppFunctionUtils;
+import com.app.merbng.mycodelibs.utils.DialogUtils;
 import com.app.merbng.mycodelibs.utils.LogUtil;
 import com.app.merbng.mycodelibs.widget.SplashView;
 import com.janggwa.zkw.golddrop.GoldAnimationActivity;
 import com.zhy.changeskin.SkinManager;
 
-import qiu.niorgai.StatusBarCompat;
-
 public class MainActivity extends BaseActivity {
     ActivityOptionsCompat aoc;
+    public static final int MESSAGE_SHOW_TIPS = 100;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        myHandler.sendEmptyMessageDelayed(MESSAGE_SHOW_TIPS, 5000);
+    }
+
+    @Override
+    public void hand_message(Message msg) {
+        switch (msg.what) {
+            case MESSAGE_SHOW_TIPS:
+                DialogUtils.showTips(this);
+                break;
+            default:
+                break;
+        }
     }
 
     public void btnClick(View view) {

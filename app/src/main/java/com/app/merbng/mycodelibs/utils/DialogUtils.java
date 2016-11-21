@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.support.design.widget.TextInputLayout;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +15,16 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.afollestad.materialdialogs.MaterialDialog;
+import com.app.merbng.mycodelibs.Constent;
 import com.app.merbng.mycodelibs.R;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
 
 /**
  * Created by zx on 2016/8/24.
@@ -133,5 +143,33 @@ public class DialogUtils {
         // 展示弹窗
         return dialog;
     }
-
+    public static void showTips(Context context) {
+        String listString =SharedPrefUtils.getString(context,Constent.DIALOG_KEY);
+        if (TextUtils.isEmpty(listString)) {
+            String[] rules = context.getResources().getStringArray(R.array.default_rules);
+            ArrayList<String> arrayList = new ArrayList<>(Arrays.asList(rules));
+            listString = new JSONArray(arrayList).toString();
+        }
+        ArrayList<String> tips = new ArrayList<>();
+        try {
+            JSONArray list = new JSONArray(listString);
+            for (int i = 0; i < list.length(); i++) {
+                tips.add(list.getString(i));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        if (tips.size() > 0) {
+            int random = (int) (Math.random() * tips.size());
+            new MaterialDialog.Builder(context)
+                    .icon(context.getResources().getDrawable(R.drawable.github))
+                    .title("友情提示")
+                    .content(tips.get(random))
+                    .positiveText("知道了")
+                    .cancelable(false).show();
+            tips.remove(random);
+            String newList = new JSONArray(tips).toString();
+            SharedPrefUtils.setAny(context, Constent.DIALOG_KEY,newList);
+        }
+    }
 }

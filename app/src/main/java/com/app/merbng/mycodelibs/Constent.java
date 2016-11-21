@@ -6,6 +6,7 @@ import android.os.Environment;
  * Created by zx on 2016/8/4.
  */
 public class Constent {
+    public static String DIALOG_KEY="dialog_key";
     public static int PHONE_WHITH;
     public static int PHONE_HEIGHT;
     /*三方分享*/

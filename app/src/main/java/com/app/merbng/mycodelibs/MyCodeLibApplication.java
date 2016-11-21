@@ -11,6 +11,7 @@ import com.zhy.changeskin.SkinManager;
 import java.util.LinkedList;
 import java.util.List;
 
+
 /**
  * User: wxp
  * Date: 2015-12-01
@@ -36,8 +37,7 @@ public class MyCodeLibApplication extends Application {
         api.registerApp(WXapp_id);
 
     }
-
-    /**
+     /**
      * 将此activity添加到集合里，方便统一关闭
      * 这个方法是为了切换登录用户而同时关闭多个页面
      */
