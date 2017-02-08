@@ -1,0 +1,23 @@
+1.刷新adapter 前 要清理数据
+2.使用StringBuilder注意OOM
+3.第三方分享：
+★新浪微博分享：
+-finish 要在 onResponse 后调用，redMsg 后不能调用finish
+-未登录时的返回要记得也加上finish 结束掉透明页（AuthListener-->onCancel）
+★微信分享：
+-sendReq 返回false 可能是 分享的缩略图 太大！（官方文档有说明）
+-若返回true 调起客户端 但 WXEntryActivity未接收到，则可能是 签名配置 问题
+-若接口报error ，检查一下bean里 判空的方法，先判空
+4.打开webview后再打开任意activity，webView不能滑动了。
+-是因为使用的是onPostCreate
+-在onResume里 判断 if(webView!=null){webView.onResume()}
+-在onPause 里 if(webView!=null){webView.onPause()}
+5.Toolbar 里添加自定义布局，setNavitionOnClickListener 失效原因
+-不要再调用setSupportActionBar();
+6.Dialog
+-setCancelable()----->false 禁止返回关闭
+-setCanceledOnTouside()-->false 点击其他地方不关闭
+7.Fragment
+-不能多次传argrment 会报Fragment already active
+-在Fragment里写一个public方法更新就行
+8.
