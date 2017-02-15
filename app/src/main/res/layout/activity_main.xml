@@ -679,6 +679,16 @@
             android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
+<!--2017年2月15日13:47:34-->
+        <Button
+            android:id="@+id/guideanimactivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="引导动画-过渡效果"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content">

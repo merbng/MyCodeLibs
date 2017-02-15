@@ -45,7 +45,7 @@ public class Gallery extends SmoothViewGroup {
         for (int i = 0; i < mImgs.length; i++) {
             mImgs[i] = new ImageView(getContext());
             addViewInLayout(mImgs[i], -1, params, true);
-            Glide.with(getContext()).load(getImgPath(i)).centerCrop().into(mImgs[i]);
+            Glide.with(getContext()).load(getImgPath(i)).into(mImgs[i]);
         }
 
         //创建阴影View
@@ -100,9 +100,9 @@ public class Gallery extends SmoothViewGroup {
     @Override
     protected void doAnimFinish() {
         if (isOddCircle()) {
-            Glide.with(getContext()).load(getImgPath(mRepeatTimes + 1)).centerCrop().into(mImgs[0]);
+            Glide.with(getContext()).load(getImgPath(mRepeatTimes + 1)).into(mImgs[0]);
         } else {
-            Glide.with(getContext()).load(getImgPath(mRepeatTimes + 1)).centerCrop().into(mImgs[1]);
+            Glide.with(getContext()).load(getImgPath(mRepeatTimes + 1)).into(mImgs[1]);
         }
         mShadowView.setAlpha(0);
     }

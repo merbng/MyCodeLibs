@@ -3,7 +3,9 @@ package com.app.merbng.mycodelibs;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
+import android.content.Intent;
 
+import com.app.merbng.mycodelibs.music.PlayerService;
 import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
 import com.zhy.changeskin.SkinManager;
@@ -35,7 +37,7 @@ public class MyCodeLibApplication extends Application {
 //        注册微信登陆
         api = WXAPIFactory.createWXAPI(mContext, WXapp_id, true);
         api.registerApp(WXapp_id);
-
+        startService(new Intent(this, PlayerService.class));
     }
      /**
      * 将此activity添加到集合里，方便统一关闭

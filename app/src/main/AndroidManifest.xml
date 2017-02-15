@@ -164,6 +164,8 @@
         <activity android:name=".A_3D.Layout3DActivity" />
         <activity android:name=".A_3D.WeatherActivity" />
         <activity android:name=".A_3D.UserCenterActivity" />
+        <activity android:name=".music.MusicActivity" />
+        <activity android:name=".activitys.GuideAnimActivity"></activity>
     </application>
 
 </manifest>

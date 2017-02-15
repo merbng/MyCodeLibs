@@ -129,7 +129,7 @@ public class MyQrCodeActivity extends BaseActivity implements View.OnTouchListen
                     break;
             }
         }
-        Glide.with(mContext).load(coverUrl).placeholder(R.drawable.github).error(R.drawable.github).into(heardImg);
+        Glide.with(mContext).load(coverUrl).into(heardImg);
         rl_qr.setOnTouchListener(this);
     }
 

@@ -108,4 +108,8 @@
     <!--状态栏-->
     <color name="colorBlack">#000000</color>
     <color name="colorBackground">#319bd2</color>
+    <!--music-->
+
+    <color name="icon_enabled">#FFFFFFFF</color>
+    <color name="icon_disabled">#3f4448</color>
 </resources>

@@ -27,11 +27,11 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     //    compile 'net.fredericosilva:showTipsView:1.0.4'
     compile 'com.android.support:multidex:1.0.1'
-    compile 'me.leolin:ShortcutBadger:1.1.4@aar'
+    compile 'me.leolin:ShortcutBadger:1.1.13@aar'
     compile 'com.android.support:appcompat-v7:23.3.0'
     compile 'com.android.support:recyclerview-v7:23.3.0'
-    compile 'com.github.bumptech.glide:glide:3.6.1'
     //    compile 'com.google.zxing:core:3.0.0'
+
     /*6.0权限管理*/
     compile 'com.zhy:mpermission-api:1.0.0'
     compile 'com.android.support:design:23.3.0'
@@ -45,22 +45,22 @@ dependencies {
     //    换肤
     compile 'com.zhy:changeskin:3.0.0'
     //    Retrofit
-    compile 'com.squareup.retrofit2:retrofit:2.0.1'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
     //    使用Retrofit获取JSON类型的数据
-    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
     compile files('libs/volley.jar')
     compile project(':library')
     //    顶部toast
     compile 'com.github.johnkil.android-appmsg:appmsg:1.2.0'
     //    进度条Button
-    compile 'com.github.dmytrodanylyk.android-process-button:library:1.0.0'
+    compile 'com.github.dmytrodanylyk.android-process-button:library:1.0.4'
     compile files('libs/open_sdk_r5756_lite.jar')
     //  Picasso 加载图片
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile project(':weiboSDK')
     compile files('libs/libammsdk.jar')
     // 滚动文本的简单的Android UI组件
-    compile 'com.robinhood.ticker:ticker:1.0.1'
+    compile 'com.robinhood.ticker:ticker:1.1.1'
     //从侧面 滑出的Button   :minSdkVersion 16
     compile 'com.github.bloder:magic:1.0'
     //图片不断向中间放大的动画效果
@@ -84,8 +84,11 @@ dependencies {
     //  一个简单的投票排名对比图
     compile project(':comparsechart')
     //    compile 'com.github.markushi:android-ui:1.2'
+
     //    物理引擎https://github.com/Jawnnypoo/PhysicsLayout
+
     //    compile 'com.github.Jawnnypoo:PhysicsLayout:2.1.0'
+
     //MD风格的Dialog
     compile 'me.drakeet.materialdialog:library:1.3.1'
     compile 'com.zhy:base-rvadapter:3.0.3'
@@ -94,15 +97,25 @@ dependencies {
     //进度条来显示加载图片的进度
     compile 'com.jpeng:LoadingProgress:1.1.0'
     compile 'com.joanzapata.android:base-adapter-helper:1.1.11'
-    compile 'com.facebook.fresco:fresco:0.14.1'
-    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.facebook.fresco:fresco:1.1.0'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
     compile project(':cmlibrary')
     //    EditText 的撤销和恢复撤销操作
     compile 'ren.qinc.edit:lib:0.0.3'
     //   状态栏
     compile 'com.github.niorgai:StatusBarCompat:2.0.0'
     compile 'com.github.githubwing:ThreeDLayout:1.0.0'
-
-
     compile 'com.afollestad.material-dialogs:core:0.9.0.1'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.github.florent37:glidepalette:2.0.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile('com.mikepenz:materialdrawer:5.8.1@aar') {
+        transitive = true
+    }
+    // 引导页
+    compile 'com.ramotion.paperonboarding:paper-onboarding:1.1.0'
 }

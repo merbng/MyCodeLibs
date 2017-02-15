@@ -74,4 +74,8 @@
         <item>请不要发假消息之类的恶作剧，不要短时间内发大量内容（刷屏）。这可能导致你未来发帖被封停或隐性封停（你能看见而其他人看不见）甚至封号。</item>
         <item>请不要提交只关于你个人的链接或者做个人宣传！如个人网站，个人公司，个人项目等，会被认定为刷广告，这样的帖子会被删除，该用户会被标记，甚至封号！</item>
     </string-array>
+    <!--music-->
+    <declare-styleable name="TintableImageView">
+        <attr name="tint" format="reference|color"/>
+    </declare-styleable>
 </resources>
