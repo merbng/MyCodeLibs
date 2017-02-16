@@ -12,6 +12,7 @@ import com.app.merbng.mycodelibs.A_3D.Layout3DActivity;
 import com.app.merbng.mycodelibs.A_StudyProcessButton.ProcessButtonActivity;
 import com.app.merbng.mycodelibs.A_TumbleEditText.TumbeEditTextActivity;
 import com.app.merbng.mycodelibs.A_WeatherAnimation.WeatherAnimationActivity;
+import com.app.merbng.mycodelibs.A_drag_swip.DragSwipeActivity;
 import com.app.merbng.mycodelibs.A_edittextfirework.EditFireWorkActivity;
 import com.app.merbng.mycodelibs.A_galleryview.GalleryActivity;
 import com.app.merbng.mycodelibs.A_loadProgress.LoadProssActivity;
@@ -59,6 +60,9 @@ public class MainActivity extends BaseActivity {
         //进入动画
 
         switch (view.getId()) {
+            case R.id.dragswipeactivity://类似支付宝应用管理界面
+                openActivity(DragSwipeActivity.class);
+                break;
             case R.id.btn_add_logo_qrCode://带logo的二维码
                 openActivity(LogoQrCodeActivity.class);
                 break;

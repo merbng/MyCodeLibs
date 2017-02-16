@@ -9,6 +9,14 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.RectF;
+import android.widget.ImageView;
+
+import com.app.merbng.mycodelibs.R;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.DecodeFormat;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+
+import java.io.File;
 
 /**
  * 图片工具类
@@ -296,4 +304,53 @@ public class ImageUtils {
             return bitmap;
         }
     }
+
+    public static void display(Context context, ImageView imageView, String url, int placeholder, int error) {
+        if (imageView == null) {
+            throw new IllegalArgumentException("argument error");
+        }
+        Glide.with(context).load(url).into(imageView);
+    }
+
+    public static void display(Context context, ImageView imageView, String url) {
+        if (imageView == null) {
+            throw new IllegalArgumentException("argument error");
+        }
+        Glide.with(context).load(url).into(imageView);
+    }
+
+    public static void display(Context context, ImageView imageView, File url) {
+        if (imageView == null) {
+            throw new IllegalArgumentException("argument error");
+        }
+        Glide.with(context).load(url).into(imageView);
+    }
+    public static void displaySmallPhoto(Context context, ImageView imageView, String url) {
+        if (imageView == null) {
+            throw new IllegalArgumentException("argument error");
+        }
+        Glide.with(context).load(url)
+                .thumbnail(0.5f)
+                .into(imageView);
+    }
+    public static void displayBigPhoto(Context context, ImageView imageView, String url) {
+        if (imageView == null) {
+            throw new IllegalArgumentException("argument error");
+        }
+        Glide.with(context).load(url).into(imageView);
+    }
+    public static void display(Context context, ImageView imageView, int url) {
+        if (imageView == null) {
+            throw new IllegalArgumentException("argument error");
+        }
+        Glide.with(context).load(url)
+                .into(imageView);
+    }
+    public static void displayRound(Context context, ImageView imageView, String url) {
+        if (imageView == null) {
+            throw new IllegalArgumentException("argument error");
+        }
+        Glide.with(context).load(url).into(imageView);
+    }
+
 }

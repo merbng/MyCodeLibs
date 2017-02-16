@@ -71,4 +71,16 @@
     <dimen name="single_pad">8.0dip</dimen>
     <!--状态栏-->
     <dimen name="card_margin">16dp</dimen>
+    <!--拖拽-->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="item_margin">8dp</dimen>
+    <dimen name="title_margin">24dp</dimen>
+    <!-- font -->
+    <dimen name="font_tiny">10sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_normal">14sp</dimen>
+    <dimen name="font_normal2">16sp</dimen>
+    <dimen name="font_normal3">20sp</dimen>
+    <dimen name="font_large">24sp</dimen>
 </resources>

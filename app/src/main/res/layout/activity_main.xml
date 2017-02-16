@@ -7,6 +7,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+<!--2017年2月15日15:33:54-->
+        <Button
+            android:id="@+id/dragswipeactivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="类似支付宝应用管理界面"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/btn_add_logo_qrCode"

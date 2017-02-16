@@ -145,4 +145,17 @@
     bergkase cream cheese fromage frais cheesy feet port-salut airedale. St. agur blue cheese rubber
     cheese caerphilly cheddar cheesecake cream cheese manchego lancashire. Roquefort squirty cheese
     the big cheese.</string>
+    <!--拖拽-->
+    <string name="loading">请稍候</string>
+    <string name="net_error">网络访问错误，请稍后再试</string>
+    <string name="download">下载中心</string>
+    <string name="search">搜索</string>
+    <!-- 共享过度动画 -->
+    <string name="transition_photos">transition_animation_news_photos</string>
+    <string name="channel_manage">频道管理</string>
+    <string name="my_channel">我的频道</string>
+    <string name="more_channel">点击添加更多频道</string>
+    <string name="reload">重新尝试</string>
+    <string name="empty">还没有数据</string>
+    <string name="news_from">%1$s %2$s</string>
 </resources>

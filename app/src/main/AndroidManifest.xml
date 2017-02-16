@@ -165,7 +165,8 @@
         <activity android:name=".A_3D.WeatherActivity" />
         <activity android:name=".A_3D.UserCenterActivity" />
         <activity android:name=".music.MusicActivity" />
-        <activity android:name=".activitys.GuideAnimActivity"></activity>
+        <activity android:name=".activitys.GuideAnimActivity" />
+        <activity android:name=".A_drag_swip.DragSwipeActivity"></activity>
     </application>
 
 </manifest>
