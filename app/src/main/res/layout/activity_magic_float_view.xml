@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:background="@drawable/iconfont_login_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.app.merbng.mycodelibs.A_MagicFloatView.ParticleChainView
+        android:id="@+id/ParticleChainView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <cn.magic.library.MagicFlyLinearLayout
+        android:id="@+id/gift_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:flyAnimatorType="T2BRainNormal"
+        app:flyDuration="3000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/github" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="刷礼物\n\n \n  感谢 我唐城老铁送出的20组66"
+                android:textColor="@color/bg_white"
+                android:gravity="center"
+                android:layout_height="180dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/gift_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="祝福雨" />
+    </cn.magic.library.MagicFlyLinearLayout>
+
+    <cn.magic.library.MagicFlyLinearLayout
+        android:id="@+id/fly_layout"
+        android:layout_width="200dp"
+        android:layout_height="800dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        app:flyAnimatorType="B2TScatter"
+        app:flyDuration="4000">
+
+        <Button
+            android:id="@+id/fly_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点赞啦" />
+    </cn.magic.library.MagicFlyLinearLayout>
+</RelativeLayout>

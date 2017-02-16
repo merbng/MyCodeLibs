@@ -9,6 +9,7 @@ import android.transition.Explode;
 import android.view.View;
 
 import com.app.merbng.mycodelibs.A_3D.Layout3DActivity;
+import com.app.merbng.mycodelibs.A_MagicFloatView.MagicFloatViewActivity;
 import com.app.merbng.mycodelibs.A_StudyProcessButton.ProcessButtonActivity;
 import com.app.merbng.mycodelibs.A_TumbleEditText.TumbeEditTextActivity;
 import com.app.merbng.mycodelibs.A_WeatherAnimation.WeatherAnimationActivity;
@@ -60,6 +61,9 @@ public class MainActivity extends BaseActivity {
         //进入动画
 
         switch (view.getId()) {
+            case R.id.magicfloatviewactivity://自定义拓展漂浮路径的迷你版轻量级漂浮控件
+                openActivity(MagicFloatViewActivity.class);
+                break;
             case R.id.dragswipeactivity://类似支付宝应用管理界面
                 openActivity(DragSwipeActivity.class);
                 break;

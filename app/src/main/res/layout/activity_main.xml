@@ -7,6 +7,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+<!--2017年2月16日18:00:16-->
+        <Button
+            android:id="@+id/magicfloatviewactivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="漂浮控件"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
 <!--2017年2月15日15:33:54-->
         <Button
             android:id="@+id/dragswipeactivity"
