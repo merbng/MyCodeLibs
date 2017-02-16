@@ -1,1 +1,1 @@
-include ':app', ':library', ':weiboSDK', ':GoldDrop', ':comparsechart'
+include ':app', ':library', ':weiboSDK', ':GoldDrop', ':comparsechart', ':cmlibrary', ':studymvp'
