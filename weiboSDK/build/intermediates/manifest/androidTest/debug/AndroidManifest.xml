@@ -3,8 +3,8 @@
     package="com.sina.weibo.sdk.test" >
 
     <uses-sdk
-        android:minSdkVersion="15"
-        android:targetSdkVersion="23" />
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
 
     <instrumentation
         android:name="android.test.InstrumentationTestRunner"
