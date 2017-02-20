@@ -31,5 +31,4 @@
             public void run() {
                 AppSystemUtils.showKeyBoard(mContext,line_create_edit);
             }
-
         }, 200);
