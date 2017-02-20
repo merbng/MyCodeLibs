@@ -20,4 +20,16 @@
 7.Fragment
 -不能多次传argrment 会报Fragment already active
 -在Fragment里写一个public方法更新就行
-8.
+8.EditText不自动弹出键盘
+-可能当前的界面未绘制完毕.加一个延时
+        line_create_edit.setFocusable(true);
+        line_create_edit.setFocusableInTouchMode(true);
+        line_create_edit.requestFocus();
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                AppSystemUtils.showKeyBoard(mContext,line_create_edit);
+            }
+
+        }, 200);
