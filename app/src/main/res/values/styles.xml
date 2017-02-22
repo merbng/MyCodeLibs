@@ -207,4 +207,8 @@
         <item name="android:scaleType">centerCrop</item>
     </style>
 
+    <style name="TopAlertButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_margin">@dimen/alerter_padding_small</item>
+    </style>
 </resources>

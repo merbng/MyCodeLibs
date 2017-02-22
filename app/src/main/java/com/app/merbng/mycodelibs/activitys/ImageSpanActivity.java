@@ -12,6 +12,9 @@ import android.widget.TextView;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
 
+/**
+ * 图文
+ */
 public class ImageSpanActivity extends BaseActivity {
 
     @Override

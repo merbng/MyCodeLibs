@@ -168,7 +168,9 @@
         <activity android:name=".activitys.GuideAnimActivity" />
         <activity android:name=".A_drag_swip.DragSwipeActivity" />
         <activity android:name=".A_MagicFloatView.MagicFloatViewActivity" />
-
+        <activity android:name=".activitys.TopAlertActivity" />
+        <activity android:name=".activitys.ClassifyAnimActivity" />
+        <activity android:name=".activitys.ClassifyOtherActivity"></activity>
     </application>
 
 </manifest>

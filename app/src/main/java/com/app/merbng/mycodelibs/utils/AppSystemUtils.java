@@ -10,6 +10,8 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.PowerManager;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.transition.Explode;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -28,6 +30,20 @@ import java.util.List;
  * Created by zx on 2016/7/13.
  */
 public class AppSystemUtils {
+
+    public static void openActivity(Activity activity, Class<?> target) {
+     ActivityOptionsCompat aoc;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {//5.0以上
+            Explode explode = new Explode();
+            explode.setDuration(1000);
+            activity.getWindow().setExitTransition(explode);
+            activity.getWindow().setEnterTransition(explode);
+            aoc = ActivityOptionsCompat.makeSceneTransitionAnimation(activity);
+            activity. startActivity(new Intent(activity, target), aoc.toBundle());
+        } else {
+            activity. startActivity(new Intent(activity, target));
+        }
+    }
     public static String getCurrentRunningActivity(Context mContext) {
         ActivityManager mActivityManager = (ActivityManager) mContext.getSystemService(Context.ACTIVITY_SERVICE);
         //获得当前正在运行的activity
