@@ -1,1 +1,1 @@
-include ':app', ':library', ':weiboSDK', ':GoldDrop', ':comparsechart', ':cmlibrary', ':studymvp', ':magicfolatlib'
+include ':app', ':library', ':weiboSDK', ':GoldDrop', ':comparsechart', ':cmlibrary', ':studymvp', ':magicfolatlib', ':tilibrary', ':transferImage'

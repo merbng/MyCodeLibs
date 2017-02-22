@@ -120,4 +120,7 @@ dependencies {
     compile 'com.ramotion.paperonboarding:paper-onboarding:1.1.0'
     compile project(':studymvp')
     compile project(':magicfolatlib')
+
+    compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+    compile project(path: ':transferImage')
 }

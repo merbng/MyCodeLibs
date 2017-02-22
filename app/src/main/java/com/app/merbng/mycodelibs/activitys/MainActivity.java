@@ -16,6 +16,7 @@ import com.app.merbng.mycodelibs.A_WeatherAnimation.WeatherAnimationActivity;
 import com.app.merbng.mycodelibs.A_drag_swip.DragSwipeActivity;
 import com.app.merbng.mycodelibs.A_edittextfirework.EditFireWorkActivity;
 import com.app.merbng.mycodelibs.A_galleryview.GalleryActivity;
+
 import com.app.merbng.mycodelibs.A_loadProgress.LoadProssActivity;
 import com.app.merbng.mycodelibs.A_materiallogin.MaterialLoginActivity;
 import com.app.merbng.mycodelibs.A_recycleViewRefresh.StudyRecycleRefreshActivity;
@@ -30,6 +31,7 @@ import com.app.merbng.mycodelibs.utils.AppFunctionUtils;
 import com.app.merbng.mycodelibs.utils.DialogUtils;
 import com.app.merbng.mycodelibs.utils.LogUtil;
 import com.app.merbng.mycodelibs.widget.SplashView;
+import com.hitomi.transferimage.TransMainActivity;
 import com.janggwa.zkw.golddrop.GoldAnimationActivity;
 import com.zhy.changeskin.SkinManager;
 
@@ -61,6 +63,9 @@ public class MainActivity extends BaseActivity {
         //进入动画
 
         switch (view.getId()) {
+            case R.id.groupimageactivity://仿微博、微信、qq 点击缩略图, 显示高清图 UI 组件
+                openActivity(TransMainActivity.class);
+                break;
             case R.id.magicfloatviewactivity://自定义拓展漂浮路径的迷你版轻量级漂浮控件
                 openActivity(MagicFloatViewActivity.class);
                 break;

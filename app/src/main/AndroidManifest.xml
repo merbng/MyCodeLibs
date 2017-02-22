@@ -167,7 +167,8 @@
         <activity android:name=".music.MusicActivity" />
         <activity android:name=".activitys.GuideAnimActivity" />
         <activity android:name=".A_drag_swip.DragSwipeActivity" />
-        <activity android:name=".A_MagicFloatView.MagicFloatViewActivity"/>
+        <activity android:name=".A_MagicFloatView.MagicFloatViewActivity" />
+
     </application>
 
 </manifest>

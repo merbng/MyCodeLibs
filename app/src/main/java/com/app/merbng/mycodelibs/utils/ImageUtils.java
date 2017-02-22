@@ -9,6 +9,8 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.RectF;
+import android.graphics.drawable.ColorDrawable;
+import android.support.v4.content.ContextCompat;
 import android.widget.ImageView;
 
 import com.app.merbng.mycodelibs.R;
@@ -352,5 +354,4 @@ public class ImageUtils {
         }
         Glide.with(context).load(url).into(imageView);
     }
-
 }
