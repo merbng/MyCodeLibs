@@ -12,6 +12,9 @@ import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.utils.DensityUtil;
 
+/**根据点击位置自适应弹出位置的PopupWindow,仿网易新闻/今日头条,"不感兴趣"弹框
+ * https://github.com/JrDong/FitPopupWindow
+ */
 public class FitPopupWindowActivity extends BaseActivity implements View.OnClickListener {
 
     private LayoutInflater mInflater;
