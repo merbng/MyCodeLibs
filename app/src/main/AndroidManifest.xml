@@ -171,6 +171,43 @@
         <activity android:name=".activitys.TopAlertActivity" />
         <activity android:name=".activitys.ClassifyAnimActivity" />
         <activity android:name=".activitys.ClassifyOtherActivity"></activity>
+        <activity
+            android:name=".A_circularMenu.MenuWithFABActivity"
+            android:parentActivityName=".A_circularMenu.MenuWithFABActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".A_circularMenu.MenuWithFABActivity" />
+        </activity>
+        <activity
+            android:name=".A_circularMenu.MenuWithCustomActionButtonActivity"
+            android:parentActivityName=".A_circularMenu.MenuWithCustomActionButtonActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".A_circularMenu.MenuWithCustomActionButtonActivity" />
+        </activity>
+        <activity
+            android:name=".A_circularMenu.MenuWithCustomAnimationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".A_circularMenu.MenuWithCustomAnimationActivity" />
+        </activity>
+        <activity
+            android:name=".A_circularMenu.MenuInScrollViewActivity"
+            android:parentActivityName=".A_circularMenu.MenuInScrollViewActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".A_circularMenu.CircularMenuActivity" />
+        </activity>
+        <activity
+            android:name=".A_circularMenu.SystemOverlayMenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.merbng.mycodelibs.A_circularMenu.SystemOverlayMenuActivity" />
+        </activity>
+
+        <activity android:name=".A_circularMenu.CircularMenuActivity"/>
+        <activity android:name=".A_fitpopupwindow.FitPopupWindowActivity"/>
+        <activity android:name=".A_fitpopupwindow.SecondNextActivity"/>
     </application>
 
 </manifest>

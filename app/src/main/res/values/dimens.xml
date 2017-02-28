@@ -83,4 +83,22 @@
     <dimen name="font_normal2">16sp</dimen>
     <dimen name="font_normal3">20sp</dimen>
     <dimen name="font_large">24sp</dimen>
+    <!--弹出菜单-->
+    <dimen name="red_action_button_size">108dp</dimen>
+    <dimen name="red_action_button_margin">48dp</dimen>
+
+    <dimen name="red_action_button_content_size">16dp</dimen>
+    <dimen name="red_action_button_content_margin">36dp</dimen>
+
+    <dimen name="red_action_menu_radius">96dp</dimen>
+    <dimen name="blue_sub_action_button_size">48dp</dimen>
+    <dimen name="blue_sub_action_button_content_margin">16dp</dimen>
+
+    <dimen name="radius_large">120dp</dimen>
+    <dimen name="radius_small">30dp</dimen>
+    <dimen name="radius_medium">72dp</dimen>
+    <!--fitpopupwidow-->
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_middle">14sp</dimen>
+    <dimen name="text_large">16sp</dimen>
 </resources>

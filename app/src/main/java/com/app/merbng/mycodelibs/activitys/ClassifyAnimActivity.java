@@ -8,6 +8,7 @@ import com.app.merbng.mycodelibs.A_MagicFloatView.MagicFloatViewActivity;
 import com.app.merbng.mycodelibs.A_StudyProcessButton.ProcessButtonActivity;
 import com.app.merbng.mycodelibs.A_TumbleEditText.TumbeEditTextActivity;
 import com.app.merbng.mycodelibs.A_WeatherAnimation.WeatherAnimationActivity;
+import com.app.merbng.mycodelibs.A_circularMenu.CircularMenuActivity;
 import com.app.merbng.mycodelibs.A_drag_swip.DragSwipeActivity;
 import com.app.merbng.mycodelibs.A_edittextfirework.EditFireWorkActivity;
 import com.app.merbng.mycodelibs.A_galleryview.GalleryActivity;
@@ -34,6 +35,9 @@ public class ClassifyAnimActivity extends BaseActivity {
 
     public void btnClick(View view) {
         switch (view.getId()) {
+            case R.id.circularmenuactivity://圆形扩散菜单
+                AppSystemUtils.openActivity(thisActivity, CircularMenuActivity.class);
+                break;
             case R.id.magicfloatviewactivity://自定义拓展漂浮路径的迷你版轻量级漂浮控件
                 AppSystemUtils.openActivity(thisActivity, MagicFloatViewActivity.class);
                 break;

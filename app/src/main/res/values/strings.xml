@@ -166,4 +166,9 @@
     <string name="verbose_alert">Verbose Alert</string>
     <string name="custom_icon_alert">Custom Icon Alert</string>
     <string name="callback_alert">Alert Callbacks</string>
+    <!--fit pop up window-->
+
+    <string name="popup_text">哪里不会点哪里</string>
+
+    <string name="not_interest">不感兴趣</string>
 </resources>

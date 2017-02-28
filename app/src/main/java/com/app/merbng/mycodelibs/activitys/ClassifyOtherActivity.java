@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.app.merbng.mycodelibs.A_fitpopupwindow.FitPopupWindowActivity;
 import com.app.merbng.mycodelibs.A_recycleViewRefresh.StudyRecycleRefreshActivity;
 import com.app.merbng.mycodelibs.A_studyRetrofit.StudyRetrofitActivity;
 import com.app.merbng.mycodelibs.A_windowManager.UcNotifyActivity;
@@ -28,6 +29,9 @@ public class ClassifyOtherActivity extends BaseActivity {
 
     public void btnClick(View view) {
         switch (view.getId()) {
+            case R.id.fitpopupwindow://点击位置自适应弹出位置的PopupWindow
+                AppSystemUtils.openActivity(thisActivity, FitPopupWindowActivity.class);
+                break;
             case R.id.top_alert_activity://顶部Alert Dialog
                 AppSystemUtils.openActivity(thisActivity, TopAlertActivity.class);
                 break;

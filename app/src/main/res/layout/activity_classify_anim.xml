@@ -8,26 +8,21 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
+
         <Button
-            android:id="@+id/groupimageactivity"
+            android:id="@+id/circularmenuactivity"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
             android:onClick="btnClick"
-            android:text="仿微博、微信、qq 点击缩略图, 显示高清图 UI 组件"
+            android:text="圆形扩散菜单"
             android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
 
-        <Button
-            android:id="@+id/top_alert_activity"
-            style="@style/btn_style"
-            android:background="@color/skin_color_text"
-            android:onClick="btnClick"
-            android:text="顶部Alert Dialog"
-            android:textColor="@color/skin_color_bg" />
 
-        <include layout="@layout/view_line" />
+
 
 
         <Button
@@ -196,15 +191,6 @@
 
         <include layout="@layout/view_line" />
 
-        <Button
-            android:id="@+id/editdialogactivity"
-            style="@style/btn_style"
-            android:background="@color/skin_color_text"
-            android:onClick="btnClick"
-            android:text="带编辑框的Dialog"
-            android:textColor="@color/skin_color_bg" />
-
-        <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/kenburnsviewactivity"
@@ -412,15 +398,6 @@
 
         <include layout="@layout/view_line" />
 
-        <Button
-            android:id="@+id/imgtextsoundactivity"
-            style="@style/btn_style"
-            android:background="@color/skin_color_text"
-            android:onClick="btnClick"
-            android:text="图文环绕"
-            android:textColor="@color/skin_color_bg" />
-
-        <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/loadprossactivity"
@@ -480,15 +457,6 @@
             android:text="下雪动画"
             android:textColor="@color/skin_color_bg" />
 
-        <include layout="@layout/view_line" />
-
-        <Button
-            android:id="@+id/imagespanactivity"
-            style="@style/btn_style"
-            android:background="@color/skin_color_text"
-            android:onClick="btnClick"
-            android:text="图文"
-            android:textColor="@color/skin_color_bg" />
 
         <include layout="@layout/view_line" />
 
