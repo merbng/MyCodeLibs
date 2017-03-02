@@ -205,10 +205,9 @@
         <activity android:name=".A_circularMenu.CircularMenuActivity" />
         <activity android:name=".A_fitpopupwindow.FitPopupWindowActivity" />
         <activity android:name=".A_fitpopupwindow.SecondNextActivity" />
-        <activity android:name=".A_MagicFloatView.exp1Barrang.BarrangActivity"></activity>
-        <activity android:name=".A_MagicFloatView.exp2DropItemAnimation.DropItemAnimationActivity">
-
-        </activity>
+        <activity android:name=".A_MagicFloatView.exp1Barrang.BarrangActivity" />
+        <activity android:name=".A_MagicFloatView.exp2DropItemAnimation.DropItemAnimationActivity"></activity>
+        <activity android:name=".activitys.ParallaxActivity"></activity>
     </application>
 
 </manifest>

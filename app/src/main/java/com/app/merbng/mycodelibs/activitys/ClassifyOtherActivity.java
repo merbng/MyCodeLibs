@@ -29,6 +29,9 @@ public class ClassifyOtherActivity extends BaseActivity {
 
     public void btnClick(View view) {
         switch (view.getId()) {
+            case R.id.parallaxactivity://层叠效果RecycleView
+                AppSystemUtils.openActivity(thisActivity, ParallaxActivity.class);
+                break;
             case R.id.fitpopupwindow://点击位置自适应弹出位置的PopupWindow
                 AppSystemUtils.openActivity(thisActivity, FitPopupWindowActivity.class);
                 break;

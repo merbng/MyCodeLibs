@@ -8,6 +8,10 @@ _____________________
 
 [![](https://jitpack.io/v/rey5137/material.svg)](https://github.com/Merbn/MyCodeLibs) [![Download](https://api.bintray.com/packages/rey5137/maven/material/images/download.svg)](https://github.com/Merbn/MyCodeLibs)  [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Material-brightgreen.svg?style=flat)](https://github.com/Merbn/MyCodeLibs)
 
+2017年3月2日16:07:4509
+* 层叠效果
+`ParallaxRecyclerView`
+:octocat:
 2017年3月2日15:25:09
 * 上升下降的效果
 `DropItemAnimationActivity`
