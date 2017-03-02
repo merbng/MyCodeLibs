@@ -8,6 +8,7 @@ import android.support.v4.app.ActivityOptionsCompat;
 import android.transition.Explode;
 import android.view.View;
 
+import com.app.merbng.mycodelibs.A_MagicFloatView.exp1Barrang.BarrangActivity;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.utils.DialogUtils;
@@ -49,6 +50,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.tv_classify_other:
                 openActivity(ClassifyOtherActivity.class);
+                break;
+            case R.id.tv_classify_test:
+
                 break;
         }
     }

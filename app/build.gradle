@@ -125,4 +125,9 @@ dependencies {
     compile project(path: ':transferImage')
 
     compile 'com.tapadoo.android:alerter:1.0.3'
+
+    //悬浮菜单
+    compile 'com.oguzdev:CircularFloatingActionMenu:1.0.2'
+    /*飘落效果*/
+    compile 'com.liuzhuang.opensource:barrage:0.0.1'
 }
