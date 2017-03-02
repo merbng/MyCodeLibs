@@ -6,6 +6,7 @@ import android.view.View;
 import com.app.merbng.mycodelibs.A_3D.Layout3DActivity;
 import com.app.merbng.mycodelibs.A_MagicFloatView.MagicFloatViewActivity;
 import com.app.merbng.mycodelibs.A_MagicFloatView.exp1Barrang.BarrangActivity;
+import com.app.merbng.mycodelibs.A_MagicFloatView.exp2DropItemAnimation.DropItemAnimationActivity;
 import com.app.merbng.mycodelibs.A_StudyProcessButton.ProcessButtonActivity;
 import com.app.merbng.mycodelibs.A_TumbleEditText.TumbeEditTextActivity;
 import com.app.merbng.mycodelibs.A_WeatherAnimation.WeatherAnimationActivity;
@@ -36,6 +37,9 @@ public class ClassifyAnimActivity extends BaseActivity {
 
     public void btnClick(View view) {
         switch (view.getId()) {
+            case R.id.dropitemanimationactivity://上升下降的效果
+                AppSystemUtils.openActivity(thisActivity, DropItemAnimationActivity.class);
+                break;
             case R.id.barrangactivity://气球上升的效果
                 AppSystemUtils.openActivity(thisActivity, BarrangActivity.class);
                 break;

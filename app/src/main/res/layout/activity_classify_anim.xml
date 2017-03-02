@@ -11,6 +11,16 @@
 
 
         <Button
+            android:id="@+id/dropitemanimationactivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="上升下降的效果"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
+        <Button
             android:id="@+id/barrangactivity"
             style="@style/btn_style"
             android:background="@color/skin_color_text"

@@ -8,6 +8,10 @@ _____________________
 
 [![](https://jitpack.io/v/rey5137/material.svg)](https://github.com/Merbn/MyCodeLibs) [![Download](https://api.bintray.com/packages/rey5137/maven/material/images/download.svg)](https://github.com/Merbn/MyCodeLibs)  [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Material-brightgreen.svg?style=flat)](https://github.com/Merbn/MyCodeLibs)
 
+2017年3月2日15:25:09
+* 上升下降的效果
+`DropItemAnimationActivity`
+:octocat:
 2017年3月2日14:44:01
 * 气球上升的效果
 `BarrangActivity`
