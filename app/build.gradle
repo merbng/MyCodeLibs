@@ -130,4 +130,6 @@ dependencies {
     compile 'com.oguzdev:CircularFloatingActionMenu:1.0.2'
     /*飘落效果*/
     compile 'com.liuzhuang.opensource:barrage:0.0.1'
+//    每隔几秒自动更改其内容的textview
+    compile 'com.tomer:fadingtextview:1.5'
 }

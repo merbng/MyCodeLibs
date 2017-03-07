@@ -171,4 +171,10 @@
     <string name="popup_text">哪里不会点哪里</string>
 
     <string name="not_interest">不感兴趣</string>
+
+    <string-array name="examples">
+        <item>Text number 1</item>
+        <item>This is a different text</item>
+        <item>WOW many texts!</item>
+    </string-array>
 </resources>

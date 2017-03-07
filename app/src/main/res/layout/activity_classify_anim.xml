@@ -8,7 +8,15 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <Button
+            android:id="@+id/fadingtextviewactivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="每隔几秒自动更改其内容的textview"
+            android:textColor="@color/skin_color_bg" />
 
+        <include layout="@layout/view_line" />
 
         <Button
             android:id="@+id/dropitemanimationactivity"

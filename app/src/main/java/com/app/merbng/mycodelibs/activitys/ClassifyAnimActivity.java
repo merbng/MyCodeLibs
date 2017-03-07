@@ -37,6 +37,9 @@ public class ClassifyAnimActivity extends BaseActivity {
 
     public void btnClick(View view) {
         switch (view.getId()) {
+            case R.id.fadingtextviewactivity://每隔几秒自动更改其内容的textview
+                AppSystemUtils.openActivity(thisActivity, FadingTextViewActivity.class);
+                break;
             case R.id.dropitemanimationactivity://上升下降的效果
                 AppSystemUtils.openActivity(thisActivity, DropItemAnimationActivity.class);
                 break;
