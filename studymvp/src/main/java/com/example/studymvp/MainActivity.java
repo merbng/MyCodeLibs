@@ -1,8 +1,8 @@
 package com.example.studymvp;
 
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -10,11 +10,12 @@ import android.widget.EditText;
 import com.example.studymvp.presenter.GetStringPresenter;
 import com.example.studymvp.view.IGetStringView;
 
-public class MainActivity extends AppCompatActivity implements IGetStringView{
-private     EditText editText;
-private     Button button;
+public class MainActivity extends AppCompatActivity implements IGetStringView {
+    private EditText editText;
+    private Button button;
     private GetStringPresenter presenter;
-    private static Context mContext ;
+    private static Context mContext;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,13 +32,14 @@ private     Button button;
             }
         });
     }
-    public static void  getAppContext(){
+
+    public static void getAppContext() {
 
     }
 
     @Override
     public void showName(String name) {
-editText.setText(name);
+        editText.setText(name);
     }
 
     @Override
