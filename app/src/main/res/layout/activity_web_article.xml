@@ -14,6 +14,6 @@
         android:background="#7bc7ea"
         android:gravity="center"
         android:onClick="btnClick"
-        android:text="网页文章"
+        android:text="一个 TextView 完成显示全文与隐藏功能"
         android:textColor="#515151" />
 </LinearLayout>

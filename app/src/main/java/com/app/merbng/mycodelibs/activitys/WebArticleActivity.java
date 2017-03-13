@@ -20,34 +20,12 @@ public class WebArticleActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_article);
-
     }
-
     public void btnClick(View view) {
         switch (view.getId()) {
-            case R.id.tv_classify_web_artal:
+            case R.id.tv_article_CollapsibleTextView:
                 startActivity(IntentUtils.startWebView(mContext, text_view_show_hide, "一个 TextView 完成显示全文与隐藏功能"));
                 break;
-        }
-    }
-
-    /**
-     * 打开新页面（适配）
-     *
-     * @param target
-     */
-    ActivityOptionsCompat aoc;
-
-    private void openActivity(Class<?> target) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {//5.0以上
-            Explode explode = new Explode();
-            explode.setDuration(1000);
-            getWindow().setExitTransition(explode);
-            getWindow().setEnterTransition(explode);
-            aoc = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
-            startActivity(new Intent(mContext, target), aoc.toBundle());
-        } else {
-            startActivity(new Intent(thisActivity, target));
         }
     }
 }
