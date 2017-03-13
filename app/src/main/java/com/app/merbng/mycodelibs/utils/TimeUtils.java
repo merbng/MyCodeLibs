@@ -1,10 +1,13 @@
 package com.app.merbng.mycodelibs.utils;
 
+import android.content.ClipData;
 import android.content.Context;
 import android.os.CountDownTimer;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.app.merbng.mycodelibs.A_TumbleEditText.utils.ToastUtil;
 import com.app.merbng.mycodelibs.R;
 
 /**
@@ -42,5 +45,17 @@ public class TimeUtils {
             }
         }
         new TimeCount(60000, 1000).start();
+    }
+    /**
+     * 复制链接
+     *
+     * @param mContext
+     * @param copyText
+     */
+    public static void copyLinks(Context mContext, String copyText) {
+        android.content.ClipboardManager clipboard = (android.content.ClipboardManager) mContext.getSystemService(Context.CLIPBOARD_SERVICE);
+        clipboard.setPrimaryClip(ClipData.newPlainText(null, copyText));
+        ToastUtil.showInfo(mContext,"复制成功");
+
     }
 }

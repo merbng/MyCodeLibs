@@ -18,23 +18,24 @@
         android:textColor="@color/bg_white" />
 
     <TextView
-        android:id="@+id/tv_classify_notify"
+        android:id="@+id/tv_classify_web_artal"
         android:layout_width="90dp"
         android:onClick="btnClick"
         android:layout_height="90dp"
         android:layout_below="@+id/tv_classify_anim"
+        android:layout_toRightOf="@+id/tv_classify_test"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/bg_input_cursor"
+        android:background="#ff0"
         android:gravity="center"
-        android:text="通知类"
-        android:textColor="@color/bg_white" />
+        android:text="网页文章"
+        android:textColor="@color/slide_1" />
 
     <TextView
         android:id="@+id/tv_classify_other"
         android:layout_width="90dp"
         android:layout_height="90dp"
-        android:layout_toRightOf="@+id/tv_classify_notify"
+        android:layout_toRightOf="@+id/tv_classify_anim"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:onClick="btnClick"

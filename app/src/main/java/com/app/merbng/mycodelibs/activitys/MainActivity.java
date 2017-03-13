@@ -42,13 +42,13 @@ public class MainActivity extends BaseActivity {
         showSplashUrl();
         //进入动画
         switch (view.getId()) {
-            case R.id.tv_classify_notify:
+            case R.id.tv_classify_web_artal://网页文章
+                openActivity(WebArticleActivity.class);
+                break;
+            case R.id.tv_classify_anim://动画
                 openActivity(ClassifyAnimActivity.class);
                 break;
-            case R.id.tv_classify_anim:
-                openActivity(ClassifyAnimActivity.class);
-                break;
-            case R.id.tv_classify_other:
+            case R.id.tv_classify_other://其他
                 openActivity(ClassifyOtherActivity.class);
                 break;
             case R.id.tv_classify_test:
