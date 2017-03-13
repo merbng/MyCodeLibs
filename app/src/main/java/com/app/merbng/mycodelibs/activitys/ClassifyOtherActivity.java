@@ -29,6 +29,9 @@ public class ClassifyOtherActivity extends BaseActivity {
 
     public void btnClick(View view) {
         switch (view.getId()) {
+            case R.id.verificationcodeinputactivity://仿微信、支付宝等简洁的验证码、密码输入框。
+                AppSystemUtils.openActivity(thisActivity, VerificationCodeInputActivity.class);
+                break;
             case R.id.parallaxactivity://层叠效果RecycleView
                 AppSystemUtils.openActivity(thisActivity, ParallaxActivity.class);
                 break;

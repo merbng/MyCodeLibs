@@ -177,4 +177,5 @@
         <item>This is a different text</item>
         <item>WOW many texts!</item>
     </string-array>
+    <string name="title_activity_verification_code_input">VerificationCodeInputActivity</string>
 </resources>

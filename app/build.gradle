@@ -132,4 +132,6 @@ dependencies {
     compile 'com.liuzhuang.opensource:barrage:0.0.1'
 //    每隔几秒自动更改其内容的textview
     compile 'com.tomer:fadingtextview:1.5'
+//    仿微信、支付宝等简洁的验证码、密码输入框。
+    compile 'com.github.liuguangli:VerificationCodeInput:1.3'
 }

@@ -208,7 +208,11 @@
         <activity android:name=".A_MagicFloatView.exp1Barrang.BarrangActivity" />
         <activity android:name=".A_MagicFloatView.exp2DropItemAnimation.DropItemAnimationActivity" />
         <activity android:name=".activitys.ParallaxActivity" />
-        <activity android:name=".activitys.FadingTextViewActivity"></activity>
+        <activity android:name=".activitys.FadingTextViewActivity" />
+        <activity
+            android:name=".activitys.VerificationCodeInputActivity"
+            android:label="@string/title_activity_verification_code_input"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
