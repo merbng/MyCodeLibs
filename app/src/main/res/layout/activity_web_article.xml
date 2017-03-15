@@ -24,9 +24,22 @@
         android:layout_below="@+id/tv_classify_anim"
         android:layout_margin="10dp"
         android:layout_toRightOf="@+id/tv_classify_test"
-        android:background="#7bc7ea"
+        android:background="#fcc557"
         android:gravity="center"
         android:onClick="btnClick"
         android:text="支持微信和支付宝两种主流支付的集成库， 两行代码实现微信支付， 三行代码实现支付宝支付"
+        android:textColor="#515151" />
+
+    <TextView
+        android:id="@+id/tv_nine_phoneView"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/tv_classify_anim"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/tv_classify_test"
+        android:background="#95ea7b"
+        android:gravity="center"
+        android:onClick="btnClick"
+        android:text="IKNinePhotoView 是一个开源的 Android 九宫格控件，可以自适应宽高主要用于满足九宫格图片展示器及选择器的需求。"
         android:textColor="#515151" />
 </LinearLayout>
