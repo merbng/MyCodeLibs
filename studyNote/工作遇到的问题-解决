@@ -1,7 +1,30 @@
 1.刷新adapter 前 要清理数据
 2.使用StringBuilder注意OOM
 3.第三方分享：
+★QQ&QQ空间分享：
+◎如果不关心分享的结果则可以忽略onActivityResult里的操作。
+◎如果把分享做成一个透明的activity，则需要在onActivityResult里添加下面的代码：
+因为点击某个分享 后关闭这个窗口，导致不能走onActivityResult，所以分享到qq的时候不要调用dismiss()
+在回调成功的时候再调用dismiss();
+onActivityResult在别的分享也会走，使用要区分是否是点击的qq分享（isClickQq），
+
+        if (mIuListener != null && isClickQq) {
+            Tencent.onActivityResultData(requestCode, resultCode, data, mIuListener);
+            if (requestCode == Constants.REQUEST_API) {
+                if (resultCode == Constants.REQUEST_QQ_SHARE
+                        || resultCode == Constants.REQUEST_QZONE_SHARE
+                        || resultCode == Constants.REQUEST_OLD_SHARE) {
+                    Tencent.handleResultData(data, mIuListener);
+                    isClickQq = false;
+                }
+            }
+        }
 ★新浪微博分享：
+要判断有没有图片，分两种情况(没图不调用下面这个)
+                    ImageObject imageobj = new ImageObject();
+                        if (bitmap != null) {
+                            imageobj.setImageObject(bitmap);
+                        }
 -finish 要在 onResponse 后调用，redMsg 后不能调用finish
 -未登录时的返回要记得也加上finish 结束掉透明页（AuthListener-->onCancel）
 ★微信分享：
@@ -32,3 +55,52 @@
                 AppSystemUtils.showKeyBoard(mContext,line_create_edit);
             }
         }, 200);
+9.小米有activity默认关闭动画，可以重写activity的finish方法，强制添加关闭动画
+（下面这个是从上往下的动画）
+     @Override
+     public void finish() {
+         super.finish();
+         //关闭窗体动画显示
+         this.overridePendingTransition(R.anim.bottom_out, 0);
+     }
+     动画文件bottom_out：
+     <set xmlns:android="http://schemas.android.com/apk/res/android"
+         android:shareInterpolator="false">
+         <translate
+             android:fromYDelta="25"
+             android:toYDelta="100%p"
+             android:duration="300"
+             />
+     </set>
+
+10.透明的activity主题
+android:theme="@style/Theme.Transparent"
+    <!--透明的activity theme 分享使用到-->
+    <style name="Theme.Transparent" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/selectFolderAnimation</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+        <!--底部弹出动画-->
+        <style name="selectFolderAnimation">
+            <item name="android:windowEnterAnimation">@anim/bottom_in</item>
+            <item name="android:windowExitAnimation">@anim/bottom_out</item>
+        </style>
+
+        动画文件bottom_in：
+        <set xmlns:android="http://schemas.android.com/apk/res/android"
+                android:shareInterpolator="false">
+                <translate
+                    android:fromYDelta="100%p"
+                    android:toYDelta="0"
+                    android:duration="300" />
+                <alpha
+                    android:fromAlpha="0"
+                    android:toAlpha="1.0"
+                    android:duration="300"/>
+            </set>
