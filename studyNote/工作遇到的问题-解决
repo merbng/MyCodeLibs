@@ -28,6 +28,7 @@ onActivityResult在别的分享也会走，使用要区分是否是点击的qq�
 -finish 要在 onResponse 后调用，redMsg 后不能调用finish
 -未登录时的返回要记得也加上finish 结束掉透明页（AuthListener-->onCancel）
 ★微信分享：
+区分是否含有图片且 图片大小要小于32kb
 -sendReq 返回false 可能是 分享的缩略图 太大！（官方文档有说明）
 -若返回true 调起客户端 但 WXEntryActivity未接收到，则可能是 签名配置 问题
 -若接口报error ，检查一下bean里 判空的方法，先判空
