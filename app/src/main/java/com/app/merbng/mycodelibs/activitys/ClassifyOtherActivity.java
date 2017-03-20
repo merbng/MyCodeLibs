@@ -14,6 +14,7 @@ import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.fragments.statefragment.StateColorActivity;
 import com.app.merbng.mycodelibs.utils.AppFunctionUtils;
 import com.app.merbng.mycodelibs.utils.AppSystemUtils;
+import com.app.merbng.mycodelibs.utils.IntentUtils;
 import com.hitomi.transferimage.TransMainActivity;
 import com.zhy.changeskin.SkinManager;
 
@@ -31,7 +32,7 @@ public class ClassifyOtherActivity extends BaseActivity {
     public void btnClick(View view) {
         switch (view.getId()) {
             case R.id.share_window://分享。
-                AppSystemUtils.openActivity(thisActivity, ShareEmptyActivity.class);
+                startActivity(IntentUtils.startShareDialogForLinkActivity(mContext,"昵称"));
                 break;
             case R.id.verificationcodeinputactivity://仿微信、支付宝等简洁的验证码、密码输入框。
                 AppSystemUtils.openActivity(thisActivity, VerificationCodeInputActivity.class);

@@ -25,7 +25,7 @@ public class IntentUtils {
         return intent;
     }
 
-    /**分享下载
+    /**分享
      * @param mContext
      * @param nickName
      * @return
@@ -35,7 +35,7 @@ public class IntentUtils {
         ShareBean shareBean = new ShareBean();
         shareBean.setNickName(nickName);
         shareBean.setMySave(true);
-        shareBean.setType(ShareBean.TYPE_SHARE_APP);
+        shareBean.setType(ShareBean.TYPE_SHARE_TOPIC);
         shareBean.setTitle("来大米社区一起摇摆吧！");
         shareBean.setIntroduction(nickName+"邀请你加入！");
         intent.putExtra("shareBean", shareBean);

@@ -116,4 +116,5 @@
     <color name="color_5589c6">#5589c6</color>
     <color name="message_tab_text__select_color">#464646</color>
     <color name="color_33333">#333333</color>
+    <color name="transparent_black">#55000000</color>
 </resources>

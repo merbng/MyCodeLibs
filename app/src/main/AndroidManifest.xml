@@ -210,7 +210,17 @@
         <activity android:name=".activitys.ParallaxActivity" />
         <activity android:name=".activitys.FadingTextViewActivity" />
         <activity android:name=".activitys.WebViewActivity" />
-        <activity android:name=".A_share.ShareEmptyActivity" />
+        <activity
+            android:name=".A_share.ShareEmptyActivity"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".activitys.VerificationCodeInputActivity"
             android:label="@string/title_activity_verification_code_input"
