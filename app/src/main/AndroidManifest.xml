@@ -210,6 +210,7 @@
         <activity android:name=".activitys.ParallaxActivity" />
         <activity android:name=".activitys.FadingTextViewActivity" />
         <activity android:name=".activitys.WebViewActivity" />
+        <activity android:name=".A_share.ShareEmptyActivity" />
         <activity
             android:name=".activitys.VerificationCodeInputActivity"
             android:label="@string/title_activity_verification_code_input"

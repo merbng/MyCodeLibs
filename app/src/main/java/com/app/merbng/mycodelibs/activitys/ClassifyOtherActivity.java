@@ -6,6 +6,7 @@ import android.view.View;
 
 import com.app.merbng.mycodelibs.A_fitpopupwindow.FitPopupWindowActivity;
 import com.app.merbng.mycodelibs.A_recycleViewRefresh.StudyRecycleRefreshActivity;
+import com.app.merbng.mycodelibs.A_share.ShareEmptyActivity;
 import com.app.merbng.mycodelibs.A_studyRetrofit.StudyRetrofitActivity;
 import com.app.merbng.mycodelibs.A_windowManager.UcNotifyActivity;
 import com.app.merbng.mycodelibs.R;
@@ -29,6 +30,9 @@ public class ClassifyOtherActivity extends BaseActivity {
 
     public void btnClick(View view) {
         switch (view.getId()) {
+            case R.id.share_window://分享。
+                AppSystemUtils.openActivity(thisActivity, ShareEmptyActivity.class);
+                break;
             case R.id.verificationcodeinputactivity://仿微信、支付宝等简洁的验证码、密码输入框。
                 AppSystemUtils.openActivity(thisActivity, VerificationCodeInputActivity.class);
                 break;

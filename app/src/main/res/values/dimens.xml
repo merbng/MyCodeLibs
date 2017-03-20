@@ -101,4 +101,5 @@
     <dimen name="text_small">12sp</dimen>
     <dimen name="text_middle">14sp</dimen>
     <dimen name="text_large">16sp</dimen>
+    <dimen name="share_text_height">38dp</dimen>
 </resources>

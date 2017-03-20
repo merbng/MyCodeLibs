@@ -179,4 +179,15 @@
     </string-array>
     <string name="title_activity_verification_code_input">VerificationCodeInputActivity</string>
     <string name="title_activity_web_article">WebArticleActivity</string>
+    <!--分享-->
+    <string name="share_success">分享成功</string>
+    <string name="share_fail">分享失败</string>
+    <string name="share_cancel">取消分享</string>
+    <string name="tip_no_weixin_client">未安装微信客户端</string>
+    <string name="tip_no_weibo_client">未安装微博客户端</string>
+    <string name="see_this_folder">大米,一个好玩的App</string>
+    <string name="tips_share_no_login">登录后分享帖子还可以获得积分!</string>
+    <string name="app_slogan2">发现世界 • 留住精彩</string>
 </resources>
+
+

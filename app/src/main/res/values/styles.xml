@@ -235,4 +235,14 @@
         <item name="android:textColor">@drawable/selector_popupwindow_text_color</item>
 
     </style>
+    <style name="transparent_bg_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/selectFolderAnimation</item>
+    </style>
+    <!--底部弹出动画-->
+    <style name="selectFolderAnimation">
+        <item name="android:windowEnterAnimation">@anim/bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_out</item>
+    </style>
 </resources>

@@ -9,14 +9,11 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.RectF;
-import android.graphics.drawable.ColorDrawable;
-import android.support.v4.content.ContextCompat;
+import android.text.TextUtils;
 import android.widget.ImageView;
 
-import com.app.merbng.mycodelibs.R;
+import com.app.merbng.mycodelibs.interfaces.GetCallBack;
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.DecodeFormat;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import java.io.File;
 
@@ -25,7 +22,8 @@ import java.io.File;
  * Created by merbng on 2016/8/16.
  */
 public class ImageUtils {
-
+    private static final String ORGINAL_ALIYUN = "tkdbucket.oss-cn-beijing.aliyuncs.com";
+    private static final String ALIYUN_OPERATION = "?x-oss-process=image/";
     /**
      * 设置水印图片在左上角
      *
@@ -327,6 +325,7 @@ public class ImageUtils {
         }
         Glide.with(context).load(url).into(imageView);
     }
+
     public static void displaySmallPhoto(Context context, ImageView imageView, String url) {
         if (imageView == null) {
             throw new IllegalArgumentException("argument error");
@@ -335,12 +334,14 @@ public class ImageUtils {
                 .thumbnail(0.5f)
                 .into(imageView);
     }
+
     public static void displayBigPhoto(Context context, ImageView imageView, String url) {
         if (imageView == null) {
             throw new IllegalArgumentException("argument error");
         }
         Glide.with(context).load(url).into(imageView);
     }
+
     public static void display(Context context, ImageView imageView, int url) {
         if (imageView == null) {
             throw new IllegalArgumentException("argument error");
@@ -348,10 +349,109 @@ public class ImageUtils {
         Glide.with(context).load(url)
                 .into(imageView);
     }
+
     public static void displayRound(Context context, ImageView imageView, String url) {
         if (imageView == null) {
             throw new IllegalArgumentException("argument error");
         }
         Glide.with(context).load(url).into(imageView);
     }
+
+    /**
+     * 图片网址 转成bitmap<br>
+     * <b>注意：返回的Bitmap可能为Null</b>
+     *
+     * @param mContext
+     * @param urlPath
+     * @param callBack
+     */
+    public static void url2Bitmap(final Context mContext, final String urlPath, final GetCallBack.GetCallBackInterface<Bitmap> callBack) {
+        if (urlPath == null) {
+            return;
+        }
+       /* Observable.just(urlPath)
+                .subscribeOn(Schedulers.io())
+                .map(new Function<String, Bitmap>() {
+                    @Override
+                    public Bitmap apply(String s) {
+                        try {
+                            return Glide.with(mContext).load(s).asBitmap().into(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL).get();
+                        } catch (InterruptedException | ExecutionException e) {
+                            e.printStackTrace();
+                        }
+                        return null;
+                    }
+                })
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new SCObserver<Bitmap>() {
+                    @Override
+                    public void onComplete() {
+
+                    }
+
+                    @Override
+                    public void onError(ErrorModel error, Throwable e) {
+                        if (e != null) {
+                            callBack.onFail(e.getMessage());
+                        }
+                    }
+
+                    @Override
+                    public void onNext(Bitmap bitmap) {
+                        callBack.onSuccess(bitmap);
+                    }
+                });*/
+    }
+
+    /**
+     * @param orginal
+     * @param width
+     * @param height
+     * @return
+     */
+    public static String getWeiXinThumbnialUrl(String orginal, int width, int height) {
+        if (orginal == null || TextUtils.isEmpty(orginal)) {
+            return null;
+        }
+        /*
+        不能使用阿里云裁剪的返回原路径
+         */
+        if (!isAliyunOssURL(orginal)) {
+            return orginal;
+        }
+         /*
+        已经裁剪过的不再裁剪
+         */
+        if (hasUseOssImageSerive(orginal)) {
+            return orginal;
+        }
+        return orginal + "?x-oss-process=image/resize,w_" + width+",h_"+height;
+    }
+    /**
+     * 是否可以是阿里云的URL.
+     *
+     * @param orginal 原图路径
+     * @return 是否
+     */
+    private static boolean isAliyunOssURL(String orginal) {
+        if (orginal.contains(ORGINAL_ALIYUN)) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 是否已经是缩略图路径
+     *
+     * @param orginal 原图路径
+     * @return 是否
+     */
+    private static boolean hasUseOssImageSerive(String orginal) {
+        if (orginal.contains(ORGINAL_ALIYUN)
+                && orginal.contains(ALIYUN_OPERATION)) {
+            return true;
+        }
+        return false;
+    }
+
 }

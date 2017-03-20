@@ -6,6 +6,21 @@ import android.os.Environment;
  * Created by zx on 2016/8/4.
  */
 public class Constent {
+
+    /**
+     * 分享下载
+     */
+    public static final String SHARE_APP = "http://www.upshequ.com/download/download.html";
+
+    public static final String SHARE_URL = "http://www.upshequ.com/share/share.html?topicId=";
+
+    public static final String PLATFORM_QQ = "qq";
+    public static final String PLATFORM_QZONE = "qzone";
+    public static final String PLATFORM_SINA = "sina";
+    public static final String PLATFORM_WEIXIN = "weixin";
+    public static final String PLATFORM_WEIXIN_QUAN = "pengyouquan";
+    /*新浪微博分享内容字数*/
+    public static final int SINA_CONTENT_CNT = 75;
     public static String DIALOG_KEY="dialog_key";
     public static int PHONE_WHITH;
     public static int PHONE_HEIGHT;

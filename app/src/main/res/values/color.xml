@@ -105,6 +105,7 @@
     <color name="dialog_hint">#969696</color>
     <!--分享-->
     <color name="body_text_color">#222222</color>
+    <color name="all_bg_f3f3f3">#f3f3f3</color>
     <!--状态栏-->
     <color name="colorBlack">#000000</color>
     <color name="colorBackground">#319bd2</color>
@@ -112,4 +113,7 @@
 
     <color name="icon_enabled">#FFFFFFFF</color>
     <color name="icon_disabled">#3f4448</color>
+    <color name="color_5589c6">#5589c6</color>
+    <color name="message_tab_text__select_color">#464646</color>
+    <color name="color_33333">#333333</color>
 </resources>
