@@ -6,6 +6,7 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
@@ -22,8 +23,10 @@ import com.app.merbng.mycodelibs.BuildConfig;
 import com.app.merbng.mycodelibs.Constent;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.activitys.SplishActivity;
+import com.app.merbng.mycodelibs.model.MyAppInfo;
 
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -32,18 +35,19 @@ import java.util.List;
 public class AppSystemUtils {
 
     public static void openActivity(Activity activity, Class<?> target) {
-     ActivityOptionsCompat aoc;
+        ActivityOptionsCompat aoc;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {//5.0以上
             Explode explode = new Explode();
             explode.setDuration(1000);
             activity.getWindow().setExitTransition(explode);
             activity.getWindow().setEnterTransition(explode);
             aoc = ActivityOptionsCompat.makeSceneTransitionAnimation(activity);
-            activity. startActivity(new Intent(activity, target), aoc.toBundle());
+            activity.startActivity(new Intent(activity, target), aoc.toBundle());
         } else {
-            activity. startActivity(new Intent(activity, target));
+            activity.startActivity(new Intent(activity, target));
         }
     }
+
     public static String getCurrentRunningActivity(Context mContext) {
         ActivityManager mActivityManager = (ActivityManager) mContext.getSystemService(Context.ACTIVITY_SERVICE);
         //获得当前正在运行的activity
@@ -252,7 +256,9 @@ public class AppSystemUtils {
         mContext.sendBroadcast(intent);
     }
 
-    /**隐藏键盘
+    /**
+     * 隐藏键盘
+     *
      * @param context
      * @param v
      */
@@ -261,5 +267,34 @@ public class AppSystemUtils {
         InputMethodManager imm = (InputMethodManager) context
                 .getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+    }
+
+    /**获取手机已安装APP
+     * @param packageManager
+     * @return
+     */
+    public static List scanLocalInstallAppList(PackageManager packageManager) {
+        List<MyAppInfo> myAppInfos = new ArrayList();
+        try {
+            List<PackageInfo> packageInfos = packageManager.getInstalledPackages(0);
+            for (int i = 0; i < packageInfos.size(); i++) {
+                PackageInfo packageInfo = packageInfos.get(i);
+                    //过滤掉系统app
+                if ((ApplicationInfo.FLAG_SYSTEM & packageInfo.applicationInfo.flags) != 0) {
+                    continue;
+                }
+                MyAppInfo myAppInfo = new MyAppInfo();
+                myAppInfo.setPackageName(packageInfo.packageName);
+                myAppInfo.setAppName(packageInfo.applicationInfo.loadLabel(packageManager).toString());
+                if (packageInfo.applicationInfo.loadIcon(packageManager) == null) {
+                    continue;
+                }
+                myAppInfo.setImage(packageInfo.applicationInfo.loadIcon(packageManager));
+                myAppInfos.add(myAppInfo);
+            }
+        } catch (Exception e) {
+            LogUtil.log.e("", "===============获取应用包信息失败");
+        }
+        return myAppInfos;
     }
 }
