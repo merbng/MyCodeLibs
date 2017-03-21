@@ -105,3 +105,11 @@ android:theme="@style/Theme.Transparent"
                     android:toAlpha="1.0"
                     android:duration="300"/>
             </set>
+11.App打包apk安装后重复启动根界面的问题
+   在splash页面添加这个
+      if (!isTaskRoot()) {
+               finish();
+               return;
+           }
+   http://www.jianshu.com/p/6b1bd37a42a4
+
