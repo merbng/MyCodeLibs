@@ -1,10 +1,6 @@
 package com.app.merbng.mycodelibs.activitys;
 
-import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.ActivityOptionsCompat;
-import android.transition.Explode;
 import android.view.View;
 
 import com.app.merbng.mycodelibs.R;
@@ -19,6 +15,7 @@ public class WebArticleActivity extends BaseActivity {
     private static final String text_view_show_hide = "http://p.codekk.com/detail/Android/timqi/CollapsibleTextView";
     private static final String text_pay_for_zhifubao_weixin = "http://p.codekk.com/detail/Android/mayubao/Android-Pay";
     private static final String text_nine_phoneView = "http://p.codekk.com/detail/Android/Idtk/IKNinePhotoView";
+    private static final String text_drag_delete_view = "http://p.codekk.com/detail/Android/yilylong/ChannelTagView";
 
 
     @Override
@@ -36,6 +33,9 @@ public class WebArticleActivity extends BaseActivity {
                 break;
             case R.id.tv_nine_phoneView:
                 startActivity(IntentUtils.startWebView(mContext, text_nine_phoneView, "IKNinePhotoView 是一个开源的 Android 九宫格控件，可以自适应宽高主要用于满足九宫格图片展示器及选择器的需求。"));
+                break;
+            case R.id.tv_drag_delete_view:
+                startActivity(IntentUtils.startWebView(mContext, text_drag_delete_view, "一个频道管理 view，可拖拽排序，滑动删除"));
                 break;
         }
     }
