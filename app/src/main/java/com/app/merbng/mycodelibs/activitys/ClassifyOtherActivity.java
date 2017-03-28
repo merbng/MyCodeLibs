@@ -4,9 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.app.merbng.mycodelibs.A_dialog.BottomMenuDialog;
 import com.app.merbng.mycodelibs.A_fitpopupwindow.FitPopupWindowActivity;
 import com.app.merbng.mycodelibs.A_recycleViewRefresh.StudyRecycleRefreshActivity;
-import com.app.merbng.mycodelibs.A_share.ShareEmptyActivity;
 import com.app.merbng.mycodelibs.A_studyRetrofit.StudyRetrofitActivity;
 import com.app.merbng.mycodelibs.A_windowManager.UcNotifyActivity;
 import com.app.merbng.mycodelibs.R;
@@ -31,6 +31,9 @@ public class ClassifyOtherActivity extends BaseActivity {
 
     public void btnClick(View view) {
         switch (view.getId()) {
+            case R.id.bottomdialog://底部dialog
+                bottomDialog();
+                break;
             case R.id.share_window://分享。
                 startActivity(IntentUtils.startShareDialogForLinkActivity(mContext,"昵称"));
                 break;
@@ -142,6 +145,26 @@ public class ClassifyOtherActivity extends BaseActivity {
                 show("夜间模式");
                 break;
         }
+    }
+
+    /**采用BottomSheetDialogFragment and BottomSheetDialog 简易封装的底部菜单控件，使用极其方便
+     * https://github.com/XiaoQiWen/BottomMenuDialog
+     */
+    private void bottomDialog() {
+        BottomMenuDialog dialog = new BottomMenuDialog.BottomMenuBuilder()
+                .addItem("拍照", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                })
+                .addItem("相册中选择", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                    }
+                })
+                .addItem("取消",null).build();
+        dialog.show(getSupportFragmentManager());
     }
 
 }

@@ -9,6 +9,16 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/bottomdialog"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="底部dialog"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
+        <Button
             android:id="@+id/share_window"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
