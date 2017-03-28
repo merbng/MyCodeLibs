@@ -9,6 +9,16 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/sectionprogressbaractivity"
+            style="@style/btn_style"
+            android:background="@color/skin_color_text"
+            android:onClick="btnClick"
+            android:text="带节点的进度条"
+            android:textColor="@color/skin_color_bg" />
+
+        <include layout="@layout/view_line" />
+
+        <Button
             android:id="@+id/fadingtextviewactivity"
             style="@style/btn_style"
             android:background="@color/skin_color_text"
@@ -476,17 +486,6 @@
             android:onClick="btnClick"
             android:text="圆形图ImageVIew"
             android:textColor="@color/skin_color_bg" />
-
-        <include layout="@layout/view_line" />
-
-        <Button
-            android:id="@+id/weatheranimationactivity"
-            style="@style/btn_style"
-            android:background="@color/skin_color_text"
-            android:onClick="btnClick"
-            android:text="下雪动画"
-            android:textColor="@color/skin_color_bg" />
-
 
         <include layout="@layout/view_line" />
 

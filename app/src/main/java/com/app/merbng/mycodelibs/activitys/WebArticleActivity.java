@@ -16,6 +16,7 @@ public class WebArticleActivity extends BaseActivity {
     private static final String text_pay_for_zhifubao_weixin = "http://p.codekk.com/detail/Android/mayubao/Android-Pay";
     private static final String text_nine_phoneView = "http://p.codekk.com/detail/Android/Idtk/IKNinePhotoView";
     private static final String text_drag_delete_view = "http://p.codekk.com/detail/Android/yilylong/ChannelTagView";
+    private static final String text_fast_dex = "https://github.com/typ0520/fastdex";
 
 
     @Override
@@ -36,6 +37,9 @@ public class WebArticleActivity extends BaseActivity {
                 break;
             case R.id.tv_drag_delete_view:
                 startActivity(IntentUtils.startWebView(mContext, text_drag_delete_view, "一个频道管理 view，可拖拽排序，滑动删除"));
+                break;
+            case R.id.tv_fast_dex:
+                startActivity(IntentUtils.startWebView(mContext, text_fast_dex, "加快 apk 的编译速度"));
                 break;
         }
     }

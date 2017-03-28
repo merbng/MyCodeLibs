@@ -9,19 +9,17 @@ import com.app.merbng.mycodelibs.A_MagicFloatView.exp1Barrang.BarrangActivity;
 import com.app.merbng.mycodelibs.A_MagicFloatView.exp2DropItemAnimation.DropItemAnimationActivity;
 import com.app.merbng.mycodelibs.A_StudyProcessButton.ProcessButtonActivity;
 import com.app.merbng.mycodelibs.A_TumbleEditText.TumbeEditTextActivity;
-import com.app.merbng.mycodelibs.A_WeatherAnimation.WeatherAnimationActivity;
 import com.app.merbng.mycodelibs.A_circularMenu.CircularMenuActivity;
-import com.app.merbng.mycodelibs.A_drag_swip.DragSwipeActivity;
 import com.app.merbng.mycodelibs.A_edittextfirework.EditFireWorkActivity;
 import com.app.merbng.mycodelibs.A_galleryview.GalleryActivity;
 import com.app.merbng.mycodelibs.A_loadProgress.LoadProssActivity;
 import com.app.merbng.mycodelibs.A_materiallogin.MaterialLoginActivity;
+import com.app.merbng.mycodelibs.A_progress.SectionProgressBarActivity;
 import com.app.merbng.mycodelibs.A_ticker.TickerActivity;
 import com.app.merbng.mycodelibs.A_viewpagerCard.ViewPagerCardActivity;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.utils.AppSystemUtils;
-import com.hitomi.transferimage.TransMainActivity;
 import com.janggwa.zkw.golddrop.GoldAnimationActivity;
 
 /**
@@ -37,6 +35,9 @@ public class ClassifyAnimActivity extends BaseActivity {
 
     public void btnClick(View view) {
         switch (view.getId()) {
+            case R.id.sectionprogressbaractivity://带节点的进度条
+                AppSystemUtils.openActivity(thisActivity, SectionProgressBarActivity.class);
+                break;
             case R.id.fadingtextviewactivity://每隔几秒自动更改其内容的textview
                 AppSystemUtils.openActivity(thisActivity, FadingTextViewActivity.class);
                 break;
@@ -159,9 +160,6 @@ public class ClassifyAnimActivity extends BaseActivity {
                 break;
             case R.id.circleimageactivity://加载进度条
                 AppSystemUtils.openActivity(thisActivity, CircleImageActivity.class);
-                break;
-            case R.id.weatheranimationactivity://下雪动画
-                AppSystemUtils.openActivity(thisActivity, WeatherAnimationActivity.class);
                 break;
             case R.id.randomtextviewactivity://滚动显示TextView的数字
                 AppSystemUtils.openActivity(thisActivity, RandomTextViewActivity.class);

@@ -47,4 +47,15 @@
         android:onClick="btnClick"
         android:text="一个频道管理 view，可拖拽排序，滑动删除"
         android:textColor="#515151" />
+
+    <TextView
+        android:id="@+id/tv_fast_dex"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:background="#ff56b6"
+        android:gravity="center"
+        android:onClick="btnClick"
+        android:text="加快 apk 的编译速度"
+        android:textColor="#515151" />
 </LinearLayout>

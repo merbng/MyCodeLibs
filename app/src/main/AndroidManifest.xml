@@ -158,7 +158,6 @@
         <activity android:name=".A_loadProgress.DifferentActivity" />
         <activity android:name=".A_loadProgress.LoadProssActivity" />
         <activity android:name=".activitys.CircleImageActivity" />
-        <activity android:name=".A_WeatherAnimation.WeatherAnimationActivity" />
         <activity android:name=".activitys.ImageSpanActivity" />
         <activity android:name=".activitys.RandomTextViewActivity" />
         <activity android:name=".A_3D.Layout3DActivity" />
@@ -210,6 +209,7 @@
         <activity android:name=".activitys.ParallaxActivity" />
         <activity android:name=".activitys.FadingTextViewActivity" />
         <activity android:name=".activitys.WebViewActivity" />
+        <activity android:name=".A_progress.SectionProgressBarActivity" />
         <activity
             android:name=".A_share.ShareEmptyActivity"
             android:configChanges="screenSize|orientation"
