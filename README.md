@@ -8,58 +8,58 @@ _____________________
 
 [![](https://jitpack.io/v/rey5137/material.svg)](https://github.com/Merbn/MyCodeLibs) [![Download](https://api.bintray.com/packages/rey5137/maven/material/images/download.svg)](https://github.com/Merbn/MyCodeLibs)  [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Material-brightgreen.svg?style=flat)](https://github.com/Merbn/MyCodeLibs)
 
-2017年3月29日11:45:03
-* 封装了一个录音和播放的管理类
-`VoiceMainActivity`
-:octocat:
-2017年3月13日13:46:43
-* 仿微信、支付宝等简洁的验证码、密码输入框。
-`VerificationCodeInputActivity`
-:octocat:
-2017年3月2日16:07:4509
-* 层叠效果
-`ParallaxRecyclerView`
-:octocat:
-2017年3月2日15:25:09
-* 上升下降的效果
-`DropItemAnimationActivity`
-:octocat:
-2017年3月2日14:44:01
-* 气球上升的效果
-`BarrangActivity`
-:octocat:
-2017年2月28日17:23:37
-* fitpopupwindow
-`FitPopupWindowActivity`
-:octocat:
-2016年11月14日15:55:11
-* 一秒让你的view拥有3D效果
-`Layout3DActivity`
-:octocat:
-2016年11月9日10:32:51
-* 滚动显示TextView的数字
-`RandomTextViewActivity`
-:octocat:
-2016年11月4日16:40:45
-* 谷歌原生圆形ImageView
-`CircleImageActivity`
-:octocat:
-2016年10月31日18:29:39
-* 透明状态栏
-`StateColorActivity`
-:octocat:
-2016年10月17日17:22:19
-* EditText的撤销和恢复（反撤销）
-`UndoEditActivity`
-:octocat:
-2016年10月17日17:21:24
-* 输入框烟花效果
-`EditFireWorkActivity`
-:octocat:
-2016年10月10日14:41:34
-* 验证码倒计时
-`AuthCodeCountdownActivity`
-2016年11月4日01:26:06
+2017年3月29日11:45:03  
+* 封装了一个录音和播放的管理类  
+`VoiceMainActivity`  
+:octocat:  
+2017年3月13日13:46:43  
+* 仿微信、支付宝等简洁的验证码、密码输入框。  
+`VerificationCodeInputActivity`  
+:octocat:  
+2017年3月2日16:07:4509  
+* 层叠效果  
+`ParallaxRecyclerView`  
+:octocat:  
+2017年3月2日15:25:09  
+* 上升下降的效果  
+`DropItemAnimationActivity`  
+:octocat:  
+2017年3月2日14:44:01  
+* 气球上升的效果  
+`BarrangActivity`  
+:octocat:  
+2017年2月28日17:23:37  
+* fitpopupwindow  
+`FitPopupWindowActivity`  
+:octocat:  
+2016年11月14日15:55:11  
+* 一秒让你的view拥有3D效果  
+`Layout3DActivity`  
+:octocat:  
+2016年11月9日10:32:51  
+* 滚动显示TextView的数字  
+`RandomTextViewActivity`  
+:octocat:  
+2016年11月4日16:40:45  
+* 谷歌原生圆形ImageView  
+`CircleImageActivity`  
+:octocat:  
+2016年10月31日18:29:39  
+* 透明状态栏  
+`StateColorActivity`  
+:octocat:  
+2016年10月17日17:22:19  
+* EditText的撤销和恢复（反撤销）  
+`UndoEditActivity`  
+:octocat:  
+2016年10月17日17:21:24  
+* 输入框烟花效果  
+`EditFireWorkActivity`  
+:octocat:  
+2016年10月10日14:41:34  
+* 验证码倒计时  
+`AuthCodeCountdownActivity`  
+2016年11月4日01:26:06  
 * 加载进度条  
 `loadprossactivity`  
 :octocat:
