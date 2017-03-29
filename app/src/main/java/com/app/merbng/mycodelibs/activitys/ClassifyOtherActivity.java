@@ -8,6 +8,7 @@ import com.app.merbng.mycodelibs.A_dialog.BottomMenuDialog;
 import com.app.merbng.mycodelibs.A_fitpopupwindow.FitPopupWindowActivity;
 import com.app.merbng.mycodelibs.A_recycleViewRefresh.StudyRecycleRefreshActivity;
 import com.app.merbng.mycodelibs.A_studyRetrofit.StudyRetrofitActivity;
+import com.app.merbng.mycodelibs.A_voice.voicemanager.VoiceMainActivity;
 import com.app.merbng.mycodelibs.A_windowManager.UcNotifyActivity;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
@@ -31,6 +32,9 @@ public class ClassifyOtherActivity extends BaseActivity {
 
     public void btnClick(View view) {
         switch (view.getId()) {
+            case R.id.voice_manager://封装了一个录音和播放的管理类
+                AppSystemUtils.openActivity(thisActivity, VoiceMainActivity.class);
+                break;
             case R.id.bottomdialog://底部dialog
                 bottomDialog();
                 break;

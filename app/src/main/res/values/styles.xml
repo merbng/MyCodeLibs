@@ -256,4 +256,13 @@
         <item name="android:windowAnimationStyle">@style/selectFolderAnimation</item>
         <item name="android:backgroundDimEnabled">true</item>
     </style>
+    <!--声音-->
+    <style name="record_voice_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@drawable/round_background</item>
+    </style>
 </resources>

@@ -6,6 +6,7 @@ import android.view.View;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.utils.IntentUtils;
+import com.jakewharton.scalpel.ScalpelFrameLayout;
 
 /**
  * 网页文章
@@ -22,7 +23,16 @@ public class WebArticleActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_web_article);
+        /*http://www.jianshu.com/p/8ea577c60865*/
+        View mainView = getLayoutInflater().inflate(R.layout.activity_web_article, null);
+        ScalpelFrameLayout mScalpelFrameLayout = new ScalpelFrameLayout(this);
+        mScalpelFrameLayout.addView(mainView);
+        mScalpelFrameLayout.setLayerInteractionEnabled(true); //开启 3D 效果
+//mScalpelFrameLayout.setDrawIds(true); //是否显示控件 id
+//mScalpelFrameLayout.setDrawViews(false); //是否展示控件内容，默认为 true
+//mScalpelFrameLayout.setChromeColor(Color.RED); //修改边框颜色
+//mScalpelFrameLayout.setChromeShadowColor(Color.YELLOW); //修改阴影颜色
+        setContentView(mScalpelFrameLayout);
     }
     public void btnClick(View view) {
         switch (view.getId()) {
