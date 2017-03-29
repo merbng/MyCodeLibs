@@ -6,7 +6,8 @@ import android.widget.ListView;
 
 import com.app.merbng.mycodelibs.R;
 
-/**
+/**https://github.com/jaydenxiao2016/VoiceManager
+ * 封装了一个录音和播放的管理类
  * 作者：xsf
  */
 public class VoiceMainActivity extends AppCompatActivity {
