@@ -10,7 +10,7 @@
         android:layout_margin="10dp"
         android:layout_above="@+id/button_rec"></ListView>
 
-    <com.jaydenxiao.voicemanager.RecordVoiceButton
+    <com.app.merbng.mycodelibs.A_voice.voicemanager.RecordVoiceButton
         android:id="@+id/button_rec"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

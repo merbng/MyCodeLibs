@@ -1,4 +1,4 @@
-package com.app.merbng.mycodelibs.A_circularMenu;
+package com.app.merbng.mycodelibs.A_circle_float_menu;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;

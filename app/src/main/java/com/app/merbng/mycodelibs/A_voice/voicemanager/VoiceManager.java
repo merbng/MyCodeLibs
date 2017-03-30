@@ -198,7 +198,7 @@ public class VoiceManager {
                 Toast.makeText(mContext, "时间过短", Toast.LENGTH_SHORT).show();
             } else {
                 File file = getOutputVoiceFile(mRecList);
-                if (file != null && file.length() > 0) {
+                if (file != null ) {
                     cleanFieArrayList(mRecList);
                     //TODO 这里可以返回数据 setResult
                     final VoiceTimeUtils ts = VoiceTimeUtils.timeSpanSecond(mRecTimeSum);

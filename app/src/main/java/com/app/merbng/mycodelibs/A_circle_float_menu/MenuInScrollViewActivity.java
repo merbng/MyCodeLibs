@@ -1,11 +1,8 @@
-package com.app.merbng.mycodelibs.A_circularMenu;
+package com.app.merbng.mycodelibs.A_circle_float_menu;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
@@ -13,12 +10,13 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 
 import com.app.merbng.mycodelibs.R;
+import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
 import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 
 import java.util.ArrayList;
 
-public class MenuInScrollViewActivity extends ActionBarActivity implements FloatingActionMenu.MenuStateChangeListener, ViewTreeObserver.OnScrollChangedListener, View.OnLayoutChangeListener {
+public class MenuInScrollViewActivity extends BaseActivity implements FloatingActionMenu.MenuStateChangeListener, ViewTreeObserver.OnScrollChangedListener, View.OnLayoutChangeListener {
 
     private ArrayList<FloatingActionMenu> menus;
     private FloatingActionMenu currentMenu;
@@ -98,19 +96,6 @@ public class MenuInScrollViewActivity extends ActionBarActivity implements Float
 
         // Listen layout (size) changes on a main layout so that we could reposition the bottom menu
         scrollView.addOnLayoutChangeListener(this);
-    }
-
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
     }
 
     @Override

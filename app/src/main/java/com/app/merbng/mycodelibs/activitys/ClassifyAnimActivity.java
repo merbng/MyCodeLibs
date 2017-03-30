@@ -9,7 +9,7 @@ import com.app.merbng.mycodelibs.A_MagicFloatView.exp1Barrang.BarrangActivity;
 import com.app.merbng.mycodelibs.A_MagicFloatView.exp2DropItemAnimation.DropItemAnimationActivity;
 import com.app.merbng.mycodelibs.A_StudyProcessButton.ProcessButtonActivity;
 import com.app.merbng.mycodelibs.A_TumbleEditText.TumbeEditTextActivity;
-import com.app.merbng.mycodelibs.A_circularMenu.CircularMenuActivity;
+import com.app.merbng.mycodelibs.A_circle_float_menu.CircularMenuActivity;
 import com.app.merbng.mycodelibs.A_edittextfirework.EditFireWorkActivity;
 import com.app.merbng.mycodelibs.A_galleryview.GalleryActivity;
 import com.app.merbng.mycodelibs.A_loadProgress.LoadProssActivity;
@@ -172,12 +172,4 @@ public class ClassifyAnimActivity extends BaseActivity {
                 break;
         }
     }
-
-    /**
-     * 打开新页面（适配）
-     *
-     * @param target
-     */
-
-
 }

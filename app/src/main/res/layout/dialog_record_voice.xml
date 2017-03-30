@@ -11,7 +11,7 @@
         android:layout_width="220dp"
         android:background="@drawable/round_selector"
         android:layout_height="220dp">
-        <com.jaydenxiao.voicemanager.VoiceLineView
+        <com.app.merbng.mycodelibs.A_voice.voicemanager.VoiceLineView
             android:id="@+id/voicLine"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

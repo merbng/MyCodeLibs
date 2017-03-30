@@ -4,9 +4,9 @@ package com.app.merbng.mycodelibs.A_voice.voicemanager;
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Environment;
+import android.support.v7.widget.AppCompatButton;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -15,7 +15,7 @@ import com.app.merbng.mycodelibs.R;
 /**
  * 录音控件button
  */
-public class RecordVoiceButton extends Button implements View.OnClickListener {
+public class RecordVoiceButton extends AppCompatButton implements View.OnClickListener {
 
     private Dialog recordIndicator;
     private ImageView mVolumeIv,mIvPauseContinue,mIvComplete;
