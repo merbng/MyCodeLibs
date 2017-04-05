@@ -19,6 +19,7 @@ public class WebArticleActivity extends BaseActivity {
     private static final String text_drag_delete_view = "http://p.codekk.com/detail/Android/yilylong/ChannelTagView";
     private static final String text_fast_dex = "https://github.com/typ0520/fastdex";
     private static final String text_webView_leak = "http://www.jianshu.com/p/3a345d27cd42?utm_source=desktop&utm_medium=timeline";
+    private static final String text_jni = "http://www.jcodecraeer.com/a/anzhuokaifa/2017/0401/7769.html";
 
 
     @Override
@@ -54,6 +55,9 @@ public class WebArticleActivity extends BaseActivity {
                 break;
             case R.id.tv_webView_leak:
                 startActivity(IntentUtils.startWebView(mContext, text_webView_leak, "Android WebView 使用漏洞"));
+                break;
+            case R.id.tv_text_jni:
+                startActivity(IntentUtils.startWebView(mContext, text_jni, "Android Studio jni开发入门——看我就够了！"));
                 break;
         }
     }

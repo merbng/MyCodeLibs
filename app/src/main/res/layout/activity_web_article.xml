@@ -69,4 +69,15 @@
         android:onClick="btnClick"
         android:text="Android WebView 使用漏洞"
         android:textColor="#515151" />
+
+    <TextView
+        android:id="@+id/tv_text_jni"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:background="#e3a7ff"
+        android:gravity="center"
+        android:onClick="btnClick"
+        android:text="Android Studio jni开发入门——看我就够了！"
+        android:textColor="#515151" />
 </LinearLayout>
