@@ -61,6 +61,7 @@ public class WebArticleActivity extends BaseActivity {
                 startActivity(IntentUtils.startWebView(mContext, text_jni, "Android Studio jni开发入门——看我就够了！"));
                 break;
             case R.id.tv_mediation_pattern:
+//           Android设计模式     http://www.jianshu.com/u/cb3133f5a1bd
                 startActivity(IntentUtils.startWebView(mContext, text_mediation_pattern, "Android设计模式（十六）-中介者模式"));
                 break;
         }
