@@ -21,6 +21,7 @@ public class WebArticleActivity extends BaseActivity {
     private static final String text_webView_leak = "http://www.jianshu.com/p/3a345d27cd42?utm_source=desktop&utm_medium=timeline";
     private static final String text_jni = "http://www.jcodecraeer.com/a/anzhuokaifa/2017/0401/7769.html";
     private static final String text_mediation_pattern = "http://www.jianshu.com/p/d2110986cb93";
+    private static final String text_video_edit = "http://p.codekk.com/detail/Android/lizhifeng-sky/VideoEdit";
 
 
     @Override
@@ -63,6 +64,9 @@ public class WebArticleActivity extends BaseActivity {
             case R.id.tv_mediation_pattern:
 //           Android设计模式     http://www.jianshu.com/u/cb3133f5a1bd
                 startActivity(IntentUtils.startWebView(mContext, text_mediation_pattern, "Android设计模式（十六）-中介者模式"));
+                break;
+            case R.id.tv_video_edit:
+                startActivity(IntentUtils.startWebView(mContext, text_video_edit, "视频剪切 音频剪切 音视频合成 更换视频背景声音"));
                 break;
         }
     }

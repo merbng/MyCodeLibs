@@ -91,4 +91,15 @@
         android:onClick="btnClick"
         android:text="Android设计模式（十六）-中介者模式"
         android:textColor="#515151" />
+
+    <TextView
+        android:id="@+id/tv_video_edit"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:background="#da7563"
+        android:gravity="center"
+        android:onClick="btnClick"
+        android:text="视频剪切 音频剪切 音视频合成 更换视频背景声音"
+        android:textColor="#515151" />
 </LinearLayout>
