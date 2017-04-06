@@ -80,4 +80,15 @@
         android:onClick="btnClick"
         android:text="Android Studio jni开发入门——看我就够了！"
         android:textColor="#515151" />
+
+    <TextView
+        android:id="@+id/tv_mediation_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:background="#6e5b48"
+        android:gravity="center"
+        android:onClick="btnClick"
+        android:text="Android设计模式（十六）-中介者模式"
+        android:textColor="#515151" />
 </LinearLayout>
