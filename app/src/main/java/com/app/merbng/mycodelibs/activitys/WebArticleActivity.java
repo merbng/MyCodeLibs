@@ -22,6 +22,7 @@ public class WebArticleActivity extends BaseActivity {
     private static final String text_jni = "http://www.jcodecraeer.com/a/anzhuokaifa/2017/0401/7769.html";
     private static final String text_mediation_pattern = "http://www.jianshu.com/p/d2110986cb93";
     private static final String text_video_edit = "http://p.codekk.com/detail/Android/lizhifeng-sky/VideoEdit";
+    private static final String text_android_lib = "http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0216/7122.html";
 
 
     @Override
@@ -67,6 +68,9 @@ public class WebArticleActivity extends BaseActivity {
                 break;
             case R.id.tv_video_edit:
                 startActivity(IntentUtils.startWebView(mContext, text_video_edit, "视频剪切 音频剪切 音视频合成 更换视频背景声音"));
+                break;
+            case R.id.tv_android_lib:
+                startActivity(IntentUtils.startWebView(mContext, text_android_lib, "2017年初你绝对想尝试的25个新安卓库"));
                 break;
         }
     }

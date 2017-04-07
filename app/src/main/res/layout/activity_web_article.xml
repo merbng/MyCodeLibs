@@ -102,4 +102,15 @@
         android:onClick="btnClick"
         android:text="视频剪切 音频剪切 音视频合成 更换视频背景声音"
         android:textColor="#515151" />
+
+    <TextView
+        android:id="@+id/tv_android_lib"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:background="#008c8a"
+        android:gravity="center"
+        android:onClick="btnClick"
+        android:text="2017年初你绝对想尝试的25个新安卓库"
+        android:textColor="#515151" />
 </LinearLayout>
