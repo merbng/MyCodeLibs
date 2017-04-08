@@ -23,6 +23,7 @@ public class WebArticleActivity extends BaseActivity {
     private static final String text_mediation_pattern = "http://www.jianshu.com/p/d2110986cb93";
     private static final String text_video_edit = "http://p.codekk.com/detail/Android/lizhifeng-sky/VideoEdit";
     private static final String text_android_lib = "http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0216/7122.html";
+    private static final String text_toolbar_use = "http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0312/7667.html";
 
 
     @Override
@@ -71,6 +72,9 @@ public class WebArticleActivity extends BaseActivity {
                 break;
             case R.id.tv_android_lib:
                 startActivity(IntentUtils.startWebView(mContext, text_android_lib, "2017年初你绝对想尝试的25个新安卓库"));
+                break;
+            case R.id.tv_toolbar_use:
+                startActivity(IntentUtils.startWebView(mContext, text_toolbar_use, "ToolBar使用心得(如何改变item的位置)"));
                 break;
         }
     }
