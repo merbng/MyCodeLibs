@@ -124,4 +124,15 @@
         android:onClick="btnClick"
         android:text="ToolBar使用心得(如何改变item的位置)"
         android:textColor="#515151" />
+
+    <TextView
+        android:id="@+id/tv_translation_plug"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:background="#b986ff"
+        android:gravity="center"
+        android:onClick="btnClick"
+        android:text="这是一个 androidStudio 翻译与陌生单词记录插件"
+        android:textColor="#515151" />
 </LinearLayout>

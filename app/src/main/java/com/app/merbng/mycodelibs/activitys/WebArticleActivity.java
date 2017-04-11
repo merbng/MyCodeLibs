@@ -24,6 +24,7 @@ public class WebArticleActivity extends BaseActivity {
     private static final String text_video_edit = "http://p.codekk.com/detail/Android/lizhifeng-sky/VideoEdit";
     private static final String text_android_lib = "http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0216/7122.html";
     private static final String text_toolbar_use = "http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0312/7667.html";
+    private static final String text_translation_plug = "http://p.codekk.com/detail/Android/BolexLiu/ReciteWords";
 
 
     @Override
@@ -75,6 +76,9 @@ public class WebArticleActivity extends BaseActivity {
                 break;
             case R.id.tv_toolbar_use:
                 startActivity(IntentUtils.startWebView(mContext, text_toolbar_use, "ToolBar使用心得(如何改变item的位置)"));
+                break;
+            case R.id.tv_translation_plug:
+                startActivity(IntentUtils.startWebView(mContext, text_translation_plug, "这是一个 androidStudio 翻译与陌生单词记录插件"));
                 break;
         }
     }
