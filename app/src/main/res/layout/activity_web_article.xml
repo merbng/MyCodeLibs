@@ -135,4 +135,15 @@
         android:onClick="btnClick"
         android:text="这是一个 androidStudio 翻译与陌生单词记录插件"
         android:textColor="#515151" />
+
+    <TextView
+        android:id="@+id/tv_loadinglayout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:background="#dd46ff"
+        android:gravity="center"
+        android:onClick="btnClick"
+        android:text="直接拿去用！每个App都会用到的LoadingLayout"
+        android:textColor="#515151" />
 </LinearLayout>

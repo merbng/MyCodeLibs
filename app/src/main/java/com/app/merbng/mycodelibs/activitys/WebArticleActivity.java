@@ -25,6 +25,7 @@ public class WebArticleActivity extends BaseActivity {
     private static final String text_android_lib = "http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0216/7122.html";
     private static final String text_toolbar_use = "http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0312/7667.html";
     private static final String text_translation_plug = "http://p.codekk.com/detail/Android/BolexLiu/ReciteWords";
+    private static final String text_loadinglayout = "直接拿去用！每个App都会用到的LoadingLayout";
 
 
     @Override
@@ -79,6 +80,9 @@ public class WebArticleActivity extends BaseActivity {
                 break;
             case R.id.tv_translation_plug:
                 startActivity(IntentUtils.startWebView(mContext, text_translation_plug, "这是一个 androidStudio 翻译与陌生单词记录插件"));
+                break;
+            case R.id.tv_loadinglayout:
+                startActivity(IntentUtils.startWebView(mContext, text_loadinglayout, "直接拿去用！每个App都会用到的LoadingLayout"));
                 break;
         }
     }
