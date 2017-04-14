@@ -26,6 +26,7 @@ public class WebArticleActivity extends BaseActivity {
     private static final String text_toolbar_use = "http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0312/7667.html";
     private static final String text_translation_plug = "http://p.codekk.com/detail/Android/BolexLiu/ReciteWords";
     private static final String text_loadinglayout = "直接拿去用！每个App都会用到的LoadingLayout";
+    private static final String text_about_rxjava = "RxJava2.0你不知道的事";
 
 
     @Override
@@ -83,6 +84,15 @@ public class WebArticleActivity extends BaseActivity {
                 break;
             case R.id.tv_loadinglayout:
                 startActivity(IntentUtils.startWebView(mContext, text_loadinglayout, "直接拿去用！每个App都会用到的LoadingLayout"));
+                break;
+            case R.id.tv_about_rxjava:
+            /*
+             给初学者的RxJava2.0教程(一)
+            http://www.jianshu.com/p/464fa025229e
+             RxJava使用介绍-概念
+            http://blog.csdn.net/jdsjlzx/article/details/51485778
+            */
+                startActivity(IntentUtils.startWebView(mContext, text_about_rxjava, "RxJava2.0你不知道的事"));
                 break;
         }
     }
