@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_show_or_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show floating window"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/btn_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dismiss floating window"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>

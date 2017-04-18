@@ -181,6 +181,7 @@
         <activity android:name=".activitys.WebViewActivity" />
         <activity android:name=".A_progress.SectionProgressBarActivity" />
         <activity android:name=".A_voice.voicemanager.VoiceMainActivity" />
+        <activity android:name=".A_FloatingPermissionCompat.FloatingPermissionCompatActivity" />
         <activity
             android:name=".A_share.ShareEmptyActivity"
             android:configChanges="screenSize|orientation"
