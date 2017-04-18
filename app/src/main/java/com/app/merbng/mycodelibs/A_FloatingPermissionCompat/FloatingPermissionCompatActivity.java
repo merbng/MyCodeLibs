@@ -1,21 +1,25 @@
 package com.app.merbng.mycodelibs.A_FloatingPermissionCompat;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.app.merbng.mycodelibs.R;
-import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.linchaolong.android.floatingpermissioncompat.FloatingPermissionCompat;
+
 
 /**
  * Android 下悬浮窗权限兼容库
  * https://github.com/linchaolong/FloatingPermissionCompat
  */
-public class FloatingPermissionCompatActivity extends BaseActivity {
+public class FloatingPermissionCompatActivity extends AppCompatActivity {
+    private Context mContext;
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mContext =FloatingPermissionCompatActivity.this;
         setContentView(R.layout.activity_floating_permission_compat);
         findViewById(R.id.btn_show_or_apply).setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
