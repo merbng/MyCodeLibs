@@ -25,8 +25,9 @@ public class WebArticleActivity extends BaseActivity {
     private static final String text_android_lib = "http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0216/7122.html";
     private static final String text_toolbar_use = "http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0312/7667.html";
     private static final String text_translation_plug = "http://p.codekk.com/detail/Android/BolexLiu/ReciteWords";
-    private static final String text_loadinglayout = "直接拿去用！每个App都会用到的LoadingLayout";
-    private static final String text_about_rxjava = "RxJava2.0你不知道的事";
+    private static final String text_loadinglayout = "http://www.jianshu.com/p/60a8b73a00f6";
+    private static final String text_about_rxjava = "http://www.jianshu.com/p/785d9dfb0a5b";
+    private static final String text_The_compressed_image = "https://github.com/Merbn/Tiny";
 
 
     @Override
@@ -45,6 +46,9 @@ public class WebArticleActivity extends BaseActivity {
     }
     public void btnClick(View view) {
         switch (view.getId()) {
+            case R.id.tv_the_compressed_image:
+                startActivity(IntentUtils.startWebView(mContext, text_The_compressed_image, "一个图像压缩框架"));
+                break;
             case R.id.tv_article_CollapsibleTextView:
                 startActivity(IntentUtils.startWebView(mContext, text_view_show_hide, "一个 TextView 完成显示全文与隐藏功能"));
                 break;

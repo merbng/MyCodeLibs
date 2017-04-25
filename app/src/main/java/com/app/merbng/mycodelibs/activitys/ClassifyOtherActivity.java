@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.app.merbng.mycodelibs.A_FloatingPermissionCompat.FloatingPermissionCompatActivity;
+import com.app.merbng.mycodelibs.A_PictureTagView.PictureTagViewActivity;
 import com.app.merbng.mycodelibs.A_dialog.BottomMenuDialog;
 import com.app.merbng.mycodelibs.A_fitpopupwindow.FitPopupWindowActivity;
 import com.app.merbng.mycodelibs.A_recycleViewRefresh.StudyRecycleRefreshActivity;
@@ -33,6 +34,9 @@ public class ClassifyOtherActivity extends BaseActivity {
 
     public void btnClick(View view) {
         switch (view.getId()) {
+            case R.id.picturetagviewactivity://图片上打标签控件
+                AppSystemUtils.openActivity(thisActivity, PictureTagViewActivity.class);
+                break;
             case R.id.floatingpermissioncompat://Android 下悬浮窗权限兼容库
                 AppSystemUtils.openActivity(thisActivity, FloatingPermissionCompatActivity.class);
                 break;

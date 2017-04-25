@@ -5,6 +5,17 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/tv_the_compressed_image"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:background="#7bc7ea"
+        android:gravity="center"
+        android:onClick="btnClick"
+        android:text="一个图像压缩框架。"
+        android:textColor="#e98e8e" />
+
+    <TextView
         android:id="@+id/tv_article_CollapsibleTextView"
         android:layout_width="match_parent"
         android:layout_height="90dp"
