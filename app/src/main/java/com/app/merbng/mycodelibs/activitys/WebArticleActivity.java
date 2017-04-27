@@ -28,6 +28,7 @@ public class WebArticleActivity extends BaseActivity {
     private static final String text_loadinglayout = "http://www.jianshu.com/p/60a8b73a00f6";
     private static final String text_about_rxjava = "http://www.jianshu.com/p/785d9dfb0a5b";
     private static final String text_The_compressed_image = "https://github.com/Merbn/Tiny";
+    private static final String text_floatinggif = "https://github.com/imyetse/FloatingGif";
 
 
     @Override
@@ -46,6 +47,9 @@ public class WebArticleActivity extends BaseActivity {
     }
     public void btnClick(View view) {
         switch (view.getId()) {
+            case R.id.tv_text_floatinggif:
+                startActivity(IntentUtils.startWebView(mContext, text_floatinggif, "仿微信 长按表情弹出表情预览弹窗/输入按钮切换"));
+                break;
             case R.id.tv_the_compressed_image:
                 startActivity(IntentUtils.startWebView(mContext, text_The_compressed_image, "一个图像压缩框架"));
                 break;
