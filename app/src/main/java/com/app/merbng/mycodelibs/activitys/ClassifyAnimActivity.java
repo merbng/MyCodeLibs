@@ -15,6 +15,7 @@ import com.app.merbng.mycodelibs.A_galleryview.GalleryActivity;
 import com.app.merbng.mycodelibs.A_loadProgress.LoadProssActivity;
 import com.app.merbng.mycodelibs.A_materiallogin.MaterialLoginActivity;
 import com.app.merbng.mycodelibs.A_progress.SectionProgressBarActivity;
+import com.app.merbng.mycodelibs.A_rotatable.RotatableActivity;
 import com.app.merbng.mycodelibs.A_ticker.TickerActivity;
 import com.app.merbng.mycodelibs.A_viewpagerCard.ViewPagerCardActivity;
 import com.app.merbng.mycodelibs.R;
@@ -35,6 +36,9 @@ public class ClassifyAnimActivity extends BaseActivity {
 
     public void btnClick(View view) {
         switch (view.getId()) {
+            case R.id.rotatableactivity://旋转ImageView
+                AppSystemUtils.openActivity(thisActivity, RotatableActivity.class);
+                break;
             case R.id.sectionprogressbaractivity://带节点的进度条
                 AppSystemUtils.openActivity(thisActivity, SectionProgressBarActivity.class);
                 break;
