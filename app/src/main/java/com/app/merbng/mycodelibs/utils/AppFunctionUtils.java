@@ -1,13 +1,15 @@
 package com.app.merbng.mycodelibs.utils;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.support.v4.view.ViewCompat;
+import android.support.v4.view.ViewPropertyAnimatorListener;
+import android.support.v4.view.animation.FastOutSlowInInterpolator;
+import android.view.View;
 
 import com.app.merbng.mycodelibs.A_SharedBottomSheetDialog.SharedBottomSheetDialog;
 import com.app.merbng.mycodelibs.Constent;
 import com.app.merbng.mycodelibs.R;
-import com.app.merbng.mycodelibs.activitys.SplishActivity;
 
 import java.util.ArrayList;
 
@@ -67,5 +69,86 @@ public class AppFunctionUtils {
         localIntent.setType("text/plain");
         localIntent.putExtra("android.intent.extra.TEXT", url);
         return localIntent;
+    }
+
+
+
+
+
+
+    public static boolean mIsAnimatingOut = false;
+
+    /**底部导航栏隐藏
+     * @param bottomBar
+     */
+    public static void animateOut(View bottomBar) {
+        ViewCompat.animate(bottomBar).translationY(bottomBar.getMeasuredHeight())
+                .setInterpolator(INTERPOLATOR).withLayer()
+                .setListener(new ViewPropertyAnimatorListener() {
+                    @Override
+                    public void onAnimationStart(View view) {
+                        mIsAnimatingOut = true;
+                    }
+
+                    @Override
+                    public void onAnimationEnd(View view) {
+                        mIsAnimatingOut = false;
+                        view.setVisibility(View.GONE);
+                    }
+
+                    @Override
+                    public void onAnimationCancel(View view) {
+                        mIsAnimatingOut = false;
+
+                    }
+                }).start();
+    }
+
+    /**顶部标题栏隐藏
+     * @param bottomBar
+     */
+    public static void animateTitleOut(View bottomBar) {
+        ViewCompat.animate(bottomBar).translationY(-bottomBar.getMeasuredHeight())
+                .setInterpolator(INTERPOLATOR).withLayer()
+                .setListener(new ViewPropertyAnimatorListener() {
+                    @Override
+                    public void onAnimationStart(View view) {
+                        mIsAnimatingOut = true;
+                    }
+
+                    @Override
+                    public void onAnimationEnd(View view) {
+                        mIsAnimatingOut = false;
+                        view.setVisibility(View.GONE);
+                    }
+
+                    @Override
+                    public void onAnimationCancel(View view) {
+                        mIsAnimatingOut = false;
+
+                    }
+                }).start();
+    }
+
+    private static final android.view.animation.Interpolator INTERPOLATOR = new FastOutSlowInInterpolator();
+
+    /**底部导航栏显示
+     * @param bottomBar
+     */
+    public static void animateIn(View bottomBar) {
+        bottomBar.setVisibility(View.VISIBLE);
+        ViewCompat.animate(bottomBar).translationY(0)
+                .setInterpolator(INTERPOLATOR).withLayer().setListener(null)
+                .start();
+    }
+
+    /**顶部标题栏显示
+     * @param bottomBar
+     */
+    public static void animateTitleIn(View bottomBar) {
+        bottomBar.setVisibility(View.VISIBLE);
+        ViewCompat.animate(bottomBar).translationY(0)
+                .setInterpolator(INTERPOLATOR).withLayer().setListener(null)
+                .start();
     }
 }

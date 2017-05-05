@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="nofiid"/>
+    <item name="mine_tv_name" type="id"/>
+    <item name="mine_ll_total" type="id"/>
+</resources>

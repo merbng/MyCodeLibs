@@ -118,4 +118,6 @@
     <color name="color_33333">#333333</color>
     <color name="transparent_black">#55000000</color>
     <color name="white">#FFFFFF</color>
+    <!--椭圆导航栏-->
+    <color name="color_afafaf">#afafaf</color>
 </resources>
