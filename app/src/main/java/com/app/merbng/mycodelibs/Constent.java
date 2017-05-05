@@ -21,6 +21,7 @@ public class Constent {
     public static final String PLATFORM_WEIXIN_QUAN = "pengyouquan";
     /*新浪微博分享内容字数*/
     public static final int SINA_CONTENT_CNT = 75;
+    public static final String LOGO_URL = "http://avatar.csdn.net/4/4/5/1_qq_35071078.jpg";
     public static String DIALOG_KEY="dialog_key";
     public static int PHONE_WHITH;
     public static int PHONE_HEIGHT;

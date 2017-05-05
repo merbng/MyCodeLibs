@@ -19,10 +19,12 @@ import android.view.inputmethod.InputMethodManager;
 import android.webkit.WebView;
 import android.widget.Toast;
 
+import com.app.merbng.mycodelibs.A_ios_share_dialog.ShareToActivity;
 import com.app.merbng.mycodelibs.BuildConfig;
 import com.app.merbng.mycodelibs.Constent;
 import com.app.merbng.mycodelibs.R;
 import com.app.merbng.mycodelibs.activitys.SplishActivity;
+import com.app.merbng.mycodelibs.beans.TopicBean;
 import com.app.merbng.mycodelibs.model.MyAppInfo;
 
 import java.lang.reflect.Field;
@@ -296,5 +298,18 @@ public class AppSystemUtils {
             LogUtil.log.e("", "===============获取应用包信息失败");
         }
         return myAppInfos;
+    }
+    /**
+     *仿IOS 分享的dialog
+     *
+     * @param mContext
+     * @param topicBean
+     * @return
+     */
+    public static void startShareDialogActivity(Context mContext, TopicBean topicBean) {
+        Intent intent = new Intent(mContext, ShareToActivity.class);
+        intent.putExtra(ShareToActivity.KEY_SHARE_TYPE, ShareToActivity.TYPE_SHARE_TOPIC);
+//        intent.putExtra(ShareToActivity.KEY_TOPICBEAN, topicBean);
+        mContext.startActivity(intent);
     }
 }

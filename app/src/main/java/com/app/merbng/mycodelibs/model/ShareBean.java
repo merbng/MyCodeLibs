@@ -9,6 +9,8 @@ import java.io.Serializable;
 public class ShareBean implements Serializable {
     public static final int TYPE_SHARE_TOPIC = 0; //分享帖子
     public static final int TYPE_SHARE_APP = 1; //分享APP
+
+    public static final int TYPE_SHARE_COMMUNITY = 2; //分享APP
     private int sourceIdType;
     private String title;
     private String coverUrl;

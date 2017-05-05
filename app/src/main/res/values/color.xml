@@ -120,4 +120,10 @@
     <color name="white">#FFFFFF</color>
     <!--椭圆导航栏-->
     <color name="color_afafaf">#afafaf</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_f3f3f3">#f3f3f3</color>
+    <color name="app_black">#323232</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_5d5a70">#5d5a70</color>
+    <color name="color_d8d8d8">#d8d8d8</color>
 </resources>
