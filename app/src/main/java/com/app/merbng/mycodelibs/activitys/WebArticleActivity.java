@@ -29,8 +29,8 @@ public class WebArticleActivity extends BaseActivity {
     private static final String text_about_rxjava = "http://www.jianshu.com/p/785d9dfb0a5b";
     private static final String text_The_compressed_image = "https://github.com/Merbn/Tiny";
     private static final String text_floatinggif = "https://github.com/imyetse/FloatingGif";
-
-
+    private static final String text_fragmention = "https://github.com/YoKeyword/Fragmentation";
+//为"单Activity ＋ 多Fragment","多模块Activity + 多Fragment"架构而生，帮你大大简化使用过程，轻松解决各种复杂嵌套等问题，修复了官方Fragment库中存在的一些BUG。
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
