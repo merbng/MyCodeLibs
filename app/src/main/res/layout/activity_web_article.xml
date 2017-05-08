@@ -5,6 +5,28 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/tv_jianpan_show_gone"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:background="#b67bea"
+        android:gravity="center"
+        android:onClick="btnClick"
+        android:text="Android键盘处理-监听键盘状态并实现QQ拉出式弹出回复框。"
+        android:textColor="#e98e8e" />
+
+    <TextView
+        android:id="@+id/tv_fragmention"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:background="#b67bea"
+        android:gravity="center"
+        android:onClick="btnClick"
+        android:text="仿微信 长按表情弹出表情预览弹窗/输入按钮切换"
+        android:textColor="#e98e8e" />
+
+    <TextView
         android:id="@+id/tv_text_floatinggif"
         android:layout_width="match_parent"
         android:layout_height="90dp"

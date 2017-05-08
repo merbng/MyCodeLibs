@@ -30,7 +30,7 @@ public class WebArticleActivity extends BaseActivity {
     private static final String text_The_compressed_image = "https://github.com/Merbn/Tiny";
     private static final String text_floatinggif = "https://github.com/imyetse/FloatingGif";
     private static final String text_fragmention = "https://github.com/YoKeyword/Fragmentation";
-//为"单Activity ＋ 多Fragment","多模块Activity + 多Fragment"架构而生，帮你大大简化使用过程，轻松解决各种复杂嵌套等问题，修复了官方Fragment库中存在的一些BUG。
+    private static final String text_jianpan_show_gone = "http://www.jianshu.com/p/bccebbc6589e";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +47,12 @@ public class WebArticleActivity extends BaseActivity {
     }
     public void btnClick(View view) {
         switch (view.getId()) {
+            case R.id.tv_jianpan_show_gone:
+                startActivity(IntentUtils.startWebView(mContext, text_jianpan_show_gone, "Android键盘处理-监听键盘状态并实现QQ拉出式弹出回复框。"));
+                break;
+            case R.id.tv_fragmention:
+                startActivity(IntentUtils.startWebView(mContext, text_fragmention, "为\"单Activity ＋ 多Fragment\",\"多模块Activity + 多Fragment\"架构而生，帮你大大简化使用过程，轻松解决各种复杂嵌套等问题，修复了官方Fragment库中存在的一些BUG。"));
+                break;
             case R.id.tv_text_floatinggif:
                 startActivity(IntentUtils.startWebView(mContext, text_floatinggif, "仿微信 长按表情弹出表情预览弹窗/输入按钮切换"));
                 break;
