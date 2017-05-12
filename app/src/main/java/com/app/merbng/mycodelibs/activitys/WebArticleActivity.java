@@ -8,6 +8,8 @@ import com.app.merbng.mycodelibs.base.BaseActivity;
 import com.app.merbng.mycodelibs.utils.IntentUtils;
 import com.jakewharton.scalpel.ScalpelFrameLayout;
 
+
+
 /**
  * 网页文章
  */
@@ -31,6 +33,8 @@ public class WebArticleActivity extends BaseActivity {
     private static final String text_floatinggif = "https://github.com/imyetse/FloatingGif";
     private static final String text_fragmention = "https://github.com/YoKeyword/Fragmentation";
     private static final String text_jianpan_show_gone = "http://www.jianshu.com/p/bccebbc6589e";
+    private static final String text_vidio_play = "http://www.jianshu.com/p/a6119d7ac516";
+    private static final String text_zhuangtailan_font_color = "http://www.jianshu.com/p/7f5a9969be53?utm_source=desktop&utm_medium=timeline";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +51,12 @@ public class WebArticleActivity extends BaseActivity {
     }
     public void btnClick(View view) {
         switch (view.getId()) {
+            case R.id.tv_zhuangtailan_font_color:
+                startActivity(IntentUtils.startWebView(mContext, text_zhuangtailan_font_color, "白底黑字！Android浅色状态栏黑色字体模式"));
+                break;
+            case R.id.tv_vidio_play:
+                startActivity(IntentUtils.startWebView(mContext, text_vidio_play, "Android仿微博实现列表滑动播放/暂停视频"));
+                break;
             case R.id.tv_jianpan_show_gone:
                 startActivity(IntentUtils.startWebView(mContext, text_jianpan_show_gone, "Android键盘处理-监听键盘状态并实现QQ拉出式弹出回复框。"));
                 break;
