@@ -36,6 +36,9 @@ public class ClassifyAnimActivity extends BaseActivity {
 
     public void btnClick(View view) {
         switch (view.getId()) {
+            case R.id.edittexthintanimactivity://EditTextHint 动画
+                AppSystemUtils.openActivity(thisActivity, EditTextHintAnimActivity.class);
+                break;
             case R.id.rotatableactivity://旋转ImageView
                 AppSystemUtils.openActivity(thisActivity, RotatableActivity.class);
                 break;

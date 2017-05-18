@@ -14,7 +14,12 @@ import com.app.merbng.mycodelibs.utils.DialogUtils;
 import com.app.merbng.mycodelibs.utils.LogUtil;
 import com.app.merbng.mycodelibs.widget.SplashView;
 
-public class MainActivity extends BaseActivity {
+import static com.app.merbng.mycodelibs.R.id.tv_classify_anim;
+import static com.app.merbng.mycodelibs.R.id.tv_classify_other;
+import static com.app.merbng.mycodelibs.R.id.tv_classify_test;
+import static com.app.merbng.mycodelibs.R.id.tv_classify_web_artal;
+
+public class MainActivity extends BaseActivity implements View.OnClickListener {
     ActivityOptionsCompat aoc;
     public static final int MESSAGE_SHOW_TIPS = 100;
 
@@ -23,6 +28,12 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_classify);
         myHandler.sendEmptyMessageDelayed(MESSAGE_SHOW_TIPS, 5000);
+        showSplashUrl();
+        findViewById(R.id.tv_classify_anim).setOnClickListener(this);
+        findViewById(R.id.tv_classify_web_artal).setOnClickListener(this);
+        findViewById(R.id.tv_classify_other).setOnClickListener(this);
+        findViewById(R.id.tv_classify_test).setOnClickListener(this);
+
     }
 
     @Override
@@ -32,26 +43,6 @@ public class MainActivity extends BaseActivity {
                 DialogUtils.showTips(this);
                 break;
             default:
-                break;
-        }
-    }
-
-    public void btnClick(View view) {
-        //闪屏图
-        showSplashUrl();
-        //进入动画
-        switch (view.getId()) {
-            case R.id.tv_classify_web_artal://网页文章
-                openActivity(WebArticleActivity.class);
-                break;
-            case R.id.tv_classify_anim://动画
-                openActivity(ClassifyAnimActivity.class);
-                break;
-            case R.id.tv_classify_other://其他
-                openActivity(ClassifyOtherActivity.class);
-                break;
-            case R.id.tv_classify_test:
-
                 break;
         }
     }
@@ -124,6 +115,24 @@ public class MainActivity extends BaseActivity {
             startActivity(new Intent(mContext, target), aoc.toBundle());
         } else {
             startActivity(new Intent(thisActivity, target));
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case tv_classify_web_artal://网页文章
+                openActivity(WebArticleActivity.class);
+                break;
+            case tv_classify_anim://动画
+                openActivity(ClassifyAnimActivity.class);
+                break;
+            case tv_classify_other://其他
+                openActivity(ClassifyOtherActivity.class);
+                break;
+            case tv_classify_test:
+
+                break;
         }
     }
 }

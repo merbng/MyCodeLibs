@@ -18,68 +18,41 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    dependencies {
-        compile 'in.srain.cube:ultra-ptr:1.0.11'
+    dexOptions {
+        javaMaxHeapSize "4g"
     }
 }
 
 dependencies {
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     //    compile 'net.fredericosilva:showTipsView:1.0.4'
-    compile 'com.android.support:multidex:1.0.1'
-    compile 'me.leolin:ShortcutBadger:1.1.13@aar'
-    compile 'com.android.support:appcompat-v7:25.1.1'
-    compile 'com.android.support:recyclerview-v7:25.1.1'
     //    compile 'com.google.zxing:core:3.0.0'
 
     /*6.0权限管理*/
-    compile 'com.zhy:mpermission-api:1.0.0'
-    compile 'com.android.support:design:25.1.1'
-    compile 'com.android.support:cardview-v7:25.1.1'
-    compile 'com.nineoldandroids:library:2.4.0'
-    compile 'com.github.ozodrukh:CircularReveal:1.1.0@aar'
     /*加载toast*/
-    compile 'net.steamcrafted:load-toast:1.0.10'
     //    转圈圈loading
-    compile 'com.lusfold.spinnerloading:library:1.0.0'
     //    换肤
-    compile 'com.zhy:changeskin:3.0.0'
     //    Retrofit
-    compile 'com.squareup.retrofit2:retrofit:2.1.0'
     //    使用Retrofit获取JSON类型的数据
-    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
     compile files('libs/volley.jar')
     compile project(':library')
     //    顶部toast
-    compile 'com.github.johnkil.android-appmsg:appmsg:1.2.0'
     //    进度条Button
-    compile 'com.github.dmytrodanylyk.android-process-button:library:1.0.4'
     compile files('libs/open_sdk_r5756_lite.jar')
     //  Picasso 加载图片
-    compile 'com.squareup.picasso:picasso:2.5.2'
     compile project(':weiboSDK')
     compile files('libs/libammsdk.jar')
     // 滚动文本的简单的Android UI组件
-    compile 'com.robinhood.ticker:ticker:1.1.1'
     //从侧面 滑出的Button   :minSdkVersion 16
-    compile 'com.github.bloder:magic:1.0'
     //图片不断向中间放大的动画效果
-    compile 'cn.carbs.android:AutoZoomInImageView:1.0.1'
     //一张静止图片都有动态的效果感觉
-    compile 'com.flaviofaria:kenburnsview:1.0.7'
     //引导页
-    compile 'za.co.riggaroo:materialhelptutorial:1.+'
     //二维码扫描&生成
-    compile 'cn.yipianfengye.android:zxing-library:1.2'
     //碎裂效果
-    compile 'com.zys:brokenview:1.0.3'
     //有趣的Toast
-    compile 'com.sdsmdg.tastytoast:tastytoast:0.0.1'
     //   自定义 spinner
-    compile 'com.github.piotrek1543:CustomSpinner:0.1'
     //    顶部snackbar
-    compile 'com.androidadvance:topsnackbar:0.0.8'
-    compile 'com.github.JakeWharton:ViewPagerIndicator:2.4.1@aar'
     compile project(':GoldDrop')
     //  一个简单的投票排名对比图
     compile project(':comparsechart')
@@ -90,19 +63,60 @@ dependencies {
     //    compile 'com.github.Jawnnypoo:PhysicsLayout:2.1.0'
 
     //MD风格的Dialog
+    //    引导
+    //进度条来显示加载图片的进度
+    compile project(':cmlibrary')
+    //    EditText 的撤销和恢复撤销操作
+    //   状态栏
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile('com.mikepenz:materialdrawer:5.8.1@aar') {
+        transitive = true
+    }
+    // 引导页
+    compile project(':studymvp')
+    compile project(':magicfolatlib')
+    compile project(path: ':transferImage')
+    /*飘落效果*/
+    //    每隔几秒自动更改其内容的textview
+    //    仿微信、支付宝等简洁的验证码、密码输入框。
+    //     3D 展示界面布局
+    compile project(':circle_float_menu')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'me.leolin:ShortcutBadger:1.1.13@aar'
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.android.support:recyclerview-v7:25.1.1'
+    compile 'com.zhy:mpermission-api:1.0.0'
+    compile 'com.android.support:design:25.1.1'
+    compile 'com.android.support:cardview-v7:25.1.1'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.ozodrukh:CircularReveal:1.1.0@aar'
+    compile 'net.steamcrafted:load-toast:1.0.10'
+    compile 'com.lusfold.spinnerloading:library:1.0.0'
+    compile 'com.zhy:changeskin:3.0.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.github.johnkil.android-appmsg:appmsg:1.2.0'
+    compile 'com.github.dmytrodanylyk.android-process-button:library:1.0.4'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.robinhood.ticker:ticker:1.1.1'
+    compile 'com.github.bloder:magic:1.0'
+    compile 'cn.carbs.android:AutoZoomInImageView:1.0.1'
+    compile 'com.flaviofaria:kenburnsview:1.0.7'
+    compile 'za.co.riggaroo:materialhelptutorial:1.+'
+    compile 'cn.yipianfengye.android:zxing-library:1.2'
+    compile 'com.zys:brokenview:1.0.3'
+    compile 'com.sdsmdg.tastytoast:tastytoast:0.0.1'
+    compile 'com.github.piotrek1543:CustomSpinner:0.1'
+    compile 'com.androidadvance:topsnackbar:0.0.8'
+    compile 'com.github.JakeWharton:ViewPagerIndicator:2.4.1@aar'
     compile 'me.drakeet.materialdialog:library:1.3.1'
     compile 'com.zhy:base-rvadapter:3.0.3'
-    //    引导
     compile 'com.getkeepsafe.taptargetview:taptargetview:1.0.1'
-    //进度条来显示加载图片的进度
     compile 'com.jpeng:LoadingProgress:1.1.0'
     compile 'com.joanzapata.android:base-adapter-helper:1.1.11'
     compile 'com.facebook.fresco:fresco:1.1.0'
     compile 'com.squareup.okhttp3:okhttp:3.6.0'
-    compile project(':cmlibrary')
-    //    EditText 的撤销和恢复撤销操作
     compile 'ren.qinc.edit:lib:0.0.3'
-    //   状态栏
     compile 'com.github.niorgai:StatusBarCompat:2.0.0'
     compile 'com.github.githubwing:ThreeDLayout:1.0.0'
     compile 'com.afollestad.material-dialogs:core:0.9.0.1'
@@ -111,25 +125,16 @@ dependencies {
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'io.reactivex:rxandroid:1.2.1'
     compile 'com.github.florent37:glidepalette:2.0.0'
-    compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile('com.mikepenz:materialdrawer:5.8.1@aar') {
-        transitive = true
-    }
-    // 引导页
     compile 'com.ramotion.paperonboarding:paper-onboarding:1.1.0'
-    compile project(':studymvp')
-    compile project(':magicfolatlib')
     compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
-    compile project(path: ':transferImage')
     compile 'com.tapadoo.android:alerter:1.0.3'
-    /*飘落效果*/
     compile 'com.liuzhuang.opensource:barrage:0.0.1'
-    //    每隔几秒自动更改其内容的textview
     compile 'com.tomer:fadingtextview:1.5'
-    //    仿微信、支付宝等简洁的验证码、密码输入框。
     compile 'com.github.liuguangli:VerificationCodeInput:1.3'
-    //     3D 展示界面布局
     compile 'com.jakewharton.scalpel:scalpel:1.1.2'
-    compile project(':circle_float_menu')
+    compile 'com.linchaolong.android:floatingpermissioncompat:1.0'
+    compile 'de.greenrobot:eventbus:2.4.1'
+    // EditText hint 动画
+    compile 'com.github.cctanfujun:HintAnim-EditText:v0.1'
 }
