@@ -1,4 +1,4 @@
-[toc]
+[TOC]
 ## [LeakCanary](http://www.tuicool.com/articles/3MVzAb)
 
 >### 有如下几个明显优点：
