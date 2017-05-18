@@ -1,13 +1,13 @@
 
 ## [LeakCanary](http://www.tuicool.com/articles/3MVzAb)
 
-### >有如下几个明显优点：
+>### 有如下几个明显优点：
 + 针对Android Activity组件完全自动化的内存泄漏检查。
 + 可定制一些行为（dump文件和leaktrace对象的数量、自定义例外、分析结果的自定义处理等）。
 + 集成到自己工程并使用的成本很低。
 + 友好的界面展示和通知。
 
-### >基本工作原理如下：
+>### 基本工作原理如下：
 1. RefWatcher.watch() 创建一个 KeyedWeakReference 到要被监控的对象。
 1. 然后在后台线程检查引用是否被清除，如果没有，调用GC。
 1. 如果引用还是未被清除，把 heap 内存 dump 到 APP 对应的文件系统中的一个 .hprof 文件中。
