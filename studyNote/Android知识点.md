@@ -1,5 +1,5 @@
-# __LeakCanary__
-[原文](http://www.tuicool.com/articles/3MVzAb)
+# [__LeakCanary__](http://www.tuicool.com/articles/3MVzAb)
+
 > 有如下几个明显优点：
 + 针对Android Activity组件完全自动化的内存泄漏检查。
 + 可定制一些行为（dump文件和leaktrace对象的数量、自定义例外、分析结果的自定义处理等）。
