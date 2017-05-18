@@ -56,23 +56,3 @@ Android Studio添加本地jar包依赖，在Module的build.gradle文件中进行
 compile files('libs/TigerDB.jar')添加某个单一jar包的依赖
 compile fileTree(dir: 'libs',include: ['*.jar']) 将libs目录下的jar包全部添加为依赖
 持续更新…
-#Android #AndroidStudio
- UC浏览器首页滑动动画实现  RecyclerView下拉刷新上拉加载 
-0
-0条评论
-还没有评论，沙发等你来抢
-社交帐号登录:
-微信
-微博
-QQ
-人人
-更多»
-
-
-说点什么吧…
-发布
-tiger正在使用多说
-文章目录  站点概览
-1. AndroidStudio使用技巧
-© 2016  老胡
-由 Hexo 强力驱动  主题 - NexT.Mist

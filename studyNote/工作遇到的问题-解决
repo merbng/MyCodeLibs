@@ -113,3 +113,26 @@ android:theme="@style/Theme.Transparent"
            }
    http://www.jianshu.com/p/6b1bd37a42a4
 
+12.见-AppFunctionUtils.java
+
+滑动 底部显示隐藏
+ //向上滚动进入，向下滚动隐藏
+                            if (dy > 15 && !AppSystemUtils.mIsAnimatingOut && mTabLayout.getVisibility() == View.VISIBLE) {
+                                AppSystemUtils.animateOut(mTabLayout);
+                                AppSystemUtils.animateOut(mStar);
+                            } else if (dy < -15 && mTabLayout.getVisibility() != View.VISIBLE) {
+                                AppSystemUtils.animateIn(mTabLayout);
+                                AppSystemUtils.animateIn(mStar);
+                            }
+滑动 顶部显示隐藏
+
+                            if (dy>10 && ! AppSystemUtils.mIsAnimatingOut && bottomView.getVisibility() == View.VISIBLE) {
+                                AppSystemUtils.animateTitleOut(bottomView);
+                            } else if (dy<-10&& bottomView.getVisibility() != View.VISIBLE) {
+                                AppSystemUtils.  animateTitleIn(bottomView);
+                            }
+
+13.椭圆导航栏 见-MineViewPagerPoint.java
+        viewPagerPoint = (MineViewPagerPoint) mView.findViewById(R.id.point_viewpager);
+        viewPagerPoint.setListData(listData);
+        viewPagerPoint.setViewPager(mViewPager);
