@@ -41,7 +41,9 @@
 4. __不要总想着Java 的垃圾回收机制会帮你解决所有内存回收问题__
 > 我们以为垃圾回收机制会帮我们将不需要使用的内存回收，例如：我们需要结束一个Activity，那么它的实例和相关的线程都该被回收。但现实并不会像我们剧本那样走。Java线程会一直存活，直到他们都被显式关闭，抑或是其进程被Android系统杀死。所以，为你的后台线程实现销毁逻辑是你在使用线程时必须时刻铭记的细节，此外，你在设计销毁逻辑时要根据Activity的生命周期去设计，避免出现Bug。
 5. __ListView和GridView的item缓存__
-> + __convertView重用__
+> + __convertView重用__  
+
 > ListView中的每一个Item显示都需要Adapter调用一次getView()的方法，这个方法会传入一个convertView的参数，这个方法返回的View就是这个Item显示的View。Android提供了一个叫做Recycler(反复循环)的构件，就是当ListView的Item从滚出屏幕视角之外，对应Item的View会被缓存到Recycler中，相应的会从生成一个Item，而此时调用的getView中的convertView参数就是滚出屏幕的缓存Item的View，所以说如果能重用这个convertView，就会大大改善性能。
-> + __使用ViewHolder重用__
+> + __使用ViewHolder重用__  
+
 > RecyclerView是经典的ListView的进化与升华，它比ListView更加灵活，但也因此引入了一定的复杂性。最新的v7支持包新添加了RecyclerView。RecyclerView提供了一种插拔式的体验，高度的解耦，异常的灵活，通过设置它提供的不同LayoutManager，ItemDecoration , ItemAnimator实现令人瞠目的效果。而且RecyclerView内部为我们处理了item缓存，所以用着效率更高，更安全
