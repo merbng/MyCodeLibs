@@ -1,6 +1,27 @@
-[toc]
-## [LeakCanary](http://www.tuicool.com/articles/3MVzAb)
 
+## [Lambda表达式](http://blog.csdn.net/ys743276112/article/details/51722047)
+>lambda表达式，它将允许我们将行为传到函数里。
+    在Java 8之前，如果想将行为传入函数，仅有的选择就是匿名类，需要6行代码。
+    而定义行为最重要的那行代码，却混在中间不够突出。
+    Lambda表达式取代了匿名类，取消了模板，允许用函数式风格编写代码。
+    这样有时可读性更好，表达更清晰。
+## [LeakCanary](http://www.tuicool.com/articles/3MVzAb)
+>Lamdba示例
++ 用lambda表达式实现Runnable
+使用lambda表达式可以替换匿名类，而实现Runnable接口是匿名类的最好示例。
+Java 8之前的runnable实现方法，需要4行代码，而使用lambda表达式只需要一行代码。
+只需要用() -> {}代码块替代整个匿名类。
+```
+// Java 8之前：
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("在Java8之前, 需要写很多代码");
+            }
+        }).start();
+ //Java 8方式：
+ new Thread( () -> System.out.println("使用Java8, Lambda表达式一目了然") ).start();
+```
 >### 有如下几个明显优点：
 + 针对Android Activity组件完全自动化的内存泄漏检查。
 + 可定制一些行为（dump文件和leaktrace对象的数量、自定义例外、分析结果的自定义处理等）。
