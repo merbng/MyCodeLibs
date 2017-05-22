@@ -23,6 +23,9 @@ android {
     dexOptions {
         javaMaxHeapSize "4g"
     }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
 }
 
 dependencies {
