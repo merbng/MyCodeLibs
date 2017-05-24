@@ -203,7 +203,8 @@
             android:label="@string/title_activity_web_article"
             android:theme="@style/AppTheme" />
         <activity android:name=".A_PictureTagView.PictureTagViewActivity" />
-        <activity android:name=".A_rotatable.RotatableActivity"></activity>
+        <activity android:name=".A_rotatable.RotatableActivity" />
+        <activity android:name=".A_lean_kotlin.LearnKotlinActivity"></activity>
     </application>
 
 </manifest>
