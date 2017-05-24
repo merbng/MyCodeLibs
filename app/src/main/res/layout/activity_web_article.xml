@@ -5,6 +5,17 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/tv_switchview"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:background="#6e89ff"
+        android:gravity="center"
+        android:onClick="btnClick"
+        android:text="带有文字的switch"
+        android:textColor="#e98e8e" />
+
+    <TextView
         android:id="@+id/tv_zhuangtailan_font_color"
         android:layout_width="match_parent"
         android:layout_height="90dp"

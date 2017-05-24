@@ -35,6 +35,7 @@ public class WebArticleActivity extends BaseActivity {
     private static final String text_jianpan_show_gone = "http://www.jianshu.com/p/bccebbc6589e";
     private static final String text_vidio_play = "http://www.jianshu.com/p/a6119d7ac516";
     private static final String text_zhuangtailan_font_color = "http://www.jianshu.com/p/7f5a9969be53?utm_source=desktop&utm_medium=timeline";
+    private static final String text_switchview = "https://github.com/799536960/switchView";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +52,9 @@ public class WebArticleActivity extends BaseActivity {
     }
     public void btnClick(View view) {
         switch (view.getId()) {
+            case R.id.tv_switchview:
+                startActivity(IntentUtils.startWebView(mContext, text_switchview, "带有文字的switch"));
+                break;
             case R.id.tv_zhuangtailan_font_color:
                 startActivity(IntentUtils.startWebView(mContext, text_zhuangtailan_font_color, "白底黑字！Android浅色状态栏黑色字体模式"));
                 break;
