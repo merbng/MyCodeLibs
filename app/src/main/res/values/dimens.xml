@@ -103,4 +103,8 @@
     <dimen name="text_middle">14sp</dimen>
     <dimen name="text_large">16sp</dimen>
     <dimen name="share_text_height">38dp</dimen>
+
+    <dimen name="topic_item_padding">15dp</dimen>
+    <dimen name="dp7.5">7.5dp</dimen>
+    <dimen name="dp15">15dp</dimen>
 </resources>

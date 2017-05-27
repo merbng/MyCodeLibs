@@ -14,10 +14,6 @@ import com.app.merbng.mycodelibs.utils.DialogUtils;
 import com.app.merbng.mycodelibs.utils.LogUtil;
 import com.app.merbng.mycodelibs.widget.SplashView;
 
-import static com.app.merbng.mycodelibs.R.id.tv_classify_anim;
-import static com.app.merbng.mycodelibs.R.id.tv_classify_other;
-import static com.app.merbng.mycodelibs.R.id.tv_classify_test;
-import static com.app.merbng.mycodelibs.R.id.tv_classify_web_artal;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
     ActivityOptionsCompat aoc;
@@ -121,17 +117,17 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case tv_classify_web_artal://网页文章
+            case R.id.tv_classify_web_artal://网页文章
                 openActivity(WebArticleActivity.class);
                 break;
-            case tv_classify_anim://动画
+            case R.id.tv_classify_anim://动画
                 openActivity(ClassifyAnimActivity.class);
                 break;
-            case tv_classify_other://其他
+            case R.id.tv_classify_other://其他
                 openActivity(ClassifyOtherActivity.class);
                 break;
-            case tv_classify_test:
-
+            case R.id.tv_classify_preview://预览
+                openActivity(ClassifyPreviewActivity.class);
                 break;
         }
     }

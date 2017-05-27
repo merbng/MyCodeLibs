@@ -188,6 +188,7 @@
     <string name="see_this_folder">大米,一个好玩的App</string>
     <string name="tips_share_no_login">登录后分享帖子还可以获得积分!</string>
     <string name="app_slogan2">发现世界 • 留住精彩</string>
+    <string name="check_net_connection">请检查网络连接</string>
 </resources>
 
 

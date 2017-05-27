@@ -95,4 +95,27 @@ public class SharedPrefUtils {
     public static void putRecentSharedPackage(Context mContext,String recentSharedPackage) {
         SharedPrefUtils.setAny(mContext,SP_RECENT_SHARED_PACKAGE, recentSharedPackage);
     }
+    private SharedPrefUtils() {
+    }
+    static final String SP_NAME = "sp_name_dami";
+
+
+
+    /**
+     * 共享参数 存储
+     */
+    static boolean putAny(Context context, String key, String value) {
+        return context.getApplicationContext().getSharedPreferences(SP_NAME, Context.MODE_PRIVATE)
+                .edit().putString(key, value).commit();
+    }
+
+    /**
+     * 共享参数 存储Int
+     */
+    static boolean putInt(Context context, String key, int value) {
+        return context.getApplicationContext().getSharedPreferences(SP_NAME, Context.MODE_PRIVATE)
+                .edit().putInt(key, value).commit();
+    }
+
+
 }

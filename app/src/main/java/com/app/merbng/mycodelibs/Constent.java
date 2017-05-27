@@ -6,7 +6,10 @@ import android.os.Environment;
  * Created by zx on 2016/8/4.
  */
 public class Constent {
-
+    /**
+     * 服务器网址前缀.
+     */
+    public static final String URL = "http://192.168.1.102:8080/up/";  //域名
     /**
      * 分享下载
      */

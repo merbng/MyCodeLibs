@@ -205,6 +205,7 @@
         <activity android:name=".A_PictureTagView.PictureTagViewActivity" />
         <activity android:name=".A_rotatable.RotatableActivity" />
         <activity android:name=".A_lean_kotlin.LearnKotlinActivity"></activity>
+        <activity android:name=".activitys.ClassifyPreviewActivity"></activity>
     </application>
 
 </manifest>
