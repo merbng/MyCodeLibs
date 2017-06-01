@@ -136,3 +136,22 @@ android:theme="@style/Theme.Transparent"
         viewPagerPoint = (MineViewPagerPoint) mView.findViewById(R.id.point_viewpager);
         viewPagerPoint.setListData(listData);
         viewPagerPoint.setViewPager(mViewPager);
+
+14.EditText限制输入汉字、字符
+    /**
+     * 获取汉字 /字符 的 长度
+     *
+     * @param str
+     * @return
+     */
+    public static int getStringUpLength(String str) {
+        int upLength = 0;
+
+        Pattern p = Pattern.compile("[\u4e00-\u9fa5]");
+        Matcher m = p.matcher(str);
+        while (m.find()) {
+            upLength++;
+        }
+        return upLength + str.length();
+    }
+http://blog.csdn.net/lucky_bo/article/details/51145524
