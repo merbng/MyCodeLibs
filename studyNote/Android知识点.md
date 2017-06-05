@@ -71,3 +71,4 @@ Java 8之前的runnable实现方法，需要4行代码，而使用lambda表达�
 
 #### [升级gradle的方法](http://www.orzapp.com/?p=269)
 #### [GreenDAO3.2初探](http://mp.weixin.qq.com/s/aEUSsSo3heKDrD2jeDLRmw)
+#### [Android模块化](http://www.jianshu.com/p/910911172243)
