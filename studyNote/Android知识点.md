@@ -69,6 +69,7 @@ Java 8之前的runnable实现方法，需要4行代码，而使用lambda表达�
 
 > RecyclerView是经典的ListView的进化与升华，它比ListView更加灵活，但也因此引入了一定的复杂性。最新的v7支持包新添加了RecyclerView。RecyclerView提供了一种插拔式的体验，高度的解耦，异常的灵活，通过设置它提供的不同LayoutManager，ItemDecoration , ItemAnimator实现令人瞠目的效果。而且RecyclerView内部为我们处理了item缓存，所以用着效率更高，更安全
 
-#### [升级gradle的方法](http://www.orzapp.com/?p=269)
-#### [GreenDAO3.2初探](http://mp.weixin.qq.com/s/aEUSsSo3heKDrD2jeDLRmw)
-#### [Android模块化](http://www.jianshu.com/p/910911172243)
++ #### [升级gradle的方法](http://www.orzapp.com/?p=269)
++ #### [GreenDAO3.2初探](http://mp.weixin.qq.com/s/aEUSsSo3heKDrD2jeDLRmw)
++ #### [Android模块化](http://www.jianshu.com/p/910911172243)
++ #### [20个学习Kotlin的优质资源](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0605/8036.html)
