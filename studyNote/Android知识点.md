@@ -83,3 +83,4 @@ Java 8之前的runnable实现方法，需要4行代码，而使用lambda表达�
 + #### [视差图片控件](https://github.com/flavioarfaria/KenBurnsView)
 + #### [ 材料设计搜索框](https://github.com/MiguelCatalan/MaterialSearchView)
 + #### [ Android 文件下载引擎，稳定、高效、灵活、简单易用](https://github.com/lingochamp/FileDownloader)
++ #### [允许将RecyclerView拆分为具有页眉和/或页脚的部分。每个部分可以单独控制其状态。](https://github.com/luizgrp/SectionedRecyclerViewAdapter)
