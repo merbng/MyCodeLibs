@@ -71,8 +71,11 @@ Java 8之前的runnable实现方法，需要4行代码，而使用lambda表达�
 
 + #### [升级gradle的方法](http://www.orzapp.com/?p=269)
 + #### [GreenDAO3.2初探](http://mp.weixin.qq.com/s/aEUSsSo3heKDrD2jeDLRmw)
+> + [<font color=#FF8800 size=3>GreenDao 使用详解</font>](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0703/8144.html)
 + #### [Android模块化](http://www.jianshu.com/p/910911172243)
 + #### [20个学习Kotlin的优质资源](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0605/8036.html)
+> + [<font color=#FF8800 size=3>Kotlin 资源大全 - 学 Kotlin 看这个就够了</font>](http://mp.weixin.qq.com/s/qtvELk-A2Fg0mxk3S41AAQ)
++ #### [进入退出动画（右进右出动画 ）](http://blog.csdn.net/jdsjlzx/article/details/43736707)
 + #### [酷炫的RecyclerView开源库整理](http://www.jianshu.com/p/154891851fe2)
 + #### [酷炫的RecyclerView开源库整理](http://www.jianshu.com/p/154891851fe2)
 + #### [颜色选择器](https://github.com/Merbn/colorpicker)

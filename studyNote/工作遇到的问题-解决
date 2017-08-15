@@ -155,3 +155,11 @@ android:theme="@style/Theme.Transparent"
         return upLength + str.length();
     }
 http://blog.csdn.net/lucky_bo/article/details/51145524
+15.
+关于全屏popupwindow 布局显示问题
+问题代码：
+        setWidth(AppSystemUtils.getPhoneWidth());
+        setHeight(AppSystemUtils.getPhoneHeight());
+设置为：可解决
+        setWidth(WindowManager.LayoutParams.MATCH_PARENT);
+        setHeight(WindowManager.LayoutParams.MATCH_PARENT);
