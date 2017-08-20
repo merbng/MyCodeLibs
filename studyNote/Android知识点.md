@@ -81,5 +81,6 @@ Java 8之前的runnable实现方法，需要4行代码，而使用lambda表达�
 + #### [颜色选择器](https://github.com/Merbn/colorpicker)
 + #### [扫描二维码、条形码、获取图片识别、生成带 Logo](https://github.com/bingoogolapple/BGAQRCode-Android)
 + #### [视差图片控件](https://github.com/flavioarfaria/KenBurnsView)
-+ #### [ 材料设计搜索框](https://github.com/MiguelCatalan/MaterialSearchView)
-+ #### [ Android 文件下载引擎，稳定、高效、灵活、简单易用](https://github.com/lingochamp/FileDownloader)
++ #### [材料设计搜索框](https://github.com/MiguelCatalan/MaterialSearchView)
++ #### [Android 文件下载引擎，稳定、高效、灵活、简单易用](https://github.com/lingochamp/FileDownloader)
++ #### [实现dialog的3D翻转](http://www.jianshu.com/p/65f50b6ecaca?utm_source=desktop&utm_medium=timeline)
