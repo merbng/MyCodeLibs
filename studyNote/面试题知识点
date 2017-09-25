@@ -1,0 +1,53 @@
+##Activity 启动模式 <font color=#FF8800 size=3>2017-9-25 23:07:38</font>
+#####为什么要研究启动模式
++ 1.有时候我们的app需要生成其他app调用的Activity，例如浏览器，相机应用。
++ 2.解决生成重复界面等bug；
++ 3.任务栈过深的时候，避免一直按返回键也退不回想要的界面。
+
+####standard
+默认模式， A-B-C-D  D呈现在界面上，，，按返回键出栈顺序：D-C-B-A
+
+####singlleTop
+栈顶复用模式，如果要开启的Activity在任务栈的顶部已经存在，就不会创建新的实例，
+而是调用onNewIntent()方法，避免栈顶Activity被重复创建。
+此模式可用于解决：
++ 1.消息推送，通知栏探出Notification点击跳转指定Activity但是我现在的页面就是停留在指定的Activity
+会再次打开当前的Activity，这样返回的时候回退的界面和当前界面一样，感觉就会很奇怪。
++ 2.登陆的时候，登陆成功跳转到主页，按下两次登陆按钮，会生成两个主页，一些有启动延迟的界面（往往是动画，网络造成）也会出现这样的情况。
++ 3.耗时操作返回界面，还有一种场景，从Activity A 启动了个service进行耗时操作，或者某种监听，这个时候你home键了，service收集到信息就要返回Activity A
+就要singleTop启动，时间不会创建新的Activity A，只是resume了如果使用standard就会创建两个A的实例。
+
+####singleTask
+栈内复用模式，如果要启动的Activity在当前栈内启动，Activity只会在任务栈里面存在一个实例，如果要激活的Activity，在任务栈里面已经存在
+就不会创建新的Activity，而是复用这个已经存在的Activity，调用onNewIntent()方法，并且清空这个Activity任务栈上面所有的Activity
++ 1.XML配置 MainActivitiy，Test2Activity为standard模式，Test1Activity为singleTask模式。 
+入栈情况： 
+MainActivity—>Test1Activity—>Test2Activity—>MainActivity,如果此时启动Test1Activity，会清空Test1顶部元素 栈内情况变为MainActivity—>Test1Activity； 
++ 2.主要就是在清单文件中配置android:taskAffinity="新的包名"，因为android:taskAffinity这个字段默认指定的包名为本应用的包名，表示在本应用包名的任务栈内创建应用。如果设置了这个字段，而且还和本应用包名不同，就会在新的任务栈创建任务。
+######场景：
++ 做浏览器、微博之类的应用，比如其他app需要打开我们的浏览器界面，就可以配置为singleTask模式，保证他只有一个唯一实例，节约内存同时按下返回键也更顺畅，但是注意提供给他人调用的界面最好是栈底元素，
+因为如果自己的客户端处于运行状态，按下home键后台挂起，此时如果使用其他应用吊起自己的客户端某个界面，不做任何处理的情况下，
+按下回退或者当前Activity。finish() 界面都会停留在自己的客户端（因为自己的application回退栈为空）这明显不合逻辑
+利用singleTask清除这个Activity任务栈上面所有的Activity特性，我们提供的分享页面始终是我们栈底的元素，只要他一启动就会清空任务栈内其他Activity，保证只有他一个实例。
+android:taskAffinity=”要打开本应用的其他应用包名”
+
+####singleInstance
+单一实例模式，整个手机操作系统里面只有一个实例存在，不同的应用去打开这个Activity共享公共的同一个Activity，
+他会运行在自己单独，独立的任务栈里面，并且任务栈里面只有他一个实例存在，应用场景：呼叫来电界面。
+这种模式的使用情况比较罕见，在Launcher中可能使用，或者你确定你需要使Activity只有一个实例.
+得出结论：
++ 1.以singleInstance模式启动的Activity具有全局唯一性，即整个系统中只会存在一个这样的实例。
++ 2.以singleInstance模式启动的Activity在整个系统中是单例的，如果在启动这样的Activity时，
+已经存在了一个实例，那么会把它所在的任务调度到前台，重用这个实例.
++ 3.以singleInstance模式启动的Activity具有独占性，即它会独自占用一个任务，被他开启的任何Activity都会运行在其他任务中
++ 4.被singleInstance模式的Activity开启的其他Activity，能够在新的任务中启动，但不一定开启新的任务，也可能在已有的一个任务中开启。
+换句话说萌骑士singleInstance就是我们刚才分享的singleTask中，分享Activity为栈底元素的情况。
+
+####singleTask，singInstance共同点：
++ 1）一旦入栈，都为栈底，这点可以通过按back键得到验证
++ 2）全栈有且只有一个Activity实例对象。
+
+####singleTask，singInstance不同点：
++ 1）singleTask的Activity首次调用时会新开一个task。当singleTask Activity再次进入task(即将放入栈顶)，则销毁其上的所有Activity；
++ 2）singleInstance不会新开一个task，只是保持全栈有且只有一个Activity实例对象。
++ 3）singleTop比较简单，只是保证task栈顶部有且只有一个Activity实例对象
