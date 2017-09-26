@@ -51,3 +51,45 @@ android:taskAffinity=”要打开本应用的其他应用包名”
 + 1）singleTask的Activity首次调用时会新开一个task。当singleTask Activity再次进入task(即将放入栈顶)，则销毁其上的所有Activity；
 + 2）singleInstance不会新开一个task，只是保持全栈有且只有一个Activity实例对象。
 + 3）singleTop比较简单，只是保证task栈顶部有且只有一个Activity实例对象
+
+
+##你是如何解决Android布局嵌套问题的？<font color=#FF8800 size=3>2017-9-26 19:01:04</font>
+
+#### 1.merge
+merge标签的作用是合并UI布局，使用该标签能降低UI布局的嵌套层次
+
+merge标签可用于两种情况：
++ 1）布局顶节点是FragmentLayout且不需要设置background等属性，可以用merge代替，因为Activity内容试图的parent view 就是个FragmentLayout
+所以用merge消除只用一个。
++ 2）某布局作为子布局被其他布局include时，使用merge当作该布局的顶节点，这样在被引入时顶节点会自动被忽略，而将其子节点全部合并到主布局中。
+
+#### 2.ViewStub
+ViewStub标签引入的布局默认不会inflate，既不会显示也不会占用位置，ViewStubb常用来引入那么些默认不会显示，只在特殊情况下显示的布局，如数据加载进度布局，出错提示布局等。
+需要在使用时手动inflate：
+
+`ViewStub stub =(ViewStub)findViewById(R.id.error_layout);
+errView =stub.inflate();
+errView.setVisibility(View.VISIBLE);`
+
+ViewStub在一定程度上起到减少嵌套层次的作用，特别是很多时候我们的程序可能不需要走到ViewStub的界面
+
+#### 3.include
+将可复用的组件抽取出来并通过include标签使用，但\<include>标签能减少布局的层次吗？
+我认为不能，include主要解决的是相同布局的复用问题，它并不能减少布局的层次。
+很多人为了减少布局层次喜欢用RelativeLayout代理LineraLayout，不过可能达到的效果并不会很明显。层次是减少了，但本身RelativeLayout就会比LinearLayout性能差一点。
+有一些界面比如一个图片和一个文本的布局，可以利用TextView有drawableLeft.drawableRight等属性，完全不需要RelativeLayout或者LinearLayout布局
+
+你不知道的两种新的布局方式。
+传统的布局方式存在一定的缺陷，如RelativeLayout要两次测量（measure）它的子View才能知道确切的高度，
+如果LinearLayout布局的子View有设置了layout_weight，那么他也需要测量两次才能获得布局的高度。
+相对于传统布局方式，Android官方还退出了两种新的布局方式：ConstraintLayout和FlexboxLayout
+
+#### 4.ConstraintLayout 
+约束布局，和RelativeLayout类似，控件之间依赖关系而存在，但比RelativeLayout更加灵活，
+创建大型复杂的布局仍然可以使用扁平的层级（不用嵌套View Group），说的简单些就是再复杂的界面也可以只有2层层次。
+
+#### 5.FlexboxLayout
+可以理解成一种更高级的LinearLayout不过比LinearLayout更加强大和灵活，
+如果我们使用LinearLayout布局的话，那么不同的分辨率，也许我们要重新调整布局，势必会需要跟多的布局文件放在不同的资源目录，而使用FlexboxLayout
+来布局的话，它可以适应各种界面的改变（使用叫响应式布局）。
+
