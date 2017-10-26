@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入星座"
+        android:text="水瓶座" />
+
+    <TextView
+        android:id="@+id/tv_selsct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/bg_input_cursor"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="请选择周期"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_show_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:text="Hello World!"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp" />
+
+    <com.zhouyou.view.seekbar.SignSeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        app:ssb_section_text_position="bottom_sides"
+        app:ssb_show_progress_in_float="false"
+        app:ssb_show_section_mark="false"
+        app:ssb_show_section_text="true"
+        app:ssb_show_sign="true"
+        app:ssb_show_thumb_text="false"
+        app:ssb_sign_arrow_height="5dp"
+        app:ssb_sign_arrow_width="10dp"
+        app:ssb_sign_border_color="@android:color/black"
+        app:ssb_sign_border_size="1dp"
+        app:ssb_sign_color="@android:color/holo_blue_bright"
+        app:ssb_sign_show_border="true" />
+</LinearLayout>
