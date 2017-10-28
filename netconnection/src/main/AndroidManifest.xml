@@ -14,14 +14,14 @@
         <activity android:name="com.app.netconnection.MainActivity" />
         <activity android:name="com.app.netconnection.demo.TriangulationDrawableActivity"></activity>
         <activity android:name="com.app.netconnection.demo.LineViewActivity">
-
-        </activity>
-        <activity android:name="com.app.netconnection.broadcast.TestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.app.netconnection.broadcast.TestActivity">
+
         </activity>
 
         <service
