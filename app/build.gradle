@@ -48,7 +48,6 @@ dependencies {
     compile files('libs/open_sdk_r5756_lite.jar')
     //  Picasso 加载图片
     compile project(':weiboSDK')
-    compile project(':circle_float_menu')
     compile files('libs/libammsdk.jar')
     // 滚动文本的简单的Android UI组件
     //从侧面 滑出的Button   :minSdkVersion 16
