@@ -28,8 +28,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         findViewById(R.id.tv_classify_anim).setOnClickListener(this);
         findViewById(R.id.tv_classify_web_artal).setOnClickListener(this);
         findViewById(R.id.tv_classify_other).setOnClickListener(this);
-        findViewById(R.id.tv_classify_test).setOnClickListener(this);
-
     }
 
     @Override
@@ -53,43 +51,43 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         LogUtil.log.e("图：" + Numround);
         switch (Numround) {
             case 0:
-                url = "http://static.cnbetacdn.com/thumb/article/2016/0802/135ab34c04bd4f9.jpg_600x600.jpg";
+                url = "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=594559231,2167829292&fm=27&gp=0.jpg";
                 actionUrl = "http://f7.topitme.com";
                 break;
             case 1:
-                url = "http://static.cnbetacdn.com/thumb/article/2016/0802/1287ae9ff2ee319.jpg_600x600.jpg";
+                url = "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=594559231,2167829292&fm=27&gp=0.jpg";
                 actionUrl = "http://f7.topitme.com";
                 break;
             case 2:
-                url = "http://static.cnbetacdn.com/thumb/article/2016/0802/1cd52f011d9af3d.jpg_600x600.jpg";
+                url = "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=594559231,2167829292&fm=27&gp=0.jpg";
                 actionUrl = "http://f7.topitme.com";
                 break;
             case 3:
-                url = "http://static.cnbetacdn.com/thumb/article/2016/0802/3b3fff57c1d281d.jpg_600x600.jpg";
+                url = "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=594559231,2167829292&fm=27&gp=0.jpg";
                 actionUrl = "http://i10.topitme.com";
                 break;
             case 4:
-                url = "http://static.cnbetacdn.com/thumb/article/2016/0802/906de4e38b58e87.jpg_600x600.jpg";
+                url = "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=594559231,2167829292&fm=27&gp=0.jpg";
                 actionUrl = "http://i10.topitme.com";
                 break;
             case 5:
-                url = "https://avatars3.githubusercontent.com/u/11256126?v=3&s=460";
+                url = "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=594559231,2167829292&fm=27&gp=0.jpg";
                 actionUrl = "https://avatars3.githubusercontent.com";
                 break;
             case 6:
-                url = "http://static.cnbetacdn.com/thumb/article/2016/0802/f691eb5a692e46a.jpg_600x600.jpg";
+                url = "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=594559231,2167829292&fm=27&gp=0.jpg";
                 actionUrl = "http://imgsrc.baidu.com";
                 break;
             case 7:
-                url = "http://static.cnbetacdn.com/thumb/article/2016/0802/a435c3bb4a61eb3.jpg_600x600.jpg";
+                url = "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=594559231,2167829292&fm=27&gp=0.jpg";
                 actionUrl = "http://imgsrc.baidu.com";
                 break;
             case 8:
-                url = "http://static.cnbetacdn.com/thumb/article/2016/0802/878978d0ae6ec2d.jpg_600x600.jpg";
+                url = "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=594559231,2167829292&fm=27&gp=0.jpg";
                 actionUrl = "http://img4q.duitang.com";
                 break;
             case 9:
-                url = "http://static.cnbetacdn.com/thumb/article/2016/0802/faa9017db6a78a2.jpg_600x600.jpg";
+                url = "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=594559231,2167829292&fm=27&gp=0.jpg";
                 actionUrl = "http://bizhi.zhuoku.com";
                 break;
         }

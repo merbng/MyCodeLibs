@@ -1,10 +1,8 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.dx168.fastdex'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "25.0.1"
 
     defaultConfig {
         applicationId "com.app.merbng.mycodelibs"
@@ -25,9 +23,13 @@ android {
     dexOptions {
         javaMaxHeapSize "4g"
     }
-    sourceSets {
-        main.java.srcDirs += 'src/main/kotlin'
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+        // ... and any other excludes go here
+        exclude 'META-INF/NOTICE' // will not include NOTICE file
+        exclude 'META-INF/LICENSE' // will not include LICENSE file
     }
+
 }
 
 dependencies {
@@ -48,7 +50,6 @@ dependencies {
     compile files('libs/open_sdk_r5756_lite.jar')
     //  Picasso 加载图片
     compile project(':weiboSDK')
-    compile project(':circle_float_menu')
     compile files('libs/libammsdk.jar')
     // 滚动文本的简单的Android UI组件
     //从侧面 滑出的Button   :minSdkVersion 16
@@ -88,7 +89,6 @@ dependencies {
     //     3D 展示界面布局
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     // EditText hint 动画
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile 'in.srain.cube:ultra-ptr:1.0.11'
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.android.support:multidex:1.0.1'
@@ -150,4 +150,5 @@ dependencies {
     compile 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
     compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
     compile 'io.reactivex.rxjava2:rxjava:2.0.7'
+    compile 'com.oguzdev:CircularFloatingActionMenu:1.0.2'
 }

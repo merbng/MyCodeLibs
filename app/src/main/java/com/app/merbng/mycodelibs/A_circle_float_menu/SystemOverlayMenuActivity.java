@@ -22,11 +22,6 @@ public class SystemOverlayMenuActivity extends ActionBarActivity {
 
             @Override
             public void onClick(View v) {
-                // Start an unbound service.
-                Intent is = new Intent(SystemOverlayMenuActivity.this, SystemOverlayMenuService.class);
-                startService(is);
-                // We need to be able to stop it later though.
-                // This is currently done by the red button of the topCenterMenu in SystemOverlayMenuService
             }
         });
     }
