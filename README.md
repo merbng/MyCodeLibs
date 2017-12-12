@@ -10,9 +10,7 @@ _____________________
 
 2017年4月18日16:27:52
 * Android 下悬浮窗权限兼容库
-
 `FloatingPermissionCompatActivity`
-
 :octocat:
 2017年3月29日11:45:03
 * 封装了一个录音和播放的管理类
