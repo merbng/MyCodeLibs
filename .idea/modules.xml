@@ -4,11 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GoldDrop/GoldDrop.iml" filepath="$PROJECT_DIR$/GoldDrop/GoldDrop.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyCodeLibs.iml" filepath="$PROJECT_DIR$/MyCodeLibs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/annotator/annotator.iml" filepath="$PROJECT_DIR$/annotator/annotator.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/cmlibrary/cmlibrary.iml" filepath="$PROJECT_DIR$/cmlibrary/cmlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/comparsechart/comparsechart.iml" filepath="$PROJECT_DIR$/comparsechart/comparsechart.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/magicfolatlib/magicfolatlib.iml" filepath="$PROJECT_DIR$/magicfolatlib/magicfolatlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netconnection/netconnection.iml" filepath="$PROJECT_DIR$/netconnection/netconnection.iml" />
       <module fileurl="file://$PROJECT_DIR$/studymvp/studymvp.iml" filepath="$PROJECT_DIR$/studymvp/studymvp.iml" />
       <module fileurl="file://$PROJECT_DIR$/tilibrary/tilibrary.iml" filepath="$PROJECT_DIR$/tilibrary/tilibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/transferImage/transferImage.iml" filepath="$PROJECT_DIR$/transferImage/transferImage.iml" />

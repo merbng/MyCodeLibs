@@ -3,18 +3,20 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="LOCAL" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-4.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/GoldDrop" />
+            <option value="$PROJECT_DIR$/annotator" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/cmlibrary" />
             <option value="$PROJECT_DIR$/comparsechart" />
             <option value="$PROJECT_DIR$/library" />
             <option value="$PROJECT_DIR$/magicfolatlib" />
+            <option value="$PROJECT_DIR$/netconnection" />
             <option value="$PROJECT_DIR$/studymvp" />
             <option value="$PROJECT_DIR$/tilibrary" />
             <option value="$PROJECT_DIR$/transferImage" />

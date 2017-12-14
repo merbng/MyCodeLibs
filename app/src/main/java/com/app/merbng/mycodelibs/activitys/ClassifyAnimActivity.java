@@ -9,7 +9,6 @@ import com.app.merbng.mycodelibs.A_MagicFloatView.exp1Barrang.BarrangActivity;
 import com.app.merbng.mycodelibs.A_MagicFloatView.exp2DropItemAnimation.DropItemAnimationActivity;
 import com.app.merbng.mycodelibs.A_StudyProcessButton.ProcessButtonActivity;
 import com.app.merbng.mycodelibs.A_TumbleEditText.TumbeEditTextActivity;
-import com.app.merbng.mycodelibs.A_circle_float_menu.CircularMenuActivity;
 import com.app.merbng.mycodelibs.A_edittextfirework.EditFireWorkActivity;
 import com.app.merbng.mycodelibs.A_galleryview.GalleryActivity;
 import com.app.merbng.mycodelibs.A_loadProgress.LoadProssActivity;
@@ -54,7 +53,7 @@ public class ClassifyAnimActivity extends BaseActivity {
                 AppSystemUtils.openActivity(thisActivity, BarrangActivity.class);
                 break;
             case R.id.circularmenuactivity://圆形扩散菜单
-                AppSystemUtils.openActivity(thisActivity, CircularMenuActivity.class);
+
                 break;
             case R.id.magicfloatviewactivity://自定义拓展漂浮路径的迷你版轻量级漂浮控件
                 AppSystemUtils.openActivity(thisActivity, MagicFloatViewActivity.class);

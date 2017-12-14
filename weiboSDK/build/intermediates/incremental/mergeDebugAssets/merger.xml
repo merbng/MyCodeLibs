@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\git_android\MyCodeLib\weiboSDK\src\main\assets"/></dataSet><dataSet config="debug"><source path="D:\git_android\MyCodeLib\weiboSDK\src\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\TyhPro\MyCodeLibs\weiboSDK\src\main\assets"/><source path="E:\TyhPro\MyCodeLibs\weiboSDK\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\TyhPro\MyCodeLibs\weiboSDK\src\debug\assets"/></dataSet></merger>
