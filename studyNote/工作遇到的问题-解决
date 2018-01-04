@@ -166,3 +166,14 @@ http://blog.csdn.net/lucky_bo/article/details/51145524
         
 16.webSocket不通的问题：
 http请求不需要配置证书，所以注释掉setSocket这个方法就通了。
+17.
+android studio 依赖aar
+在module的build.gradle
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+compile(name: 'LL-AggregatePay-1.0.2', ext: 'aar')
