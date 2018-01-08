@@ -163,3 +163,11 @@ http://blog.csdn.net/lucky_bo/article/details/51145524
 设置为：可解决
         setWidth(WindowManager.LayoutParams.MATCH_PARENT);
         setHeight(WindowManager.LayoutParams.MATCH_PARENT);
+
+
+16.
+NoClassDefFoundError
+原因:对接连连支付时，由于原项目已集成过微信支付，故导致 没有添加微信的gradle，所以奔溃
+暂解决:将项目中的相关微信的暂注释掉，添加微信gradle，引入连连支付的aar。解决崩溃
+注：项目中还用到微信及其他三方的登录分享，所以不能注掉。
+
