@@ -185,4 +185,4 @@ NoClassDefFoundError
 原因:对接连连支付时，由于原项目已集成过微信支付，故导致 没有添加微信的gradle，所以奔溃
 暂解决:将项目中的相关微信的暂注释掉，添加微信gradle，引入连连支付的aar。解决崩溃
 注：项目中还用到微信及其他三方的登录分享，所以不能注掉。
-
+17. android studio 修改包名时，先点击【show action menu 】里的[hide empty middle package]后，再shift+F6
