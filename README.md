@@ -1,10 +1,11 @@
 # MyCodeLibs
-##AndroidStudy代码库
+## AndroidStudy代码库
 [我的博客](http://blog.csdn.net/merbn):running:
 ![image](https://github.com/Merbn/MyCodeLibs/blob/master/myscreen.png)
 注：二维码为微信公众号；
 _____________________
 =====================
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/merbngStudy/Lobby)  
 
 [![](https://jitpack.io/v/rey5137/material.svg)](https://github.com/Merbn/MyCodeLibs) [![Download](https://api.bintray.com/packages/rey5137/maven/material/images/download.svg)](https://github.com/Merbn/MyCodeLibs)  [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Material-brightgreen.svg?style=flat)](https://github.com/Merbn/MyCodeLibs)
 
