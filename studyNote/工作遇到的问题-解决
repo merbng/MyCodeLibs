@@ -32,6 +32,10 @@ onActivityResult在别的分享也会走，使用要区分是否是点击的qq�
 -sendReq 返回false 可能是 分享的缩略图 太大！（官方文档有说明）
 -若返回true 调起客户端 但 WXEntryActivity未接收到，则可能是 签名配置 问题
 -若接口报error ，检查一下bean里 判空的方法，先判空
+
+sendReq返回true 打包前可分享，打包后分享失败 可能就是签名不一致，需要比对一下开发者平台的MD5签名跟.jks的签名是否一致。
+如http://blog.csdn.net/fkd7891/article/details/79087810
+
 4.打开webview后再打开任意activity，webView不能滑动了。
 -是因为使用的是onPostCreate
 -在onResume里 判断 if(webView!=null){webView.onResume()}
