@@ -7,3 +7,5 @@ _设计模式_
 + [抽象工厂模式](https://www.jianshu.com/p/47015e83fa68)
 + [面向对象基础](https://www.jianshu.com/p/f01408d89623)
 + [集合框架](https://www.jianshu.com/p/a67eb48a2e0b)
++ [Synchronized原理](https://www.jianshu.com/p/ef1c9cdac26a)
+
