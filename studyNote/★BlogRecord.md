@@ -9,3 +9,5 @@ _设计模式_
 + [集合框架](https://www.jianshu.com/p/a67eb48a2e0b)
 + [Synchronized原理](https://www.jianshu.com/p/ef1c9cdac26a)
 + [抽象类和接口](https://www.jianshu.com/p/92ac0e6cec52)
+### Android基础
++ [String、StringBuffer、StringBuilder区别](https://www.jianshu.com/p/a87eaeadcc19)
