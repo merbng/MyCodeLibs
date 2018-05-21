@@ -12,55 +12,55 @@ _____________________
 2017年4月18日16:27:52  
 * Android 下悬浮窗权限兼容库  
 `FloatingPermissionCompatActivity`  
-:octocat:  
+:octocat:
 2017年3月29日11:45:03  
 * 封装了一个录音和播放的管理类  
 `VoiceMainActivity`  
-:octocat:  
+:octocat:
 2017年3月13日13:46:43  
 * 仿微信、支付宝等简洁的验证码、密码输入框。  
 `VerificationCodeInputActivity`  
-:octocat:  
+:octocat:
 2017年3月2日16:07:4509  
 * 层叠效果  
 `ParallaxRecyclerView`  
-:octocat:  
+:octocat:
 2017年3月2日15:25:09  
 * 上升下降的效果  
 `DropItemAnimationActivity`  
-:octocat:  
+:octocat:
 2017年3月2日14:44:01  
 * 气球上升的效果  
 `BarrangActivity`  
-:octocat:  
+:octocat:
 2017年2月28日17:23:37  
 * fitpopupwindow  
 `FitPopupWindowActivity`  
-:octocat:  
+:octocat:
 2016年11月14日15:55:11  
 * 一秒让你的view拥有3D效果  
 `Layout3DActivity`  
-:octocat:  
+:octocat:
 2016年11月9日10:32:51  
 * 滚动显示TextView的数字  
 `RandomTextViewActivity`  
-:octocat:  
+:octocat:
 2016年11月4日16:40:45  
 * 谷歌原生圆形ImageView  
 `CircleImageActivity`  
-:octocat:  
+:octocat:
 2016年10月31日18:29:39  
 * 透明状态栏  
 `StateColorActivity`  
-:octocat:  
+:octocat:
 2016年10月17日17:22:19  
 * EditText的撤销和恢复（反撤销）  
 `UndoEditActivity`  
-:octocat:  
+:octocat:
 2016年10月17日17:21:24  
 * 输入框烟花效果  
 `EditFireWorkActivity`  
-:octocat:  
+:octocat:
 2016年10月10日14:41:34  
 * 验证码倒计时  
 `AuthCodeCountdownActivity`  
