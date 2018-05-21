@@ -15,3 +15,6 @@ _设计模式_
 ### Android基础
 + [String、StringBuffer、StringBuilder区别](https://www.jianshu.com/p/a87eaeadcc19)
 + [系统架构](https://www.jianshu.com/p/898d4548030b)
+
+### 问题记录
++ [打包报错：Keystore was tampered with, or password was incorrect](https://www.jianshu.com/p/b8ce3e21abc6)
