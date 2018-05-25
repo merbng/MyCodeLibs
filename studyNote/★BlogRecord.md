@@ -18,3 +18,4 @@ _设计模式_
 
 ### 问题记录
 + [打包报错：Keystore was tampered with, or password was incorrect](https://www.jianshu.com/p/b8ce3e21abc6)
++ [一些知识点的整理以及面试题记录](https://www.jianshu.com/p/1c74438775a1)
