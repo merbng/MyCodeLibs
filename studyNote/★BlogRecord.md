@@ -11,7 +11,6 @@ _设计模式_
 + [抽象类和接口](https://www.jianshu.com/p/92ac0e6cec52)
 + [==和equals和hashCode的区别](https://www.jianshu.com/p/121c23a7bf00)
 
-
 ### Android基础
 + [String、StringBuffer、StringBuilder区别](https://www.jianshu.com/p/a87eaeadcc19)
 + [系统架构](https://www.jianshu.com/p/898d4548030b)
