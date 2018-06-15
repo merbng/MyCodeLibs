@@ -15,6 +15,7 @@ _设计模式_
 + [String、StringBuffer、StringBuilder区别](https://www.jianshu.com/p/a87eaeadcc19)
 + [系统架构](https://www.jianshu.com/p/898d4548030b)
 + [Android ScrollView滚动到指定View的位置](https://www.jianshu.com/p/ee9a4ced941e)
++ [记一次 报错：Android ClassNotFoundException: Didn't find class on path](https://www.jianshu.com/p/b0085ea91ffe)
 
 ### 问题记录
 + [打包报错：Keystore was tampered with, or password was incorrect](https://www.jianshu.com/p/b8ce3e21abc6)
