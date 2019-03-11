@@ -10,6 +10,7 @@ _设计模式_
 + [Synchronized原理](https://www.jianshu.com/p/ef1c9cdac26a)
 + [抽象类和接口](https://www.jianshu.com/p/92ac0e6cec52)
 + [==和equals和hashCode的区别](https://www.jianshu.com/p/121c23a7bf00)
++ [Java基础-建造者模式](https://www.jianshu.com/p/e0058c7c1579)
 
 ### Android基础
 + [String、StringBuffer、StringBuilder区别](https://www.jianshu.com/p/a87eaeadcc19)
