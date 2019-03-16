@@ -20,6 +20,7 @@ _设计模式_
 + [Android 身高体重曲线的实现](https://www.jianshu.com/p/83ae7639a6de)
 + [Android 技术点集锦（面试）](https://www.jianshu.com/p/e6fb45e6378b)
 + [项目中对于内存优化的几个细节点](https://www.jianshu.com/p/aff97a15d72c)
++ [Android 中的线程有哪些，原理与各自特点](https://www.jianshu.com/p/1670b2bc0533)
 
 ### 问题记录
 + [打包报错：Keystore was tampered with, or password was incorrect](https://www.jianshu.com/p/b8ce3e21abc6)
