@@ -23,7 +23,7 @@ _设计模式_
 + [Android 中的线程有哪些，原理与各自特点](https://www.jianshu.com/p/1670b2bc0533)
 + [Android 横向滚动的RecycleView一屏显示五个半，低于五个平均分布](https://www.jianshu.com/p/788d505e869d)
 
-###HTML&CSS&JS学习
+### HTML&CSS&JS学习
 + [CSS变形动画](https://www.jianshu.com/p/654d8e12c119)
 + [CSS3 伸缩布局](https://www.jianshu.com/p/c5fad74a68c6)
 ### 问题记录
