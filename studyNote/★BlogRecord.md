@@ -13,10 +13,12 @@ _设计模式_
 + [Java基础-建造者模式](https://www.jianshu.com/p/e0058c7c1579)
 
 ### Android基础
+
 + [String、StringBuffer、StringBuilder区别](https://www.jianshu.com/p/a87eaeadcc19)
 + [系统架构](https://www.jianshu.com/p/898d4548030b)
 + [Android ScrollView滚动到指定View的位置](https://www.jianshu.com/p/ee9a4ced941e)
 + [记一次 报错：Android ClassNotFoundException: Didn't find class on path](https://www.jianshu.com/p/b0085ea91ffe)
++ [Android Studio 报 Failed to resolve: xxx 找不到依赖 错误解决](https://www.jianshu.com/p/cc58cb9af085)
 + [Android 身高体重曲线的实现](https://www.jianshu.com/p/83ae7639a6de)
 + [Android 技术点集锦（面试）](https://www.jianshu.com/p/e6fb45e6378b)
 + [项目中对于内存优化的几个细节点](https://www.jianshu.com/p/aff97a15d72c)
@@ -24,8 +26,10 @@ _设计模式_
 + [Android 横向滚动的RecycleView一屏显示五个半，低于五个平均分布](https://www.jianshu.com/p/788d505e869d)
 
 ### HTML&CSS&JS学习
+
 + [CSS变形动画](https://www.jianshu.com/p/654d8e12c119)
 + [CSS3 伸缩布局](https://www.jianshu.com/p/c5fad74a68c6)
+
 ### 问题记录
 + [打包报错：Keystore was tampered with, or password was incorrect](https://www.jianshu.com/p/b8ce3e21abc6)
 + [一些知识点的整理以及面试题记录](https://www.jianshu.com/p/1c74438775a1)
