@@ -22,6 +22,7 @@ _设计模式_
 + [项目中对于内存优化的几个细节点](https://www.jianshu.com/p/aff97a15d72c)
 + [Android 中的线程有哪些，原理与各自特点](https://www.jianshu.com/p/1670b2bc0533)
 + [Android 横向滚动的RecycleView一屏显示五个半，低于五个平均分布](https://www.jianshu.com/p/788d505e869d)
++ [RecycleView横向自动滚动（ViewPager效果）](https://www.jianshu.com/p/577ce45a1632)
 
 ### HTML&CSS&JS学习
 
