@@ -24,6 +24,7 @@ _设计模式_
 + [Android 横向滚动的RecycleView一屏显示五个半，低于五个平均分布](https://www.jianshu.com/p/788d505e869d)
 + [RecycleView横向自动滚动（ViewPager效果）](https://www.jianshu.com/p/577ce45a1632)
 + [[Android] Handler中的IdleHandler](https://www.jianshu.com/p/1dc73c8ab6a1)
++ [[Android] 谈一下自定义View的流程](https://www.jianshu.com/p/7bf20f6083c3)
 
 ### HTML&CSS&JS学习
 
